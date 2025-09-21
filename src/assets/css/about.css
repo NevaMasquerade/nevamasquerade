@@ -1,0 +1,428 @@
+/* PAGE-SPECIFIC STYLES FOR THE ABOUT PAGE */
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1106 {
+    padding: var(--sectionPadding);
+    padding-top: 11.25rem;
+    padding-bottom: 7.5rem;
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background: var(--medium);
+  }
+  #banner-1106 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #banner-1106 .cs-int-title {
+    /* 39px - 61px */
+    font-family: var(--headerFont);
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--textLight);
+    position: relative;
+  }
+  #banner-1106 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1106 .cs-link {
+    font-family: var(--smallCaps);
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--textLight);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1106 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-1106 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1106 .cs-link:after {
+    /* chevron */
+    content: "";
+    width: 0.75rem;
+    height: 1rem;
+    margin: 0 1rem;
+    background: url("../svgs/chevron.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+  }
+  #banner-1106 .cs-link.cs-active {
+    opacity: 0.6;
+    font-weight: 300;
+  }
+  #banner-1106 .cs-link:hover {
+    color: var(--primary100);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  #banner-1106 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-1106 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(18, 38, 51, 0.94) 0%, rgba(18, 38, 51, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(18, 38, 51, 0.94) 0%, rgba(18, 38, 51, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-1106 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-600,
+  #RPsbsr-600 {
+    position: relative;
+    background-color: var(--textLight);
+  }
+  #RPsbs-600 .cs-container,
+  #RPsbsr-600 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #RPsbs-600 .cs-content,
+  #RPsbsr-600 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    /* moved section padding to cs-content so the cs-background can be full width */
+    padding: var(--sectionPadding);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RPsbs-600 .cs-topper,
+  #RPsbsr-600 .cs-topper {
+    color: var(--accent500);
+  }
+  #RPsbs-600 .cs-text,
+  #RPsbsr-600 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-600 .cs-text:last-of-type,
+  #RPsbsr-600 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-600 .cs-background,
+  #RPsbsr-600 .cs-background {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 16rem;
+    z-index: 1;
+  }
+  #RPsbs-600 .cs-background img,
+  #RPsbsr-600 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbs-600,
+  #RPsbsr-600 {
+    /* 90px - 150px */
+    /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
+    padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
+  }
+  #RPsbs-600 .cs-container,
+  #RPsbsr-600 .cs-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #RPsbs-600 .cs-background,
+  #RPsbsr-600 .cs-background {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+  }
+  #RPsbs-600 .cs-background img,
+  #RPsbsr-600 .cs-background img {
+    aspect-ratio: 5/4;
+  }
+  #RPsbs-600 .cs-content,
+  #RPsbsr-600 .cs-content {
+    width: 45%;
+    padding: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #RPsbs-600,
+  body.dark-mode #RPsbsr-600 {
+    background: var(--primary);
+  }
+  body.dark-mode #RPsbs-600 .cs-topper,
+  body.dark-mode #RPsbsr-600 .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode #RPsbs-600 .cs-title,
+  body.dark-mode #RPsbs-600 .cs-text,
+  body.dark-mode #RPsbsr-600 .cs-title,
+  body.dark-mode #RPsbsr-600 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #RPsbs-600 .cs-text,
+  body.dark-mode #RPsbsr-600 .cs-text {
+    opacity: 0.8;
+  }
+}
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-600 {
+    background: var(--primary);
+  }
+  #RPsbsr-600 .cs-topper {
+    color: var(--secondary);
+  }
+  #RPsbsr-600 .cs-title,
+  #RPsbsr-600 .cs-text {
+    color: var(--textLight);
+  }
+}
+/* Mobile - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbsr-600 .cs-container {
+    justify-content: flex-start;
+  }
+  #RPsbsr-600 .cs-background {
+    left: 50%;
+    right: auto;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #RPsbsr-600 {
+    background-color: var(--dark);
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #content-1638 {
+    padding: var(--sectionPadding);
+    background-color: var(--secondary);
+    position: relative;
+    z-index: 1;
+  }
+  #content-1638 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 100px */
+    gap: clamp(0.5rem, 2vw, 1rem);
+  }
+  #content-1638 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #content-1638 .cs-flex {
+    max-width: 38rem;
+  }
+  #content-1638 .cs-h3-mission {
+    font-family: var(--smallCaps);
+    font-size: 1.25rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    font-weight: 600;
+    margin: 2rem 0 1rem 0;
+    color: var(--accent400);
+  }
+  #content-1638 .cs-text {
+    margin-bottom: 2rem;
+  }
+  #content-1638 .cs-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* 16px - 32px */
+    gap: clamp(1rem, 3.2vw, 2rem);
+  }
+  #content-1638 .cs-card-group {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    /* 16px - 32px */
+    gap: clamp(1rem, 2vw, 2rem);
+  }
+  #content-1638 .cs-item {
+    list-style: none;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #content-1638 .cs-item-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #content-1638 .cs-item-number {
+    font-family: var(--smallCaps);
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--accent400);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    font-variant-numeric: lining-nums;
+  }
+  #content-1638 .cs-h3 {
+    font-family: var(--bodyFont);
+    font-size: 1rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--textDark);
+  }
+  #content-1638 .cs-item-text {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--textDark);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #content-1638:before {
+    height: 63%;
+  }
+  #content-1638 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  #content-1638 .cs-flex {
+    width: 50%;
+    text-align: left;
+  }
+  #content-1638 .cs-title {
+    margin: 0;
+  }
+  #content-1638 .cs-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #content-1638 {
+    background-color: var(--medium);
+    z-index: -10;
+  }
+  body.dark-mode #content-1638 .cs-title, body.dark-mode #content-1638 .cs-text, body.dark-mode #content-1638 .cs-h3-mission, body.dark-mode #content-1638 .cs-text, body.dark-mode #content-1638 .cs-h3, body.dark-mode #content-1638 .cs-item-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #content-1638 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #content-1638 .cs-h3-mission,
+  body.dark-mode #content-1638 .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode #content-1638 .cs-item-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #content-1638 .cs-item-number {
+    color: var(--secondary200);
+  }
+}
+
+/*# sourceMappingURL=about.css.map */

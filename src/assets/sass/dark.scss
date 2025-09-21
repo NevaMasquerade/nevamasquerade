@@ -1,0 +1,91 @@
+/* DARK MODE AND TOGGLE STYLES */
+
+/*-- -------------------------- -->
+<---      Core Dark Styles      -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    // Dark Mode Color Scheme
+    :root {
+        --dark: #071219;
+        --medium: #122633;
+        --accent: #294759;
+        --darkBlog: #190705;
+        --mediumBlog: #33120f;
+        --accentBlog: #592824;
+    }
+
+    body.dark-mode {
+        background-color: var(--dark);
+
+        p,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--textLight);
+        }
+
+        a {
+            color: var(--primary100);
+        
+            &:visited {
+                color: var(--secondary200);
+            }
+        
+            &:hover {
+                color: var(--primary200);
+            }
+        }
+
+        a[target="_blank"]:link::after {
+            background-color: var(--primary100);
+        }
+    
+        a[target="_blank"]:hover::after {
+            background-color: var(--primary200);
+            width: .8em;
+            height: .8em;
+        }
+    
+        a[target="_blank"]:visited::after {
+            background-color: var(--secondary200);
+        }
+
+        
+        // hide all light classes
+        .light {
+            display: none;
+        }
+
+        // show all dark classes
+        .dark {
+            display: block !important;
+        }
+
+        .cs-topper {
+            color: var(--secondary);
+        }
+
+        .cs-button-solid {
+            background-color: var(--primary400);
+            color: var(--textLight);
+
+            &:visited {
+                color: var(--textLight);
+            }
+
+            &:before {
+                background-color: var(--accent500);
+            }
+        }
+    }
+
+    .dark {
+        display: none;
+    }
+}

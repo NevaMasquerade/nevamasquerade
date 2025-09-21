@@ -1,0 +1,12 @@
+[build]
+  publish = "public/"
+  command = "npm run build"
+
+[[plugins]]
+  # Installs the Lighthouse Build Plugin for all deploy contexts
+  package = "@netlify/plugin-lighthouse"
+
+  [[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

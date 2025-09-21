@@ -1,0 +1,21 @@
+{
+  "name": "Neva Masquerade | Branding and Web Design",
+  "short_name": "Neva Masquerade",
+  "icons": [
+    {
+      "src": "/assets/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#fffaf0",
+  "background_color": "#294759",
+  "display": "standalone"
+}

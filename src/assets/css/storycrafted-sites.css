@@ -1,0 +1,1049 @@
+/*-- -------------------------- -->
+<---            Hero            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-668 {
+    /* centers button */
+    text-align: center;
+    /* 120px - 300px top */
+    /* 60px - 150px  bottom */
+    padding: clamp(7.5rem, 18vw, 15.75rem) 1rem clamp(3.75rem, 14.82vw, 9.375rem);
+    position: relative;
+    z-index: 1;
+  }
+  #hero-668:before {
+    /* red background box */
+    content: "";
+    width: 100%;
+    height: 85%;
+    background: var(--primary);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #hero-668 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  #hero-668 .cs-content {
+    text-align: center;
+    max-width: 48rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #hero-668 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-668 .cs-link {
+    font-family: var(--smallCaps);
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--textLight);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  #hero-668 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #hero-668 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #hero-668 .cs-link:after {
+    /* chevron */
+    content: "";
+    width: 0.75rem;
+    height: 1rem;
+    margin: 0 1rem;
+    background: url("../svgs/chevron.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: block;
+  }
+  #hero-668 .cs-link.cs-active {
+    opacity: 0.8;
+    font-weight: 300;
+  }
+  #hero-668 .cs-link:hover {
+    color: var(--primary100);
+    text-decoration: underline;
+    text-underline-offset: 0.3em;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+  #hero-668 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    line-height: 1.2em;
+    text-align: inherit;
+    /* 16 characters wide including spaces */
+    margin: 0 0 1rem 0;
+    color: var(--textLight);
+    position: relative;
+  }
+  #hero-668 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  #hero-668 .cs-button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+  #hero-668 .cs-picture {
+    width: 100%;
+    max-width: 38.5rem;
+    /* Changes at desktop */
+    height: 25rem;
+    overflow: hidden;
+    display: block;
+    align-self: center;
+    position: relative;
+  }
+  #hero-668 .cs-picture img {
+    position: relative;
+    align-self: center;
+    height: 100%;
+    width: 100%;
+    /* makes image act as a background image */
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-668 {
+    /* clips the red box from overflowing the section */
+    overflow: hidden;
+    margin-top: clamp(2rem, 5vh, 4rem);
+  }
+  #hero-668:before {
+    /* removed from section container and added to cs-container for easier horizontal positioning */
+    display: none;
+  }
+  #hero-668 .cs-container {
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 6.25rem;
+  }
+  #hero-668 .cs-container:before {
+    /* red background box */
+    content: "";
+    width: 100vw;
+    height: 300%;
+    background: var(--primary);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    /* 200px - 305px, positioning it off the right edge of the container which has a fixed width */
+    right: clamp(12.5rem, 20vw, 19.0625rem);
+    z-index: -1;
+    transform: translateY(-50%);
+  }
+  #hero-668 .cs-content {
+    text-align: left;
+    width: 53%;
+    /* prevents flex-box from squishing it */
+    flex: none;
+    align-items: flex-start;
+  }
+  #hero-668 .cs-picture {
+    width: 50vw;
+    max-width: 100%;
+    /* 714px - 800px */
+    height: clamp(44.625rem, 60vw, 50rem);
+    /* push 100px left of that center line from the left property. this ensures it always stays exactly 100px right of the center line and won't move */
+    margin-left: 6.25rem;
+    position: absolute;
+    bottom: 0;
+    /* send the left edge of the element to line up at the center of the screen */
+    left: 50%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-668:before {
+    filter: brightness(50%);
+  }
+  body.dark-mode #hero-668 .cs-container:before {
+    filter: brightness(50%);
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-578 {
+    background-color: var(--secondary);
+  }
+  #sbs-578 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
+  }
+  #sbs-578 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 32.625rem;
+    /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+    padding: var(--sectionPadding);
+    padding-top: 0;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #sbs-578 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-578 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-578 .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 18.75rem;
+  }
+  #sbs-578 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-578 {
+    padding: var(--sectionPadding);
+  }
+  #sbs-578 .cs-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    /* 60px - 128px */
+    gap: clamp(3.75rem, 10vw, 8rem);
+  }
+  #sbs-578 .cs-content {
+    width: 53%;
+    /* reset the padding, add the section padding back to the section container */
+    padding: 0;
+  }
+  #sbs-578 .cs-picture {
+    width: 47vw;
+    max-width: 30.875rem;
+    /* 518px - 700px */
+    height: clamp(32.375rem, 63vw, 43.75rem);
+    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+    margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+    position: relative;
+  }
+  #sbs-578 .cs-picture:before {
+    /* yellow box */
+    content: "";
+    width: 50%;
+    height: 60%;
+    background: var(--secondary300);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+    bottom: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+    left: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-578 {
+    background-color: var(--primary);
+  }
+  body.dark-mode #sbs-578 .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode #sbs-578 .cs-title,
+  body.dark-mode #sbs-578 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #sbs-578 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-578 .cs-picture:before {
+    background-color: var(--accent);
+  }
+}
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-690 {
+    padding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem 4rem 1rem;
+  }
+  #services-690 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-690 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #services-690 .cs-flex-group {
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-690 .cs-topper {
+    color: var(--accent600);
+  }
+  #services-690 .cs-title {
+    color: var(--secondary600);
+  }
+  #services-690 .cs-text {
+    padding-bottom: 1rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cs-content-832 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  #cs-content-832 .cs-flex-group {
+    width: 50%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cs-content-832 .cs-topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #cs-content-832 .cs-title,
+  body.dark-mode #cs-content-832 .cs-text {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #cs-content-832 .cs-text {
+    opacity: 0.8;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-690 .cs-container {
+    max-width: 80rem;
+  }
+  #services-690 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  #services-690 .cs-flex-group {
+    width: 50%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-690 {
+    background: var(--dark);
+  }
+  body.dark-mode #services-690 .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode #services-690 .cs-title,
+  body.dark-mode #services-690 .cs-text,
+  body.dark-mode #services-690 .cs-h3,
+  body.dark-mode #services-690 .cs-item-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #services-690 .cs-color {
+    color: var(--secondary300);
+  }
+  body.dark-mode #services-690 .cs-picture {
+    background-color: var(--primary400);
+  }
+  body.dark-mode #services-690 .cs-text,
+  body.dark-mode #services-690 .cs-item-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #services-690 .cs-item {
+    background-color: var(--primary600);
+  }
+  body.dark-mode #services-690 .nm-accent {
+    background-color: var(--primary);
+  }
+  body.dark-mode #services-690 .nm-accent .cs-picture {
+    background-color: var(--medium);
+  }
+  body.dark-mode #services-690 .cs-th {
+    border: 1px solid var(--primary);
+  }
+  body.dark-mode #services-690 .cs-td {
+    background-color: var(--primary);
+    border: 1px solid var(--primary400);
+  }
+  body.dark-mode #services-690 .cs-color .cs-th:first-child {
+    color: var(--textLight);
+    background-color: var(--dark);
+  }
+  body.dark-mode #services-690 .cs-color .nm-th-accent {
+    background-color: var(--dark);
+  }
+  body.dark-mode #services-690 .cs-th:first-child, body.dark-mode #services-690 .cs-td:first-child {
+    background-color: var(--medium);
+    border: 1px solid var(--primary400);
+    color: var(--textLight);
+  }
+  body.dark-mode #services-690 .nm-td-accent {
+    background-color: var(--medium);
+  }
+  body.dark-mode #services-690 .cs-th {
+    background-color: var(--medium);
+    color: var(--textLight);
+  }
+  body.dark-mode #services-690 .cs-tr {
+    color: var(--textLight);
+  }
+}
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing-1233 {
+    padding: 0 1rem clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+  }
+  #pricing-1233 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #pricing-1233 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.8vw, 1.25rem);
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #pricing-1233 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    /* 24px - 40px top & Bottom */
+    /* 20px - 40px left & right */
+    padding: clamp(1.5rem, 4.2vw, 2.5rem) clamp(1.25rem, 4.2vw, 2.5rem);
+    background-color: var(--secondary);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #pricing-1233 .nm-badge {
+    background-color: var(--secondary300);
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.125rem;
+  }
+  #pricing-1233 .nm-best {
+    font-family: var(--smallCaps);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent700);
+    text-align: center;
+    align-self: center;
+  }
+  #pricing-1233 .cs-button-transparent {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 2px solid var(--accent500);
+  }
+  #pricing-1233 .cs-popular {
+    background-color: var(--accent500);
+    color: var(--textLight);
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
+    padding: clamp(2.5rem, 4.7vw, 3.5rem) clamp(1.5rem, 4.2vw, 2.5rem);
+  }
+  #pricing-1233 .cs-popular .cs-package {
+    color: var(--textLight);
+    font-size: clamp(2.5rem, 2.7vw, 3.25rem);
+  }
+  #pricing-1233 .cs-popular .cs-desc,
+  #pricing-1233 .cs-popular .cs-time {
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  #pricing-1233 .cs-popular .cs-price {
+    color: var(--secondary);
+  }
+  #pricing-1233 .cs-popular .cs-includes {
+    color: var(--textLight);
+  }
+  #pricing-1233 .cs-popular .cs-includes {
+    border-color: var(--secondary300);
+  }
+  #pricing-1233 .cs-popular .cs-li {
+    color: var(--textLight);
+  }
+  #pricing-1233 .cs-popular .cs-button-transparent {
+    color: var(--textLight);
+    border: 2px solid var(--secondary200);
+  }
+  #pricing-1233 .cs-popular .cs-button-transparent:hover {
+    background-color: var(--secondary200);
+    color: var(--accent600);
+  }
+  #pricing-1233 .cs-package {
+    /* 13px - 16px */
+    font-family: var(--headerFont);
+    font-size: clamp(2rem, 2.2vw, 3rem);
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 400;
+    /* 4px - 8px */
+    margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
+    color: var(--accent500);
+    display: block;
+  }
+  #pricing-1233 .cs-desc {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.4vw, 1rem);
+    font-weight: 400;
+    line-height: 1.5em;
+    text-align: left;
+    /* 12px - 24px */
+    margin: 0 0 clamp(0.75rem, 2.5vw, 1.5rem);
+    color: var(--textDark);
+    display: block;
+  }
+  #pricing-1233 .cs-price {
+    /* 39px - 49px */
+    font-family: var(--headerFont);
+    font-size: clamp(2.4375rem, 4vw, 3.0625rem);
+    white-space: nowrap;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 400;
+    margin: 0;
+    color: var(--accent500);
+  }
+  #pricing-1233 .cs-time {
+    font-family: var(--smallCaps);
+    font-size: 0.875rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 0 0 -0.5rem;
+    color: var(--textDark);
+  }
+  #pricing-1233 .cs-includes {
+    font-family: var(--smallCaps);
+    font-size: 1rem;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: inherit;
+    font-weight: 600;
+    width: 100%;
+    color: var(--accent500);
+    margin-top: 2rem;
+    /* 16px - 24px */
+    padding: clamp(1rem, 3vw, 1.5rem) 0 0 0;
+    border-top: 1px solid var(--secondary300);
+    display: block;
+  }
+  #pricing-1233 .nm-recommended {
+    font-family: var(--smallCaps);
+    font-size: 0.75rem;
+    line-height: 1.2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: inherit;
+  }
+  #pricing-1233 .cs-ul {
+    /* 16px - 24px */
+    margin: clamp(1rem, 3vw, 1.5rem) 0 clamp(1.125rem, 3.5vw, 1.75rem) 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 4px - 12px */
+    gap: clamp(0.25rem, 1.3vw, 0.75rem);
+    position: relative;
+  }
+  #pricing-1233 .cs-li {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--textDark);
+    display: flex;
+    justify-content: flex-start;
+    /* push everything to the top so if the li goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #pricing-1233 .cs-icon {
+    width: 1.5rem;
+    height: auto;
+    display: block;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #pricing-1233 .cs-container {
+    max-width: 80rem;
+  }
+  #pricing-1233 .cs-item {
+    flex-direction: row;
+  }
+  #pricing-1233 .cs-item-content {
+    width: 30%;
+    max-width: 14.25rem;
+    /* 28px - 40px */
+    margin-right: clamp(1.75rem, 4vw, 2.5rem);
+    padding-right: clamp(1.75rem, 4vw, 2.5rem);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    border-right: 1px solid var(--secondary300);
+  }
+  #pricing-1233 .cs-popular .cs-item-content {
+    border-color: var(--secondary300);
+  }
+  #pricing-1233 .cs-popular .cs-package {
+    font-size: clamp(1.6125rem, 2vw, 2rem);
+  }
+  #pricing-1233 .cs-package {
+    font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+  }
+  #pricing-1233 .cs-includes {
+    padding: 0;
+    border: none;
+  }
+  #pricing-1233 .cs-includes:first-of-type {
+    margin-top: 0;
+  }
+  #pricing-1233 .cs-includes:last-of-type {
+    margin-top: 3rem;
+  }
+  #pricing-1233 .cs-ul {
+    display: grid;
+    /* removed at desktop, added again at large desktop */
+    grid-template-columns: repeat(2, minmax(9rem, 1fr));
+  }
+  #pricing-1233 .cs-li {
+    grid-column: span 1;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing-1233 .cs-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  #pricing-1233 .cs-content {
+    text-align: left;
+    max-width: 25rem;
+    align-items: flex-start;
+  }
+  #pricing-1233 .cs-card-group {
+    /* changes to 813px at large desktop */
+    width: 100%;
+    max-width: 80rem;
+  }
+  #pricing-1233 .cs-item-content {
+    width: 100%;
+    flex: none;
+  }
+  #pricing-1233 .cs-ul {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(9rem, 1fr));
+  }
+  #pricing-1233 .cs-li {
+    grid-column: span 1;
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #pricing-1233 .cs-container {
+    max-width: 80rem;
+  }
+  #pricing-1233 .cs-card-group {
+    width: 100%;
+  }
+  #pricing-1233 .cs-ul {
+    grid-template-columns: repeat(3, minmax(9rem, 1fr));
+  }
+  #pricing-1233 .cs-li {
+    grid-column: span 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing-1233 .cs-title,
+  body.dark-mode #pricing-1233 .cs-text,
+  body.dark-mode #pricing-1233 .cs-package,
+  body.dark-mode #pricing-1233 .cs-li,
+  body.dark-mode #pricing-1233 .cs-price,
+  body.dark-mode #pricing-1233 .cs-desc,
+  body.dark-mode #pricing-1233 .cs-time,
+  body.dark-mode #pricing-1233 .cs-includes {
+    color: var(--textLight);
+  }
+  body.dark-mode #pricing-1233 .cs-text,
+  body.dark-mode #pricing-1233 .cs-time,
+  body.dark-mode #pricing-1233 .cs-desc,
+  body.dark-mode #pricing-1233 .cs-li {
+    opacity: 0.8;
+  }
+  body.dark-mode #pricing-1233 .cs-item {
+    background-color: var(--primary600);
+  }
+  body.dark-mode #pricing-1233 .cs-item-content {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+  body.dark-mode #pricing-1233 .cs-disabled {
+    opacity: 0.4;
+  }
+  body.dark-mode #pricing-1233 .cs-popular {
+    background-color: var(--primary);
+  }
+  body.dark-mode #pricing-1233 .cs-popular .cs-price,
+  body.dark-mode #pricing-1233 .cs-popular .cs-package {
+    color: var(--textLight);
+  }
+  body.dark-mode #pricing-1233 .cs-popular .cs-disabled {
+    opacity: 0.9;
+  }
+}
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-351 {
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+  }
+  #faq-351 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    row-gap: clamp(3rem, 6vw, 4rem);
+  }
+  #faq-351 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #faq-351 .cs-topper {
+    color: var(--secondary200);
+  }
+  #faq-351 .cs-title,
+  #faq-351 .cs-text {
+    color: var(--textLight);
+  }
+  #faq-351 .cs-title {
+    margin: 0;
+  }
+  #faq-351 .cs-faq-group {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #faq-351 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid var(--primary300);
+    transition: border-bottom 0.3s;
+  }
+  #faq-351 .cs-faq-item.active {
+    border-color: var(--secondary200);
+  }
+  #faq-351 .cs-faq-item.active .cs-button {
+    color: var(--secondary);
+  }
+  #faq-351 .cs-faq-item.active .cs-button:before {
+    background-color: var(--secondary200);
+    transform: rotate(315deg);
+  }
+  #faq-351 .cs-faq-item.active .cs-button:after {
+    background-color: var(--secondary200);
+    transform: rotate(-315deg);
+  }
+  #faq-351 .cs-faq-item.active .cs-item-p {
+    height: auto;
+    /* 20px - 24px bottom */
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+    opacity: 1;
+  }
+  #faq-351 .cs-faq-item.active .cs-item-p li {
+    color: var(--textLight);
+    font-size: 1rem;
+  }
+  #faq-351 .cs-button {
+    font-size: 1.25rem;
+    font-family: var(--headerFont);
+    line-height: 1.2em;
+    text-align: left;
+    /* 16px - 20px */
+    padding: clamp(1rem, 1.3vw, 1.25rem);
+    border: none;
+    background: transparent;
+    color: var(--textLight);
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #faq-351 .cs-button:hover {
+    cursor: pointer;
+  }
+  #faq-351 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--primary300);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.5rem;
+    transform: rotate(45deg);
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+    transition: transform 0.5s;
+  }
+  #faq-351 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--primary300);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.3125rem;
+    transform: rotate(-45deg);
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+    transition: transform 0.5s;
+  }
+  #faq-351 .cs-button-text {
+    width: 80%;
+    display: block;
+  }
+  #faq-351 .cs-item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 90%;
+    height: 0;
+    margin: 0;
+    /* 16px - 24px */
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    opacity: 0;
+    color: var(--textLight);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #faq-351 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    /* push everything to the top */
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #faq-351 .cs-content {
+    width: 100%;
+  }
+  #faq-351 .cs-faq-group {
+    width: 48%;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #faq-351 {
+    background-color: var(--medium);
+  }
+}
+/*-- -------------------------- -->
+<---       Call To Action       -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  #cta-2443 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #cta-2443 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 40px - 48px */
+    gap: clamp(2.5rem, 5vw, 3rem);
+  }
+  #cta-2443 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  #cta-2443 .cs-title {
+    font-size: clamp(3rem, 8vw, 3.75rem);
+    margin: 0;
+    color: var(--textLight);
+    flex: none;
+    align-self: center;
+  }
+  #cta-2443 .cs-text {
+    margin-bottom: 1rem;
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  #cta-2443 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #cta-2443 .cs-button-solid {
+    line-height: 1.4;
+    padding: 1rem 1rem;
+    text-wrap: balance;
+  }
+  #cta-2443 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-2443 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cta-2443 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #cta-2443 .cs-flex {
+    max-width: 23.25rem;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta-2443 {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+/*# sourceMappingURL=storycrafted-sites.css.map */

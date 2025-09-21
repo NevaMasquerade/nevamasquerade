@@ -1,0 +1,138 @@
+---
+title: "Blog"
+description: "Find articles on web design and branding best practices."
+preloadImg: "/assets/textures/blog-banner-m.webp"
+permalink: "blog/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/assets/css/blog.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog.css" />
+    </noscript>
+    <style>
+        .cs-background {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+            &:before {
+                /* background color overlay */
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 100%;
+                background: -moz-linear-gradient(
+                    left,
+                    rgba(18, 38, 51, 0.94) 0%,
+                    rgba(18, 38, 51, 0) 100%
+                ); /* FF3.6-15 */
+                background: -webkit-linear-gradient(
+                    left,
+                    rgba(18, 38, 51, 0.94) 0%,
+                    rgba(18, 38, 51, 0) 100%
+                ); /* Chrome10-25,Safari5.1-6 */
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: 1;
+            }
+
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                /* Makes img tag act as a background image */
+                object-fit: cover;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-1106">
+        <div class="cs-container">
+            <h1 class="cs-int-title">Blog</h1>
+            <nav aria-label="Breadcrumb">
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/{{ permalink }}" class="cs-link cs-active" aria-current="page">Blog</a>
+                </div>
+            </nav>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="../../assets/textures/blog-banner-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="../../assets/textures/blog-banner.webp">
+            <img decoding="async" src="../../assets/textures/blog-banner.webp" alt="" width="1920" height="400" aria-hidden="true">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                    Blog                      -->
+    <!-- ============================================ -->
+
+    <section id="blog-1701">
+        <div class="cs-container">
+            <div class="cs-news">
+                <div class="cs-content">
+                    <span class="cs-topper">Our Blog</span>
+                    <h2 class="cs-title">Latest News</h2>
+                </div>
+                {% if collections.post | length == 0 %}
+                    <h3>No Recent Posts</h3>
+                {% else %}
+                    {%- for post in collections.post | reverse -%}
+                    <div class="cs-card-group">
+                        <div class="cs-item">
+                            <!--Main Article Image-->    
+                            <picture class="cs-picture">
+                                <img
+                                    src="{{ post.data.image }}"
+                                    alt="{{ post.data.imageAlt }}"
+                                    width="795"
+                                    height="400"
+                                    decoding="async"
+                                />
+                            </picture>
+                            <!--Article Info-->
+                            <div class="cs-item-text">
+                                <div class="blog-authorGroup">
+                                    <span class="blog-author">{{ post.data.author }}</span>
+                                    <span aria-hidden="true" class="blog-dot">&nbsp;</span>
+                                    <span class="blog-date">{{ post.date | postDate }}</span>
+                                </div>
+                                <h3 class="cs-h3"><a href="{{ post.url }}" class="nm-link-title">{{ post.data.title }}</a></h3>
+                                <p class="cs-desc">{{ post.data.description }}</p>
+                            </div>
+                        </div>
+                    </article>
+                    </div>
+                    {%- endfor -%}
+                {% endif %}
+            </div>
+            <div class="blog-sidebar">
+                {% include 'components/featured-post.html' %}
+            </div> 
+        </div>
+    </section>
+    {% include 'components/cta.html' %}
+{% endblock %}

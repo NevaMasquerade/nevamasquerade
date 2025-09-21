@@ -1,0 +1,72 @@
+/* DARK MODE AND TOGGLE STYLES */
+/*-- -------------------------- -->
+<---      Core Dark Styles      -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+  :root {
+    --dark: #071219;
+    --medium: #122633;
+    --accent: #294759;
+    --darkBlog: #190705;
+    --mediumBlog: #33120f;
+    --accentBlog: #592824;
+  }
+  body.dark-mode {
+    background-color: var(--dark);
+  }
+  body.dark-mode p,
+  body.dark-mode li,
+  body.dark-mode h1,
+  body.dark-mode h2,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode h5,
+  body.dark-mode h6 {
+    color: var(--textLight);
+  }
+  body.dark-mode a {
+    color: var(--primary100);
+  }
+  body.dark-mode a:visited {
+    color: var(--secondary200);
+  }
+  body.dark-mode a:hover {
+    color: var(--primary200);
+  }
+  body.dark-mode a[target=_blank]:link::after {
+    background-color: var(--primary100);
+  }
+  body.dark-mode a[target=_blank]:hover::after {
+    background-color: var(--primary200);
+    width: 0.8em;
+    height: 0.8em;
+  }
+  body.dark-mode a[target=_blank]:visited::after {
+    background-color: var(--secondary200);
+  }
+  body.dark-mode .light {
+    display: none;
+  }
+  body.dark-mode .dark {
+    display: block !important;
+  }
+  body.dark-mode .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode .cs-button-solid {
+    background-color: var(--primary400);
+    color: var(--textLight);
+  }
+  body.dark-mode .cs-button-solid:visited {
+    color: var(--textLight);
+  }
+  body.dark-mode .cs-button-solid:before {
+    background-color: var(--accent500);
+  }
+  .dark {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=dark.css.map */

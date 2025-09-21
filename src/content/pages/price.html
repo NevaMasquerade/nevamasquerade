@@ -1,0 +1,533 @@
+---
+title: 'Pricing for Custom Web and Branding'
+description: 'Small business pricing: custom web design, branding, copywriting, & support. See our upfront costs and services designed to fit your budget and help you grow.'
+preloadImg: '/assets/textures/blue-banner-m.webp'
+permalink: 'services/prices/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="website" />
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+        <link rel="stylesheet" href="/assets/css/content-pages.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <link rel="stylesheet" href="/assets/css/tables.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/content-pages.css" />
+            <link rel="stylesheet" href="/assets/css/tables.css" />
+        </noscript>
+        <style>
+            .cs-background {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+                &:before {
+                    /* background color overlay */
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    height: 100%;
+                    width: 100%;
+                    background: -moz-linear-gradient(
+                        left,
+                        rgba(18, 38, 51, 0.94) 0%,
+                        rgba(18, 38, 51, 0) 100%
+                    ); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(
+                        left,
+                        rgba(18, 38, 51, 0.94) 0%,
+                        rgba(18, 38, 51, 0) 100%
+                    ); /* Chrome10-25,Safari5.1-6 */
+                    opacity: 1;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    /* Makes img tag act as a background image */
+                    object-fit: cover;
+                }
+            }
+        </style>
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+        <!-- ============================================ -->
+        <!--                   Banner                     -->
+        <!-- ============================================ -->
+
+        <div id="banner-1106">
+            <div class="cs-container">
+                <span class="cs-int-title">Prices</span>
+                <div class="cs-breadcrumbs">
+                    <a href="/" class="cs-link">Home</a>
+                    <a href="/services/" class="cs-link">Services</a>
+                    <a href="/{{ permalink }}" class="cs-link cs-active">Prices</a>
+                </div>
+            </div>
+            <!--Background Image-->
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+                <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+            </picture>
+        </div>
+
+        <!-- ============================================ -->
+        <!--                 Content Page                 -->
+        <!-- ============================================ -->
+
+        <!-- ============================================ 
+            This Stitch is used for content heavy interior pages
+            that have no design or layout.  Often times these are 
+            content silos where you talk extensively about a topic
+            to educate your visitors and rank on Google for the 
+            content.  These are great for pages that have a TON
+            of content.  Design isn't important here, it's all 
+            about making the content accessible and easy to read.
+        ================================================= -->
+
+        <section id="content-page-851">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <h1 class="cs-title">Upfront prices for small business design services</h1>
+                        <p>
+                            <strong>Tired of budgeting in the dark? Sick of playing hide-and-seek with web design prices? </strong> Everyone benefits from transparent pricing, yet too many people keep their pricing a secret. That's absurd. At Neva Masquerade, you'll find upfront, predictable prices for all our services. No surprises. No sales tricks to snag your contact information. Just clear costs so that you can plan your budget and invest in a website and branding that work for you. Then you can get back to focusing on what matters most: growing your business.   
+                        </p>
+                        <p>
+                            Each service in our price tables links to a description explaining what it is and why you should buy it.
+                        </p>
+                        <!--Web design-->
+                        <table>
+                            <caption>Web design</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="nm-services">Service</th>
+                                    <th scope="col" class="nm-prices">Price</th>
+                                    <th scope="col" class="nm-description">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#standard-website">{{ services.stdWeb.name }}</a></td>
+                                    <td>${{ services.stdWeb.price}}</td>
+                                    <td>5-page website, paid for upfront</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#subscription-website">{{ services.subWeb.name }}</a></td>
+                                    <td>${{ services.subWeb.price }}/month</td>
+                                    <td>5-page website, $0 down with monthly payments</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#extra-pages">{{ services.extraPages.name }}</a></td>
+                                    <td>${{ services.extraPages.price }}</td>
+                                    <td>Add more pages to your website</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#blog-configuration">{{ services.blog.name }}</a></td>
+                                    <td>${{ services.blog.price }}</td>
+                                    <td>Add a blog to your website</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#dark-mode">{{ services.darkMode.name }}</a></td>
+                                    <td>${{ services.darkMode.price }}</td>
+                                    <td>Add dark mode to your website</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--Support-->
+                        <table>
+                            <caption>Support</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="nm-services">Service</th>
+                                    <th scope="col" class="nm-prices">Price</th>
+                                    <th scope="col" class="nm-description">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#domain">{{ services.domain.name }}</a></td>
+                                    <td>${{ services.domain.price }}/year</td>
+                                    <td>We'll manage your domain and DNS records</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#hosting">{{ services.hosting.name }}</a></td>
+                                    <td>${{ services.hosting.price }}/month</td>
+                                    <td>We'll manage your web hosting</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#unlimited-edits">{{ services.edits.name }}</a></td>
+                                    <td>${{ services.edits.price }}/month</td>
+                                    <td>We'll update your site as often as needed</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#copywriting">{{ services.copywriting.name }}</a></td>
+                                    <td>${{ services.copywriting.price }}/word</td>
+                                    <td>We'll write the copy for your website</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!--Branding table-->
+                        <table>
+                            <caption>Branding</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="nm-services">Service</th>
+                                    <th scope="col" class="nm-prices">Price</th>
+                                    <th scope="col" class="nm-description">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="#social-banner">{{ services.profileGraphic.name }}</a></td>
+                                    <td>${{ services.profileGraphic.price }}</td>
+                                    <td>Add a custom banner image to your profile</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#social-graphic">{{ services.socialGraphic.name }}</a></td>
+                                    <td>${{ services.socialGraphic.price }}</td>
+                                    <td>Get a branded graphic for your post</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#social-subscription">{{ services.socialSub.name }}</a></td>
+                                    <td>${{ services.socialSub.price }}/month</td>
+                                    <td>Get branded graphics for less</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#business-cards">{{ services.businessCards.name }}</a></td>
+                                    <td>${{ services.businessCards.price }}</td>
+                                    <td>Custom designed business cards</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#letterhead-envelopes">{{ services.letterhead.name }}</a></td>
+                                    <td>${{ services.letterhead.price }}</td>
+                                    <td>Custom designed stationery</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#other-design">{{ services.otherGraphic.name }}</a></td>
+                                    <td>{{ services.otherGraphic.price }}</td>
+                                    <td>Have a need? Ask us about it</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#brand-narrative">{{ services.narrative.name }}</a></td>
+                                    <td>${{ services.narrative.price }}</td>
+                                    <td>Engage customers with a brand story</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#style-guide">{{ services.styleGuide.name }}</a></td>
+                                    <td>${{ services.styleGuide.price }}</td>
+                                    <td>Establish styles and rules for your brand</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#consulting">{{ services.consulting.name }}</a></td>
+                                    <td>${{ services.consulting.price }}/hour</td>
+                                    <td>Get advice for DIY brand and web strategy</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <h2 id="web-design">
+                            Web design
+                        </h2>
+                            <p>
+                                Here's a secret the big players in web design don't want you to know: Simpler is often better. They want to sell you a fancy content management system filled with distracting bells and whistles. Yet, most small businesses and freelancers simply need the basics. No bloated page builders. No AI chatbots. All you need is clean code and a clear message. 
+                            </p>
+                            <h3 class="cs-h3" id="standard-website">
+                                <span class="cs-name">{{ services.stdWeb.name }}</span>
+                                <span class="cs-price"><span class="nm-price-mod">Starts at</span> ${{ services.stdWeb.price }}</span>
+                            </h3>
+                                <p>
+                                    Do you have a solid budget and wish to own your website? The {{ services.stdWeb.name}} is your clear choice. You pay upfront, and everything is yours to do with as you please. No lingering payments. No incomplete or limited exports. No strings attached.
+                                </p>
+                                <p>
+                                    You are free to manage hosting and updates yourself, but we don't recommend it, to be frank. We build our websites to perform well, but we sacrifice ease of updating to achieve this. They need developer skills and tools to manage them. That's why we offer ongoing <a href="#hosting">{{ services.hosting.name }}</a> and <a href="#unlimited-edits">{{ services.edits.name }}</a>. Your website lives up to its full potential, and you don't need to worry about editing code.
+                                </p>
+                                <div class="nm-columns">
+                                    <div class="nm-column">
+                                        <p class="nm-include">
+                                            Includes:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                Homepage and 4 content pages (e.g., About, Services, Contact, etc.)
+                                            </li>
+                                            <li>
+                                                Personalized design
+                                            </li>
+                                            <li>
+                                                Hand-coded website developed in HTML, CSS, and JavaScript
+                                                <ul>
+                                                    <li>Responsive, mobile-first design (looks great on phones)</li>
+                                                    <li>PageSpeed Insights scores of 90+ (loads fast and performs well)</li>
+                                                    <li>Accessible to all users (meets WCAG 2.2 AA standards)</li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Ownership of the design and codebase
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="nm-column">
+                                        <p class="nm-include">
+                                            Add-ons:
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                <a href="#hosting">{{ services.hosting.name }}</a>: Keep your site online, without the technical headaches. (${{ services.hosting.price }}/month)</li>
+                                                <li>
+                                                <a href="#unlimited-edits">{{ services.edits.name }}</a>: Effortlessly update your content for SEO and engagement. (${{ services.edits.price }}/month)</li>
+                                                <li>
+                                                <a href="#extra-pages">{{ services.extraPages.name }}</a>: Expand your site as needed. (${{ services.extraPages.price }} fee for each page)</li>
+                                                <li>
+                                                <a href="#blog-configuration">{{ services.blog.name }}</a>: Boost your SEO and connect with your audience. (${{ services.blog.price }} fee)</li>
+                                                <li>
+                                                <a href="#dark-mode">{{ services.darkMode.name }}</a>: A modern touch that enhances user experience. (${{ services.darkMode.price }} fee)</li>
+                                                <li><em>Please note: This package does not include future design refreshes.</em></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <h3 class="cs-h3" id="subscription-website">
+                                <span class="cs-name">{{ services.subWeb.name }}</span>
+                                <span class="cs-price">${{ services.subWeb.price }} <span class="nm-price-mod">/ month</span></span>
+                            </h3>
+                                <p>
+                                    Does a professional website feel like a costly, out-of-reach dream? Do you want a trendy look without paying an arm and a leg to refresh it? If this is you, look no further than the {{ services.subWeb.name }}. For an affordable monthly payment, you can have a high-performing, custom-coded site. You'll also get <a href="#hosting">{{ services.hosting.name }}</a>, <a href="#unlimited-edits">{{ services.edits.name }}</a>, and even periodic design refreshes. It's the frugal option that keeps your brand modern and effective.
+                                </p>
+                                <p>
+                                    To make this flexible model possible, we handle ownership in a different manner. We own the design and codebase. You own your domain and all the content you provide. This structure makes custom, top-tier websites accessible to those with smaller budgets. It also lets us provide continuous value and a perpetually fresh online presence.                                
+                                </p>
+                                <div class="nm-columns">
+                                    <div class="nm-column">
+                                        <p class="nm-include">
+                                            Includes:
+                                        </p>
+                                        <ul>
+                                            <li>Homepage and 4 content pages (About, Services, Contact, etc.)</li>
+                                            <li>Personalized design</li>
+                                            <li>Hand-coded website developed in HTML, CSS, and JavaScript
+                                                <ul>
+                                                    <li>Responsive, mobile-first design (looks great on phones)</li>
+                                                    <li>PageSpeed Insights scores of 90+ (loads fast and performs well)</li>
+                                                    <li>Accessible to all users (meets WCAG 2.2 AA standards)</li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#hosting">{{ services.hosting.name }}</a> (${{ services.hosting.price }} value)</li>
+                                            <li><a href="#unlimited-edits">{{ services.edits.name }}</a> (${{ services.edits.price }} value)</li>
+                                            <li>Design refreshes every ~3 years (${{ services.stdWeb.price }} value)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="nm-column">
+                                        <p class="nm-include">
+                                            Does not include:
+                                        </p>
+                                        <ul>
+                                            <li><a href="#extra-pages">{{ services.extraPages.name }}</a>: Expand your site as needed. (${{ services.extraPages.price }} fee for each page)</li>
+                                            <li><a href="#blog-configuration">{{ services.blog.name }}</a>: Boost your SEO and connect with your audience. (${{ services.blog.price }} fee)</li>
+                                            <li><a href="#dark-mode">{{ services.darkMode.name }}</a>: A modern touch that enhances user experience. (${{ services.darkMode.price }} fee)</li>
+                                            <li><em>Please note: This package does not include ownership of the design and codebase.</em></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            <h3 class="nm-h3">
+                                Add-ons
+                            </h3>
+                                <p>
+                                    Need more from your website? Not a problem. Whether you have more to say or just want to spice things up, our add-ons will grow with you. Pay for them once and reap the benefits for years to come.
+                                </p>
+                                <h4 class="nm-h4" id="extra-pages">
+                                    <span class="cs-name">{{ services.extraPages.name }}</span>
+                                    <span class="cs-price">${{ services.extraPages.price }} <span class="nm-price-mod">/ each</span></span>
+                                </h4>
+                                    <p>
+                                        Psst...Did you know that websites aren't carved in stone? They need regular updates, which can include adding new pages. A chaotic hodgepodge with all the keywords confuses both search engines and users. Instead, you should break those bad boys up into separate pages with a single, clear message. We can create as many pages as you need. This fee covers the development time needed to set up the page; once it's built, you'll never pay for it again.
+                                    </p>
+                                <h4 class="nm-h4" id="blog-configuration">
+                                    <span class="cs-name">{{ services.blog.name }}</span>
+                                    <span class="cs-price">${{ services.blog.price }}</span>
+                                </h4>
+                                    <p>
+                                        Ignore the naysayers, blogging isn't dead. Don't base your retirement plan on your blog, but it's far from a waste of time. Good blogs aren't about monetization; they exist to boost your SEO and build authority.
+                                    </p>
+                                    <p>
+                                        WordPress is the most popular blogging platform. We don't use it. Its database creates vulnerabilities, and it is extremely high-maintenance. Yuck. Instead, we use Decap CMS. It keeps your website fast, secure, and simple to update. This fee covers the complete setup, custom styling, and a live training session. We put our money where our mouth is: Neva Masquerade's blog uses Decap CMS. It isn't flashy, but it is easy to use and gets the job done.
+                                    </p>
+                                <h4 class="nm-h4" id="dark-mode">
+                                    <span class="cs-name">{{ services.darkMode.name }}</span>
+                                    <span class="cs-price">${{ services.darkMode.price }}</span>
+                                </h4>
+                                    <p>
+                                        Are you a fan of dark mode? Your customers might be. Why not wow them with a cutting-edge aesthetic that few small businesses offer? But dark mode is more than just a style; it can also be a thoughtful touch. Dark mode reduces eye fatigue for many and aids people with certain eye conditions. It's a valuable feature and well worth the extra effort. See it in action by tapping the moon or sun icon on the right side of the menu bar.
+                                    </p>
+                        <h2 id="support">
+                            Support
+                        </h2>
+                            <p>
+                                Congratulations on launching your new website! Now you never have to think about it again. Wait, that's not right. Websites demand ongoing attention and care to remain healthy. Do you have the time or expertise to keep it running and make Google happy? Good news, you don't have to. Our support services take care of that stuff so that you can relax and focus on other priorities.
+                            </p>
+                            <h3 class="cs-h3" id="domain">
+                                <span class="cs-name">{{ services.domain.name }}</span>
+                                <span class="cs-price">${{ services.domain.price }} <span class="nm-price-mod">/ year</span></span>
+                            </h3>
+                                <p>
+                                    So, a domain is...? And DNS records do what exactly? This stuff is technical; it's okay if you don't understand it. A lapsed domain means a broken website and no emails. No emails sounds kinda nice... no, that's bad. For a small annual fee, we can take this technical burden off your plate. We'll ensure your domain remains active and connected.
+                                </p>
+                            <h3 class="cs-h3" id="hosting">
+                                <span class="cs-name">{{ services.hosting.name }}</span>
+                                <span class="cs-price">${{ services.hosting.price }} <span class="nm-price-mod">/ month</span></span>
+                            </h3>
+                                <span class="nm-available">
+                                    (Included with {{ services.subWeb.name }})
+                                </span>
+                                <p>
+                                    Do you ever wonder how the Internet works? Magic. Joking, it's a bunch of computers and servers talking to each other imperceptibly fast. Hosting is how your website joins the party. Can you set up the tech stack yourself and troubleshoot issues when they happen? Sure, but why would you want to? Let us handle it. We'll keep your website online and running smoothly, so you don't need to lift a finger.
+                                </p>
+                            <h3 class="cs-h3" id="unlimited-edits">
+                                <span class="cs-name">{{ services.edits.name }}</span>
+                                <span class="cs-price">${{ services.edits.price }} <span class="nm-price-mod">/ month</span></span>
+                            </h3>
+                                <span class="nm-available">
+                                    (Included with {{ services.subWeb.name }})
+                                </span>
+                                <p>
+                                    Our online overlord demands regular updates to show that we are worthy of attention. By that, I mean Google wants to see updates so that it knows your website isn't dead. If you neglect to make updates, Google will favor your active rivals, and you'll slip through the ranks. This monthly retainer gives you peace of mind. From text tweaks to image swaps, send us an email and we'll take care of it. No invoices for every minor edit. No wrestling with a content management system. Just seamless updates to please the overlord.
+                                </p>
+                            <h3 class="cs-h3" id="copywriting">
+                                <span class="cs-name">{{ services.copywriting.name }}</span>
+                                <span class="cs-price">${{ services.copywriting.price }} <span class="nm-price-mod">/ word</span></span>
+                            </h3>
+                                <p>
+                                    Let's be realistic: the world's most stunning design won't save your website if the content is sucks. Don't overlook the power of persuasive copy. And don't use AI-generated text without editing it. If you want your content to connect, it needs a human touch. 
+                                </p>
+                                <p>
+                                    We can help you turn dry, boring information into dynamic, persuasive copy. Seriously, does anyone think websites are an engaging topic? Who wants to read about CDNs and client-side rendering? Yawn. The secret to transforming mundane features into compelling benefits: brand storytelling and a touch of personality. Sprinkle on some copywriting frameworks, and that snore-fest can become vibrant and engaging. Don't just fill space, make every word count.
+                                </p>
+                        <h2 id="branding">
+                            Branding
+                        </h2>
+                            <p>
+                                Fact: You already have a brand. Is it working for you or against you? A brand is so much more than a logo, color palette, and fonts. It's your voice. It's your message. It's your every interaction. Your brand should be consistent and strategic; otherwise, it's just chaotic digital noise. We can help you bring order to the chaos. You don't need millions to craft a message that is clear, consistent, and unforgettable.
+                            </p>
+                            <h3 class="cs-h3" id="social-banner">
+                                <span class="cs-name">{{ services.profileGraphic.name }}</span>
+                                <span class="cs-price">${{ services.profileGraphic.price }}</span>
+                            </h3>
+                                <p>
+                                    You're on social media, right? You're using your profile to nudge people into your sales funnel, yes? Oh, your banner is just a nice-looking picture; that's a shame. The profile banner is a valuable piece of digital real estate — use it wisely. We can transform this often neglected area into a powerful digital billboard. Our formula: your unique selling proposition, a clear call to action, and social proof. Add in styles that complement your website, and you're well on the way to a cohesive brand and a solid customer acquisition strategy.
+                                </p>
+                            <h3 class="cs-h3" id="social-graphic">
+                                <span class="cs-name">{{ services.socialGraphic.name }}</span>
+                                <span class="cs-price">${{ services.socialGraphic.price }}</span>
+                            </h3>
+                                <p>
+                                    Social media is brutal. With every post, you are at the mercy of the algorithm. It can feel like you're speaking to the void. How do you win attention? Social media strategy often feels overwhelming and mysterious. First, you have to find your voice. Then you need to grab attention. One way to do this is with graphics. We can take your text and images and create instantly recognizable and memorable graphics that reinforce your brand. Remember, every interaction builds your brand, so make every impression count. 
+                                </p>
+                            <h3 class="cs-h3" id="social-subscription">
+                                <span class="cs-name">{{ services.socialSub.name }}</span>
+                                <span class="cs-price">${{ services.socialSub.price }} <span class="nm-price-mod">/ month</span></span>
+                            </h3>
+                                <p>
+                                    Thanks to Canva, everyone is now a graphic designer. Err, a lot of people think they're a designer, but do they really have a designer's eye? Have you ever made something in Canva and it felt off but you weren't sure why? The difference between good design and great design is in the small details. The things few people notice. 
+                                </p>
+                                <p>
+                                    Social media demands regular posts. You need fresh, branded graphics to stay top of mind. With this subscription, you can get all the graphics you need for at a reduced price. We set up a few signature layouts, then you tell us what you need. The monthly payments includes 5 graphics, then you can add more for $15 each — that's a 57% savings. Quality stays consistent, turnaround is swift, and your brand always looks sharp. Better than Canva.
+                                </p>
+                            <h3 class="cs-h3" id="business-cards">
+                                <span class="cs-name">{{ services.businessCards.name }}</span>
+                                <span class="cs-price">${{ services.businessCards.price }}</span>
+                            </h3>
+                                <p class="nm-available">
+                                    (Design only)
+                                </p>
+                                <p>
+                                    Time to get physical. Your website represents your business digitally; your business card represents it physically. You need both to make a good impression. They also need to look cohesive. If you have a custom-designed website, you need custom-designed business cards to match. The designs won't perfectly match if you use a template. You'll look like a wannabe amateur, not the competent professional you know you are. What are you waiting for?
+                                </p>
+                            <h3 class="cs-h3" id="letterhead-envelopes">
+                                <span class="cs-name">{{ services.letterhead.name }}</span>
+                                <span class="cs-price">${{ services.letterhead.price }}</span>
+                            </h3>
+                                <p class="nm-available">
+                                    (Design only)
+                                </p>
+                                <p>
+                                    Fun fact: King County in Washington used Comic Sans font on birth certificates for many years. They look like a bad forgery, not an official document. Don't let your stationery be the butt of a joke like King County. Reinforce your brand's legitimacy and professionalism with custom-designed letterhead and envelopes. It's the perfect touch to marry your invoices and other documents with your website.
+                                </p>
+                            <h3 class="cs-h3" id="other-design">
+                                <span class="cs-name">{{ services.otherGraphic.name }}</span>
+                                <span class="cs-price">{{ services.otherGraphic.price }}</span>
+                            </h3>
+                                <p>
+                                    Need something else designed? While our primary focus is web design, we dabble in the world of graphic design. We've priced out the common high-value services that will benefit most businesses. That said, if you need something else, such as a brochure or presentation deck, please reach out! We'll review your needs and provide a quote. If it falls outside our skill set, we won't take on the work. We guarantee that everything we create will meet the same high standard you expect with other services.
+                                </p>
+                            <h3 class="cs-h3" id="style-guide">
+                                <span class="cs-name">{{ services.styleGuide.name }}</span>
+                                <span class="cs-price">${{ services.styleGuide.price }}</span>
+                            </h3>
+                                <p>
+                                    Is your brand more chaotic neutral or lawful good? While unhinged marketing is a popular trend right now, it shouldn't be pure chaos. A style guide keeps your brand consistent and focused even if you're running off the rails. It also streamlines workflows and decision-making, making it easy for anyone to create your branded content. Whether you prefer to play it safe or push the edge, a style guide will keep your brand undeniably your brand.
+                                </p>
+                                <p>
+                                    Our style guide will include pages on:
+                                </p>
+                                <ul>
+                                    <li>Company mission, vision, and values</li>
+                                    <li>Brand narrative (if applicable)</li>
+                                    <li>Tone and voice</li>
+                                    <li>Typography</li>
+                                    <li>Logo usage</li>
+                                    <li>Color palette</li>
+                                    <li>Imagery</li>
+                                    <li>Website</li>
+                                    <li>Templates (if applicable)</li>
+                                </ul>
+                            <h3 class="cs-h3" id="brand-narrative">
+                                <span class="cs-name">{{ services.narrative.name }}</span>
+                                <span class="cs-price">${{ services.narrative.price }}</span>
+                            </h3>
+                                <p>
+                                    Stories connect to emotions. Emotions drive decisions, not reason. People use reason to justify their choices after the fact. Don't believe us? Imagine a freelancing CPA thriving at tax time, but struggling during the off-season slump. Their website? Quieter than a mouse on Christmas Eve. They learn about its flaws, connect with us, and buy a website, copywriting, and a brand narrative. Slowly, their bounce rate drops. They start getting new clients through their website. The next slump comes around, and they're busier than Santa Claus delivering presents.
+                                </p>
+                                <p>
+                                    Stories sell because they trigger emotions and build connections. Your brand narrative will tell your authentic story. It will help you take your customers on a journey of their transformation. It will make you unforgettable. Don't be boring. Sell.
+                                </p>
+                            <h3 class="cs-h3" id="consulting">
+                                <span class="cs-name">{{ services.consulting.name }}</span>
+                                <span class="cs-price">${{ services.consulting.price }} <span class="nm-price-mod">/ hour</span></span>
+                            </h3>
+                                <p>
+                                    In Greek mythology, the gods curse Sisyphus to roll a boulder up a hill for all eternity. When he neared the top, it would roll back down again and he would need to start over. Does running your brand or website ever feel like that? While we can't build everything for you, we can help you get unstuck. Stop doing the same thing again and again expecting different results. We'll help you look at it from a different angle. Schedule a consultation and get the answers you crave.
+                                </p>
+                        <h2>
+                            How can we serve you?
+                        </h2>
+                            <p>
+                                Now that you know about our services, which seem right for you? Schedule a free discovery call to discuss your needs and plan your next steps.
+                            </p>
+                            <a href="/contact/" class="cs-button-solid">Book a call</a>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/prices.webp">
+                        <img decoding="async" src="../../assets/images/prices.webp" alt="A cat wearing a crown sits next to a goblet of milk." width="542" height="520" aria-hidden="true">
+                    </picture>
+                </div>
+            </div>
+        </section>
+    {% include 'components/cta.html' %}
+{% endblock %}
