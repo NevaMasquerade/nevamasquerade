@@ -13,6 +13,7 @@
             clamp(3.75rem, 14.82vw, 9.375rem);
         position: relative;
         z-index: 1;
+        background-color: var(--secondary);
 
         &:before {
             /* red background box */
@@ -264,6 +265,7 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
+            order: 1;
         }
 
         .cs-text {
@@ -278,6 +280,7 @@
             position: relative;
             width: 100%;
             height: calc(300 / 16 * 1rem);
+            order: 2;
 
             img {
                 position: absolute;
@@ -307,6 +310,7 @@
             width: 53%;
             /* reset the padding, add the section padding back to the section container */
             padding: 0;
+            order: 2;
         }
 
         .cs-picture {
@@ -317,6 +321,7 @@
             /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
             margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
             position: relative;
+            order: 1;
 
             &:before {
                 /* yellow box */

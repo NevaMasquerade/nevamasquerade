@@ -55,11 +55,11 @@
     color: var(--secondary);
   }
   body.dark-mode .cs-button-solid {
-    background-color: var(--primary400);
-    color: var(--textLight);
+    background-color: var(--secondary200);
+    color: var(--dark);
   }
   body.dark-mode .cs-button-solid:visited {
-    color: var(--textLight);
+    color: var(--dark);
   }
   body.dark-mode .cs-button-solid:before {
     background-color: var(--accent500);

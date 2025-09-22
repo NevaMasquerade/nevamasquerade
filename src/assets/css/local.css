@@ -207,26 +207,6 @@
   #RPsbsr-576 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
-  #RPsbs-576 .nm-subhead,
-  #RPsbsr-576 .nm-subhead {
-    color: var(--textLight);
-    opacity: 0.9;
-  }
-  #RPsbs-576 .nm-featured-link,
-  #RPsbsr-576 .nm-featured-link {
-    font-family: var(--headerFont);
-    color: var(--primary100);
-    text-decoration: none;
-    /* &:visited {
-        color: var(--accent100);
-    } */
-  }
-  #RPsbs-576 .nm-featured-link:hover,
-  #RPsbsr-576 .nm-featured-link:hover {
-    color: var(--primary200);
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
   #RPsbs-576 .cs-picture,
   #RPsbsr-576 .cs-picture {
     display: block;
@@ -323,20 +303,6 @@
   body.dark-mode #RPsbsr-576 .cs-picture:before {
     background: var(--accent);
   }
-  body.dark-mode #RPsbs-576 .nm-button-outline,
-  body.dark-mode #RPsbsr-576 .nm-button-outline {
-    border: 2px solid var(--primary400);
-    background: var(--medium);
-  }
-  body.dark-mode #RPsbs-576 .cs-button-solid,
-  body.dark-mode #RPsbsr-576 .cs-button-solid {
-    background: var(--primary400);
-    color: var(--textLight);
-  }
-  body.dark-mode #RPsbs-576 .cs-button-solid:before,
-  body.dark-mode #RPsbsr-576 .cs-button-solid:before {
-    background: var(--accent500);
-  }
 }
 /*-- -------------------------- -->
 <---    Side By Side Reverse    -->
@@ -412,6 +378,7 @@
 @media only screen and (max-width: 47.9375rem) {
   body.dark-mode #RPsbsr-576 {
     background: var(--dark);
+    /* Also target if it's not wrapped in an anchor */
   }
   body.dark-mode #RPsbsr-576 .cs-topper {
     color: var(--secondary);
@@ -420,7 +387,29 @@
   body.dark-mode #RPsbsr-576 .cs-text {
     color: var(--textLight);
   }
+  body.dark-mode #RPsbsr-576 a.cs-button-solid {
+    color: var(--textDark) !important;
+  }
+  body.dark-mode #RPsbsr-576 a.cs-button-solid:visited {
+    color: var(--textDark) !important;
+  }
+  body.dark-mode #RPsbsr-576 a.cs-button-solid:hover {
+    color: var(--textDark) !important;
+  }
+  body.dark-mode #RPsbsr-576 .cs-button-solid {
+    color: var(--textDark) !important;
+  }
+  body.dark-mode #RPsbsr-576 .cs-button-solid:visited {
+    color: var(--textDark) !important;
+  }
+  body.dark-mode #RPsbsr-576 .cs-button-solid:hover {
+    color: var(--textDark) !important;
+  }
 }
+body.dark-mode #RPsbsr-576 .cs-button-solid {
+  color: var(--dark) !important; /* Use red to test if this rule applies */
+}
+
 /*-- -------------------------- -->
 <---           Steps            -->
 <--- -------------------------- -*/
@@ -892,6 +881,7 @@
   }
   body.dark-mode #pricing-1319 .cs-item.cs-popular {
     background-color: var(--primary);
+    filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   }
   body.dark-mode #pricing-1319 .cs-item.cs-popular .cs-ul:before {
     opacity: 1;
@@ -905,6 +895,13 @@
   }
   body.dark-mode #pricing-1319 .nm-recommended {
     background-color: var(--dark);
+  }
+  body.dark-mode #pricing-1319 .nm-badge {
+    background-color: var(--secondary300);
+    filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.2));
+  }
+  body.dark-mode #pricing-1319 .nm-best {
+    color: var(--dark);
   }
   body.dark-mode #pricing-1319 .nm-footer {
     color: var(--textLight);
@@ -975,9 +972,6 @@
   }
   #why-choose-1635 .cs-text:last-of-type {
     margin-bottom: 2rem;
-  }
-  #why-choose-1635 .cs-button-solid {
-    color: var(--textLight);
   }
   #why-choose-1635 .cs-wrapper {
     width: 100%;
