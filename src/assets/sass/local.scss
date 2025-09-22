@@ -227,28 +227,6 @@
             }
         }
 
-        .nm-subhead {
-            color: var(--textLight);
-            opacity: .9;
-        }
-
-        .nm-featured-link {
-            font-family: var(--headerFont);
-            color: var(--primary100);
-            text-decoration: none;
-
-
-            /* &:visited {
-                color: var(--accent100);
-            } */
-
-            &:hover {
-                color: var(--primary200);
-                text-decoration: underline;
-                text-underline-offset: .2em;
-            }
-        }
-
         .cs-picture {
             display: block;
             position: relative;
@@ -354,20 +332,6 @@
                 background: var(--accent);
                 }
             }
-
-            .nm-button-outline {
-                border: 2px solid var(--primary400);
-                background: var(--medium);
-            }
-
-            .cs-button-solid {
-                background: var(--primary400);
-                color: var(--textLight);
-
-                &:before {
-                    background: var(--accent500);
-                }
-            }
         }
     }
     
@@ -403,10 +367,7 @@
             &:hover {
                 color: var(--primary200);
             }
-
-            
         }
-
         .cs-button-solid {
             color: var(--textLight);
 
@@ -475,8 +436,37 @@
             .cs-text {
                 color: var(--textLight);
             }
+
+            a.cs-button-solid {
+                color: var(--textDark) !important;
+
+                &:visited {
+                    color: var(--textDark) !important;
+                }
+
+                &:hover {
+                    color: var(--textDark) !important;
+                }
+            }
+
+            /* Also target if it's not wrapped in an anchor */
+            .cs-button-solid {
+                color: var(--textDark) !important;
+
+                &:visited {
+                    color: var(--textDark) !important;
+                }
+
+                &:hover {
+                    color: var(--textDark) !important;
+                }
+            }
         }
     }
+}
+
+body.dark-mode #RPsbsr-576 .cs-button-solid {
+    color: var(--dark) !important; /* Use red to test if this rule applies */
 }
 
 /*-- -------------------------- -->
@@ -1037,6 +1027,7 @@
 
                 &.cs-popular {
                     background-color: var(--primary);
+                    filter: drop-shadow(0 0 4px rgba(255, 255, 255, .2));
 
                     .cs-ul {
                         &:before {
@@ -1056,6 +1047,15 @@
 
             .nm-recommended {
                 background-color: var(--dark);
+            }
+
+            .nm-badge {
+                background-color: var(--secondary300);
+                filter: drop-shadow(0 0 40px rgba(255, 255, 255, .2));
+            }
+
+            .nm-best {
+                color: var(--dark);
             }
 
             .nm-footer {
@@ -1143,10 +1143,6 @@
             &:last-of-type {
                 margin-bottom: calc(32 / 16 * 1rem);
             }
-        }
-
-        .cs-button-solid {
-            color: var(--textLight);
         }
 
         .cs-wrapper {

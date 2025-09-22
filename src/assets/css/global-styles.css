@@ -662,13 +662,6 @@
   body.dark-mode #cs-navigation .cs-li-link:before {
     background: var(--secondary200);
   }
-  body.dark-mode #cs-navigation .cs-button-solid {
-    background: var(--primary400);
-    color: var(--textLight);
-  }
-  body.dark-mode #cs-navigation .cs-button-solid:before {
-    background: var(--accent500);
-  }
 }
 /*-- -------------------------- -->
 <---            CTA             -->
@@ -1064,7 +1057,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-footer-1293 {
-    background: var(--dark);
+    background: rgba(0, 0, 0, 0.5);
   }
   body.dark-mode #cs-footer-1293 .cs-header {
     color: var(--secondary);

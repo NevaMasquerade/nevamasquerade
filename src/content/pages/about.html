@@ -1,6 +1,6 @@
 ---
-title: "About Us: Our Story & Values"
-description: "Go behind the scenes at Neva Masquerade. Learn our story, mission, and values. We focus on helping small businesses shine with custom web and branding."
+title: "Why Story is the Strategy"
+description: "From dead people to dot-gov to DIY-free design — discover the story behind Neva Masquerade and the process that makes your site sell."
 preloadImg: "/assets/textures/blue-banner-m.webp"
 permalink: "about/"
 ---
@@ -19,182 +19,342 @@ permalink: "about/"
 {% block body %}
 
     <!-- ============================================ -->
-    <!--                   Banner                     -->
+    <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <div id="banner-1106">
+    <section id="hero-668">
         <div class="cs-container">
-            <h1 class="cs-int-title">About Us: Our Story & Values</h1>
-            <nav aria-label="Breadcrumb">
-                        <div class="cs-breadcrumbs">
-                            <a href="/" class="cs-link">Home</a>
-                            <a href="/{{ permalink }}" class="cs-link cs-active" aria-current="page">About</a>
-                        </div>
-                    </nav>
+            <div class="cs-content">
+                <nav aria-label="Breadcrumb">
+                    <div class="cs-breadcrumbs">
+                        <a href="/" class="cs-link">Home</a>
+                        <a href="/{{ permalink }}" class="cs-link cs-active" aria-current="page">About</a>
+                    </div>
+                </nav>
+                <h1 class="cs-title">Design that tells your story — no masquerade.</h1>
+                <p class="cs-text">
+                    I’m Tianna, a web designer and strategist with a not-so-typical background (more on that in a minute). These days, I help solo coaches and consultants ditch their DIY templates and stand out online &mdash; through story, not stock.
+                </p>
+                <div class="cs-button-group">
+                    <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
+                        class="cs-button-solid"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+                        Start your story
+                    </a>
+                </div>
+            </div>
         </div>
-        <!--Background Image-->
-        <picture class="cs-background">
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="../../assets/images/about-image-1-m.webp">
+            <source media="(min-width: 601px)" srcset="../../assets/images/about-image-1.webp">
+            <img aria-hidden="true" decoding="async" src="../../assets/images/about-image-1.webp" alt="Tianna looking sassy under an umbrella as her husband looks unamused." width="862" height="850">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs-578">
+        <div class="cs-container">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="../../assets/images/about-image-2-m.webp">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="../../assets/images/about-image-2.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/about-image-2.webp" alt="A black cat yawning, he looks like he's screaming with excitement." width="494" height="700">
+            </picture>
+            <div class="cs-content">
+                <span class="cs-topper">From Dead People to Dot-Gov</span>
+                <h2 class="cs-title">How I went from history to HTML</h2>
+                <p class="cs-text">
+                    That unconventional background? I went from studying dead people to running a major government website. Here’s how it happened.
+                </p>
+                <p class="cs-text">
+                    I thought I’d be a lawyer. But after enjoying my history degree in undergrad, I went on to earn a master’s instead. During grad school, I landed an internship at the U.S. Department of State.
+                </p>
+                <p class="cs-text">
+                    After graduating, I joined my current office as a web editor. Four years later, I became the team lead and product owner of State.gov, a 47,000-page site with 79 million annual visitors. I’ve led daily operations ever since.
+                </p>
+                <p class="cs-text">
+                    Now, I want to use those skills to help other women grow their own careers. As a historian, I’m trained to tell stories &mdash; and as a designer, I know how badly templates can muffle them.
+                </p>
+                <p class="cs-text">
+                    When I got married, I tried to build our wedding website on Zola. It was supposed to be easy &mdash; but every template felt like a cage. I couldn’t bring my vision to life because I couldn’t break the mold.
+                </p>
+                <p class="cs-text">
+                    This is why I reject templates for my clients. <br>Your story deserves to take center stage — not someone else’s design.
+                </p>
+                <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
+                    class="cs-button-solid"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+                    Start your story
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services-965">
+        <div class="cs-container">
+            <!-- Left Content Section-->
+            <div class="cs-content">
+                <span class="cs-topper">Down With Templates, Up With Trust</span>
+                <h2 class="cs-title">The Storycrafted Manifesto</h2>
+                <p class="cs-text">
+                    Tried to launch a “simple” website and nearly lost your mind?
+                    <br>It’s not you. It’s the templates.
+                </p>
+                <p class="cs-text">I’ve been there. It sucks.
+                <br>That’s why I created something better: the Storycrafted Manifesto.
+                </p>
+                <p class="cs-text">
+                    If you’re ready to ditch the DIY disaster, this is for you.
+                </p>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/warning.svg" alt="triangle with an exclamation point" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Templates Aren’t Strategy</h3>
+                    <p class="cs-item-text">
+                        Lookalike sites don’t build trust. Your story does.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/browser-gear.svg" alt="browser window with a gear" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Your Website Should Work for You</h3>
+                    <p class="cs-item-text">
+                        Not just look good &mdash; land clients.
+                    </p>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/story.svg" alt="open book" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Story Is What Sets You Apart</h3>
+                    <p class="cs-item-text">
+                        That “special sauce” everyone talks about? It’s your story.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/lightbulb.svg" alt="lightbulb" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Clarity Creates Confidence</h3>
+                    <p class="cs-item-text">
+                        You can’t sell what you can’t say.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/fingerprint.svg" alt="fingerprint" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Good Design Feels Like You</h3>
+                    <p class="cs-item-text">
+                        No more trying to fit into someone else’s box.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/leaf.svg" alt="plant" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Growth Needs More Than Tools</h3>
+                    <p class="cs-item-text">
+                        You don’t need another app. You need a partner.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <!--Waves Background-->
+        <div class="cs-waves">
+            
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Steps                      -->
+    <!-- ============================================ -->
+
+    <section id="steps-284">
+        <div class="cs-container">
+            <!-- Left Section -->
+            <div class="cs-content">
+                <span class="cs-topper">Where Story Becomes Strategy</span>
+                <h2 class="cs-title">The Storycrafted Process</h2>
+                <p class="cs-text">
+                    A website isn’t just colors and fonts — every pixel needs a job. The Storycrafted Process builds clarity and trust through story. It’s what happens when history meets design.
+                </p>
+                <p class="cs-text">
+                    When we work together, your project moves through three flexible phases:
+                </p>
+                <h3 class="nm-phase-heading">
+                    <span class="nm-phase-topper">Phase 1</span> 
+                    <br>Share Your Story
+                </h3>
+                <p class="cs-text">
+                    We uncover your brand’s soul &mdash; who you are, who you serve, and why you’re the one they’ve been looking for.
+                </p>
+                <h3 class="nm-phase-heading">
+                    <span class="nm-phase-topper">Phase 2</span> 
+                    <br>Shape the Site
+                </h3>
+                <p class="cs-text">
+                    Strategic content and custom design come together to tell that story clearly. I handle the heavy lifting; you gut check for truth.
+                </p>
+                <h3 class="nm-phase-heading">
+                    <span class="nm-phase-topper">Phase 3</span> 
+                    <br>Ship and Support
+                </h3>
+                <p class="cs-text">
+                    You approve, we launch. Then I stick around to make sure your site keeps working for you, not against you.
+                </p>
+                <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
+                    class="cs-button-solid"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+                    Start your story
+                </a>                      
+            </div>
+            <!-- Right Section -->
+            <ul class="cs-right-section">
+                <li class="cs-item">
+                    <span class="cs-number">01</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Discovery Call</strong></span>
+                        <br>Let’s talk goals, vibes, and big dreams.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">02</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Brand Questionnaire</strong></span>
+                        <br>You tell me about your story, your voice, and your people.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">03</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Story Strategy Check-in</strong></span>
+                        <br>We review your identity-first message.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">04</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Strategic Copywriting</strong></span>
+                        <br>I write your story to sell. You review and approve.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">05</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Visual Design in Figma</strong></span>
+                        <br>I match visuals to message. You approve the mockups.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">06</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Site Development</strong></span>
+                        <br>I code the real thing. We’ll tweak as needed once it’s live.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">07</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Beta Review + Launch</strong></span>
+                        <br>You click through, test, and sign off &mdash; then we go live.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">08</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>On-Demand Support</strong></span>
+                        <br>Need a tweak or have a question? Text or email anytime.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">09</span>
+                    <p class="cs-item-text">
+                        <span class="nm-step-name"><strong>Quarterly Check-ins</strong></span>
+                        <br>We revisit what is and isn't working so your site evolves with you.
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+<!--                     Quote                    -->
+<!-- ============================================ -->
+
+<section id="quote-2434">
+	<div class="cs-container">
+		<div class="cs-content">
+			<h2 class="cs-title">Why Neva Masquerade?</h2>
+                <p class="cs-text">
+                    All the normal web design names were taken or mind-numbingly boring. I’d been stuck for weeks. Then, one night at 1 a.m., I ended up scrolling cat breeds on Wikipedia.
+                </p>
+                <p class="cs-text">
+                    That’s when the Neva Masquerade jumped out. It sounded cool, looked beautiful, and, most importantly, no one else was using it.
+                </p>
+                <p class="cs-text">
+                    Devon Rex was the runner-up.
+                </p>
+		</div>
+	</div>
+	<picture class="cs-background">
+		<source media="(max-width: 600px)" srcset="../../assets/images/kitten-quote-m.webp" />
+        <source media="(min-width: 601px) and (max-width: 767px)" srcset="../../assets/images/kitten-quote-t.webp" />
+		<source media="(min-width: 768px)" srcset="../../assets/images/kitten-quote.webp" />
+		<img loading="lazy" decoding="async" src="../../assets/images/kitten-quote.webp" alt="A fluffy Neva Masquerade kitten." width="1920" height="768" aria-hidden="true" />
+	</picture>
+</section>
+                                
+              
+    <!-- ============================================ -->
+    <!--                Call To Action                -->
+    <!-- ============================================ -->
+
+    <section id="cta-2443">
+        <div class="cs-container">
+            <div class="cs-content">
+                <h2 class="cs-title">Say good riddance to your template era.</h2>
+                <div class="cs-flex">
+                    <p class="cs-text">
+                        Your website can finally tell your story — not just sell your services. Let’s build one that sells the one thing your competitors can never offer: you.
+                    </p>
+                    <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
+                        class="cs-button-solid"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+                        Start your story
+                    </a>
+                </div>
+            </div>
+        </div>
+        <picture class="cs-background" aria-hidden="true">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp" fetchpriority="high">
+            <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
             <!--Tablet and above Image-->
             <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
-            <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true" fetchpriority="high">
+            <img loading="lazy" decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568">
         </picture>
-    </div>
-
-    <!-- ============================================ -->
-    <!--              Side By Side Reverse            -->
-    <!-- ============================================ -->
-
-    <section id="RPsbsr-600">
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="../../assets/images/about-image-1-m.webp">
-            <!--Tablet Image-->
-            <source media="(min-width: 601px) and (max-width: 767px)" srcset="../../assets/images/about-image-1-t.webp">
-            <!--Small Desktop and above Image-->
-            <source media="(min-width: 768px)" srcset="../../assets/images/about-image-1.webp">
-            <img loading="lazy" decoding="async" src="../../assets/images/about-image-1.webp" alt="A young couple. The man is holding an umbrella and looks slightly annoyed. The woman is standing next to him with a sassy smile." width="960" height="1200">
-        </picture>
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">About the Founder</span>
-                <h2 class="cs-title">Serving people, not profits</h2>
-                <p class="cs-text">
-                    Hi, my name is Tianna Hutchins, and I am an unapologetic cat lover, history nerd, and public servant. In 2018, I joined the U.S. Department of State's web team as a web editor. Today, I'm the team lead overseeing a small team that manages the Department's main website. The website receives millions of visits each month and peaked at over 47,500 pages. Over the past seven years, I've learned a lot. Now, I am a jack-of-all-trades in the world of websites.
-                </p>
-                <p class="cs-text">
-                    For the next chapter in my career, I want to share my knowledge and experience with people like you. I could look for a corporate job, but I would like to use my skills instead to help small businesses grow. That's why I started Neva Masquerade.
-                </p>
-                <p class="cs-text">
-                    You don't have to settle for a subpar website and weak branding. I'm ready to help you elevate your brand and grow your business. Are you?
-                </p>
-                <a href="/services/diy-disaster-detector/" class="cs-button-solid">Get Free Audit</a>
-            </div>
-        </div>
     </section>
-    
-    <!-- ============================================ -->
-    <!--                Side By Side                  -->
-    <!-- ============================================ -->
-
-    <section id="RPsbs-600">
-        <picture class="cs-background">
-            <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="../../assets/images/about-image-2-m.webp">
-            <!--Tablet Image-->
-            <source media="(min-width: 601px) and (max-width: 767px)" srcset="../../assets/images/about-image-2-t.webp">
-            <!--Small Desktop and above Image-->
-            <source media="(min-width: 1024px)" srcset="../../assets/images/about-image-2.webp">
-            <img loading="lazy" decoding="async" src="../../assets/images/about-image-2.webp" alt="A black cat yawns while looking out a window. It looks like he's screaming excitedly." width="960" height="1200">
-        </picture>
-        <div class="cs-container">
-            <div class="cs-content">
-                <span class="cs-topper">About Neva Masquerade</span>
-                <h2 class="cs-title">Be bold. Be unique. Be you.</h2>
-                <p class="cs-text">
-                    How can you shine when your online presence feels like a masquerade? Starting a business is challenging. Feeling lost, overwhelmed, and sometimes like an imposter is easy. Running a business takes a lot of time. You don't have time to grapple with a subpar website and an inconsistent brand. Neva Masquerade was born out of a desire to ease this burden.
-                </p>
-                <p class="cs-text">
-                    Many small businesses struggle to make their mark, but it doesn't have to be that way. Our custom-coded websites can free you from the hassle of web design so that you can focus on what you do best. We aspire to help businesses like yours thrive.
-                </p>
-                <p class="cs-text">
-                    We don't use templates or page builders because every web design should be a partnership. Your website should reflect your vision and personality and not a generic knock-off. Your business deserves to stand out and not blend into the crowded marketplace. We're excited to see what we can build together. When can we start?
-                </p>
-                <a href="/services/diy-disaster-detector/" class="cs-button-solid">Get Free Audit</a>
-            </div>
-        </div>
-    </section>
-        
-    <!-- ============================================ -->
-    <!--                  Content                     -->
-    <!-- ============================================ -->
-
-    <section id="content-1638">
-        <div class="cs-container">
-            <div class="cs-content">
-                <div class="cs-flex">
-                    <span class="cs-topper">Why we do it</span>
-                    <h2 class="cs-title">Our mission, vision, and values</h2>
-                    <h3 class="cs-h3-mission">
-                        Mission
-                    </h3>
-                    <p class="cs-text">
-                        To help small business owners elevate their brands and grow their businesses.
-                    </p>
-                    <h3 class="cs-h3-mission">
-                        Vision
-                    </h3>
-                    <p class="cs-text">
-                        A world where everyone can be confident in who they are and share their dreams.
-                    </p>
-                </div>
-                <div class="cs-flex">
-                    <ul class="cs-card-group">
-                        <li class="cs-item">
-                            <span class="cs-item-number">01</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Treat everyone with dignity and respect.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="cs-item">
-                            <span class="cs-item-number">02</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Practice empathy.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="cs-item">
-                            <span class="cs-item-number">03</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Share knowledge.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="cs-item">
-                            <span class="cs-item-number">04</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Think long-term.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="cs-item">
-                            <span class="cs-item-number">05</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Speak the truth.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="cs-item">
-                            <span class="cs-item-number">06</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Learn from mistakes.
-                                </p>
-                            </div>
-                        </li>
-                        <li class="cs-item">
-                            <span class="cs-item-number">07</span>
-                            <div class="cs-item-wrapper">
-                                <p class="cs-h3">
-                                    Embrace your weirdness and have fun.
-                                </p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
-            <div class="cs-wrapper">
-                
-            </div>
-        </div>
-    </section>
+                                    
                                 
     {% include 'components/cta.html' %}
 {% endblock %}

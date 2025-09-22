@@ -72,11 +72,11 @@
         }
 
         .cs-button-solid {
-            background-color: var(--primary400);
-            color: var(--textLight);
+            background-color: var(--secondary200);
+            color: var(--dark);
 
             &:visited {
-                color: var(--textLight);
+                color: var(--dark);
             }
 
             &:before {
