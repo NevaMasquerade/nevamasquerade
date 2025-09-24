@@ -16,9 +16,11 @@ eleventyNavigation:
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="/assets/css/critical.css"  media="print" onload="this.media='all'; this.onload=null;" />
     <link rel="stylesheet" href="/assets/css/local.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;" >
     <noscript>
         <link rel="stylesheet" href="/assets/css/critical.css" />
         <link rel="stylesheet" href="/assets/css/local.css" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" >
     </noscript>
     <script defer src="/assets/js/prices.js"></script>
     
@@ -267,11 +269,9 @@ eleventyNavigation:
                 </p>
             </li>
         </ul>
-        <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call" 
-            class="cs-button-solid"
-            target="_blank" 
-            rel="noopener noreferrer"
-            aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+        <a class="cs-button-solid" 
+            onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+            {% ButtonIcon %}
             Start Your Story
         </a>
     </div>
@@ -295,11 +295,9 @@ eleventyNavigation:
             <p class="cs-text">
                 Not sure where to start? Book a call &mdash; I’ll help you find the right fit, even if it’s not with me.
             </p>
-            <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call" 
-                class="cs-button-solid"
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+            <a class="cs-button-solid" 
+                onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                {% ButtonIcon %}
                 Start Your Story
             </a>
         </div>
@@ -372,11 +370,9 @@ eleventyNavigation:
                 <p class="cs-text">
                     No chatbots. No waiting. No hiding. Just results.
                 </p>
-                <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call" 
-                    class="cs-button-solid"
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
+                <a class="cs-button-solid" 
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                    {% ButtonIcon %}
                     Start Your Story
                 </a>
             </span>
@@ -455,5 +451,6 @@ eleventyNavigation:
     </div>
 </section>
 
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>  
     {% include 'components/cta.html' %}
 {% endblock %}

@@ -79,6 +79,10 @@
                 color: var(--dark);
             }
 
+            &:hover {
+                color: var(--textLight);
+            }
+
             &:before {
                 background-color: var(--accent500);
             }
@@ -87,5 +91,13 @@
 
     .dark {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero-668 {
+            background-color: var(--primary);
+        }
     }
 }

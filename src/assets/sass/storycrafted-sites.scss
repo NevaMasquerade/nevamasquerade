@@ -13,7 +13,7 @@
             clamp(3.75rem, 14.82vw, 9.375rem);
         position: relative;
         z-index: 1;
-        background-color: var(--secondary);
+        background-color: transparent;
 
         &:before {
             /* red background box */
@@ -218,6 +218,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #hero-668 {
+            background-color: var(--primary);
+
             &:before {
                 filter: brightness(50%);
             }
@@ -230,6 +232,8 @@
         }
     }
 }
+
+
 
 /*-- -------------------------- -->
 <---       Side By Side         -->

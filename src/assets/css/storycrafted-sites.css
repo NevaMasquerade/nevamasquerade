@@ -11,7 +11,7 @@
     padding: clamp(7.5rem, 18vw, 15.75rem) 1rem clamp(3.75rem, 14.82vw, 9.375rem);
     position: relative;
     z-index: 1;
-    background-color: var(--secondary);
+    background-color: transparent;
   }
   #hero-668:before {
     /* red background box */
@@ -192,6 +192,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #hero-668 {
+    background-color: var(--primary);
+  }
   body.dark-mode #hero-668:before {
     filter: brightness(50%);
   }

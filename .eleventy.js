@@ -2,6 +2,8 @@
 const pluginEleventyNavigation = require("@11ty/eleventy-navigation");
 const pluginMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const pluginSitemap = require("@quasibit/eleventy-plugin-sitemap");
+const fs = require("fs");
+
 
 // Configs
 const configCss = require("./src/config/css");
@@ -108,6 +110,11 @@ module.exports = function (eleventyConfig) {
      *  Use - {% year %}
      */
     eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
+    /* Shortcode to add calendar icon to buttons */
+    eleventyConfig.addShortcode("ButtonIcon", function () {
+        return fs.readFileSync("src/_includes/components/button-icon.html", "utf8");
+    });
     /**=====================================================================
                                 END SHORTCODES
     =======================================================================*/

@@ -750,7 +750,7 @@ body.dark-mode #RPsbsr-576 .cs-button-solid {
             letter-spacing: 2px;
             text-align: inherit;
             text-transform: uppercase;
-            font-weight: 700;
+            font-weight: 600;
             color: var(--accent500);
             /* 4px - 8px */
             margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
@@ -825,7 +825,7 @@ body.dark-mode #RPsbsr-576 .cs-button-solid {
             font-family: var(--headerFont);
             font-size: clamp(1.9375rem, 4vw, 3.0625rem);
             line-height: 1.2em;
-            font-weight: 700;
+            font-weight: 400;
             text-align: inherit;
             margin: 0;
             padding: 0;
@@ -1198,7 +1198,6 @@ body.dark-mode #RPsbsr-576 .cs-button-solid {
         .cs-h3 {
             font-family: var(--headerFont);
             font-size: calc(20 / 16 * 1rem);
-            letter-spacing: 1px;
             font-weight: 400;
             line-height: 1.5em;
             margin: 0;
