@@ -11,8 +11,10 @@ permalink: "about/"
     {{ super() }}
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="/assets/css/about.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;" >
     <noscript>
         <link rel="stylesheet" href="/assets/css/about.css" />
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" >
     </noscript>
 {% endblock %}
 
@@ -36,12 +38,10 @@ permalink: "about/"
                     I’m Tianna, a web designer and strategist with a not-so-typical background (more on that in a minute). These days, I help solo coaches and consultants ditch their DIY templates and stand out online &mdash; through story, not stock.
                 </p>
                 <div class="cs-button-group">
-                    <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
-                        class="cs-button-solid"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
-                        Start your story
+                    <a class="cs-button-solid" 
+                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                        {% ButtonIcon %}
+                        Start Your Story
                     </a>
                 </div>
             </div>
@@ -53,6 +53,7 @@ permalink: "about/"
             <img aria-hidden="true" decoding="async" src="../../assets/images/about-image-1.webp" alt="Tianna looking sassy under an umbrella as her husband looks unamused." width="862" height="850">
         </picture>
     </section>
+
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
@@ -88,12 +89,10 @@ permalink: "about/"
                 <p class="cs-text">
                     This is why I reject templates for my clients. <br>Your story deserves to take center stage — not someone else’s design.
                 </p>
-                <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
-                    class="cs-button-solid"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
-                    Start your story
+                <a class="cs-button-solid" 
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                    {% ButtonIcon %}
+                    Start Your Story
                 </a>
             </div>
         </div>
@@ -219,13 +218,11 @@ permalink: "about/"
                 <p class="cs-text">
                     You approve, we launch. Then I stick around to make sure your site keeps working for you, not against you.
                 </p>
-                <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
-                    class="cs-button-solid"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
-                    Start your story
-                </a>                      
+                <a class="cs-button-solid" 
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                    {% ButtonIcon %}
+                    Start Your Story
+                </a>                  
             </div>
             <!-- Right Section -->
             <ul class="cs-right-section">
@@ -336,13 +333,11 @@ permalink: "about/"
                     <p class="cs-text">
                         Your website can finally tell your story — not just sell your services. Let’s build one that sells the one thing your competitors can never offer: you.
                     </p>
-                    <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call"
-                        class="cs-button-solid"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Schedule your free Storycrafted Site discovery call via Calendly">
-                        Start your story
-                    </a>
+                <a class="cs-button-solid" 
+                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                    {% ButtonIcon %}
+                    Start Your Story
+                </a>
                 </div>
             </div>
         </div>
@@ -355,6 +350,6 @@ permalink: "about/"
         </picture>
     </section>
                                     
-                                
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>                            
     {% include 'components/cta.html' %}
 {% endblock %}

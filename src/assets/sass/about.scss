@@ -477,7 +477,6 @@
             /* 20px - 25px */
             font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
             line-height: 1.2em;
-            font-weight: bold;
             text-align: inherit;
             margin: 0 0 calc(12 / 16 * 1rem) 0;
             color: var(--secondary600);
@@ -604,7 +603,7 @@
         .nm-phase-topper {
             font-family: var(--smallCaps);
             font-size: calc(16 / 16 * 1rem);
-            font-weight: 700;
+            font-weight: 600;
             letter-spacing: 3px;
             text-transform: uppercase;
             color: var(--accent400);

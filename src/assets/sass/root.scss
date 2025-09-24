@@ -97,7 +97,8 @@
     .cs-button-solid {
         z-index: 1;
         position: relative;
-        display: inline-block;
+        display: inline-flex;
+        gap: .5em;
         background: var(--accent300);
         width: auto;
         padding: 1rem;
@@ -184,6 +185,18 @@
         }
     }
 
+    .button-icon {
+        width: auto;
+        height: 1.25em;
+        margin-right: 0.25em;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 6;
+        vertical-align: middle;
+        display: inline-block;
+        flex-shrink: 0;
+    }
+
     .nm-honeypot {
         display: none;
     }
@@ -192,6 +205,9 @@
         display: none;
     }
 }
+
+/* Mobile only */
+
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
