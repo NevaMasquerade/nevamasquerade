@@ -13,7 +13,7 @@
             clamp(3.75rem, 14.82vw, 9.375rem);
         position: relative;
         z-index: 1;
-        background-color: transparent;
+        background-color: var(--secondary);
 
         &:before {
             /* red background box */
@@ -712,13 +712,15 @@
         .cs-price {
             /* 39px - 49px */
             font-family: var(--headerFont);
-            font-size: clamp(2.4375rem, 4vw, 3.0625rem);
-            white-space: nowrap;
+            font-size: clamp(1.75rem, 2vw, 2.5rem);
             line-height: 1.2em;
             text-align: inherit;
             font-weight: 400;
             margin: 0;
             color: var(--accent500);
+            display: flex;
+            flex-wrap: wrap;
+            gap: .25rem;
         }
 
         .cs-time {
@@ -747,15 +749,6 @@
             padding: clamp(1rem, 3vw, 1.5rem) 0 0 0;
             border-top: 1px solid var(--secondary300);
             display: block;
-        }
-
-        .nm-recommended {
-            font-family: var(--smallCaps);
-            font-size: calc(12 / 16 * 1rem);
-            line-height: 1.2em;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-align: inherit;
         }
 
         .cs-ul {
@@ -828,6 +821,7 @@
 
         .cs-package {
             font-size: clamp(1.25rem, 1.7vw, 1.5rem);
+            
         }
 
         .cs-includes {
@@ -877,6 +871,7 @@
 
         .cs-item-content {
             width: 100%;
+            max-width: 20vw;
             flex: none;
         }
 
@@ -957,6 +952,11 @@
                     opacity: 0.9;
                 }
             }
+
+            .cs-button-transparent {
+                border-color: var(--textLight);
+                color: var(--textLight);
+            }
         }
     }
 }
@@ -1009,10 +1009,15 @@
         .cs-faq-group {
             padding: 0;
             margin: 0;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
+            &:nth-of-type(2) { 
+                margin-top: -3rem;
+            }
         }
 
         .cs-faq-item {
@@ -1151,6 +1156,10 @@
 
         .cs-faq-group {
             width: 48%;
+
+            &:nth-of-type(2) { 
+                margin-top: 0;
+            }
         }
     }
 }
@@ -1189,12 +1198,12 @@
     
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: left;
+            text-align: center;
             width: 100%;
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+            align-items: center;
             gap: calc(32/16 * 1rem);
         }
 
@@ -1246,12 +1255,13 @@
 }
 
 /* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 64rem) {
     #cta-2443 {
         .cs-content {
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-end;
+            text-align: left;
         }
 
         .cs-flex {

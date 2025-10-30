@@ -723,6 +723,18 @@ body.dark-mode #RPsbsr-576 .cs-button-solid {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    flex-direction: row;
+  }
+  #pricing-1319 .nm-stack {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #pricing-1319 .nm-stack .nm-price-group {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: row;
   }
   #pricing-1319 .cs-duration {
     font-family: var(--smallCaps);
