@@ -565,6 +565,9 @@
   #sbs-578 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
+  #sbs-578 .nm-button-secondary {
+    color: var(--accent500);
+  }
   #sbs-578 .cs-picture {
     display: block;
     position: relative;
@@ -631,7 +634,8 @@
     color: var(--secondary);
   }
   body.dark-mode #sbs-578 .cs-title,
-  body.dark-mode #sbs-578 .cs-text {
+  body.dark-mode #sbs-578 .cs-text,
+  body.dark-mode #sbs-578 .nm-button-secondary {
     color: var(--textLight);
   }
   body.dark-mode #sbs-578 .cs-text {

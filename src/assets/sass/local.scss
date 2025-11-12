@@ -677,6 +677,10 @@
             }
         }
 
+        .nm-button-secondary {
+            color: var(--accent500);
+        }
+
         .cs-picture {
             display: block;
             position: relative;
@@ -752,7 +756,8 @@
             }
 
             .cs-title,
-            .cs-text {
+            .cs-text,
+            .nm-button-secondary {
                 color: var(--textLight);
             }
 

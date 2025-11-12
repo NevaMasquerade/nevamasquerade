@@ -33,6 +33,9 @@
   #sbs-578 .cs-text:last-of-type {
     margin-bottom: 2rem;
   }
+  #sbs-578 .nm-button-secondary {
+    color: var(--accent500);
+  }
   #sbs-578 .cs-picture {
     display: block;
     position: relative;
@@ -101,7 +104,8 @@
     color: var(--secondary);
   }
   body.dark-mode #sbs-578 .cs-title,
-  body.dark-mode #sbs-578 .cs-text {
+  body.dark-mode #sbs-578 .cs-text,
+  body.dark-mode #sbs-578 .nm-button-secondary {
     color: var(--textLight);
   }
   body.dark-mode #sbs-578 .cs-text {
@@ -310,6 +314,7 @@
   }
   #steps-284 .nm-button-secondary {
     margin-top: 1.5rem;
+    color: var(--accent500);
   }
   #steps-284 .nm-phase-topper {
     font-family: var(--smallCaps);
@@ -342,7 +347,7 @@
   #steps-284 .cs-item:nth-of-type(1) .cs-item-text:before {
     height: 50%;
     top: auto;
-    bottom: -1px;
+    bottom: -0.5px;
   }
   #steps-284 .cs-item:nth-of-type(2), #steps-284 .cs-item:nth-of-type(4), #steps-284 .cs-item:nth-of-type(6), #steps-284 .cs-item:nth-of-type(8) {
     justify-content: flex-end;
@@ -368,7 +373,7 @@
     border-right: 1px solid var(--accent400);
     left: auto;
     right: 0;
-    bottom: -1px;
+    bottom: 0;
     border-radius: 0;
   }
   #steps-284 .cs-item:nth-of-type(2) .cs-item-text:after, #steps-284 .cs-item:nth-of-type(4) .cs-item-text:after, #steps-284 .cs-item:nth-of-type(6) .cs-item-text:after, #steps-284 .cs-item:nth-of-type(8) .cs-item-text:after {
@@ -380,15 +385,15 @@
     height: auto;
     border-top: 1px solid var(--accent400);
     border-radius: 0;
-    top: 1px;
-    bottom: -1px;
+    top: 0.5px;
+    bottom: -0.5px;
   }
   #steps-284 .cs-item:last-of-type .cs-item-text:before {
     height: 50%;
     border-radius: 0;
     border-top: 1px solid var(--accent400);
     border-bottom: none;
-    top: 1px;
+    top: 0.5px;
   }
   #steps-284 .cs-number {
     /* 16px - 20px */
@@ -501,7 +506,8 @@
   }
   body.dark-mode #steps-284 .nm-phase-topper,
   body.dark-mode #steps-284 .nm-phase-heading,
-  body.dark-mode #steps-284 .nm-step-name {
+  body.dark-mode #steps-284 .nm-step-name,
+  body.dark-mode #steps-284 .nm-button-secondary {
     color: var(--textLight);
   }
   body.dark-mode #steps-284 #quote-828 {
