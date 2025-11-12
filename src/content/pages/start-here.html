@@ -1,0 +1,309 @@
+---
+title: "Lost? Start Here. Bring snacks."
+description: "Too many tabs open? Close the others. This page helps you sort out your website next step — whether you’re hiring, DIYing, or still panicking."
+preloadImg: '/assets/images/start-here-m.webp'
+ogImage: '/assets/images/og/start-here-og.png'
+permalink: 'start-here/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="../../assets/css/start-here.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/start-here.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+<!-- ============================================ -->
+<!--                   Hero                       -->
+<!-- ============================================ -->
+
+<section id="hero-288">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Let’s Get You Where You’re Going</h1>
+            <p class="cs-text">
+                Whether you’re ready to upgrade your DIY site or just figuring out what you need, you’re in the right place. This page will point you to the best next step.
+            </p>
+        </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <source media="(max-width: 1023px)" srcset="../../assets/images/start-here-m.webp">
+            <source media="(min-width: 1024px)" srcset="../../assets/images/start-here.webp">
+            <img aria-hidden="true" decoding="async" src="../../assets/images/start-here.webp" alt="A cat studies an open book with a ship and a globe in the background." width="630" height="814">
+        </picture>
+        <!--Green Waves-->
+        <picture class="cs-waves">
+            <source media="(min-width: 1024px)" srcset="../../assets/textures/blue-tall.webp">
+            <source media="(max-width: 1023px)" srcset="../../assets/textures/blue-background-m.svg">
+            <img decoding="async" src="../../assets/textures/blue-tall.webp" alt="" width="645" height="1080" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--              Quick Filters                   -->
+<!-- ============================================ -->
+
+<section id="events-1438">
+    <div class="cs-container">
+        <div id="cs-content-832">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Because one-size-fits-all is a lie.</span>
+                <h2 class="cs-title">I'm here for&hellip;</h2>
+            </div>
+            <p class="cs-text">
+                Every business is different and so is every visitor. Pick the option that sounds most like you and I’ll guide you to the best place to start.
+            </p>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="../../assets/images/storycraft-card.webp" alt="A cat sits next to a stack of books." width="305" height="180">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">I’m ready for a story-led website</h3>
+                    <p class="cs-item-text">
+                        You’ve outgrown DIY and want a site that reflects the business you’ve built.
+                    </p>
+                    <a href="/storycraft/" class="cs-link">
+                        Explore Storycraft
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="../../assets/images/voice-card.webp" alt="A kitten sits between book stacks and an ink well." width="305" height="180">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">I just need help with the words</h3>
+                    <p class="cs-item-text">
+                        You’ve got the bones of a site. Now you need a pro to help your message click.
+                    </p>
+                    <a href="/voice/" class="cs-link">
+                        Discover Voice
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="../../assets/images/frame-card.webp" alt="A kitten looks up at a cat with books in the background." width="305" height="180">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">I want something simpler</h3>
+                    <p class="cs-item-text">
+                        You want a clean, credible site without a big investment.
+                    </p>
+                    <a href="/frame/" class="cs-link">
+                        Meet Frame
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="../../assets/images/book-call-card.webp" alt="A cat looks at a mobile phone." width="305" height="180">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">I’m not sure what I need</h3>
+                    <p class="cs-item-text">
+                        No problem. Let’s talk it out and figure out what makes the most sense for you.
+                    </p>
+                    <a href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call" class="cs-link">
+                        Book a Call
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+            <li class="cs-item">
+                <picture class="cs-picture" aria-hidden="true">
+                    <img loading="lazy" decoding="async" src="../../assets/images/blog-card.webp" alt="A cat scratching a tree." width="305" height="180">
+                </picture>
+                <div class="cs-info">
+                    <h3 class="cs-h3">I’m just browsing for now</h3>
+                    <p class="cs-item-text">
+                        Not quite ready to reach out? Start with a few blog posts I wrote to help you decide.
+                    </p>
+                    <a href="/blog/" class="cs-link">
+                        Read the Blog
+                        <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <img src="../../assets/textures/blue-banner.webp" alt="" aria-hidden="true" width="1920" height="400" >
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                Blog Feature                  -->
+<!-- ============================================ -->
+
+<section id="blog-1289">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Zero fluff. Real help. No pitch.</span>
+                <h2 class="cs-title">Not Ready to Hire Yet? Start Here Instead</h2>
+            </div>
+            <div class="nm-group">
+                <p class="cs-text">
+                If you're still in the research phase, totally fair. I’m building a blog full of honest, high-impact content to help you get clarity — even if we never work together.
+            </p>
+            <a class="nm-button-secondary" href="/blog/">
+                Read the Blog
+                <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+            </div>
+        </div>      
+        <ul class="cs-card-group">
+            <li class="cs-item cs-highlight">
+                <a href="/blog/storycraft-atlas/" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../../assets/images/blog/storycraft-atlas-m.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/blog/storycraft-atlas-m.webp">
+                        <img loading="lazy" decoding="async" src="../../assets/images/blog/storycraft-atlas-m.webp" alt="A cat lounging in front of a globe, books, and camera." width="270" height="200">
+                    </picture>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">{{ blogs.framework.title }}</h3>
+                        <p class="cs-item-text">
+                            {{ blogs.framework.description }}
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/evolving-offers/" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../../assets/images/blog/evolving-offers-m.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/blog/evolving-offers-m.webp">
+                        <img loading="lazy" decoding="async" src="../../assets/images/blog/evolving-offers-m.webp" alt="A cat in a reptilian costume." width="270" height="200">
+                    </picture>
+                    <h3 class="cs-h3">{{ blogs.notReady.title }}</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/website-not-converting/" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../../assets/images/blog/weak-copy-m.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/blog/weak-copy-m.webp">
+                        <img loading="lazy" decoding="async" src="../../assets/images/blog/weak-copy-m.webp" alt="A view from below of a cat on glass looking down. It appears floating in black space." width="270" height="200">
+                    </picture>
+                    <h3 class="cs-h3">{{ blogs.weakCopy.title }}</h3>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="/blog/why-i-made-storycraft/" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../../assets/images/blog/why-story-m.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/blog/why-story-m.webp">
+                        <img loading="lazy" decoding="async" src="../../assets/images/blog/why-story-m.webp" alt="A cat stretched across loose puzzle pieces." width="270" height="200">
+                    </picture>
+                    <h3 class="cs-h3">{{ blogs.whyStory.title }}</h3>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+
+<!-- ============================================ -->
+<!--                   Offer                      -->
+<!-- ============================================ -->
+
+<section id="pricing-1319">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Three ways to get unstuck.</span>
+            <h2 class="cs-title">Curious what working together would look like?</h2>
+            <p class="cs-text">
+                If we do work together, here’s how that usually looks. I offer three core packages &mdash; each one tailored to a different level of business, budget, and support. No one-size-fits-all solutions here.
+            </p>
+            <a href="/services/" class="nm-button-secondary">
+                Check out my services
+                <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <span class="cs-package">{{ services.strWeb.name }}</span>
+                <span class="cs-desc">For growth-stage business owners who are ready to level up.</span>
+                <p class="nm-footer">
+                    You want strategy, copy, and a custom-built site that does the heavy lifting.
+                </p>
+                <a href="/storycraft/" class="cs-button-transparent">Explore<br>{{ services.strWeb.name }}</a>
+            </li>
+            <li class="cs-item">
+                <span class="cs-package">{{ services.stdWeb.name }}</span>
+                <span class="cs-desc">For folks who need better messaging, not a whole new site.</span>
+                <p class="nm-footer">
+                    Get strategic, story-driven website copy that sounds like you and converts like it should.
+                </p>
+                <a href="/voice/" class="cs-button-transparent">Discover<br>{{ services.stdWeb.name }}</a>
+            </li>
+            <li class="cs-item">
+                <span class="cs-package">{{ services.subWeb.name }}</span>
+                <span class="cs-desc">For early-stage pros who want a clean, credible foundation.</span>
+                <p class="nm-footer">
+                    A smart, simple starter site designed to grow with you, not box you in.
+                </p>
+                <a href="/frame/" class="cs-button-transparent">Meet<br>{{ services.subWeb.name }}</a>
+            </li>
+        </ul>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/textures/price-texture-m.webp">
+        <!--Tablet Image-->
+        <source media="(min-width: 601px) and (max-width: 1023px)" srcset="/assets/textures/price-texture-t.webp">
+        <!--Small Desktop and above Image-->
+        <source media="(min-width: 1024px)" srcset="/assets/textures/price-texture.webp">
+        <img loading="lazy" decoding="async" src="/assets/textures/price-texture.webp" alt="" width="1400" height="789">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                    CTA                       -->
+<!-- ============================================ -->
+
+<section id="cta-403">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Meet the weirdo behind the website.</span>
+            <h2 class="cs-title">Curious Who’s Behind the Cat-Themed Strategy?</h2>
+            <p class="cs-text">
+                You’ve got the lay of the land, now come meet the person behind the pixels. My About page breaks down my story, philosophy, and how this whole {{ services.strWeb.name }} thing came to be. Spoiler: it involves government websites, a failed wedding site, and some very strategic cat energy.
+            </p>
+            <a href="/about/" class="cs-button-solid">Meet Tianna</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="../../assets/images/start-here-cta-m.webp">
+        <source media="(min-width: 601px)" srcset="../../assets/images/start-here-cta-t.webp">
+        <source media="(min-width: 1400px)" srcset="../../assets/images/start-here-cta.webp">
+        <img loading="lazy" decoding="async" src="../../assets/images/start-here-cta.webp" alt="Tianna smiling mid motion while holding an umbrella." width="1920" height="660" aria-hidden="true">
+    </picture>
+</section>
+
+{% endblock %}

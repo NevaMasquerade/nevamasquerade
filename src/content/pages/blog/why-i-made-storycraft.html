@@ -1,0 +1,399 @@
+---
+title: "How Failing at My Site Changed Everything"
+description: "I studied the dead, ran a .gov, rage-quit my wedding website, and now I build strategic cat-themed websites. There is a thread. Trust me."
+preloadImg: '/assets/images/blog/why-story-m.webp'
+ogImage: '/assets/images/og/why-i-made-storycraft-og.png'
+permalink: 'blog/why-i-made-storycraft/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/assets/css/blog-post.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog-post.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">{{ blogs.whyStory.title}}</h1>
+        <div class="blog-authorGroup">
+            <!--Blog Date-->
+            <span class="blog-date">Last Updated: November 8, 2025</span>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--               Featured Image                 -->
+<!-- ============================================ -->
+<div class="nm-featured-image">
+    <picture class="blog-mainImage">
+        <source media="(max-width: 600px)" srcset="../../../assets/images/blog/why-story-m.webp">
+        <source media="(min-width: 601px)" srcset="../../../assets/images/blog/why-story.webp">
+        <img
+            src="../../../assets/images/blog/why-story.webp"
+            alt="{{ imageAlt }}"
+            decoding="async"
+            width="2200"
+            height="1237"
+        />
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+
+<div class="blog-container main-content-wrapper">
+    
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                  Blog Article                -->
+        <!-- ============================================ -->
+
+        <article class="blog-article">
+            <section id="blog-content">
+                <p>
+                If you’ve been in business for a while, you already know: your website matters.
+                </p>
+                <p>
+                It got the job done when you launched. Or maybe it was never quite right, but you didn’t have the time, money, or energy to deal with it — and it was <em>fine enough</em>.
+                </p>
+                <p>
+                But now? It’s dragging behind the rest of your business.
+                </p>
+                <p>
+                You’ve put in the work. <br>Your services are clearer. <br>You’ve raised your rates. <br>You’re showing up more confidently, booking better clients, and figuring out how to scale.
+                </p>
+                <p>
+                Then someone says, “Hey, what’s your website?” And you hesitate before sending the link. Or you just send them to your Calendly and skip it altogether.
+                </p>
+                <p>
+                You aren’t alone.
+                </p>
+                <p>
+                That space between “I’m not a beginner anymore” and “I’m not ready to drop five figures on an agency” is exactly where I live.
+                </p>
+                <p>
+                And it’s why I created <strong><a href="/storycraft/">Storycraft</a></strong> — a website offer for business owners who’ve outgrown their DIY build but still want someone who <em>gets</em> what it’s like to be solo, scrappy, and serious about doing this right.
+                </p>
+                <p>
+                Let me tell you how I got here.
+                </p>
+                <hr>
+                <h2>Why I reject templates: the wedding website that broke me</h2>
+
+
+                <p>
+                The first site I ever tried to build was my own wedding website on Zola.
+                </p>
+                <p>
+                Spoiler alert: I failed. Hard.
+                </p>
+                <p>
+                Zola is supposed to be user-friendly. Pick a template, plug in your info, and boom — you’ve got a wedding website.
+                </p>
+                <p>
+                But I hated all of the templates. None of them looked or felt right. <br>The colors were wrong. <br>The fonts were blah. <br>The vibes weren’t vibing. <br>I wanted to tweak them — move a section here, change the layout there — but Zola wouldn’t let me.
+                </p>
+                <p>
+                And because I already had years of experience managing a WordPress website, I knew exactly what was possible and exactly how boxed in I was.
+                </p>
+                <p>
+                Eventually, I gave up and let my partner build it. It wasn’t what I envisioned, but it worked.
+                </p>
+                <p>
+                That experience stuck with me, not just because I was annoyed (though I was), but because it taught me something big:
+                </p>
+                <p>
+                Templates are great <em>until</em> you outgrow them. Then they’re just in the way.
+                </p>
+                <hr>
+                <h2>Becoming an expert in WordPress led me away from using it</h2>
+
+
+                <p>
+                You may be wondering what my “years of experience managing a WordPress website” look like if I couldn’t manage Zola. 
+                </p>
+                <p>
+                I’ve spent the last 7.5 years working on the web team at the U.S. Department of State.
+                </p>
+                <p>
+                That includes leading the team that runs www.state.gov — a site that peaked with over 47,000 published pages and 79 million visitors in 2024. (Yes, you read that right.)
+                </p>
+                <p>
+                I’ve managed editors, coordinated with developers, handled sprints and content strategy, dealt with accessibility requirements, compliance, contracts — the whole works.
+                </p>
+                <p>
+                Honestly, it all sounds a lot cooler than it is. But it taught me how to think holistically about digital strategy, user experience, and long-term maintenance.
+                </p>
+                <p>
+                It also taught me something else: Big doesn’t always mean good. And complexity doesn’t always equal quality. 
+                </p>
+                <p>
+                Sometimes, it just means bloated systems and bad processes that no one wants to touch.
+                </p>
+                <p>
+                When I started my business, I knew I didn’t want to build websites like that.
+                </p>
+                <p>
+                So I learned how to build clean, high-performance static sites using custom code and a static-site generator. No bloated plugins. No hidden backend chaos. Just fast, secure, thoughtfully built sites that are easy to maintain and hard to break.
+                </p>
+                <p>
+                The result? Websites that feel intentional, not over-designed or over-engineered. Just clear, strategic, and (most importantly) built to grow with your business.
+                </p>
+                <hr>
+                <h2>What do puzzles, cats, and history have to do with web design?</h2>
+
+
+                <p>
+                At first glance, not much. But honestly? Everything.
+                </p>
+                <p>
+                Let me explain.
+                </p>
+                <p>
+                <strong>Why puzzles?<br></strong>Because I love figuring things out. I get genuinely excited about escape rooms and puzzle boxes. My husband once gave me a Japanese puzzle box — I solved it in one sitting, not because it was easy, but because that’s how my brain works. I <em>need</em> to understand how all the pieces fit together.
+                </p>
+                <p>
+                That’s exactly how I approach websites.
+                </p>
+                <p>
+                You come to me with bits and pieces: your services, your goals, your audience, your offers. Sometimes the pieces are clear. Sometimes they’re a mess. I help you lay it all out, make sense of it, and build a structure that ties everything together.
+                </p>
+                <p>
+                I like to make things click. That’s the job.
+                </p>
+                <p>
+                <strong>Why cats?<br></strong>Have you seen my website? Of course I’m a cat person.
+                </p>
+                <p>
+                But the name Neva Masquerade didn’t come from a branding workshop or some clever play on words. It came from me googling cat breeds at 1 a.m. when every “normal” business name was already taken.
+                </p>
+                <p>
+                I found the Neva Masquerade — a blue-eyed, Siberian cat with dark points and a cool name. I liked how it sounded. I bought the domain. And I leaned into the cat thing hard.
+                </p>
+                <p>
+                Why? Because it makes people smile. It’s weird, it’s memorable, and most importantly — it feels like me.
+                </p>
+                <p>
+                This brand is built on clarity, but it’s also built on personality. The cats are my way of saying, “This doesn’t have to be boring.”
+                </p>
+                <p>
+                <strong>Why history?<br></strong>For years, I didn’t think my BA and MA in history had anything to do with what I do now.
+                </p>
+                <p>
+                I was wrong.
+                </p>
+                <p>
+                Historians are trained to take messy, scattered, unorganized material and find the story inside it. We sift through the noise, figure out what matters, and build a narrative that helps people understand something clearly.
+                </p>
+                <p>
+                That’s literally what I do with websites.
+                </p>
+                <p>
+                I take your raw material — your voice, your business model, your values, your goals, your love of [blank] — and I craft a site that makes sense to the people who land on it. Not just structurally. Not just visually. But narratively.
+                </p>
+                <p>
+                That’s why I call it <em>Storycraft</em>.
+                </p>
+                <p>
+                It’s not just about pages. It’s about telling the right story — the one that turns browsers into buyers.
+                </p>
+                <p>
+                <strong>So yeah — puzzles, cats, and history.<br></strong>They’re not just quirks. They’re part of how I work.<br>And they’re part of why this offer is different.
+                </p>
+                <hr>
+                <h2>Who Storycraft is for</h2>
+
+
+                <p>
+                <a href="/storycraft/">Storycraft</a> is for people in the messy middle.
+                </p>
+                <ul>
+
+                <li>You’ve outgrown DIY. </li>
+
+                <li>You’re not ready for an expensive agency. </li>
+
+                <li>You want clarity, not just pretty. </li>
+
+                <li>You’re doing real work, and your site needs to reflect that.</li>
+                </ul>
+                <p>
+                You’re most likely a coach, consultant, or service provider. You’ve been booking clients, making money, and building a legit business. But your website? It doesn’t feel like it represents you anymore.
+                </p>
+                <p>
+                Maybe it’s a mismatch visually. <br>Maybe the copy is outdated or cringey. <br>Maybe it’s just a pain to update.
+                </p>
+                <p>
+                You want a website that’s custom, but not complicated. You want something that looks good, reads well, and doesn’t fall apart if you change your mind six months from now. And you want a partner to manage it all for you.
+                </p>
+                <p>
+                That’s exactly what I build in <a href="/storycraft/">Storycraft</a>.
+                </p>
+                <hr>
+                <h2>What you can expect inside Storycraft</h2>
+
+
+                <p>
+                I named my signature offer the <em>Storycraft </em>because that’s exactly what I do: take everything you bring to the table — your experience, your offers, your voice, your people — and turn it into a clear, thoughtful, and strategic website.
+                </p>
+                <p>
+                Not flashy. Not fussy. Not trying to game an algorithm.
+                </p>
+                <p>
+                Just a website that feels like you and guides your dream clients to take action.
+                </p>
+                <p>
+                Here’s how we build it:
+                </p>
+                <p>
+                <strong>Phase 1: Share Your Story <br></strong>We get clear on your brand, your goals, and what your site actually needs to do.
+                </p>
+                <p>
+                <strong>Phase 2: Shape the Site <br></strong>I design and write every part of your site. No templates. Just what fits <em>you.</em>
+                </p>
+                <p>
+                <strong>Phase 3: Ship and Support <br></strong>We launch. You breathe. And we meet quarterly to check in, make updates, and keep things fresh.
+                </p>
+                <p>
+                What you get:
+                </p>
+                <ul>
+
+                <li>5 custom-designed pages (plus 2 extra per year)</li>
+
+                <li>Strategic copywriting</li>
+
+                <li>Hosting + lifetime updates</li>
+
+                <li>Unlimited content edits</li>
+
+                <li>Quarterly check-ins</li>
+
+                <li>Design refresh every 2 years</li>
+
+                <li>Optional blog integration</li>
+                </ul>
+                <p>
+                Oh, and dark mode. Because yes, that matters.
+                </p>
+                <hr>
+                <h2>What people are saying</h2>
+
+
+                <p>
+                While I’m still in the early days of launching this offer, the feedback I’ve received from prospective clients and fellow creatives has been incredibly affirming.
+                </p>
+                <p>
+                One prospective client said:
+                </p>
+                <p>
+                “I wasn’t even in the market for a website… until I saw yours.”
+                </p>
+                <p>
+                She loved:
+                </p>
+                <ul>
+
+                <li>The bold “ditch the DIY disaster” messaging</li>
+
+                <li>The homepage that lays everything out clearly (with pricing up front!)</li>
+
+                <li>The thoughtful, relevant FAQs</li>
+
+                <li>The cats. Always the cats.</li>
+                </ul>
+                <p>
+                And perhaps most importantly:
+                </p>
+                <p>
+                “Your site is memorable. It looks different. It feels like <em>you.</em>”
+                </p>
+                <p>
+                That’s exactly what I want your future clients to say about <em>your</em> website.
+                </p>
+                <hr>
+                <h2>Not a mass-producer. A craftsperson.</h2>
+
+
+                <p>
+                We’re entering a strange phase in the online business world.
+                </p>
+                <p>
+                Thanks to AI, DIY is becoming more accessible than ever. You can generate a logo, build a site, even write copy without ever talking to another human.
+                </p>
+                <p>
+                At first glance, that sounds empowering. You can build something without hiring a team. But that promise of convenience often leads to compromise. And the compromise? It’s showing.
+                </p>
+                <p>
+                What we're already seeing is a wave of websites that feel... the same. Not bad, exactly. Just bland. Templates with swapped-out colors. Vaguely inspirational copy. The same headlines you’ve seen on five other coaches' websites this week.
+                </p>
+                <p>
+                When your business is based on real relationships — when people hire <em>you</em> because of your voice, your perspective, your approach — a generic website doesn’t help you. It holds you back.
+                </p>
+                <p>
+                And honestly? The people you're hoping to work with can tell. It’s like walking into a sterile office versus being welcomed into someone’s beautifully lived-in home. You <em>feel</em> the difference, even if you can't name it.
+                </p>
+                <p>
+                What stands out now is depth. Personality. <em>Story.</em>
+                </p>
+                <p>
+                I don’t build websites like a production line. I build them like an artisan. Carefully. Intentionally. With an eye for how every part supports the whole. The difference is kind of like IKEA vs hand-carved oak. One is fast and functional. The other? Unmistakably yours.
+                </p>
+                <p>
+                And that level of care doesn’t just create a beautiful website. It creates trust. It makes people want to linger, to explore, to say, "This person gets it."
+                </p>
+                <p>
+                That’s what <a href="/storycraft/">Storycraft</a> is about.
+                </p>
+                <hr>
+                <h2>Ready for a site you’re actually proud of?</h2>
+
+
+                <p>
+                If you’re tired of cringing every time someone asks for your website… <br>If you’re done with the template phase and not quite ready for agency pricing… <br>If you want a website that sounds like you, works like it should, and grows with your business…
+                </p>
+                <p>
+                Let’s talk. 
+                </p>
+                <p>
+                No pressure. No pitch deck. Just a real conversation to see if this is the right fit.
+                </p>
+                <p>
+                <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
+                    {% ButtonIcon %}
+                    Start Your Story
+                </a>
+                </p>
+                <p>
+                Because you’ve grown. And it’s time your website caught up.
+                </p>
+            </section>
+        </article>
+    </div>
+    <!-- End .main-content -->
+</div>
+    {% include 'components/cta.html' %}
+{% endblock %}

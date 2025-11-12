@@ -1,7 +1,8 @@
 ---
-title: 'Custom Web Design & Branding | Services'
-description: 'Explore our custom web design, support, & branding services for small businesses. Find the perfect solution to elevate your brand, stand out, & grow.'
-preloadImg: '/assets/textures/blue-banner-m.webp'
+title: "Pick Your Chaos (Strategically)"
+description: "Three ways to stop apologizing for your website: copy-only, design-only, or the full storycrafted glow-up. Cats included. No templates allowed."
+preloadImg: '/assets/images/services-m.webp'
+ogImage: '/assets/images/og/services-og.png'
 permalink: 'services/'
 ---
 
@@ -10,135 +11,572 @@ permalink: 'services/'
 {% block head %}
     {{ super() }}
     <meta property="og:type" content="website" />
-    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
     <link rel="stylesheet" href="/assets/css/services.css" media="print" onload="this.media='all'; this.onload=null;" />
     <noscript>
         <link rel="stylesheet" href="/assets/css/services.css" />
     </noscript>
-    <style>
-        .cs-background {
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-
-            &:before {
-                /* background color overlay */
-                content: "";
-                position: absolute;
-                display: block;
-                height: 100%;
-                width: 100%;
-                background: -moz-linear-gradient(
-                    left,
-                    rgba(18, 38, 51, 0.94) 0%,
-                    rgba(18, 38, 51, 0) 100%
-                ); /* FF3.6-15 */
-                background: -webkit-linear-gradient(
-                    left,
-                    rgba(18, 38, 51, 0.94) 0%,
-                    rgba(18, 38, 51, 0) 100%
-                ); /* Chrome10-25,Safari5.1-6 */
-                opacity: 1;
-                top: 0;
-                left: 0;
-                z-index: 1;
-            }
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                /* Makes img tag act as a background image */
-                object-fit: cover;
-            }
-        }
-    </style>
 {% endblock %}
 
 {% block body %}
-    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+<!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
 
-        <!-- ============================================ -->
-        <!--                   Banner                     -->
-        <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Hero                       -->
+<!-- ============================================ -->
 
-        <div id="banner-1106">
-            <div class="cs-container">
-                <h1 class="cs-int-title">Services</h1>
-                <nav aria-label="Breadcrumb">
-                    <div class="cs-breadcrumbs">
-                        <a href="/" class="cs-link">Home</a>
-                        <a href="/{{ permalink }}" class="cs-link cs-active" aria-current="page">Services</a>
-                    </div>
-                </nav>
-            </div>
-            <!--Background Image-->
-            <picture class="cs-background">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
-                <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
-            </picture>
+<section id="hero-288">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Ditch the DIY disaster and get a site that’s actually built for you.</h1>
+            <p class="cs-text">
+                Most people use templates, but you aren't like most people, are you?
+            </p>
+            <p class="cs-text">
+                Templates don't tell stories; they mold everyone into the same shape. A storycrafted website proclaims your value with every pixel.
+            </p>
+            <a class="nm-button-secondary" href="/services/#pricing-1233">
+                Find your fit
+                <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+            </a>
         </div>
+        <!--Hero Image-->
+        <picture class="cs-picture">
+            <source media="(max-width: 1023px)" srcset="../../assets/images/services-m.webp">
+            <source media="(min-width: 1024px)" srcset="../../assets/images/services.webp">
+            <img aria-hidden="true" decoding="async" src="../../assets/images/services.webp" alt="A cat with glasses and an open book." width="630" height="814">
+        </picture>
+        <!--Green Waves-->
+        <picture class="cs-waves">
+            <source media="(min-width: 1024px)" srcset="../../assets/textures/blue-tall.webp">
+            <source media="(min-width: 601px)" srcset="../../assets/textures/hero-background.webp">
+            <source media="(max-width: 600px)" srcset="../../assets/textures/hero-background.webp">
+            <img decoding="async" src="../../assets/textures/blue-tall.webp" alt="" width="645" height="1080" aria-hidden="true">
+        </picture>
+    </div>
+</section>
+                        
+<!-- ============================================ -->
+<!--                 Side By Side                 -->
+<!-- ============================================ -->
 
-        <!-- ============================================ -->
-        <!--                  Services                    -->
-        <!-- ============================================ -->
+<section id="sbs-578">
+    <div class="cs-container">
+        <picture class="cs-picture">
+            <!--Mobile Image-->
+            <source media="(max-width: 1023px)" srcset="../../assets/images/storycrafted-philosophy-m.webp">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 1024px)" srcset="../../assets/images/storycrafted-philosophy.webp">
+            <img loading="lazy" decoding="async" src="../../assets/images/storycrafted-philosophy.webp" alt="Cat with ink bottle and crumpled paper at a writing desk." width="494" height="700">
+        </picture>
+        <div class="cs-content">
+            <span class="cs-topper">History Favors the Bold (So Does Design)</span>
+            <h2 class="cs-title">Your site doesn’t need more features. It needs more you.</h2>
+            <p class="cs-text">
+                If you don’t want to sound like everyone else, your website can’t look like everyone else’s. It has to communicate who you are &mdash; and what you stand for.
+            </p>
+            <p class="cs-text">
+                Most designers focus on SEO, mobile responsiveness, and slick layouts. Those matter &mdash; but performance is only half the job. The other half is storytelling that builds trust.
+            </p>
+            <p class="cs-text">
+                My story starts in a history classroom. I didn’t study design or comp sci. I studied revolutions, social movements, and narratives.
+            </p>
+            <p class="cs-text">
+                After grad school, I joined the web team at the U.S. Department of State. Four years later, I became team lead and product owner of State.gov, a 47,000-page site with 79 million visitors a year.
+            </p>
+            <p class="cs-text">
+                When you land on my site, you don’t just see a layout. You see me: a cat-loving historian who builds with clarity and conviction. Every design choice tells that story, and I do the same for you.
+            </p>
+            <a class="nm-button-secondary" href="/about/">
+                About me and my approach
+                <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+            </a>
+        </div>
+    </div>
+</section>
 
-        <section id="services-690">
-            <div class="cs-container">
-                <div class="cs-content">
-                    <div class="cs-flex-group">
-                        <span class="cs-topper">Goodbye, frustrations. Hello, customers.</span>
-                        <h2 class="cs-title"><span class="cs-color">Web design</span> and <span class="cs-color">branding</span> for your small business</h2>
-                    </div>
-                    <p class="cs-text">
-                        Get a fast, unique website that draws in customers. We'll guide you to a stunning online presence that reflects your brand. Your competition will never overshadow you again.
-                    </p>
-                </div>
-                <ul class="cs-card-group">
-                    <li class="cs-item">
-                        <a href="/services/web-design/" class="cs-link">
-                            <picture class="cs-picture">
-                                <img class="cs-icon" src="../../assets/svgs/design.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
-                            </picture>
-                            <h3 class="cs-h3">Web Design & Maintenance</h3>
-                            <p class="cs-item-text">
-                                Get a custom, fast, and unique website. No page builders. No pre-designed templates. All you.
-                            </p>
-                        </a>
-                    </li>
-                    <li class="cs-item">
-                        <a href="/services/support/" class="cs-link">
-                            <picture class="cs-picture">
-                                <img class="cs-icon" src="../../assets/svgs/maintenance.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
-                            </picture>
-                            <h3 class="cs-h3">Support</h3>
-                            <p class="cs-item-text">
-                                Never worry about your website again. We'll keep it updated and online so you don't have to.
-                            </p>
-                        </a>
-                    </li>
-                    <li class="cs-item">
-                        <a href="/services/branding/" class="cs-link">
-                            <picture class="cs-picture">
-                                <img class="cs-icon" src="../../assets/svgs/branding.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
-                            </picture>
-                            <h3 class="cs-h3">Branding</h3>
-                            <p class="cs-item-text">
-                                Everywhere you are, you should look the same. Get consistent design that match your website.
-                            </p>
-                        </a>
-                    </li>
-                </ul>
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-690">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex-group">
+                <span class="cs-topper">Different Journeys, Same Destination</span>
+                <h2 class="cs-title">Three ways to tell your story. One strategy-first approach.</h2>
             </div>
-        </section>              
-    {% include 'components/cta.html' %}
+            <div>
+                <p class="cs-text">
+                Whether you want total ownership or an ongoing partnership, there’s a path that fits your story.
+                </p>
+                <p class="cs-text">
+                    Not sure which path to take?
+                </p>
+                <p class="cs-text">
+                    Every plan is built around your story; this just helps you choose how hands-on you want to be.
+                </p>
+            </div>
+        </div>
+        <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
+            {% ButtonIcon %}
+            Start Your Story
+        </a>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Pricing                    -->
+<!-- ============================================ -->
+
+<section id="pricing-1233">
+    <div class="cs-container">
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <span class="cs-package">{{ services.subWeb.name }}</span>
+                    <span class="cs-desc">You’ve got the words. I’ll build the site.</span>
+                    <span class="cs-price">
+                        ${{ services.subWeb.fee }} + 
+                        <div>${{ services.subWeb.price}}&nbsp;
+                        <span class="cs-time">/ Monthly</span></div>
+                    </span>
+                    <div>
+                        <a class="cs-button-transparent" href="/frame/">
+                            Meet {{ services.subWeb.name }}
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-flex">
+                    <span class="cs-includes">Includes:</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            5 custom-designed pages
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Hosting + lifetime updates
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Unlimited content edits
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Design refresh every 3 years
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            You provide final copy
+                        </li>
+                    </ul>
+                    <span class="cs-includes">Optional Add-ons:</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Extra pages ($100&ndash;250 one-time fee per page)
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Blog integration ($250 one-time fee, includes training session)
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Dark mode ($150 one-time fee)
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="cs-item cs-popular">
+                <div class="cs-item-content">
+                    <div class="nm-badge">
+                        <span class="nm-best">&nbsp;Recommended&nbsp;</span>
+                    </div>
+                    <span class="cs-package">{{ services.strWeb.name}}</span>
+                    <span class="cs-desc">Strategy, copy, and site &mdash; start to finish.</span>
+                    <span class="cs-price">
+                        ${{ services.strWeb.fee }} + 
+                        <div>${{ services.strWeb.price}}&nbsp;
+                        <span class="cs-time">/ Monthly</span></div>
+                    </span>
+                    <div>
+                        <a class="cs-button-transparent" href="/storycraft/">
+                            Explore {{ services.strWeb.name }}
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-flex">
+                    <span class="cs-includes">Includes:</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            5 custom-designed pages
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Strategic copywriting for all pages
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Hosting + lifetime updates
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Unlimited content edits
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Quarterly strategy check-ins
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Design refresh every 2 years
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Dark mode included
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            2 extra pages per year (bankable)
+                        </li>
+                    </ul>
+                    <span class="cs-includes">Optional Add-ons:</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Extra pages ($250&ndash;500 one-time fee per page)
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Blog integration ($250 one-time fee, includes training session)
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-item-content">
+                    <span class="cs-package">{{ services.stdWeb.name}}</span>
+                    <span class="cs-desc">You know what you do. I help you say it.</span>
+                    <span class="cs-price">
+                        ${{ services.stdWeb.price}}
+                    </span>
+                    <div>
+                        <a class="cs-button-transparent" href="/voice/">
+                            Discover {{ services.stdWeb.name }}
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-flex">
+                    <span class="cs-includes">Includes:</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            5 pages of strategic website copy
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            1:1 messaging strategy session
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Custom site map
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Organized copy doc (by page & section)
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Dev-ready handoff doc
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Optional wireframe notes
+                        </li>
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Up to two rounds of async revisions
+                        </li>
+                    </ul>
+                    <span class="cs-includes">Optional Add-ons:</span>
+                    <ul class="cs-ul">
+                        <li class="cs-li">
+                            <img class="cs-icon" aria-hidden="true" loading="lazy" decoding="async" src="../../assets/svgs/checkmark.svg" alt="" width="24" height="24">
+                            Extra pages ($150&ndash;250 per page)
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+                        
+
+<!-- ============================================ -->
+<!--                     FAQ                      -->
+<!-- ============================================ -->
+
+<section id="faq-351">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">No Riddles, Just Answers.</span>
+            <h2 class="cs-title">Frequently Asked Questions</h2>
+            <p class="cs-text">
+                Still have questions? Send me a message.
+            </p>
+            <a class="nm-button-secondary" href="/contact/#cs-form-1333">
+                Contact me
+                <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+            </a>
+        </div>
+        <ul class="cs-faq-group">
+            <!-- Active class added as default -->
+            <li class="cs-faq-item">
+                <button id="faq1-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq1-answer">
+                    <span class="cs-button-text">
+                        Will this website actually attract clients, or just look pretty?
+                    </span>
+                </button>
+                <p id="faq1-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq1-button"
+                    hidden>
+                    Pretty doesn’t pay the bills. Your site should look great and help the right people say “yes.” Every design choice, headline, and call-to-action is there to build trust and guide someone toward working with you. If it’s just decorative, it doesn’t make the cut.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq2-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq2-answer">
+                    <span class="cs-button-text">
+                        What makes it “Storycrafted”?
+                    </span>
+                </button>
+                <ul id="faq2-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq2-button"
+                    hidden>
+                    Storycrafted means we lead with who you are &mdash; not just what you sell. Your story becomes the strategy behind the design, so everything from the copy to the layout is built around trust, clarity, and resonance. Every pixel has a job.
+                </ul>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq3-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq3-answer">
+                    <span class="cs-button-text">
+                        How is this different from templates or a generic designer?
+                    </span>
+                </button>
+                <p id="faq3-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq3-button"
+                    hidden>
+                    Templates force you to cram your business into someone else’s mold. Generic designers can make something that looks fine but lacks strategy. I build around your voice, your goals, and your clients &mdash; so your site sounds like you, looks like you, and works for you.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq4-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq4-answer">
+                    <span class="cs-button-text">
+                        Do I need to write the content myself?
+                    </span>
+                </button>
+                <p id="faq4-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq4-button"
+                    hidden>
+                    That depends on your package:
+                    <ul class="cs-item-p">
+                        <li><strong>{{ services.subWeb.name }}:</strong> You write the content and I design around it.</li>
+                        <li><strong>{{ services.stdWeb.name }}:</strong> I write the content, you hand it off to your designer.</li>
+                        <li><strong>{{ services.strWeb.name }}:</strong> I handle both &mdash; copy and design &mdash; for a seamless message and layout.</li>
+                    </ul>
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq5-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq5-answer">
+                    <span class="cs-button-text">
+                        Can I update the site myself?
+                    </span>
+                </button>
+                <p id="faq5-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq5-button"
+                    hidden>
+                    If we’re adding a blog, you’ll be able to add and edit blog posts. The rest of the site isn’t drag-and-drop &mdash; but that’s intentional. I keep things lightweight, fast, and clean behind the scenes. If you need updates, just shoot me a message. I’ll take care of it.
+                </p>
+            </li>
+        </ul>
+        <!--Added second UL, this allows you to open an FAQ item on each side without messing up the flexbox for the other -->
+        <ul class="cs-faq-group">
+            <li class="cs-faq-item">
+                <button id="faq6-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq6-answer">
+                    <span class="cs-button-text">
+                        What happens after launch?
+                    </span>
+                </button>
+                <p id="faq6-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq6-button"
+                    hidden>
+                    All plans include support — so if something breaks or you need a quick fix, I’m here. <strong>{{ services.strWeb.name }}</strong> clients also get quarterly check-ins to review what’s working, adjust strategy, or make small site updates as you grow.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq7-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq7-answer">
+                    <span class="cs-button-text">
+                        Will the site grow with me?
+                    </span>
+                </button>
+                <p id="faq7-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq7-button"
+                    hidden>
+                    Yes. Your site is built to evolve with your business &mdash; whether that means adding new services, tweaking your positioning, or changing how people book with you. <strong>{{ services.strWeb.name }}</strong> clients get built-in checkpoints to keep everything aligned long term.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq8-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq8-answer">
+                    <span class="cs-button-text">
+                        How involved will I need to be?
+                    </span>
+                </button>
+                <p id="faq8-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq8-button"
+                    hidden>
+                    You’ll answer some thoughtful questions, join a couple of key calls, and give feedback at the right checkpoints. I do the writing, designing, and coding &mdash; so your time goes to high-level decisions, not busywork.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq9-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq9-answer">
+                    <span class="cs-button-text">
+                        What if I’m still refining my offers?
+                    </span>
+                </button>
+                <p id="faq9-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq9-button"
+                    hidden>
+                    You don’t need to have it all figured out &mdash; we’ll build a site that gives you room to evolve. And if you’re on the <strong>{{ services.strWeb.name }}</strong> plan, we check in quarterly to keep things aligned as your business grows.
+                </p>
+            </li>
+            <li class="cs-faq-item">
+                <button id="faq10-button"
+                        class="cs-button"
+                        aria-expanded="false"
+                        aria-controls="faq10-answer">
+                    <span class="cs-button-text">
+                        What if I don’t make my money back?
+                    </span>
+                </button>
+                <p id="faq10-answer"
+                    class="cs-item-p"
+                    role="region"
+                    aria-labelledby="faq10-button"
+                    hidden>
+                    Totally fair question. A website can’t guarantee revenue &mdash; but it can give you clarity, confidence, and a serious upgrade in how people perceive your business. That positioning shift helps you book better-fit clients, raise your prices, and stop losing leads to confusion or doubt.
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+            
+<!-- ============================================ -->
+<!--                Call To Action                -->
+<!-- ============================================ -->
+
+<section id="cta-2443">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h2 class="cs-title">Say good riddance to your template era.</h2>
+            <div class="cs-flex">
+                <p class="cs-text">
+                    Your website can finally tell your story &mdash; not just sell your services. Let’s build one that sells the one thing your competitors can never offer: you.
+                </p>
+                <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
+                    {% ButtonIcon %}
+                    Start Your Story
+                </a>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <picture class="cs-background" aria-hidden="true">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img loading="lazy" decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568">
+    </picture>
+</section>
+
+<script>
+    const faqItems = document.querySelectorAll('.cs-faq-item');
+
+    faqItems.forEach(item => {
+        const button = item.querySelector('.cs-button');
+        const answer = item.querySelector('.cs-item-p');
+
+        // Assign unique IDs if not already present (optional enhancement)
+        const questionId = button.id || `faq-button-${Math.random().toString(36).substr(2, 9)}`;
+        const answerId = answer.id || `faq-answer-${Math.random().toString(36).substr(2, 9)}`;
+
+        button.id = questionId;
+        answer.id = answerId;
+
+        button.setAttribute('aria-controls', answerId);
+        answer.setAttribute('aria-labelledby', questionId);
+        answer.setAttribute('role', 'region');
+        answer.setAttribute('hidden', '');
+
+        button.setAttribute('aria-expanded', 'false');
+
+        button.addEventListener('click', () => {
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!isExpanded));
+
+        if (isExpanded) {
+            answer.setAttribute('hidden', '');
+            item.classList.remove('active');
+        } else {
+            answer.removeAttribute('hidden');
+            item.classList.add('active');
+        }
+        });
+    });
+</script>
+
 {% endblock %}

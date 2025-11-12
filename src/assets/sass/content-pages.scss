@@ -12,7 +12,6 @@
         overflow: hidden;
         position: relative;
         z-index: 1;
-        background: var(--medium);
 
         .cs-container {
             text-align: center;
@@ -33,65 +32,30 @@
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 400;
             line-height: 1.2em;
-            text-align: inherit;
+            text-align: left;
             margin: 0;
             color: var(--textLight);
             position: relative;
+            font-variant-numeric: lining-nums;
         }
 
-        .cs-breadcrumbs {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cs-link {
-            font-family: var(--smallCaps);
-            font-size: calc(14 / 16 * 1rem);
-            line-height: 1.2em;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 3px;
+        .nm-subhead {
+            font-size: clamp(1.125rem, 2vw, 1.25rem);
+            text-align: left;
             color: var(--textLight);
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            &:last-of-type {
-                /* remove the chevron on the last list item */
-                &::after {
-                    display: none;
-                }
-            }
-
-            &:after {
-                /* chevron */
-                content: "";
-                width: calc(12 / 16 * 1rem);
-                height: calc(16 / 16 * 1rem);
-                margin: 0 calc(16 / 16 * 1rem);
-                background: url("../svgs/chevron.svg");
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                position: relative;
-                display: block;
-            }
-
-            &.cs-active {
-                opacity: .8;
-                font-weight: 300;
-            }
-
-            &:hover {
-                color: var(--primary100);
-                text-decoration: underline;
-                text-underline-offset: .3em;
-                transition: color .3s, text-decoration .3s;
-            }
         }
 
+        .cs-text {
+            color: var(--textLight);
+        }
+
+        .light-mode {
+            display: block;
+        }
+
+        .dark-mode {
+            display: none;
+        }
         .cs-background {
             width: 100%;
             height: 100%;
@@ -110,13 +74,13 @@
                 width: 100%;
                 background: -moz-linear-gradient(
                     left,
-                    rgba(18, 38, 51, 0.94) 0%,
-                    rgba(18, 38, 51, 0) 100%
+                    rgba(25, 7, 5, 0.5) 0%,
+                    rgba(25, 7, 5, 0) 100%
                 ); /* FF3.6-15 */
                 background: -webkit-linear-gradient(
                     left,
-                    rgba(18, 38, 51, 0.94) 0%,
-                    rgba(18, 38, 51, 0) 100%
+                    rgba(25, 7, 5, 0.5) 0%,
+                    rgba(25, 7, 5, 0) 100%
                 ); /* Chrome10-25,Safari5.1-6 */
                 opacity: 1;
                 top: 0;
@@ -145,7 +109,7 @@
 @media only screen and (min-width: 0rem) {
     #content-page-851 {
         padding: var(--sectionPadding);
-        background: var(--textLight);
+        background-color: var(--textLight);
         /* clips the wave background from causing overflow issues when it goes off screen */
         overflow: hidden;
         position: relative;
@@ -173,104 +137,6 @@
             /* centers content horizontally, set to flex-start to left align */
             align-items: flex-start;
         }
-
-        .nm-columns {
-            display: flex;
-            flex-flow: column;
-            
-            .nm-column {
-                display: block;
-                
-                li {
-                    color: var(--textMid)
-                }
-            }
-        }
-
-        .nm-include {
-            font-family: var(--smallCaps);
-            font-size: 1rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--accent500);
-        }
-
-        .cs-h3 {
-            /* 20px - 25px */
-            font-size: calc(24 / 16 * 1rem);
-            line-height: 1.2em;
-            font-weight: 400;
-            width: 100%;
-            margin: 0;
-            padding-top: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            position: relative;
-        }
-
-        .nm-h4 {
-            /* 20px - 25px */
-            font-size: clamp(1rem, 20px, 1.25rem);
-            line-height: 1.2em;
-            font-weight: 400;
-            width: 100%;
-            margin: 0;
-            padding-top: 1rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-            align-items: center;
-            position: relative;
-        }
-
-        .cs-name {
-            /* 16px - 20px */
-            font-size: inherit;
-            line-height: inherit;
-
-            margin-right: auto;
-            display: block;
-            /* prevents flexbox from squishing it */
-            flex: none;
-
-        }
-
-        .cs-price {
-            /* 20px - 25px */
-            font-size: inherit;
-            line-height: inherit;
-            font-weight: 400;
-            width: auto;
-            margin: 0;
-            padding: calc(8 / 16 * 1rem) calc(12 / 16 * 1rem);
-
-            /* prevents padding and border from affecting height and width */
-            box-sizing: border-box;
-            display: block;
-            /* prevents flexbox from squishing it */
-            flex: none;
-            /* forces it into the 3rd position */
-            order: 3;
-            font-variant-numeric: lining-nums;
-        }
-
-        .nm-price-mod {
-            font-family: var(--smallCaps);
-            font-size: .75rem;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 300;
-            opacity: .8;
-        }
-
-        .nm-h3 {
-            padding-top: 1rem;
-        }
-
-        h1,
         h2,
         h3,
         h4,
@@ -279,19 +145,16 @@
             font-weight: 400;
             text-align: inherit;
             margin: 0 0 calc(16 / 16 * 1rem) 0;
-            color: var(--secondary600);
+            color: var(--textDark);
         }
 
-        h1 {
-            font-weight: 400;
-        }
         h2 {
             font-size: calc(32 / 16 * 1rem);
-            margin-top: calc(16 / 16 * 1rem);
+            margin-top: calc(32 / 16 * 1rem);
         }
 
         h3 {
-            font-size: calc(24 / 16 * 1rem);;
+            font-size: calc(24 / 16 * 1rem);
         }
 
         h4,
@@ -300,13 +163,8 @@
             font-size: calc(20 / 16 * 1rem);
         }
 
-        li ul {
-            margin-top: .75rem;
-            margin-bottom: 0rem;
-        }
-
         .cs-button-solid {
-            margin-top: calc(24 / 16 * 1rem);
+            margin-bottom: calc(32 / 16 * 1rem);
         }
 
         .cs-no-margin {
@@ -314,7 +172,7 @@
         }
 
         .cs-color {
-            color: var(--secondary400);
+            color: var(--primary);
         }
 
         p {
@@ -324,33 +182,46 @@
             width: 100%;
             margin: 0 0 calc(16 / 16 * 1rem) 0;
             color: var(--textDark);
-        }
+            &:last-of-type {
+                margin-bottom: calc(32 / 16 * 1rem);
+            }
 
-        .nm-available {
-            color: var(--textMid);
-            font-family: var(--smallCaps);
-            font-size: .75rem;
-            font-weight: 300;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            margin: -.25rem 0 1rem 0;
+            a {
+                font-size: inherit;
+                line-height: inherit;
+                text-decoration: underline;
+                color: var(--primary);
+            }
         }
 
         ol,
         ul {
-            padding-left: 1rem;
-            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            padding-left: calc(24 / 16 * 1rem);
+            margin: 0 0 calc(32 / 16 * 1rem) 0;
             color: var(--textDark);
             display: flex;
             flex-direction: column;
             gap: calc(16 / 16 * 1rem);
+        }
 
+        ul {
             li {
-                margin: 0 0 -.5rem 0;
-                font-size: 1rem;
+                list-style: none;
+                color: inherit;
+                position: relative;
 
-                &:last-of-type {
-                    margin: 0;
+                &:before {
+                    /* custom list bullet */
+                    content: "";
+                    width: 3px;
+                    height: 3px;
+                    background: currentColor;
+                    opacity: 1;
+                    border-radius: 50%;
+                    position: absolute;
+                    display: block;
+                    top: calc(10 / 16 * 1rem);
+                    left: calc(-12 / 16 * 1rem);
                 }
             }
         }
@@ -374,13 +245,11 @@
                 content: "";
                 width: 100%;
                 /* 177px - 258px */
-                height: 100%;
+                height: clamp(11.0625rem, 19vw, 16.125rem);
                 background: var(--primary);
+                border-radius: 0 calc(100 / 16 * 1rem) 0 calc(100 / 16 * 1rem);
+                opacity: 0.15;
                 display: block;
-                position: absolute;
-                top: 2rem;
-                left: 2rem;
-                z-index: -1;
             }
         }
 
@@ -390,6 +259,8 @@
             height: clamp(18.75rem, 40vw, 32.5rem);
             box-shadow: 0px 3.3478px 50.2169px rgba(0, 0, 0, 0.16);
             /* 125px - 200px */
+            border-radius: clamp(7.8125rem, 15vw, 12.5rem) 0
+                clamp(7.8125rem, 15vw, 12.5rem) 0;
             /* prevents border from affecting height and width */
             box-sizing: border-box;
             /* clips img tag corners */
@@ -424,29 +295,6 @@
         .cs-image-group {
             display: flex;
         }
-
-        .cs-picture {
-            aspect-ratio: 4 / 5;
-        }
-    }
-}
-
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #content-page-851 {
-        .nm-columns {
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 1rem;
-            width: 100%;
-            
-            .nm-column {
-                display: block;
-                width: 50%;
-            }
-        }
     }
 }
 
@@ -454,7 +302,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #content-page-851 {
-            background: var(--medium);
+            background-color: var(--dark);
 
             .cs-title,
             .cs-text,
@@ -462,39 +310,14 @@
             h3,
             h4,
             h5,
-            h6 {
+            h6,
+            li,
+            p {
                 color: var(--textLight);
             }
-            
-            p, li {
-                color: var(--textLight);
-                opacity: .8;
-            }
-            .cs-color {
-                color: var(--secondary200);
-            }
-            
-            .nm-column li {
-                color: var(--textLight);
-                opacity: .8;
-            }
-            .nm-available {
-                color: var(--textLight);
-                opacity: .6;
-            }
-
-            table {
-                a {
-                    color: var(--textLight);
-
-                    &:visited {
-                        color: var(--secondary);
-                    }
-                }
-            }
-
-            .cs-button-solid {
-                color: var(--textLight);
+            .cs-color,
+            a {
+                color: var(--primary100);
             }
 
             p,
@@ -504,8 +327,10 @@
 
             .cs-picture {
                 border-color: var(--dark);
-                background: var(--dark);
+                background-color: var(--dark);
             }
         }
     }
 }
+
+                                

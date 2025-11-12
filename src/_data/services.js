@@ -1,8 +1,8 @@
 // _data/services.js
 module.exports = {
-  stdWeb: { name: 'Voice', price: '2,500' },
-  subWeb: { name: 'Frame', price: '175' },
-  strWeb: { name: 'Storycraft', price: '325', fee: '1,750' },
+  stdWeb: { name: 'Voice', price: '2,499' },
+  subWeb: { name: 'Frame', price: '149', fee: '499' },
+  strWeb: { name: 'Storycraft', price: '324', fee: '1,749' },
   extraPages: { name: 'Extra Pages', price: '100' },
   blog: { name: 'Blog Configuration', price: '250' },
   darkMode: { name: 'Dark Mode', price: '150' },

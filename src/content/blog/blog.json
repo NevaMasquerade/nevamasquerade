@@ -5,5 +5,5 @@
         "permalink": "/blog/{{ url | slug }}/index.html"
     },
     "tags": "post",
-    "preloadCSS": "/assets/css/blog.css"
+    "preloadCSS": "/assets/css/blog-post.css"
 }

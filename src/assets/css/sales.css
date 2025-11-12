@@ -1,0 +1,961 @@
+/*-- -------------------------- -->
+<---      Problem Overview      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-578 {
+    background-color: var(--primary600);
+  }
+  #sbs-578 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+  }
+  #sbs-578 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 48rem;
+    /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+    padding: var(--sectionPadding);
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    order: 1;
+  }
+  #sbs-578 .cs-topper {
+    color: var(--secondary);
+  }
+  #sbs-578 .cs-title,
+  #sbs-578 .cs-text {
+    color: var(--textLight);
+  }
+  #sbs-578 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #sbs-578 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs-578 .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    order: 2;
+  }
+  #sbs-578 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-578 {
+    padding: var(--sectionPadding);
+  }
+  #sbs-578 .cs-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    /* 60px - 128px */
+    gap: clamp(3.75rem, 10vw, 8rem);
+  }
+  #sbs-578 .cs-content {
+    width: 53%;
+    /* reset the padding, add the section padding back to the section container */
+    padding: 0;
+    order: 2;
+  }
+  #sbs-578 .cs-picture {
+    width: 100%;
+    max-width: 30.875rem;
+    /* 518px - 700px */
+    height: auto;
+    /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+    aspect-ratio: 2/3;
+    margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
+    position: relative;
+    order: 1;
+  }
+  #sbs-578 .cs-picture:before {
+    /* yellow box */
+    content: "";
+    width: 50%;
+    height: 60%;
+    background: var(--secondary400);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+    bottom: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+    left: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #sbs-578 {
+    background-color: var(--medium);
+  }
+  body.dark-mode #sbs-578 .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode #sbs-578 .cs-title,
+  body.dark-mode #sbs-578 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #sbs-578 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #sbs-578 .cs-picture:before {
+    background-color: var(--accent);
+  }
+}
+/*-- -------------------------- -->
+<---      Alignment Filter      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #content-1638 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #content-1638 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 100px */
+    gap: clamp(3rem, 9vw, 6.25rem);
+  }
+  #content-1638 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #content-1638 .cs-flex {
+    max-width: 38rem;
+  }
+  #content-1638 .cs-title {
+    padding-bottom: 1rem;
+  }
+  #content-1638 #list-1405 {
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #content-1638 #list-1405 .cs-li {
+    font-size: var(--bodyFontSize);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    color: var(--textDark);
+    display: flex;
+    justify-content: flex-start;
+    /* push icon top the top so if the list item goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #content-1638 #list-1405 .cs-icon {
+    width: 1rem;
+    height: auto;
+    /* adds extra space between the icon and top of parent so it's more centered */
+    margin-top: 4px;
+    display: block;
+  }
+  #content-1638 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+  }
+  #content-1638 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #content-1638 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #content-1638:before {
+    height: 63%;
+  }
+  #content-1638 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 2.5rem;
+  }
+  #content-1638 .cs-flex {
+    width: 50%;
+    text-align: left;
+  }
+  #content-1638 .cs-title {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #content-1638 {
+    background-color: var(--dark);
+  }
+  body.dark-mode #content-1638 .cs-title, body.dark-mode #content-1638 .cs-text, body.dark-mode #content-1638 .cs-h3, body.dark-mode #content-1638 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #content-1638 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #content-1638 #list-1405 .cs-li {
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  body.dark-mode #content-1638 #list-1405 .cs-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+}
+/*-- -------------------------- -->
+<---   Transformation & Story   -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbs-600,
+  #RPsbsr-600 {
+    position: relative;
+    background-color: var(--accent500);
+  }
+  #RPsbs-600 .cs-container,
+  #RPsbsr-600 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #RPsbs-600 .cs-content,
+  #RPsbsr-600 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 50rem;
+    /* moved section padding to cs-content so the cs-background can be full width */
+    padding: var(--sectionPadding);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #RPsbs-600 .cs-topper,
+  #RPsbsr-600 .cs-topper {
+    color: var(--secondary);
+  }
+  #RPsbs-600 .cs-title,
+  #RPsbs-600 .cs-text,
+  #RPsbsr-600 .cs-title,
+  #RPsbsr-600 .cs-text {
+    color: var(--textLight);
+  }
+  #RPsbs-600 .cs-text,
+  #RPsbsr-600 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #RPsbs-600 .cs-text:last-of-type,
+  #RPsbsr-600 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #RPsbs-600 #list-824,
+  #RPsbsr-600 #list-824 {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+  #RPsbs-600 #list-824 .cs-li,
+  #RPsbsr-600 #list-824 .cs-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #RPsbs-600 #list-824 .cs-h3,
+  #RPsbsr-600 #list-824 .cs-h3 {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5rem 0;
+    color: var(--textLight);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #RPsbs-600 #list-824 .cs-icon,
+  #RPsbsr-600 #list-824 .cs-icon {
+    width: 1.0625rem;
+    height: auto;
+    margin-top: 0.25rem;
+  }
+  #RPsbs-600 #list-824 .cs-item-text,
+  #RPsbsr-600 #list-824 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    color: var(--textLight);
+    margin: 0;
+  }
+  #RPsbs-600 .cs-background,
+  #RPsbsr-600 .cs-background {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    z-index: 1;
+  }
+  #RPsbs-600 .cs-background img,
+  #RPsbsr-600 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #RPsbs-600,
+  #RPsbsr-600 {
+    /* 90px - 150px */
+    /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
+    padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
+  }
+  #RPsbs-600 .cs-container,
+  #RPsbsr-600 .cs-container {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  #RPsbs-600 .cs-background,
+  #RPsbsr-600 .cs-background {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+  }
+  #RPsbs-600 .cs-content,
+  #RPsbsr-600 .cs-content {
+    width: 45%;
+    padding: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #RPsbs-600,
+  body.dark-mode #RPsbsr-600 {
+    background-color: var(--primary);
+  }
+  body.dark-mode #RPsbs-600 .cs-topper,
+  body.dark-mode #RPsbsr-600 .cs-topper {
+    color: var(--secondary);
+  }
+  body.dark-mode #RPsbs-600 .cs-title,
+  body.dark-mode #RPsbs-600 .cs-text,
+  body.dark-mode #RPsbsr-600 .cs-title,
+  body.dark-mode #RPsbsr-600 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #RPsbs-600 .cs-text,
+  body.dark-mode #RPsbsr-600 .cs-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #RPsbs-600 #list-824 .cs-h3,
+  body.dark-mode #RPsbsr-600 #list-824 .cs-h3 {
+    color: var(--textLight);
+  }
+  body.dark-mode #RPsbs-600 #list-824 .cs-item-text,
+  body.dark-mode #RPsbsr-600 #list-824 .cs-item-text {
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  body.dark-mode #RPsbs-600 #list-824 .cs-icon,
+  body.dark-mode #RPsbsr-600 #list-824 .cs-icon {
+    filter: brightness(125%);
+  }
+}
+/*-- -------------------------- -->
+<---        Founder Story       -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-600 {
+    background-color: var(--primary);
+  }
+}
+/* Mobile - 768px */
+@media only screen and (min-width: 64rem) {
+  #RPsbsr-600 .cs-container {
+    justify-content: flex-start;
+  }
+  #RPsbsr-600 .cs-background {
+    left: 50%;
+    right: auto;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #RPsbsr-600 {
+    background-color: var(--medium);
+  }
+}
+/*-- -------------------------- -->
+<---        Offer Snapshot      -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #why-choose-1631 {
+    padding: var(--sectionPadding);
+  }
+  #why-choose-1631 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
+  }
+  #why-choose-1631 .cs-flex {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 7vw, 4rem);
+  }
+  #why-choose-1631 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 38rem;
+    /* prevents padding from affecting width and height */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #why-choose-1631 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #why-choose-1631 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #why-choose-1631 #cs-content-831 {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+    border-bottom: solid 1px var(--accent500);
+  }
+  #why-choose-1631 #cs-content-831 .cs-title {
+    font-size: 2rem;
+  }
+  #why-choose-1631 .cs-picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+    /* clips img tag corners */
+    /* sends it to the 2nd posiiton in the bottom */
+    order: 2;
+  }
+  #why-choose-1631 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #why-choose-1631 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: stretch;
+    /* 16px - 20px */
+    column-gap: clamp(1rem, 2.5vw, 2rem);
+    row-gap: 1.75rem;
+  }
+  #why-choose-1631 .cs-item {
+    list-style: none;
+    display: flex;
+    grid-column: span 12;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #why-choose-1631 .cs-h4 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 3vw, 1.5625rem);
+    line-height: 1.2em;
+    margin: 0;
+    color: var(--textDark);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+    transition: color 0.3s;
+  }
+  #why-choose-1631 .cs-wrapper {
+    width: 3rem;
+    height: 3rem;
+    aspect-ratio: 1/1;
+    background: var(--accent500);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #why-choose-1631 .cs-h4-icon {
+    width: 1.5rem;
+    height: auto;
+    margin-top: 2px;
+    display: block;
+  }
+  #why-choose-1631 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--textDark);
+    transition: color 0.3s, opacity 0.3s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #why-choose-1631 .cs-container {
+    max-width: 80rem;
+  }
+  #why-choose-1631 .cs-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #why-choose-1631 .cs-content {
+    width: 50%;
+    /* 32px - 56px top and bottom */
+    padding: clamp(2rem, 4vw, 3.5rem) 0;
+    align-self: center;
+    flex: none;
+  }
+  #why-choose-1631 .cs-picture {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 5/4;
+    /* sends it to the left in the 1st position */
+    order: -1;
+    position: relative;
+  }
+  #why-choose-1631 .cs-item {
+    grid-column: span 4;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #why-choose-1631 .cs-title,
+  body.dark-mode #why-choose-1631 .cs-text,
+  body.dark-mode #why-choose-1631 .cs-h3,
+  body.dark-mode #why-choose-1631 .cs-h4,
+  body.dark-mode #why-choose-1631 .cs-item-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #why-choose-1631 .cs-text, body.dark-mode #why-choose-1631 .cs-item-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #why-choose-1631 .cs-wrapper {
+    background: var(--primary);
+  }
+  body.dark-mode #why-choose-1631 .cs-picture:before {
+    background-color: var(--accent);
+  }
+  body.dark-mode #why-choose-1631 #cs-content-831 {
+    border-bottom-color: var(--primary);
+  }
+  body.dark-mode #why-choose-1631 #cs-content-831 .cs-title,
+  body.dark-mode #why-choose-1631 #cs-content-831 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #why-choose-1631 #cs-content-831 .cs-text {
+    opacity: 0.8;
+  }
+}
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-585 {
+    padding: var(--sectionPadding);
+    background: var(--secondary);
+  }
+  #steps-585 .cs-topper {
+    color: var(--accent500);
+  }
+  #steps-585 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-585 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #steps-585 .cs-content .cs-text:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  #steps-585 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #steps-585 .cs-item {
+    list-style: none;
+    min-height: 15.5rem;
+    /* 16px - 24px left & right */
+    padding: 1rem clamp(1rem, 1.8vw, 1.5rem);
+    border-bottom: 1px solid var(--accent500);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #steps-585 .cs-item:last-of-type {
+    border: none;
+  }
+  #steps-585 .cs-h3 {
+    font-family: var(--smallCaps);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0 0 0.75rem 0;
+    color: var(--textDark);
+    display: block;
+  }
+  #steps-585 .cs-item-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.4em;
+    text-align: left;
+    margin: 0 0 1rem 0;
+    color: var(--textDark);
+  }
+  #steps-585 .cs-number {
+    font-family: var(--smallCaps);
+    font-size: 3.8125rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    /* auto pushes against other elements in a flexbox, this one forces it to be at the bottom of the flexbox */
+    margin: 0 0 auto 0;
+    color: var(--accent500);
+    display: block;
+    font-variant-numeric: lining-nums;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-585 .cs-container {
+    max-width: 80rem;
+  }
+  #steps-585 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #steps-585 .cs-item {
+    width: 48%;
+    justify-content: flex-start;
+  }
+  #steps-585 .cs-item:nth-of-type(3) {
+    border-bottom: none;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #steps-585 .cs-card-group {
+    flex-wrap: nowrap;
+  }
+  #steps-585 .cs-item {
+    border-bottom: none;
+    border-right: 1px solid var(--accent500);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #steps-585 {
+    background: var(--medium);
+  }
+  body.dark-mode #steps-585 .cs-topper {
+    color: var(--secondary200);
+  }
+  body.dark-mode #steps-585 .cs-title {
+    color: var(--textLight);
+  }
+  body.dark-mode #steps-585 .cs-item {
+    border-color: var(--textLight);
+  }
+  body.dark-mode #steps-585 .cs-item-text {
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  body.dark-mode #steps-585 .cs-h3 {
+    color: var(--textLight);
+  }
+  body.dark-mode #steps-585 .cs-number {
+    color: var(--secondary300);
+  }
+}
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-351 {
+    padding: var(--sectionPadding);
+    background-color: var(--primary);
+  }
+  #faq-351 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    row-gap: clamp(3rem, 6vw, 4rem);
+  }
+  #faq-351 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #faq-351 .cs-content .cs-text {
+    margin-top: 2rem;
+  }
+  #faq-351 .cs-content .cs-text:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  #faq-351 .cs-topper {
+    color: var(--secondary200);
+  }
+  #faq-351 .cs-title,
+  #faq-351 .cs-text {
+    color: var(--textLight);
+  }
+  #faq-351 .cs-title {
+    margin: 0;
+  }
+  #faq-351 .nm-button-secondary {
+    color: var(--textLight);
+    margin-bottom: 0;
+  }
+  #faq-351 .cs-faq-group {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #faq-351 .cs-faq-group:nth-of-type(2) {
+    margin-top: -3rem;
+  }
+  #faq-351 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid var(--primary300);
+    transition: border-bottom 0.3s;
+  }
+  #faq-351 .cs-faq-item.active {
+    border-color: var(--secondary200);
+  }
+  #faq-351 .cs-faq-item.active .cs-button {
+    color: var(--secondary);
+  }
+  #faq-351 .cs-faq-item.active .cs-button:before {
+    background-color: var(--secondary200);
+    transform: rotate(315deg);
+  }
+  #faq-351 .cs-faq-item.active .cs-button:after {
+    background-color: var(--secondary200);
+    transform: rotate(-315deg);
+  }
+  #faq-351 .cs-faq-item.active .cs-item-p {
+    height: auto;
+    /* 20px - 24px bottom */
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 1.3vw, 1.5rem);
+    opacity: 1;
+  }
+  #faq-351 .cs-faq-item.active .cs-item-p li {
+    color: var(--textLight);
+    font-size: 1rem;
+  }
+  #faq-351 .cs-button {
+    font-size: 1.25rem;
+    font-family: var(--headerFont);
+    line-height: 1.2em;
+    text-align: left;
+    /* 16px - 20px */
+    padding: clamp(1rem, 1.3vw, 1.25rem);
+    border: none;
+    background: transparent;
+    color: var(--textLight);
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #faq-351 .cs-button:hover {
+    cursor: pointer;
+  }
+  #faq-351 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--primary300);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.5rem;
+    transform: rotate(45deg);
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+    transition: transform 0.5s;
+  }
+  #faq-351 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--primary300);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.3125rem;
+    transform: rotate(-45deg);
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+    transition: transform 0.5s;
+  }
+  #faq-351 .cs-button-text {
+    width: 80%;
+    display: block;
+  }
+  #faq-351 .cs-item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 90%;
+    height: 0;
+    margin: 0;
+    /* 16px - 24px */
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    opacity: 0;
+    color: var(--textLight);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #faq-351 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    /* push everything to the top */
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #faq-351 .cs-content {
+    width: 100%;
+  }
+  #faq-351 .cs-faq-group {
+    width: 48%;
+  }
+  #faq-351 .cs-faq-group:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #faq-351 {
+    background-color: var(--primary);
+  }
+}
+
+/*# sourceMappingURL=sales.css.map */

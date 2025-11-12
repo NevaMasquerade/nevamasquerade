@@ -1,15 +1,118 @@
 /* STYLES FOR ABOVE THE FOLD */
 /*-- -------------------------- -->
-<---            Hero            -->
+<---       Hero (Immpact)       -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #hero-2149 {
+    /* 300px - 400px on top - leaving extra space for the navigation */
+    /* 60px - 100px on bottom */
+    margin-top: 60px;
+    padding: clamp(18.75rem, 54vw, 25rem) 1rem clamp(3.75rem, 7.5vw, 6.25rem) 1rem;
+    /* prevents the topper line from causing an overflow */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #hero-2149 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #hero-2149 .cs-content {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #hero-2149 .cs-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 5vw, 3.8125rem);
+    max-width: 30ch;
+  }
+  #hero-2149 .cs-topper {
+    color: var(--secondary);
+  }
+  #hero-2149 .cs-title,
+  #hero-2149 .cs-text {
+    color: var(--textLight);
+  }
+  #hero-2149 .cs-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    max-width: 55ch;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  #hero-2149 .nm-button-secondary {
+    color: var(--textLight);
+  }
+  #hero-2149 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+  }
+  #hero-2149 .cs-background:before {
+    /* Overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #hero-2149 .cs-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #hero-2149 {
+    margin-top: 100px;
+  }
+  #hero-2149 .cs-background:before {
+    /* Overlay */
+    content: "";
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+    /* prevents the cursor from interacting with it */
+    pointer-events: none;
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/*-- -------------------------- -->
+<---        Hero (Clarity)      -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #hero-288 {
     /* 116px - 164px top */
     /* 60px - 100px  bottom */
-    padding: clamp(7.25rem, 16.82vw, 10.25rem) 1rem clamp(3.75rem, 7.82vw, 6.25rem);
+    padding-bottom: clamp(3.75rem, 7.82vw, 6.25rem);
     position: relative;
-    background: var(--secondary);
   }
   #hero-288 .cs-container {
     width: 100%;
@@ -27,6 +130,10 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    width: 100%;
+    padding: 8rem 1rem 7rem 1rem;
+    background-color: var(--secondary);
+    z-index: 0;
   }
   #hero-288 .cs-topper {
     text-wrap: balance;
@@ -36,50 +143,52 @@
     font-size: clamp(2.25rem, 5vw, 3rem);
     line-height: 1.1em;
     text-align: center;
-    max-width: 43.75rem;
+    max-width: 48rem;
     margin: 0 0 1rem 0;
     color: var(--accent600);
     position: relative;
   }
   #hero-288 .cs-text {
     /* 16px - 20px */
-    font-size: 1rem;
+    font-size: clamp(1.125rem, 1.5vw, 1.25rem);
     line-height: 1.5em;
     text-align: center;
     width: 100%;
-    max-width: 33.1875rem;
+    max-width: 48rem;
     margin: 0 auto;
     /* 28px - 40px */
     margin-bottom: 1rem;
     color: var(--textDark);
   }
-  #hero-288 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #hero-288 .nm-subhead {
-    color: var(--secondary500);
-    font-size: clamp(1.125rem, 3.5vh, 1.5rem);
-    margin: 0.5rem 0 1rem 0;
-    text-align: center;
-    max-width: 43.75rem;
-  }
-  #hero-288 .nm-subhead-md {
-    font-size: clamp(1.25rem, 4vh, 1.75rem);
-    font-family: var(--headerFont);
-    text-align: center;
-    margin: 1rem 0 2rem 0;
+  #hero-288 .nm-button-secondary {
+    color: var(--accent500);
   }
   #hero-288 .cs-picture {
     width: 100%;
-    max-width: 36.5625rem;
+    max-width: 34.375rem;
     /* 380px - 453px */
-    aspect-ratio: 398/290;
+    aspect-ratio: 16/9;
     height: auto;
     /* clips the img tag corners */
     overflow: hidden;
     display: block;
     position: relative;
+    margin-top: -6rem;
     z-index: 2;
+  }
+  #hero-288 .cs-picture:before {
+    /* yellow box */
+    content: "";
+    width: 150%;
+    height: 105%;
+    aspect-ratio: 16/9;
+    background: var(--secondary300);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    /* 16px - 28px, wrapped in calc function to multiple by negative 1 and get a negative clamp value */
+    top: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
+    left: calc(clamp(1rem, 2.4vw, 1.75rem) * -1);
   }
   #hero-288 .cs-picture img {
     position: absolute;
@@ -89,17 +198,16 @@
     width: 100%;
     /* makes image act as a background image */
     object-fit: cover;
+    z-index: 3;
   }
   #hero-288 .cs-waves {
     width: 100%;
-    height: 30vh;
-    background: var(--primary);
+    height: 100%;
     display: block;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
-    right: 0;
-    z-index: 1;
+    z-index: -1;
   }
   #hero-288 .cs-waves img {
     position: absolute;
@@ -107,65 +215,55 @@
     left: 0;
     height: 100%;
     width: 100%;
-    /* makes image act as a background image */
     object-fit: cover;
-  }
-  #hero-288 #button-box-838 {
-    width: 100%;
-    max-width: 39.375rem;
-    margin-bottom: 4rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1.5rem;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
   #hero-288 {
     text-align: left;
+    padding: 12.5rem 1rem 5rem;
+    background-color: var(--secondary);
   }
   #hero-288 .cs-container {
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 6.25rem;
+    min-height: 34.375rem;
+    column-gap: 1rem;
   }
   #hero-288 .cs-content {
-    width: 40%;
+    width: 50%;
     /* prevents flex-box from squishing it */
     flex: none;
     align-items: flex-start;
     text-align: left;
   }
-  #hero-288 .cs-content #button-box-838 {
-    justify-content: flex-start;
-    flex-flow: nowrap;
-  }
   #hero-288 .cs-title,
   #hero-288 .cs-text {
     text-align: left;
   }
-  #hero-288 .nm-subhead {
-    text-align: left;
-  }
   #hero-288 .cs-picture {
-    max-width: 39.375rem;
-    aspect-ratio: 630/814;
-    /* 623px - 814px */
+    width: 100%;
     height: auto;
+    aspect-ratio: 1/1;
+    /* 623px - 814px */
   }
   #hero-288 .cs-waves {
     height: 100%;
     width: calc(40vw + 9rem);
     left: 50%;
     margin-left: 12.5rem;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-288 {
-    background: var(--medium);
+  body.dark-mode #hero-288 .cs-content {
+    background-color: var(--primary);
   }
   body.dark-mode #hero-288 .cs-title {
     color: var(--textLight);
@@ -174,15 +272,16 @@
     color: var(--textLight);
     opacity: 0.8;
   }
-  body.dark-mode #hero-288 .nm-subhead, body.dark-mode #hero-288 .nm-subhead-md {
+  body.dark-mode #hero-288 .nm-button-secondary {
     color: var(--textLight);
-  }
-  body.dark-mode #hero-288 .cs-waves {
-    opacity: 0.5;
-    filter: brightness(160%);
   }
   body.dark-mode #hero-288 #button-box-838 .cs-button-transparent {
     color: var(--textLight);
+  }
+}
+@media only screen and (min-width: 64rem) {
+  body.dark-mode #hero-288 {
+    background-color: var(--primary);
   }
 }
 

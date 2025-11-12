@@ -8,26 +8,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="{{ description }}" />
-        <meta name="keywords" content="" />
         <meta name="theme-color" content="#294759">
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}" />
 
         <!--Social Media Display-->
+        {%- set socialImage = ogImage if ogImage else '/assets/images/og/index-og.png' -%}
+
         <meta property="og:title" content="{{ title }}" />
         <meta property="og:description" content="{{ description }}" />
         <meta property="og:url" content="{{ client.domain }}{{ page.url }}" />
-        <meta property="og:image" content="{% if social_image %}{{ client.domain }}{{ social_image }}{% else %}{{ client.domain }}/assets/images/social-share-image.webp{% endif %}" />
-        <meta
-            property="og:image:secure_url"
-            content="{% if social_image %}{{ client.domain }}{{ social_image }}{% else %}{{ client.domain }}/assets/images/social-share-image.webp{% endif %}"
-        />
+        <meta property="og:image" content="{{ client.domain }}{{ socialImage }}" />
+        <meta property="og:image:secure_url" content="{{ client.domain }}{{ socialImage }}" />
         <meta property="fb:app_id" content="9518164928251833" />
         <meta property="og:site_name" content="Neva Masquerade">
         <meta property="og:locale" content="en_US">
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="{{ title }}">
         <meta name="twitter:description" content="{{ description }}">
-        <meta name="twitter:image" content="{% if social_image %}{{ client.domain }}{{ social_image }}{% else %}{{ client.domain }}/assets/images/social-share-image.webp{% endif %}">
+        <meta name="twitter:image" content="{{ client.domain }}{{ socialImage }}">
 
 
         <link rel="preconnect" href="https://app.termly.io" crossorigin>
@@ -81,10 +79,12 @@
 
         <!-- Sitewide Stylesheets and Scripts -->
         <link rel="stylesheet" href="/assets/css/root.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <link rel="stylesheet" href="/assets/css/critical.css" media="print" onload="this.media='all'; this.onload=null;" />
         <link rel="stylesheet" href="/assets/css/dark.css" media="print" onload="this.media='all'; this.onload=null;" />
         <link rel="stylesheet" href="/assets/css/global-styles.css" media="print" onload="this.media='all'; this.onload=null;" />
         <noscript>
             <link rel="stylesheet" href="/assets/css/root.css" />
+            <link rel="stylesheet" href="/assets/css/critical.css" />
             <link rel="stylesheet" href="/assets/css/dark.css" />
             <link rel="stylesheet" href="/assets/css/global-styles.css" />
         </noscript>

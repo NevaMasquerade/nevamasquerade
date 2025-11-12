@@ -1,171 +1,151 @@
 /* PAGE-SPECIFIC STYLES FOR THE CONTACT PAGE */
 /*-- -------------------------- -->
-<---          Banner            -->
+<---          Options           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #banner-1106 {
-    padding: var(--sectionPadding);
-    padding-top: 11.25rem;
-    padding-bottom: 7.5rem;
-    /* clips the line from causing overflow issues for going off screen */
-    overflow: hidden;
+  #services-2175 {
+    margin: auto;
     position: relative;
-    z-index: 1;
-    background: var(--medium);
+    z-index: 10;
+    background-color: var(--primary600);
   }
-  #banner-1106 .cs-container {
-    text-align: center;
+  #services-2175:before {
+    /* background color */
+    content: "";
+    width: 100vw;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #services-2175 .cs-container {
     width: 100%;
-    max-width: 80rem;
     margin: auto;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-2175 .cs-card-group {
+    width: 100%;
+    max-width: 82rem;
+    margin: 0;
+    /* 60px - 100px top & bottom */
+    /* 16px - 100px left and right */
+    padding: clamp(3.75rem, 7vw, 6.25rem) 1rem;
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 2rem;
+    position: relative;
+    z-index: 15;
+  }
+  #services-2175 .cs-item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    box-sizing: border-box;
+    grid-column: span 12;
+    transition: background-color 0.3s;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    gap: 0.75rem;
   }
-  #banner-1106 .cs-int-title {
-    /* 39px - 61px */
-    font-family: var(--headerFont);
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+  #services-2175 .cs-icon {
+    width: 2rem;
+    height: auto;
+  }
+  #services-2175 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2vw, 1.5625rem);
     font-weight: 400;
-    line-height: 1.2em;
     text-align: inherit;
+    line-height: 1.2em;
     margin: 0;
     color: var(--textLight);
-    position: relative;
-  }
-  #banner-1106 .cs-breadcrumbs {
     display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s;
   }
-  #banner-1106 .cs-link {
-    font-family: var(--smallCaps);
-    font-size: 0.875rem;
-    line-height: 1.2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+  #services-2175 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-weight: 400;
+    text-align: inherit;
+    line-height: 1.5em;
+    margin: 1rem 0 0.5rem 0;
     color: var(--textLight);
-    position: relative;
-    display: flex;
-    justify-content: center;
+    opacity: 0.8;
+    transition: color 0.3s, opacity 0.3s;
+  }
+  #services-2175 .nm-button-secondary {
+    color: var(--textLight);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-2175 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    gap: 3rem;
   }
-  #banner-1106 .cs-link:last-of-type {
-    /* remove the chevron on the last list item */
+  #services-2175 .cs-title {
+    margin: 0;
   }
-  #banner-1106 .cs-link:last-of-type::after {
-    display: none;
+  #services-2175 .cs-card-group {
+    /* 32px - 60px */
+    column-gap: clamp(2rem, 6vw, 3.75rem);
   }
-  #banner-1106 .cs-link:after {
-    /* chevron */
-    content: "";
-    width: 0.75rem;
-    height: 1rem;
-    margin: 0 1rem;
-    background: url("../svgs/chevron.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: block;
+  #services-2175 .cs-flex-group {
+    width: 50%;
+    /* prevents flexbox from squishing it */
+    flex: none;
   }
-  #banner-1106 .cs-link.cs-active {
-    opacity: 0.6;
-    font-weight: 300;
+  #services-2175 .cs-item {
+    grid-column: span 6;
   }
-  #banner-1106 .cs-link:hover {
-    color: var(--primary100);
-    text-decoration: underline;
-    text-underline-offset: 0.3em;
-    transition: color 0.3s, text-decoration 0.3s;
-  }
-  #banner-1106 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #banner-1106 .cs-background:before {
-    /* background color overlay */
-    content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
-    width: 100%;
-    background: -moz-linear-gradient(left, rgba(18, 38, 51, 0.94) 0%, rgba(18, 38, 51, 0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(18, 38, 51, 0.94) 0%, rgba(18, 38, 51, 0) 100%); /* Chrome10-25,Safari5.1-6 */
-    opacity: 1;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #banner-1106 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-2175 {
+    background-color: var(--dark);
   }
 }
 /*-- -------------------------- -->
-<---          Contact           -->
+<---       Contact  & FAQ       -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #contact-590 {
-    background-color: var(--secondary);
+  #contact-1333 {
+    padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
-  #contact-590 .cs-container {
+  #contact-1333 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
-    /* changes to 20px at desktop */
-    gap: 3rem;
-  }
-  #contact-590 .cs-picture {
-    display: block;
+    /* 48px - 80px */
+    gap: clamp(3rem, 6vw, 5rem);
     position: relative;
-    width: 100%;
-    height: 18.75rem;
   }
-  #contact-590 .cs-picture img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    aspect-ratio: 2/1;
-    object-fit: cover;
-  }
-  #contact-590 .cs-right {
-    /* moved section padding to the content so the picture can be full width */
-    padding: var(--sectionPadding);
-    padding-top: 0;
-    /* prevents padding and border from affecting height and width */
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3rem;
-  }
-  #contact-590 .cs-content {
-    /* set text aling to left if content needs to be left aligned */
+  #contact-1333 .cs-content {
+    /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
     display: flex;
@@ -173,139 +153,246 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #contact-590 .cs-topper {
-    color: var(--accent500);
+  #contact-1333 .cs-title {
+    max-width: 23ch;
+    margin: 0 0 1.75rem 0;
   }
-  #contact-590 .cs-text {
-    margin-bottom: -2rem;
-  }
-  #contact-590 .cs-form {
+  #contact-1333 .cs-form {
+    width: 100%;
+    max-width: 40.625rem;
+    /* 32px - 48px top and bottom */
+    /* 16px - 60px left and right */
+    padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
+    /* prevents flexbox from affecting height and width */
+    box-sizing: border-box;
+    background-color: var(--primary);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
     gap: 0.75rem;
+    order: 2;
   }
-  #contact-590 .cs-label {
+  #contact-1333 .cs-form .cs-title {
+    /* 16px - 28px */
+    margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+    color: var(--textLight);
+  }
+  #contact-1333 .cs-form .cs-topper {
+    color: var(--secondary);
+  }
+  #contact-1333 .cs-form .cs-text {
+    color: var(--textLight);
+  }
+  #contact-1333 .cs-label {
     /* 14px - 16px */
     font-family: var(--smallCaps);
-    text-transform: uppercase;
-    font-weight: 300;
     font-size: clamp(0.875rem, 1.5vw, 1rem);
-    letter-spacing: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     width: 100%;
-    color: var(--textDark);
+    color: var(--textLight);
+    margin-top: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 0.25rem;
-    margin-top: 1.5rem;
   }
-  #contact-590 .cs-input {
-    font-family: var(--bodyFont);
+  #contact-1333 .cs-input {
     font-size: 1rem;
     width: 100%;
     height: 3.5rem;
     padding: 0;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
     color: var(--textDark);
     background-color: var(--textLight);
     border: none;
     /* prevents padding from adding to height and width */
     box-sizing: border-box;
-    transition: border-color 0.3s;
   }
-  #contact-590 .cs-input:hover {
-    border-color: var(--primary300);
-  }
-  #contact-590 .cs-input:focus {
-    outline: 1px solid var(--accent200);
-  }
-  #contact-590 .cs-input::placeholder {
+  #contact-1333 .cs-input::placeholder {
     color: var(--textMid);
-    opacity: 0.8;
-  }
-  #contact-590 .cs-textarea {
-    /* 120px - 192px */
-    min-height: clamp(7.5rem, 28vw, 12rem);
-    padding-top: 1.5rem;
-    margin-bottom: 0.75rem;
+    opacity: 0.6;
     font-family: var(--bodyFont);
   }
-  #contact-590 .cs-button-solid {
-    background-color: var(--primary);
-    color: var(--textLight);
+  #contact-1333 .cs-textarea {
+    min-height: 7.5rem;
+    padding-top: 1.5rem;
+    /* 16px - 28px */
+    margin: 0 0 clamp(1rem, 3vw, 1.75rem) 0;
+    font-family: var(--bodyFont);
   }
-  #contact-590 .cs-submit {
-    text-transform: uppercase;
-    line-height: 3.5rem;
-    min-width: 13.375rem;
+  #contact-1333 .cs-submit {
     border: none;
-    border-radius: 0;
+  }
+  #contact-1333 .cs-submit:hover {
+    cursor: pointer;
+  }
+  #contact-1333 .cs-faq-group {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #contact-1333 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary300);
+    transition: border-bottom 0.3s;
+  }
+  #contact-1333 .cs-faq-item.active {
+    border-color: var(--accent400);
+  }
+  #contact-1333 .cs-faq-item.active .cs-button {
+    color: var(--textDark);
+  }
+  #contact-1333 .cs-faq-item.active .cs-button:before {
+    background-color: var(--accent400);
+    transform: rotate(315deg);
+  }
+  #contact-1333 .cs-faq-item.active .cs-button:after {
+    background-color: var(--accent400);
+    transform: rotate(-315deg);
+  }
+  #contact-1333 .cs-faq-item.active .cs-item-p {
+    height: auto;
+    /* 20px - 24px bottom */
+    /* 16px - 24px left & right */
+    padding: 0 clamp(1rem, 2vw, 1.5rem) clamp(1.25rem, 2vw, 1.5rem) 0;
+    opacity: 1;
+  }
+  #contact-1333 .cs-button {
+    font-family: var(--headerFont);
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: left;
+    /* 16px - 24px */
+    padding: clamp(1rem, 2vw, 1.5rem);
+    padding-left: 0;
+    border: none;
+    background: transparent;
+    color: var(--textDark);
+    display: block;
+    width: 100%;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  #contact-1333 .cs-button:hover {
+    cursor: pointer;
+  }
+  #contact-1333 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--secondary300);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.5rem;
+    transform: rotate(45deg);
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+    transition: transform 0.5s;
+  }
+  #contact-1333 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--secondary300);
+    opacity: 1;
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 45%;
+    right: 1.3125rem;
+    transform: rotate(-45deg);
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+    transition: transform 0.5s;
+  }
+  #contact-1333 .cs-button-text {
+    width: 80%;
+    display: block;
+  }
+  #contact-1333 .cs-item-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    width: 90%;
+    height: 0;
+    margin: 0;
+    /* 16px - 24px */
+    padding: 0 clamp(1rem, 2vw, 1.5rem);
+    opacity: 0;
+    color: var(--bodyTextColor);
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    transition: opacity 0.3s, padding-bottom 0.3s;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #contact-590 {
-    padding: var(--sectionPadding);
-    position: relative;
-  }
-  #contact-590 .cs-container {
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #contact-1333 .cs-container {
+    max-width: 80rem;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
-  #contact-590 .cs-picture {
-    position: absolute;
-    height: 100%;
-    width: 44%;
-    left: 50%;
-    /* 84px - 120px */
-    margin-left: clamp(5.25rem, 12vw, 7.5rem);
+  #contact-1333 .cs-form {
+    width: 45vw;
+    order: -1;
   }
-  #contact-590 .cs-picture img {
-    aspect-ratio: 1/1;
-  }
-  #contact-590 .cs-right {
-    width: 56%;
-    max-width: 39.375rem;
-    padding: 0;
-  }
-  #contact-590 .cs-label {
-    width: 48%;
-  }
-  #contact-590 .cs-message {
-    width: 100%;
+  #contact-1333 .cs-submit {
+    width: auto;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #contact-590 {
+  body.dark-mode #contact-1333 {
     background-color: var(--medium);
   }
-  body.dark-mode #contact-590 .cs-topper {
-    color: var(--secondary);
-  }
-  body.dark-mode #contact-590 .cs-title,
-  body.dark-mode #contact-590 .cs-text,
-  body.dark-mode #contact-590 .cs-label,
-  body.dark-mode #contact-590 .cs-link {
+  body.dark-mode #contact-1333 .cs-title,
+  body.dark-mode #contact-1333 .cs-item-p,
+  body.dark-mode #contact-1333 .cs-button,
+  body.dark-mode #contact-1333 label {
     color: var(--textLight);
   }
-  body.dark-mode #contact-590 .cs-text {
+  body.dark-mode #contact-1333 .cs-form {
+    background-color: var(--dark);
+  }
+  body.dark-mode #contact-1333 .cs-button:before, body.dark-mode #contact-1333 .cs-button:after {
+    background-color: var(--secondary300);
+  }
+  body.dark-mode #contact-1333 .cs-item-p {
     opacity: 0.8;
-  }
-  body.dark-mode #contact-590 .cs-input {
-    background-color: rgba(255, 255, 255, 0.1);
     color: var(--textLight);
-    border-color: rgba(255, 255, 255, 0.1);
   }
-  body.dark-mode #contact-590 .cs-input:hover {
-    border-color: var(--secondary400);
+  body.dark-mode #contact-1333 .cs-graphic {
+    opacity: 0.4;
   }
-  body.dark-mode #contact-590 .cs-input::placeholder {
-    color: var(--secondary);
-    opacity: 0.7;
+  body.dark-mode #contact-1333 .cs-faq-item.active {
+    border-color: var(--primary200);
+  }
+  body.dark-mode #contact-1333 .cs-faq-item.active .cs-button {
+    color: var(--textLight);
+  }
+  body.dark-mode #contact-1333 .cs-faq-item.active .cs-button:before {
+    background-color: var(--primary200);
+  }
+  body.dark-mode #contact-1333 .cs-faq-item.active .cs-button:after {
+    background-color: var(--primary200);
+  }
+  body.dark-mode #contact-1333 .cs-button {
+    color: var(--textLight);
   }
 }
 

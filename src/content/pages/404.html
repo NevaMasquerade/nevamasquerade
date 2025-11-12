@@ -1,8 +1,9 @@
 ---
-title: '404: Page not found'
-description: 'Description for <meta> description and OG tags'
-preloadImg: '/assets/textures/blue-banner-m.webp'
+title: "404: Cat not found"
+description: "The link is dead. Long live the website. Head back to safety or start fresh from the blog or services page."
+preloadImg: '/assets/images/404-m.webp'
 permalink: '404/'
+eleventyExcludeFromCollections: true
 ---
 
 {% extends "layouts/base.html" %}
@@ -28,23 +29,28 @@ permalink: '404/'
     <div class="cs-container">
         <picture class="cs-picture">
             <!--Mobile Image-->
-            <source media="(max-width: 600px)" srcset="../../assets/images/404-page-not-found-m.webp">
+            <source media="(max-width: 600px)" srcset="../../assets/images/404-m.webp">
             <!--Tablet and above Image-->
-            <source media="(min-width: 601px)" srcset="../../assets/images/404-page-not-found.webp">
-            <img loading="lazy" decoding="async" src="../../assets/images/404-page-not-found.webp" alt="A cat peeks out from behind a wall. Is it hiding from you? Is it looking for you? No one knows." width="618" height="537">
+            <source media="(min-width: 601px)" srcset="../../assets/images/404.webp">
+            <img loading="lazy" decoding="async" src="../../assets/images/404.webp" alt="A chinchilla lounges like a tiny cryptid beside a suspiciously well-styled basket of nuts." width="618" height="537">
         </picture>
         <div class="cs-content">
-            <span class="cs-topper">Where did I leave that page?</span>
-            <h1 class="cs-title">404: page not found</h1>
+            <h1 class="cs-title">You Found the Forbidden Rodent.</h1>
             <p class="cs-text">
-                Well, this is awkward. We can't find the page you're looking for.  
+                Only the chosen encounter the chinchilla.
             </p>
             <p class="cs-text">
-                It might be hiding under a different spelling. Or maybe a cat ate it and it's gone for good. The world may never know.
+                Unfortunately, this is still a 404. But feel free to brag about it in the comments. (There are no comments.)
             </p>
             <p class="cs-text">
-                Or you can write to us at 404@nevamasquerade.design and ask. 
+                Nonetheless, you took a wrong turn and the chinchilla is not amused. She will allow one exit. Choose carefully:
             </p>
+            <ul>
+                <li><a href="/">Excape the woods.</a></li>
+                <li><a href="/start-here/">Abandon chinchilla. Return to order.</a></li>
+                <li><a href="/services/">Regroup with the cats.</a></li>
+                <li><a href="/blog/">Consult the scrolls.</a></li>
+                <li><a href="/contact/">Speak to the webmaster before the chinchilla does.</a></li>
         </div>
     </div>
 </section>

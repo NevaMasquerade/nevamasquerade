@@ -36,7 +36,7 @@
     --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
     --bodyFontSize: 1rem;
     /* 60px - 100px top and bottom */
-    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+    --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1.5rem;
     --headerFont: "Baskerville", Georgia, "Times New Roman", serif;
     --bodyFont: "Montserrat", "Arial", Helvetica, sans-serif;
     --smallCaps: "Contralto Small", "Arial Narrow", "Helvetica Narrow", Arial, Helvetica, sans-serif;
@@ -55,7 +55,7 @@
     letter-spacing: 2px;
     font-size: var(--topperFontSize);
     line-height: 1.2em;
-    font-weight: 300;
+    font-weight: 400;
     color: var(--accent500);
     text-align: inherit;
     text-wrap: balance;
@@ -73,7 +73,7 @@
   }
   .cs-text {
     margin: 0;
-    max-width: 40.625rem;
+    max-width: 80ch;
     width: 100%;
     font-family: var(--bodyFont);
     font-size: var(--bodyFontSize);
@@ -158,6 +158,34 @@
     color: var(--textLight);
     background: var(--accent500);
     text-decoration: none;
+  }
+  .nm-button-secondary {
+    font-family: var(--smallCaps);
+    font-size: 1rem;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1rem 0;
+    color: var(--textLight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nm-button-secondary:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.25rem;
+  }
+  .nm-button-secondary:hover .cs-arrow {
+    transform: translateX(0.25rem);
+  }
+  .cs-arrow {
+    width: auto;
+    height: 1em;
+    transition: transform 0.3s;
+    color: var(--secondary300);
+    display: flex;
+    align-self: flex-start;
   }
   .button-icon {
     width: auto;
@@ -284,15 +312,16 @@
     color: var(--textDark);
   }
   ul {
-    margin-top: -0.5rem;
-    margin-bottom: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 1rem;
+  }
+  ul li {
+    list-style-image: url(../svgs/diamond.svg);
   }
   li {
     color: var(--textDark);
-    font-size: 0.9rem;
     font-family: var(--bodyFont);
-    list-style-image: url(../svgs/diamond.svg);
     list-style-position: outside;
     padding-left: 0.5em;
     margin-bottom: 0.75rem;

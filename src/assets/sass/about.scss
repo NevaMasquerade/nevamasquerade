@@ -1,236 +1,4 @@
 /*-- -------------------------- -->
-<---            Hero            -->
-<--- -------------------------- -*/
-
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-    #hero-668 {
-        /* centers button */
-        text-align: center;
-        /* 120px - 300px top */
-        /* 60px - 150px  bottom */
-        padding: clamp(7.5rem, 18vw, 15.75rem) calc(16 / 16 * 1rem)
-            clamp(3.75rem, 14.82vw, 9.375rem);
-        position: relative;
-        z-index: 1;
-
-        &:before {
-            /* red background box */
-            content: "";
-            width: 100%;
-            height: 85%;
-            background: var(--primary);
-            opacity: 1;
-            position: absolute;
-            display: block;
-            top: 0;
-            left: 0;
-            z-index: -1;
-        }
-
-        .cs-container {
-            width: 100%;
-            max-width: calc(1280 / 16 * 1rem);
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            position: relative;
-        }
-
-        .cs-content {
-            text-align: center;
-            max-width: 48rem;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .cs-breadcrumbs {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .cs-link {
-            font-family: var(--smallCaps);
-            font-size: calc(14 / 16 * 1rem);
-            line-height: 1.2em;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--textLight);
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 2rem;
-
-            &:last-of-type {
-                /* remove the chevron on the last list item */
-                &::after {
-                    display: none;
-                }
-            }
-
-            &:after {
-                /* chevron */
-                content: "";
-                width: calc(12 / 16 * 1rem);
-                height: calc(16 / 16 * 1rem);
-                margin: 0 calc(16 / 16 * 1rem);
-                background: url("../svgs/chevron.svg");
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                position: relative;
-                display: block;
-            }
-
-            &.cs-active {
-                opacity: .8;
-                font-weight: 300;
-            }
-
-            &:hover {
-                color: var(--primary100);
-                text-decoration: underline;
-                text-underline-offset: .3em;
-                transition: color .3s, text-decoration .3s;
-            }
-        }
-
-        .cs-title {
-            /* 39px - 61px */
-            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-            line-height: 1.2em;
-            text-align: inherit;
-            /* 16 characters wide including spaces */
-
-            margin: 0 0 calc(16 / 16 * 1rem) 0;
-            color: var(--textLight);
-            position: relative;
-        }
-
-        .cs-text {
-            /* 16px - 20px */
-            font-size: clamp(1rem, 1.5vw, 1.25rem);
-            line-height: 1.5em;
-            text-align: inherit;
-            width: 100%;
-            margin: 0 0 calc(32 / 16 * 1rem) 0;
-            color: var(--textLight);
-            opacity: 0.8;
-        }
-
-        .cs-button-group {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: calc(12 / 16 * 1rem);
-            margin-bottom: 2rem;
-        }
-
-        .cs-picture {
-            width: 100%;
-            max-width: calc(616 / 16 * 1rem);
-            /* Changes at desktop */
-            height: calc(400 / 16 * 1rem);
-            overflow: hidden;
-            display: block;
-            align-self: center;
-            position: relative;
-
-            img {
-                position: relative;
-                align-self: center;
-                height: 100%;
-                width: 100%;
-                /* makes image act as a background image */
-                object-fit: cover;
-            }
-        }
-    }
-}
-
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-    #hero-668 {
-        /* clips the red box from overflowing the section */
-        overflow: hidden;
-        margin-top: clamp(2rem, 5vh, 4rem);
-
-        &:before {
-            /* removed from section container and added to cs-container for easier horizontal positioning */
-            display: none;
-        }
-
-        .cs-container {
-            flex-direction: row;
-            justify-content: space-between;
-            column-gap: calc(100 / 16 * 1rem);
-
-            &:before {
-                /* red background box */
-                content: "";
-                width: 100vw;
-                height: 300%;
-                background: var(--primary);
-                opacity: 1;
-                position: absolute;
-                display: block;
-                top: 50%;
-                /* 200px - 305px, positioning it off the right edge of the container which has a fixed width */
-                right: clamp(12.5rem, 20vw, 19.0625rem);
-                z-index: -1;
-                transform: translateY(-50%);
-            }
-        }
-
-        .cs-content {
-            text-align: left;
-            width: 53%;
-            /* prevents flex-box from squishing it */
-            flex: none;
-            align-items: flex-start;
-        }
-
-        .cs-picture {
-            width: 50vw;
-            max-width: 100%;
-            /* 714px - 800px */
-            height: clamp(44.625rem, 60vw, 50rem);
-            /* push 100px left of that center line from the left property. this ensures it always stays exactly 100px right of the center line and won't move */
-            margin-left: calc(100 / 16 * 1rem);
-            position: absolute;
-            bottom: 0;
-            /* send the left edge of the element to line up at the center of the screen */
-            left: 50%;
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #hero-668 {
-            &:before {
-                filter: brightness(50%);
-            }
-
-            .cs-container {
-                &:before {
-                    filter: brightness(50%);
-                }
-            }
-        }
-    }
-}
-
-/*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
 
@@ -246,17 +14,16 @@
             flex-direction: column;
             align-items: center;
             /* 48px - 64px */
-            gap: clamp(3rem, 7vw, 4rem);
+
         }
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
-            max-width: calc(522 / 16 * 1rem);
+            max-width: calc(768 / 16 * 1rem);
             /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
             padding: var(--sectionPadding);
-            padding-top: 0;
             /* prevents padding from affecting width and height */
             box-sizing: border-box;
             display: flex;
@@ -277,7 +44,8 @@
             display: block;
             position: relative;
             width: 100%;
-            height: calc(300 / 16 * 1rem);
+            height: auto;
+            aspect-ratio: 16 / 9;
             order: 2;
 
             img {
@@ -292,8 +60,8 @@
     }
 }
 
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
     #sbs-578 {
         padding: var(--sectionPadding);
 
@@ -312,11 +80,12 @@
         }
 
         .cs-picture {
-            width: 47vw;
+            width: 100%;
             max-width: calc(494 / 16 * 1rem);
             /* 518px - 700px */
-            height: clamp(32.375rem, 63vw, 43.75rem);
+            height: auto;
             /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+            aspect-ratio: 2/3;
             margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
             position: relative;
             order: 1;
@@ -326,7 +95,7 @@
                 content: "";
                 width: 50%;
                 height: 60%;
-                background: var(--secondary300);
+                background: var(--secondary400);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -342,7 +111,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-578 {
-            background-color: var(--primary);
+            background-color: var(--medium);
 
             .cs-topper {
                 color: var(--secondary);
@@ -451,7 +220,7 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: flex-start;
             position: relative;
             z-index: 1;
         }
@@ -597,8 +366,8 @@
             margin-bottom: 1rem;
         }
 
-        .cs-button-solid {
-            margin-top: 1rem;
+        .nm-button-secondary {
+            margin-top: 1.5rem;
         }
 
         .nm-phase-topper {
@@ -1031,108 +800,3 @@
 }
                                 
 
-/*-- -------------------------- -->
-<---       Call To Action       -->
-<--- -------------------------- -*/
-
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-    #cta-2443 {
-        padding: var(--sectionPadding);
-        position: relative;
-        z-index: 1;
-
-        .cs-container {
-            width: 100%;
-            max-width: calc(1280/16 * 1rem);
-            margin: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            /* 40px - 48px */
-            gap: clamp(2.5rem, 5vw, 3rem);
-        }
-    
-        .cs-content {
-            /* set text align to left if content needs to be left aligned */
-            text-align: left;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
-            gap: calc(32/16 * 1rem);
-        }
-
-        .cs-title {
-            font-size: clamp(calc(48/16 * 1rem), 8vw, calc(60/16 * 1rem));
-            margin: 0;
-            color: var(--textLight);
-            flex: none;
-            align-self: center;
-        }
-
-        .cs-text {
-            margin-bottom: calc(16/16 * 1rem);
-            color: var(--textLight);
-            opacity: .8;
-
-            &:last-of-type {
-                margin-bottom: calc(32/16 * 1rem);
-            }
-        }
-
-        .cs-button-solid {
-            line-height: 1.4;
-            padding: 1rem 1rem;
-            text-wrap: balance;
-        }
-
-        .cs-background {
-            width: 100%;
-            height: 100%;
-            display: block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                /* Makes img tag act as a background image */
-                object-fit: cover;
-            }
-        }
-
-    }
-}
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #cta-2443 {
-        .cs-content {
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-
-        .cs-flex {
-            max-width: calc(372/16 * 1rem);
-        }
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-    body.dark-mode {
-        #cta-2443 {
-            background-color: rgba(0, 0, 0, .8);
-        }
-    }
-}
-        

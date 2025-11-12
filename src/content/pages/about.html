@@ -1,7 +1,8 @@
 ---
-title: "Why Story is the Strategy"
-description: "From dead people to dot-gov to DIY-free design — discover the story behind Neva Masquerade and the process that makes your site sell."
-preloadImg: "/assets/textures/blue-banner-m.webp"
+title: "Not a Cult. Just a Cat Brand."
+description: "What do you get when you mix a historian, a web strategist, and someone who scrolls cat breeds at 1 a.m.? This website."
+preloadImg: "/assets/images/about-image-1-m.webp"
+ogImage: "/assets/images/og/about-og.png"
 permalink: "about/"
 ---
 
@@ -11,49 +12,43 @@ permalink: "about/"
     {{ super() }}
     <meta property="og:type" content="website" />
     <link rel="stylesheet" href="/assets/css/about.css" media="print" onload="this.media='all'; this.onload=null;" />
-    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;" >
     <noscript>
         <link rel="stylesheet" href="/assets/css/about.css" />
-        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" >
     </noscript>
 {% endblock %}
 
 {% block body %}
 
-    <!-- ============================================ -->
-    <!--                    Hero                      -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Hero                       -->
+<!-- ============================================ -->
 
-    <section id="hero-668">
-        <div class="cs-container">
-            <div class="cs-content">
-                <nav aria-label="Breadcrumb">
-                    <div class="cs-breadcrumbs">
-                        <a href="/" class="cs-link">Home</a>
-                        <a href="/{{ permalink }}" class="cs-link cs-active" aria-current="page">About</a>
-                    </div>
-                </nav>
-                <h1 class="cs-title">Design that tells your story — no masquerade.</h1>
-                <p class="cs-text">
-                    I’m Tianna, a web designer and strategist with a not-so-typical background (more on that in a minute). These days, I help solo coaches and consultants ditch their DIY templates and stand out online &mdash; through story, not stock.
-                </p>
-                <div class="cs-button-group">
-                    <a class="cs-button-solid" 
-                        onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
-                        {% ButtonIcon %}
-                        Start Your Story
-                    </a>
-                </div>
-            </div>
+<section id="hero-288">
+    <div class="cs-container">
+        <div class="cs-content">
+            <h1 class="cs-title">Design that tells your story — no masquerade.</h1>
+            <p class="cs-text">
+                I’m Tianna, a web designer and strategist with a not-so-typical background (more on that below). These days, I help solo coaches and consultants ditch their DIY templates and stand out online &mdash; through story, not stock.
+            </p>
+            <a class="nm-button-secondary" href="/start-here/">
+                Start Here
+                <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="icon" width="20" height="20" aria-hidden="true">
+            </a>
         </div>
         <!--Hero Image-->
         <picture class="cs-picture">
-            <source media="(max-width: 600px)" srcset="../../assets/images/about-image-1-m.webp">
-            <source media="(min-width: 601px)" srcset="../../assets/images/about-image-1.webp">
-            <img aria-hidden="true" decoding="async" src="../../assets/images/about-image-1.webp" alt="Tianna looking sassy under an umbrella as her husband looks unamused." width="862" height="850">
+            <source media="(max-width: 1023px)" srcset="../../assets/images/about-image-1-m.webp">
+            <source media="(min-width: 1024px)" srcset="../../assets/images/about-image-1.webp">
+            <img aria-hidden="true" decoding="async" src="../../assets/images/about-image-1.webp" alt="Tianna and her husband." width="630" height="814">
         </picture>
-    </section>
-
+        <!--Green Waves-->
+        <picture class="cs-waves">
+            <source media="(min-width: 1024px)" srcset="../../assets/textures/blue-tall.webp">
+            <source media="(max-width: 1023px)" srcset="../../assets/textures/blue-background-m.svg">
+            <img decoding="async" src="../../assets/textures/blue-tall.webp" alt="" width="645" height="1080" aria-hidden="true">
+        </picture>
+    </div>
+</section>
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
@@ -63,10 +58,10 @@ permalink: "about/"
         <div class="cs-container">
             <picture class="cs-picture">
                 <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="../../assets/images/about-image-2-m.webp">
+                <source media="(max-width: 1023px)" srcset="../../assets/images/about-founder-story-m.webp">
                 <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="../../assets/images/about-image-2.webp">
-                <img loading="lazy" decoding="async" src="../../assets/images/about-image-2.webp" alt="A black cat yawning, he looks like he's screaming with excitement." width="494" height="700">
+                <source media="(min-width: 1024px)" srcset="../../assets/images/about-founder-story.webp">
+                <img loading="lazy" decoding="async" src="../../assets/images/about-founder-story.webp" alt="A cat wearing glasses on an open book." width="494" height="700">
             </picture>
             <div class="cs-content">
                 <span class="cs-topper">From Dead People to Dot-Gov</span>
@@ -89,10 +84,9 @@ permalink: "about/"
                 <p class="cs-text">
                     This is why I reject templates for my clients. <br>Your story deserves to take center stage — not someone else’s design.
                 </p>
-                <a class="cs-button-solid" 
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
-                    {% ButtonIcon %}
-                    Start Your Story
+                <a class="nm-button-secondary" href="/services/">
+                    Ditch DIY with my services
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
                 </a>
             </div>
         </div>
@@ -107,7 +101,7 @@ permalink: "about/"
             <!-- Left Content Section-->
             <div class="cs-content">
                 <span class="cs-topper">Down With Templates, Up With Trust</span>
-                <h2 class="cs-title">The Storycrafted Manifesto</h2>
+                <h2 class="cs-title">The {{ services.strWeb.name }} Manifesto</h2>
                 <p class="cs-text">
                     Tried to launch a “simple” website and nearly lost your mind?
                     <br>It’s not you. It’s the templates.
@@ -122,55 +116,55 @@ permalink: "about/"
             <ul class="cs-card-group">
                 <li class="cs-item">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/warning.svg" alt="triangle with an exclamation point" width="40" height="40">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/story.svg" alt="" width="40" height="40">
                     </picture>
-                    <h3 class="cs-h3">Templates Aren’t Strategy</h3>
-                    <p class="cs-item-text">
-                        Lookalike sites don’t build trust. Your story does.
-                    </p>
-                </li>
-                <li class="cs-item">
-                    <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/browser-gear.svg" alt="browser window with a gear" width="40" height="40">
-                    </picture>
-                    <h3 class="cs-h3">Your Website Should Work for You</h3>
-                    <p class="cs-item-text">
-                        Not just look good &mdash; land clients.
-                    </p>
-                <li class="cs-item">
-                    <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/story.svg" alt="open book" width="40" height="40">
-                    </picture>
-                    <h3 class="cs-h3">Story Is What Sets You Apart</h3>
+                    <h3 class="cs-h3">Story comes first.</h3>
                     <p class="cs-item-text">
                         That “special sauce” everyone talks about? It’s your story.
                     </p>
                 </li>
                 <li class="cs-item">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/lightbulb.svg" alt="lightbulb" width="40" height="40">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/warning.svg" alt="" width="40" height="40">
                     </picture>
-                    <h3 class="cs-h3">Clarity Creates Confidence</h3>
+                    <h3 class="cs-h3">Templates don’t cut it.</h3>
                     <p class="cs-item-text">
-                        You can’t sell what you can’t say.
+                        Lookalike sites don’t build trust. Your story does.
                     </p>
-                </li>
                 <li class="cs-item">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/fingerprint.svg" alt="fingerprint" width="40" height="40">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/fingerprint.svg" alt="" width="40" height="40">
                     </picture>
-                    <h3 class="cs-h3">Good Design Feels Like You</h3>
+                    <h3 class="cs-h3">Design should support, not distract.</h3>
                     <p class="cs-item-text">
                         No more trying to fit into someone else’s box.
                     </p>
                 </li>
                 <li class="cs-item">
                     <picture class="cs-icon-wrapper">
-                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/leaf.svg" alt="plant" width="40" height="40">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/leaf.svg" alt="" width="40" height="40">
                     </picture>
-                    <h3 class="cs-h3">Growth Needs More Than Tools</h3>
+                    <h3 class="cs-h3">You shouldn’t have to do it all.</h3>
                     <p class="cs-item-text">
                         You don’t need another app. You need a partner.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/browser-gear.svg" alt="" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Support shouldn’t vanish after launch.</h3>
+                    <p class="cs-item-text">
+                        Because “post-launch ghosting” shouldn’t be a thing.
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="../../assets/svgs/lightbulb.svg" alt="" width="40" height="40">
+                    </picture>
+                    <h3 class="cs-h3">Clarity creates confidence.</h3>
+                    <p class="cs-item-text">
+                        Clear story = more trust. You deserve both.
                     </p>
                 </li>
             </ul>
@@ -190,9 +184,9 @@ permalink: "about/"
             <!-- Left Section -->
             <div class="cs-content">
                 <span class="cs-topper">Where Story Becomes Strategy</span>
-                <h2 class="cs-title">The Storycrafted Process</h2>
+                <h2 class="cs-title">The {{ services.strWeb.name}} Process</h2>
                 <p class="cs-text">
-                    A website isn’t just colors and fonts — every pixel needs a job. The Storycrafted Process builds clarity and trust through story. It’s what happens when history meets design.
+                    A website isn’t just colors and fonts &mdash; every pixel needs a job. The {{ services.strWeb.name }} Process builds clarity and trust through story. It’s what happens when history meets design.
                 </p>
                 <p class="cs-text">
                     When we work together, your project moves through three flexible phases:
@@ -218,11 +212,10 @@ permalink: "about/"
                 <p class="cs-text">
                     You approve, we launch. Then I stick around to make sure your site keeps working for you, not against you.
                 </p>
-                <a class="cs-button-solid" 
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
-                    {% ButtonIcon %}
-                    Start Your Story
-                </a>                  
+                <a class="nm-button-secondary" href="/storycraft/">
+                    Explore {{ services.strWeb.name }}
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                </a>                 
             </div>
             <!-- Right Section -->
             <ul class="cs-right-section">
@@ -302,7 +295,7 @@ permalink: "about/"
 		<div class="cs-content">
 			<h2 class="cs-title">Neva Masquerade: Behind the Name</h2>
                 <p class="cs-text">
-                    All the normal web design names were taken or mind-numbingly boring. I’d been stuck for weeks. Then, one night at 1 a.m., I ended up scrolling cat breeds on Wikipedia.
+                    All the normal web design names were taken &mdash; or boring. I’d been stuck for weeks. Then, one night at 1 a.m., I ended up scrolling cat breeds on Wikipedia.
                 </p>
                 <p class="cs-text">
                     That’s when the Neva Masquerade jumped out. It sounded cool, looked beautiful, and, most importantly, no one else was using it.
@@ -331,10 +324,9 @@ permalink: "about/"
                 <h2 class="cs-title">Say good riddance to your template era.</h2>
                 <div class="cs-flex">
                     <p class="cs-text">
-                        Your website can finally tell your story — not just sell your services. Let’s build one that sells the one thing your competitors can never offer: you.
+                        Your website can finally tell your story &mdash; not just sell your services. Let’s build one that sells the one thing your competitors can never offer: you.
                     </p>
-                <a class="cs-button-solid" 
-                    onclick="Calendly.initPopupWidget({url: 'https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call?background_color=fffaf0&text_color=262524&primary_color=486a80'});return false;">
+                <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
                     {% ButtonIcon %}
                     Start Your Story
                 </a>
@@ -349,7 +341,5 @@ permalink: "about/"
             <img loading="lazy" decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568">
         </picture>
     </section>
-                                    
-    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>                            
-    {% include 'components/cta.html' %}
+                                                           
 {% endblock %}

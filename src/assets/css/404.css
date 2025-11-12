@@ -43,8 +43,14 @@
     color: var(--textLight);
     opacity: 0.8;
   }
-  #sbs-574 .cs-text:last-of-type {
-    margin-bottom: 2rem;
+  #sbs-574 h2 {
+    color: var(--textLight);
+  }
+  #sbs-574 ul {
+    margin-top: 1rem;
+  }
+  #sbs-574 a, #sbs-574 li {
+    color: var(--textLight);
   }
   #sbs-574 .cs-picture {
     display: block;
