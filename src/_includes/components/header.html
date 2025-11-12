@@ -11,8 +11,8 @@
             <img
                 src="../../assets/svgs/logo-horizontal-color.svg"
                 alt="logo"
-                width="320px"
-                height="65px"
+                width="300px"
+                height="36px"
                 aria-hidden="true"
                 decoding="async"
                 class="light-mode-logo"
@@ -20,8 +20,8 @@
             <img
                 src="../../assets/svgs/logo-horizontal-color-dark.svg"
                 alt="logo"
-                width="320px"
-                height="65px"
+                width="300px"
+                height="36px"
                 aria-hidden="true"
                 decoding="async"
                 class="dark-mode-logo"
@@ -50,23 +50,10 @@
                             About
                         </a>
                     </li>
-                    <li class="cs-li cs-dropdown" tabindex="0">
-                        <span class="cs-li-link cs-dropdown-toggle">
+                    <li class="cs-li">
+                        <a href="/services/" class="cs-li-link {% if page.url == '/services/' %} cs-active {% endif %}">
                             Services
-                            <img class="cs-drop-icon" src="../../assets/svgs/icon-down.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                        </span>
-                        <ul class="cs-drop-ul">
-                            <li class="cs-drop-li">
-                                <a href="/services/diy-disaster-detector/" class="cs-li-link cs-drop-link {% if page.url == '/services/diy-disaster-detector/' %} cs-active {% endif %}">
-                                    DIY Disaster Detector
-                                </a>
-                            </li>
-                            <li class="cs-drop-li">
-                                <a href="/services/storycrafted-sites/" class="cs-li-link cs-drop-link {% if page.url == '/services/storycrafted-sites/' %} cs-active {% endif %}">
-                                    Storycrafted Sites
-                                </a>
-                            </li>
-                        </ul>
+                        </a>
                     </li>
                     <li class="cs-li">
                         <a href="/blog/" class="cs-li-link {% if page.url == '/blog/' %} cs-active {% endif %}">
@@ -78,10 +65,12 @@
                             Contact
                         </a>
                     </li>
+                    <li class="cs-li">
+                        <a href="/start-here/" class="cs-button-solid">Start Here</a>
+                    </li>
                 </ul>
             </div>
         </nav>
-        <a href="/services/diy-disaster-detector/" class="cs-button-solid">Get Free Audit</a>
         <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
         <button
             id="dark-mode-toggle"

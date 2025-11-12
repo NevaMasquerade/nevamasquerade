@@ -1,0 +1,178 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-1106 {
+    padding: var(--sectionPadding);
+    padding-top: 11.25rem;
+    padding-bottom: 7.5rem;
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #banner-1106 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  #banner-1106 .cs-int-title {
+    /* 39px - 61px */
+    font-family: var(--headerFont);
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0;
+    color: var(--textLight);
+    position: relative;
+    font-variant-numeric: lining-nums;
+  }
+  #banner-1106 .nm-subhead {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    text-align: left;
+    color: var(--textLight);
+  }
+  #banner-1106 .cs-text {
+    color: var(--textLight);
+  }
+  #banner-1106 .light-mode {
+    display: block;
+  }
+  #banner-1106 .dark-mode {
+    display: none;
+  }
+  #banner-1106 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-1106 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: -moz-linear-gradient(left, rgba(25, 7, 5, 0.5) 0%, rgba(25, 7, 5, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(25, 7, 5, 0.5) 0%, rgba(25, 7, 5, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-1106 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #content-1638 {
+    padding: var(--sectionPadding);
+    background-color: var(--secondary);
+    position: relative;
+    z-index: 1;
+  }
+  #content-1638 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 100px */
+    gap: clamp(3rem, 9vw, 6.25rem);
+  }
+  #content-1638 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #content-1638 .cs-flex {
+    max-width: 38rem;
+  }
+  #content-1638 .cs-h3 {
+    font-size: 1.5rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    color: var(--textLight);
+  }
+  #content-1638 .nm-highlight {
+    background-color: var(--primary);
+    padding: 2rem;
+  }
+  #content-1638 .nm-highlight .cs-text {
+    color: var(--textLight);
+  }
+  #content-1638 .nm-highlight .nm-button-secondary {
+    color: var(--textLight);
+  }
+  #content-1638 .cs-title {
+    padding-bottom: 2rem;
+  }
+  #content-1638 .cs-text {
+    margin-bottom: 1rem;
+  }
+  #content-1638 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #content-1638:before {
+    height: 63%;
+  }
+  #content-1638 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  #content-1638 .cs-flex {
+    width: 50%;
+    text-align: left;
+  }
+  #content-1638 .cs-title {
+    margin: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #content-1638 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #content-1638 .cs-title, body.dark-mode #content-1638 .cs-text, body.dark-mode #content-1638 .cs-h3, body.dark-mode #content-1638 .cs-text {
+    color: var(--textLight);
+  }
+  body.dark-mode #content-1638 .cs-text {
+    opacity: 0.8;
+  }
+}
+
+/*# sourceMappingURL=thank-you.css.map */

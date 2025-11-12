@@ -1,0 +1,79 @@
+---
+title: 'Page title'
+description: 'Description for <meta> description and OG tags'
+preloadImg: '/assets/textures/blue-banner-m.webp'
+permalink: 'page-path/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/assets/css/blog-post.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog-post.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">Title</h1>
+        <div class="blog-authorGroup">
+            <!--Blog Date-->
+            <span class="blog-date">Last Updated: </span>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--               Featured Image                 -->
+<!-- ============================================ -->
+<div class="nm-featured-image">
+    <picture class="blog-mainImage">
+        <img
+            src="{{ image }}"
+            alt="{{ imageAlt }}"
+            decoding="async"
+        />
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+
+<div class="blog-container main-content-wrapper">
+    
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                  Blog Article                -->
+        <!-- ============================================ -->
+
+        <article class="blog-article">
+            <section id="blog-content">
+                {{ content | safe }}
+            </section>
+        </article>
+    </div>
+    <!-- End .main-content -->
+</div>
+    {% include 'components/cta.html' %}
+{% endblock %}

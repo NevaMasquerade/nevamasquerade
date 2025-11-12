@@ -44,13 +44,6 @@ module.exports = function (eleventyConfig) {
     /** https://www.11ty.dev/docs/plugins/ */
 
     /**
-     *  ELEVENTY NAVIGATION
-     *  Sets up the eleventy navigation plugin for a scalable navigation as used in _includes/components/header.html
-     *  https://github.com/11ty/eleventy-navigation
-     */
-    eleventyConfig.addPlugin(pluginEleventyNavigation);
-
-    /**
      *  AUTOMATIC SITEMAP GENERATION
      *  Automatically generate a sitemap, using the domain in _data/client.json
      *  https://www.npmjs.com/package/@quasibit/eleventy-plugin-sitemap

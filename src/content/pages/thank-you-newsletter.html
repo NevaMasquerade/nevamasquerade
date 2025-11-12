@@ -1,0 +1,82 @@
+---
+title: "Cats Included. No Regrets."
+description: "You’re in. Expect occasional insights (and probably cats). Check your inbox for the welcome email &mdash; and the blog while you’re at it."
+preloadImg: '/assets/textures/blue-banner-m.webp'
+permalink: 'thank-you-for-subscribing/'
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="../../assets/css/thank-you.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/thank-you.css" />
+    </noscript>
+    <meta property="og:type" content="website" />
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">
+            You’re in — thanks for subscribing.
+        </h1>
+        <p class="nm-subhead">
+            Expect occasional insights on websites, messaging, and building a business that actually feels like you. No fluff. No inbox spam.
+        </p>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1638">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Cats included. Wisdom optional.</span>
+                <h2 class="cs-title">Here's what to expect</h2>
+                <ul>
+                    <li>You’ll get a welcome email shortly; check spam or promotions if it’s missing</li>
+                    <li>Emails will be irregular (but thoughtful)</li>
+                    <li>Until then, explore the blog &mdash; there’s good stuff waiting</li>
+                </ul>
+                <p class="cs-text">
+                    Don’t see a confirmation email? Give it a few minutes, then check spam or promotions. Still nothing? Reach out at tianna@nevamasquerade.design and I’ll get you sorted.
+
+                </p>
+            </div>
+            <div class="cs-flex nm-highlight">
+                <h3 class="cs-h3">Want to dig in while you wait?</h3>
+                <p class="cs-text">
+                    You’ll see me in your inbox soon, but in the meantime, the blog is full of bite-sized ideas on what makes a website work for you, not against you.
+                </p>
+                <a href="/blog/" class="nm-button-secondary">
+                    Explore the Blog
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                </a>
+            </div>
+        </div>  
+    </div>
+</section>
+                                
+
+{% endblock %}

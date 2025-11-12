@@ -1,0 +1,613 @@
+---
+title: "The System Behind Good Sites"
+description: "Guessing what to put on your site? Don’t. This framework maps pages, strategy, structure, and story &mdash; without the chaos spiral."
+preloadImg: '/assets/images/blog/storycraft-atlas.webp'
+ogImage: '/assets/images/og/storycraft-atlas-og.png'
+permalink: 'blog/storycraft-atlas/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/assets/css/blog-post.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog-post.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">{{ blogs.framework.title}}</h1>
+        <div class="blog-authorGroup">
+            <!--Blog Date-->
+            <span class="blog-date">Last Updated: November 8, 2025</span>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--               Featured Image                 -->
+<!-- ============================================ -->
+<div class="nm-featured-image">
+    <picture class="blog-mainImage">
+        <source media="(max-width: 600px)" srcset="../../../assets/images/blog/storycraft-atlas-m.webp">
+        <source media="(min-width: 601px)" srcset="../../../assets/images/blog/storycraft-atlas.webp">
+        <img
+            src="../../../assets/images/blog/storycraft-atlas.webp"
+            alt="{{ imageAlt }}"
+            decoding="async"
+            width="2200"
+            height="1237"
+        />
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+
+<div class="blog-container main-content-wrapper">
+    
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                  Blog Article                -->
+        <!-- ============================================ -->
+
+        <article class="blog-article">
+            <section id="blog-content">
+                <p>
+                    You’re not a beginner. 
+                </p>
+                <p>
+                    Clients are hiring you. Word-of-mouth is working. You’ve refined your services and know what you’re doing.
+                </p>
+                <p>
+                    But your website? That thing’s still stuck in your startup era.
+                </p>
+                <p>
+                    You made it work in the beginning when you slapped some copy on a Squarespace template at midnight. And kudos, it did its job by helping you look legit when you were first getting started.
+                </p>
+                <p>
+                    But now? It’s holding you back.
+                </p>
+                <p>
+                    Your offers are clearer. <br>Your positioning is stronger. <br>You’ve got a better sense of who your best-fit clients are. 
+                </p>
+                <p>
+                    But that old website doesn’t reflect any of it. It’s not selling for you. It’s not guiding anyone. It’s not even that easy to update.
+                </p>
+                <p>
+                    That’s where the <strong>Storycraft Atlas</strong> comes in.
+                </p>
+                <p>
+                    This post breaks down how I plan and build strategic websites for solo service providers who are in this exact in-between spot: past DIY, not ready to hand things off to a huge agency. 
+                </p>
+                <p>
+                    You’ll get a look at the frameworks I use to plan and map out your pages, decide what goes where, and build a site that actually supports your business.
+                </p>
+                <p>
+                    No fluff. No filler. Let’s go.
+                </p>
+                <hr>
+                <h2>What is the Storycraft Atlas?</h2>
+                    <p>
+                    The Storycraft Atlas is how I plan and structure websites inside my done-for-you offer, <a href="https://nevamasquerade.design/storycraft/">Storycraft</a>. It’s a strategic tool I use in the planning phase to make sure we’re not just building “a pretty site” — we’re building the <em>right</em> site for <em>your</em> business.
+                    </p>
+                    <p>
+                    Most solopreneurs’ websites are just a collection of pages people think they’re supposed to have. A homepage, an about page with your bio, a services page with some bullets, and a contact form at the end.
+                    </p>
+                    <p>
+                    That doesn’t help you get hired.
+                    </p>
+                    <p>
+                    <strong><a href="https://nevamasquerade.design/storycraft/">Storycraft</a></strong> is my subscription-based partnership for custom websites. In it, I handle planning, copy, design, and development. Once your site is live, you get ongoing support: unlimited content edits, quarterly check-ins, two new pages a year, and a redesign every other year.
+                    </p>
+                    <p>
+                    The Storycraft Atlas powers the Share Your Story (planning) and Shape the Site (implementation) phases of <a href="https://nevamasquerade.design/about/#steps-284">my process</a>. It helps me figure out:
+                    </p>
+                    <ul>
+
+                    <li>What pages we actually need (and which ones we don’t)</li>
+
+                    <li>What content goes where and why</li>
+
+                    <li>How your site fits into your sales process</li>
+
+                    <li>What helps build trust, guide leads, and move people toward working with you</li>
+                    </ul>
+                    <p>
+                    Here’s a peek inside the Storycraft Atlas.
+                    </p>
+                    <hr>
+                    <h2>The webpage frameworks: How I determine which pages you need</h2>
+
+
+                    <p>
+                    This is the big picture. I’ve built the Storycraft Atlas in Notion, and this database is the foundation. It includes 37 frameworks across all the core page types:
+                    </p>
+                    <ul class="nm-four-column-list">
+
+                    <li>Homepage</li>
+
+                    <li>About</li>
+
+                    <li>Services</li>
+
+                    <li>Sales Page</li>
+
+                    <li>Case Study / Testimonials</li>
+
+                    <li>Start Here</li>
+
+                    <li>Contact</li>
+
+                    <li>FAQ</li>
+
+                    <li>Blog Hub</li>
+
+                    <li>Thank You</li>
+
+                    <li>Landing Pages</li>
+
+                    <li>Legal / 404</li>
+                    </ul>
+                    <p>
+                    Each framework comes with a strategic breakdown: 
+                    </p>
+                    <ul class="nm-two-column-list">
+
+                    <li>what this page is <em>for</em></li>
+
+                    <li>where it fits in your funnel</li>
+
+                    <li>who it’s best for</li>
+
+                    <li>the best tone to use</li>
+
+                    <li>the offer types it supports</li>
+
+                    <li>copywriting prompts</li>
+                    </ul>
+                    <p>
+                    This lets us get clear on what we actually <em>need</em> and how the pieces fit together.
+                    </p>
+                    <h3>Why this matters:</h3>
+
+
+                    <p>
+                    When you build your site without this kind of structure, you end up guessing. Or worse, copying other sites and hoping it works for you (spoiler: it usually doesn’t). This database keeps things strategic from the start.
+                    </p>
+                    <hr>
+                    <h2>The detailed page frameworks: How I know what each page needs to say</h2>
+
+
+                    <p>
+                    Once we pick the right pages and frameworks for your site, I get into the weeds of <em>what should be on each one</em>.
+                    </p>
+                    <p>
+                    Each detailed framework entry includes:
+                    </p>
+                    <h3>Section-by-Section Breakdown</h3>
+
+
+                    <p>
+                    What content blocks you need, how long each one should be, what it’s there to do, layout tips, and writing prompts.
+                    </p>
+                    <h3>Strategic Link Pathways</h3>
+
+
+                    <p>
+                    We plan out <em>where each section links</em> so visitors don’t just scroll aimlessly and bounce. They’re nudged to the next right page, the next step in your process.
+                    </p>
+                    <h3>Optional Block Swaps & Additions</h3>
+
+
+                    <p>
+                    Because no two businesses are the same, I also include strategic options for adding or swapping content blocks. Plus: clear notes on what to avoid.
+                    </p>
+                    <h3>Why this matters:</h3>
+
+
+                    <p>
+                    This is where we get specific. Most service provider websites feel flat or vague because they don’t say the right thing at the right time. This step gives every section a job that moves the visitor forward. 
+                    </p>
+                    <hr>
+                    <h2>The block glossary: How I structure each section</h2>
+
+
+                    <p>
+                    Think of this like a library of content blocks: hero sections, testimonials, opt-ins, FAQs, CTAs, etc.
+                    </p>
+                    <p>
+                    Each block has info on:
+                    </p>
+                    <ul class="nm-three-column-list">
+
+                    <li>What it’s for</li>
+
+                    <li>Where it works best</li>
+
+                    <li>Where to avoid it</li>
+
+                    <li>What it pairs well with</li>
+
+                    <li>The role it plays in conversion</li>
+                    </ul>
+                    <h3>Why this matters:</h3>
+
+
+                    <p>
+                    If you’re using a template, you probably shoved text into whatever block was next up in the page layout. Maybe it worked it okay, or maybe it wasn’t the right choice for that job. This glossary helps us avoid butchering your message by guiding us to use the right building blocks in the right way.
+                    </p>
+                    <hr>
+                    <h2>Cross-page mapping: How I plan movement across your website</h2>
+
+
+                    <p>
+                    This is your sitemap, but smarter.
+                    </p>
+                    <p>
+                    The Cross-Page Mapping database shows how each page connects to the others. We’re looking at the <em>sitewide strategy</em> here: how a visitor might move from Start Here → About → Services → Case Study → Contact.
+                    </p>
+                    <p>
+                    While the Link Pathways (from the Detailed Page Frameworks) focus on <em>intra-page</em> flow, this step is about <em>inter-page</em> structure. It’s what keeps your site from feeling like a maze.
+                    </p>
+                    <h3>Why this matters:</h3>
+
+
+                    <p>
+                    Without this, you end up with a bunch of disconnected pages and no clear journey. This step builds the map that gets people where you want them to go.
+                    </p>
+                    <hr>
+                    <h2>How it works: Sophie’s website before & after</h2>
+
+
+                    <p>
+                    Let’s run through how I use the Storycraft Atlas with a hypothetical client.
+                    </p>
+                    <p>
+                    Picture <strong>Sophie</strong>, a brand strategist and messaging consultant for creatives. She’s not brand new, but her current website doesn’t reflect where she is now.
+                    </p>
+                    <h3>The DIY disaster:</h3>
+
+
+                    <ul class="nm-two-column-list">
+
+                    <li>Squarespace site from 3 years ago</li>
+
+                    <li>Way too much text, no visual hierarchy</li>
+
+                    <li>Offers are buried or poorly explained</li>
+
+                    <li>No trust-building pages (no testimonials, no Start Here page)</li>
+
+                    <li>No clear direction for visitors</li>
+                    </ul>
+                    <h3>Sophie’s Goals:</h3>
+
+
+                    <ul class="nm-two-column-list">
+
+                    <li>Make her signature offer feel premium</li>
+
+                    <li>Convert more warm leads (shorten the sales cycle)</li>
+
+                    <li>Prepare for launching a group offer (list-building + funnel readiness)</li>
+
+                    <li>Don’t lean too hard on a personal brand (she’s the expert, but she doesn’t want to be the face of everything)</li>
+                    </ul>
+                    <h3>What I’d recommend (with strategy backing every page)</h3>
+
+
+                    <p>
+                    With Sophie’s business model, marketing maturity, and goals, I’d use the Storycraft Atlas to map out a website that does <em>three things really well</em>: 
+                    </p>
+                    <ul>
+
+                    <li>builds authority, </li>
+
+                    <li>supports conversion for high-consideration offers, and </li>
+
+                    <li>lays the groundwork for future growth.</li>
+                    </ul>
+                    <p>
+                    Here’s what I’d recommend — and <strong>why</strong>:
+                    </p>
+                    <hr>
+                    <h4>Home: Clarity-First + CTA-Led Framework</h4>
+
+
+                    <p>
+                    Sophie’s homepage doesn’t need to educate or entertain; it needs to <strong>orient</strong>. Most of her traffic is referral-based or already warm, so we don’t need to spend time convincing. We need to make it immediately clear <em>who</em> she serves, <em>what</em> she offers, and <em>how</em> to take action.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Get to the point fast.</li>
+
+                    <li><strong>Sections:</strong> Hero, Features Breakdown, Offer Positioning, Proof, CTA.</li>
+
+                    <li><strong>Key links:</strong> Start Here, Services, Testimonials, Contact.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> Add a “Not the Right Fit?” section to filter poor fits away from her premium offer.</li>
+                    </ul>
+                    <hr>
+                    <h4>About: Strategic Partner Framework</h4>
+
+
+                    <p>
+                    This is a <strong>positioning tool</strong>. Not a bio. Not a resume. Not a playful “get to know me” page. Sophie doesn’t want to be front and center, but she still needs to build trust. That’s where this framework shines.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Build authority.</li>
+
+                    <li><strong>Sections:</strong> Hero, Professional Background, Approach, Beliefs or POV, Client Proof, CTA.</li>
+
+                    <li><strong>Key links:</strong> Start Here, Services, Testimonials, Contact.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> Avoid a full story arc or personal details; focus on authority, not personality.</li>
+                    </ul>
+                    <hr>
+                    <h4>Services: Tiered / Productized Framework</h4>
+
+
+                    <p>
+                    Sophie has multiple offers, and prospects need help understanding <em>what to choose</em>. This framework is built to <strong>reduce friction</strong> while increasing clarity and conversions.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Position main services.</li>
+
+                    <li><strong>Key blocks:</strong> Hero, Offer Comparison, Process Overview, Client Proof, CTA.</li>
+
+                    <li><strong>Key links:</strong> Contact, Sales, FAQ, Testimonials.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> None apply.</li>
+                    </ul>
+                    <hr>
+                    <h4>Start Here: Authority Builder Framework</h4>
+
+
+                    <p>
+                    Sophie has warm traffic from referrals and Instagram, but no funnel. This page is key to helping people <strong>land in the right place fast</strong>.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Direct and funnel traffic.</li>
+
+                    <li><strong>Key blocks:</strong> Hero, Authority Markers, Orientation, Featured Offer or CTA.</li>
+
+                    <li><strong>Key links:</strong> Services, Blog Hub, Lead Magnet, About, Sales.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> Add “Who I Help” section to gently weed out unqualified leads.</li>
+                    </ul>
+                    <hr>
+                    <h4>Sales Page (for Signature Offer): Long-Form Framework</h4>
+
+
+                    <p>
+                    Her signature service is high-investment and high-consideration. Pushing for an immediate sale won’t work. Instead, we <strong>build a case slowly</strong>, with the right emotional and logical beats in place.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Nurture, then sell.</li>
+
+                    <li><strong>Sections:</strong> Hero, Problem Overview, Transformation Highlights, Offer Snapshot, Client Proof, FAQ, CTA.</li>
+
+                    <li><strong>Key links:</strong> Contact, Testimonials.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> Add a “Not the Right Fit?” section to filter poor fits away from the premium offer.</li>
+                    </ul>
+                    <hr>
+                    <h4>Case Study or Testimonials: Narrative-Driven Framework</h4>
+
+
+                    <p>
+                    If Sophie has <strong>detailed stories of transformation</strong>, we go the case study route. If her testimonials are strong and specific, we use them strategically.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Show prospects what’s possible.</li>
+
+                    <li><strong>Key blocks:</strong> Hero, Project Context, Approach, Outcome, Client Quote, CTA.</li>
+
+                    <li><strong>Key links:</strong> Services, Sales, Contact.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> Add a “Behind-the-Scenes Insight” to show strategic depth and reinforce authority.</li>
+                    </ul>
+                    <hr>
+                    <h4>Contact: Next-Step Focused Framework</h4>
+
+
+                    <p>
+                    This is more than just a form. It’s a <em>conversion point</em> and a light pre-qualification filter. We make it easy to reach out — without opening the floodgates to poor-fit leads.
+                    </p>
+                    <ul>
+
+                    <li><strong>Top priority:</strong> Encourage contact for good fits.</li>
+
+                    <li><strong>Key blocks:</strong> Hero, Contact Methods, Mini FAQ, Client Proof, CTA.</li>
+
+                    <li><strong>Key links:</strong> internal only.</li>
+
+                    <li><strong>Add/swap/avoid:</strong> Add a “What Happens Next” section to manage expectations.</li>
+                    </ul>
+                    <hr>
+                    <h4>Plus: Extra supporting pages that serve a purpose</h4>
+
+
+                    <p>
+                    Depending on what Sophie’s ready for, here are a few strategic add-ons I'd recommend:
+                    </p>
+                    <ul>
+
+                        <li><strong>Blog Hub:</strong> For future thought leadership and SEO authority. We use a grid layout with light intros to help people skim and click.</li>
+
+                        <li><strong>FAQ Page:</strong> Save time on calls, reduce objections, build trust. Ideally linked from the Services and Sales pages.</li>
+
+                        <li><strong>Thank You Pages:</strong> Reinforce conversion actions. Great for lead magnet downloads, form submissions, and contact follow-up.</li>
+
+                        <li><strong>Landing Pages (Lead Magnet and Waitlist):</strong> To grow her list for the group program she's planning. Built to convert with a headline, benefit, opt-in form, and social proof if available.</li>
+                    </ul>
+                    <hr>
+                    <p>
+                        Every page I’d recommend for Sophie is tied to a <strong>specific role</strong> in her funnel and business model. None of it is there “just because.” And the structure of each page is mapped out based on how warm her traffic is, how complex her offers are, and how much trust she needs to build at each step.
+                    </p>
+                    <p>
+                        That’s the difference a system like this makes.
+                    </p>
+                    <hr>
+                    <h2>What happens if you don’t have a framework like this?</h2>
+
+
+                    <p>
+                        Here’s what I see all the time: smart, skilled business owners working with a website that feels more like a “necessary evil” than an actual business tool.
+                    </p>
+                    <p>
+                        You know you need one. So you slap together a homepage, a services page, an about page, and a contact form. 
+                    </p>
+                    <p>
+                        Maybe you copy a few layouts from someone in your industry. Maybe you Google “what to put on a sales page.” Maybe you even did some keyword research. 
+                    </p>
+                    <p>
+                        You fill in the blanks. <br>You guess. <br>You publish.<br>And technically, it’s a website.
+                    </p>
+                    <p>
+                        But here’s what happens when you don’t have a system behind it:
+                    </p>
+                    <ul>
+
+                        <li>The homepage tries to say everything, but ends up saying nothing because no one reads it.</li>
+
+                        <li>Your services page is either too vague or too detailed.</li>
+
+                        <li>There’s no obvious path for visitors to follow.</li>
+
+                        <li>Your about page talks about your passion for helping people, but doesn’t build authority. Or it’s just a resume that fails to connect with the reader.</li>
+
+                        <li>You end up answering the same questions in every discovery call.</li>
+
+                        <li>Visitors bounce.</li>
+                    </ul>
+                    <p>
+                        Without a strategy, your website becomes a series of disconnected pages. Each one is working in isolation. And your visitor is stuck trying to piece it all together. 
+                    </p>
+                    <p>
+                        <strong>Here’s the hard truth:<br></strong>Most people won’t tell you your site isn’t working. They’ll just click away.
+                    </p>
+                    <p>
+                        I didn’t have the Storycraft Atlas when I first built my website. And honestly, that first version sucked. Don’t get me wrong, it looked great, had personality, and demonstrated my technical skills. But it didn’t move people to hire me.
+                    </p>
+                    <p>
+                        That’s why I built the Storycraft Atlas. First, to fix my own damn website. Second, to guide how I craft my clients’ websites.
+                    </p>
+                    <hr>
+                <h2>What happens with a framework?</h2>
+
+                    <p>
+                        Now let’s look at what shifts when you <em>do</em> have a framework like the Storycraft Atlas backing your site:
+                    </p>
+                    <h3>You know exactly which pages you need — and why.</h3>
+
+                        <p>
+                            No more guessing, copying competitors, and hoping it somehow works. Every page we build is tied to a specific job, such as guiding new visitors, showcasing proof, or moving someone toward your highest-leverage offer.
+                        </p>
+                    <h3>The content becomes focused and functional.</h3>
+
+                        <p>
+                            Each page has a job. Each section has a reason for being there. Visitors don’t get lost, overwhelmed, or distracted. Instead, they get the information they need, in the order they need it, to feel confident taking the next step.
+                        </p>
+                    <h3>Your site becomes an actual sales tool.</h3>
+
+                        <p>
+                            It handles pre-qualification. It answers common questions. It positions your services clearly. It connects the dots between what your audience wants and how you help. In other words, it works while you’re not working.
+                        </p>
+                    <h3>You feel confident sending people to your site again.</h3>
+
+                        <p>
+                            You stop saying “just DM me” or “ignore my website, it’s a mess.” Instead, you can point people to your site and know it’s going to reinforce your value, not confuse people or sell you short.
+                        </p>
+                        <p>
+                            When we use the Storycraft Atlas, we’re building more than a website. We’re creating a content ecosystem that grows with your business and supports how you sell.
+                        </p>
+                    <hr>
+                <h2>“This all sounds great, but it also sounds like… a lot. How much do I have to do to use this?”</h2>
+
+
+                    <p>
+                        Short answer? <strong>You don’t.</strong>
+                    </p>
+                    <p>
+                        You don’t need to download the framework. You don’t need to figure it out yourself. You don’t need to learn how to write strategic copy, plan page flows, or build a site map. That’s <em>my</em> job.
+                    </p>
+                    <p>
+                        This system exists behind the scenes of my <strong><a href="/storycraft/">Storycraft</a></strong> offer, and it’s how I’m able to create custom websites that actually <em>work </em>— without needing 10 meetings or 100 hours of your time.
+                    </p>
+                    <p>
+                        Here’s what happens instead:
+                    </p>
+                    <ol>
+                        <li><strong>We kick things off with a conversation.</strong> You tell me about your business, what you offer, and what’s been working (or not) with your current site.</li>
+
+                        <li><strong>I take what I learn and map your site.</strong> Using the Storycraft Atlas, I figure out what pages you need, what the structure should look like, and how to guide people from first click to conversion.</li>
+
+                        <li><strong>You review the plan.</strong> I’ll walk you through my recommendations during your Story Strategy Check-In. Nothing gets written or built until you feel great about the plan.</li>
+
+                        <li><strong>I write the copy.</strong> No blank Google Docs, no “just tell me what you want it to say.” I’ll write the content based on the frameworks and strategy, using your voice and positioning.</li>
+
+                        <li><strong>I design and hand-code your site.</strong> It’s fast, clean, mobile-optimized, and custom to your brand, not some hacked-together theme or bloated page builder.</li>
+
+                        <li><strong>Post-launch? I stick around.</strong> You get unlimited content edits, two new pages a year, quarterly check-ins to adjust strategy, and a full redesign every other year. So you’re never stuck again.</li>
+                    </ol>
+                    <p>
+                        You get to focus on running your business. I’ll make sure your website keeps up with it.
+                    </p>
+                    <hr>
+
+                <h2>Want a website that actually works?</h2>
+
+                    <p>
+                        If you’ve outgrown your current site and you’re tired of duct-taping things together, this is your next step.
+                    </p>
+                    <p>
+                        You don’t need to “learn more about web strategy.”<br>You don’t need to read more articles about writing a better homepage.<br>You don’t need to settle for a designer who says, “Just send me the copy.”
+                    </p>
+                    <p>
+                        What you need is someone who can lead the process and make sure your website does its job — so you can do yours.
+                    </p>
+                    <p>
+                        That’s what <strong><a href="/storycraft/">Storycraft</a></strong> is built for.
+                    </p>
+                    <p>
+                        <strong>Book a discovery call</strong> if you’re ready for a website that supports the way you actually work, and sells the way you actually want to sell.
+                    </p>
+                    <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
+                        {% ButtonIcon %}
+                        Start Your Story
+                    </a>
+            </section>
+        </article>
+    </div>
+    <!-- End .main-content -->
+</div>
+    {% include 'components/cta.html' %}
+{% endblock %}

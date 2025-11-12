@@ -1,204 +1,4 @@
 /*-- -------------------------- -->
-<---            Hero            -->
-<--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #hero-668 {
-    /* centers button */
-    text-align: center;
-    /* 120px - 300px top */
-    /* 60px - 150px  bottom */
-    padding: clamp(7.5rem, 18vw, 15.75rem) 1rem clamp(3.75rem, 14.82vw, 9.375rem);
-    position: relative;
-    z-index: 1;
-  }
-  #hero-668:before {
-    /* red background box */
-    content: "";
-    width: 100%;
-    height: 85%;
-    background: var(--primary);
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #hero-668 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-  }
-  #hero-668 .cs-content {
-    text-align: center;
-    max-width: 48rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  #hero-668 .cs-breadcrumbs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #hero-668 .cs-link {
-    font-family: var(--smallCaps);
-    font-size: 0.875rem;
-    line-height: 1.2em;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    color: var(--textLight);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-  #hero-668 .cs-link:last-of-type {
-    /* remove the chevron on the last list item */
-  }
-  #hero-668 .cs-link:last-of-type::after {
-    display: none;
-  }
-  #hero-668 .cs-link:after {
-    /* chevron */
-    content: "";
-    width: 0.75rem;
-    height: 1rem;
-    margin: 0 1rem;
-    background: url("../svgs/chevron.svg");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    display: block;
-  }
-  #hero-668 .cs-link.cs-active {
-    opacity: 0.8;
-    font-weight: 300;
-  }
-  #hero-668 .cs-link:hover {
-    color: var(--primary100);
-    text-decoration: underline;
-    text-underline-offset: 0.3em;
-    transition: color 0.3s, text-decoration 0.3s;
-  }
-  #hero-668 .cs-title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-    line-height: 1.2em;
-    text-align: inherit;
-    /* 16 characters wide including spaces */
-    margin: 0 0 1rem 0;
-    color: var(--textLight);
-    position: relative;
-  }
-  #hero-668 .cs-text {
-    /* 16px - 20px */
-    font-size: clamp(1rem, 1.5vw, 1.25rem);
-    line-height: 1.5em;
-    text-align: inherit;
-    width: 100%;
-    margin: 0 0 2rem 0;
-    color: var(--textLight);
-    opacity: 0.8;
-  }
-  #hero-668 .cs-button-group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
-  }
-  #hero-668 .cs-picture {
-    width: 100%;
-    max-width: 38.5rem;
-    /* Changes at desktop */
-    height: 25rem;
-    overflow: hidden;
-    display: block;
-    align-self: center;
-    position: relative;
-  }
-  #hero-668 .cs-picture img {
-    position: relative;
-    align-self: center;
-    height: 100%;
-    width: 100%;
-    /* makes image act as a background image */
-    object-fit: cover;
-  }
-}
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #hero-668 {
-    /* clips the red box from overflowing the section */
-    overflow: hidden;
-    margin-top: clamp(2rem, 5vh, 4rem);
-  }
-  #hero-668:before {
-    /* removed from section container and added to cs-container for easier horizontal positioning */
-    display: none;
-  }
-  #hero-668 .cs-container {
-    flex-direction: row;
-    justify-content: space-between;
-    column-gap: 6.25rem;
-  }
-  #hero-668 .cs-container:before {
-    /* red background box */
-    content: "";
-    width: 100vw;
-    height: 300%;
-    background: var(--primary);
-    opacity: 1;
-    position: absolute;
-    display: block;
-    top: 50%;
-    /* 200px - 305px, positioning it off the right edge of the container which has a fixed width */
-    right: clamp(12.5rem, 20vw, 19.0625rem);
-    z-index: -1;
-    transform: translateY(-50%);
-  }
-  #hero-668 .cs-content {
-    text-align: left;
-    width: 53%;
-    /* prevents flex-box from squishing it */
-    flex: none;
-    align-items: flex-start;
-  }
-  #hero-668 .cs-picture {
-    width: 50vw;
-    max-width: 100%;
-    /* 714px - 800px */
-    height: clamp(44.625rem, 60vw, 50rem);
-    /* push 100px left of that center line from the left property. this ensures it always stays exactly 100px right of the center line and won't move */
-    margin-left: 6.25rem;
-    position: absolute;
-    bottom: 0;
-    /* send the left edge of the element to line up at the center of the screen */
-    left: 50%;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-  body.dark-mode #hero-668:before {
-    filter: brightness(50%);
-  }
-  body.dark-mode #hero-668 .cs-container:before {
-    filter: brightness(50%);
-  }
-}
-/*-- -------------------------- -->
 <---       Side By Side         -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
@@ -211,16 +11,14 @@
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 7vw, 4rem);
   }
   #sbs-578 .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
-    max-width: 32.625rem;
+    max-width: 48rem;
     /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
     padding: var(--sectionPadding);
-    padding-top: 0;
     /* prevents padding from affecting width and height */
     box-sizing: border-box;
     display: flex;
@@ -239,7 +37,8 @@
     display: block;
     position: relative;
     width: 100%;
-    height: 18.75rem;
+    height: auto;
+    aspect-ratio: 16/9;
     order: 2;
   }
   #sbs-578 .cs-picture img {
@@ -251,8 +50,8 @@
     object-fit: cover;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
   #sbs-578 {
     padding: var(--sectionPadding);
   }
@@ -269,11 +68,12 @@
     order: 2;
   }
   #sbs-578 .cs-picture {
-    width: 47vw;
+    width: 100%;
     max-width: 30.875rem;
     /* 518px - 700px */
-    height: clamp(32.375rem, 63vw, 43.75rem);
+    height: auto;
     /* 16px - 28px, added margin left and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it left and bottom. This maintains consistent spacing left and bottom */
+    aspect-ratio: 2/3;
     margin: 0 0 clamp(1rem, 2.4vw, 1.75rem) clamp(1rem, 2.4vw, 1.75rem);
     position: relative;
     order: 1;
@@ -283,7 +83,7 @@
     content: "";
     width: 50%;
     height: 60%;
-    background: var(--secondary300);
+    background: var(--secondary400);
     opacity: 1;
     display: block;
     position: absolute;
@@ -295,7 +95,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #sbs-578 {
-    background-color: var(--primary);
+    background-color: var(--medium);
   }
   body.dark-mode #sbs-578 .cs-topper {
     color: var(--secondary);
@@ -388,7 +188,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
     z-index: 1;
   }
@@ -508,8 +308,8 @@
   #steps-284 .cs-text {
     margin-bottom: 1rem;
   }
-  #steps-284 .cs-button-solid {
-    margin-top: 1rem;
+  #steps-284 .nm-button-secondary {
+    margin-top: 1.5rem;
   }
   #steps-284 .nm-phase-topper {
     font-family: var(--smallCaps);
@@ -826,93 +626,6 @@
 @media only screen and (min-width: 48rem) {
   body.dark-mode #quote-2434 .cs-background:before {
     background: linear-gradient(to right, rgba(1, 3, 8, 0) 0%, rgba(1, 3, 8, 0.84) 13%, rgb(1, 3, 8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  }
-}
-/*-- -------------------------- -->
-<---       Call To Action       -->
-<--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-  #cta-2443 {
-    padding: var(--sectionPadding);
-    position: relative;
-    z-index: 1;
-  }
-  #cta-2443 .cs-container {
-    width: 100%;
-    max-width: 80rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* 40px - 48px */
-    gap: clamp(2.5rem, 5vw, 3rem);
-  }
-  #cta-2443 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-    gap: 2rem;
-  }
-  #cta-2443 .cs-title {
-    font-size: clamp(3rem, 8vw, 3.75rem);
-    margin: 0;
-    color: var(--textLight);
-    flex: none;
-    align-self: center;
-  }
-  #cta-2443 .cs-text {
-    margin-bottom: 1rem;
-    color: var(--textLight);
-    opacity: 0.8;
-  }
-  #cta-2443 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
-  #cta-2443 .cs-button-solid {
-    line-height: 1.4;
-    padding: 1rem 1rem;
-    text-wrap: balance;
-  }
-  #cta-2443 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #cta-2443 .cs-background img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
-  }
-}
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #cta-2443 .cs-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-  #cta-2443 .cs-flex {
-    max-width: 23.25rem;
-  }
-}
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #cta-2443 {
-    background-color: rgba(0, 0, 0, 0.8);
   }
 }
 

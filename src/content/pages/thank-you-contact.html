@@ -1,0 +1,81 @@
+---
+title: "In My Inbox, Not the Void"
+description: "You reached out &mdash; thank you! I’ll be in touch soon. Until then, take a peek at the Start Here page or poke around the blog."
+preloadImg: '/assets/textures/blue-banner-m.webp'
+permalink: 'thank-you-contact-submission/'
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="../../assets/css/thank-you.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/thank-you.css" />
+    </noscript>
+    <meta property="og:type" content="website" />
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">
+            Thanks for reaching out, I’ll be in touch soon.
+        </h1>
+        <p class="nm-subhead">
+            Your message landed safely in my inbox. I typically reply within 1&ndash;2 business days.
+        </p>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1638">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Now we wait (but not for long)</span>
+                <h2 class="cs-title">Here's what to expect</h2>
+                <ul>
+                    <li>You’ll get a reply from me (tianna@nevamasquerade.design) within 48 hours</li>
+                    <li>If we need to hop on a call, I’ll send over a scheduling link</li>
+                    <li>In the meantime, feel free to explore the blog or Start Here page</li>
+                </ul>
+                <p class="cs-text">
+                    Didn’t hear back in a few days? Something may have gone awry. You can always reach me directly at tianna@nevamasquerade.design.
+                </p>
+            </div>
+            <div class="cs-flex nm-highlight">
+                <h3 class="cs-h3">Curious while you wait?</h3>
+                <p class="cs-text">
+                    If you’re new here, the Start Here page is a great way to get oriented, especially if you’re figuring out next steps for your website or messaging.
+                </p>
+                <a href="/start-here/" class="nm-button-secondary">
+                    Explore Start Here
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                </a>
+            </div>
+        </div>  
+    </div>
+</section>
+                                
+
+{% endblock %}
