@@ -1,4 +1,4 @@
-const CACHE_NAME = 'my-site-cache-v22';
+const CACHE_NAME = 'my-site-cache-v23';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -6,14 +6,18 @@ const urlsToCache = [
   '/assets/css/404.css',
   '/assets/css/about.css',
   '/assets/css/blog.css',
+  '/assets/css/blog-post.css',
   '/assets/css/contact.css',
   '/assets/css/content-pages.css',
   '/assets/css/critical.css',
   '/assets/css/dark.css',
   '/assets/css/global-styles.css',
   '/assets/css/local.css',
+  '/assets/css/sales.css',
   '/assets/css/services.css',
+  '/assets/css/start-here.css',
   '/assets/css/tables.css',
+  '/assets/css/thank-you.css',
   '/assets/js/dark.js',
   '/assets/js/nav.js',
   '/site.webmanifest',
