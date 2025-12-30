@@ -37,7 +37,7 @@ permalink: 'start-here/'
         <picture class="cs-picture">
             <source media="(max-width: 1023px)" srcset="../../assets/images/start-here-m.webp">
             <source media="(min-width: 1024px)" srcset="../../assets/images/start-here.webp">
-            <img aria-hidden="true" decoding="async" src="../../assets/images/start-here.webp" alt="A cat studies an open book with a ship and a globe in the background." width="630" height="814">
+            <img aria-hidden="true" fetchpriority="high" decoding="async" src="../../assets/images/start-here.webp" alt="A cat studies an open book with a ship and a globe in the background." width="630" height="814">
         </picture>
         <!--Green Waves-->
         <picture class="cs-waves">
@@ -186,6 +186,18 @@ permalink: 'start-here/'
                 </a>
             </li>
             <li class="cs-item">
+                <a href="/blog/bad-ux/" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="../../assets/images/blog/bad-ux-m.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="../../assets/images/blog/bad-ux-m.webp">
+                        <img loading="lazy" decoding="async" src="../../assets/images/blog/bad-ux-m.webp" alt="Fluffy cat squished awkwardly into a clear glass fishbowl. Cute, but not remotely functional." width="270" height="200">
+                    </picture>
+                    <h3 class="cs-h3">{{ blogs.badUX.title }}</h3>
+                </a>
+            </li>
+            <li class="cs-item">
                 <a href="/blog/evolving-offers/" class="cs-link">
                     <picture class="cs-picture">
                         <!--Mobile Image-->
@@ -207,18 +219,6 @@ permalink: 'start-here/'
                         <img loading="lazy" decoding="async" src="../../assets/images/blog/weak-copy-m.webp" alt="A view from below of a cat on glass looking down. It appears floating in black space." width="270" height="200">
                     </picture>
                     <h3 class="cs-h3">{{ blogs.weakCopy.title }}</h3>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/blog/why-i-made-storycraft/" class="cs-link">
-                    <picture class="cs-picture">
-                        <!--Mobile Image-->
-                        <source media="(max-width: 600px)" srcset="../../assets/images/blog/why-story-m.webp">
-                        <!--Tablet and above Image-->
-                        <source media="(min-width: 601px)" srcset="../../assets/images/blog/why-story-m.webp">
-                        <img loading="lazy" decoding="async" src="../../assets/images/blog/why-story-m.webp" alt="A cat stretched across loose puzzle pieces." width="270" height="200">
-                    </picture>
-                    <h3 class="cs-h3">{{ blogs.whyStory.title }}</h3>
                 </a>
             </li>
         </ul>

@@ -8,7 +8,7 @@
     /* 300px - 400px on top - leaving extra space for the navigation */
     /* 60px - 100px on bottom */
     margin-top: 60px;
-    padding: clamp(18.75rem, 54vw, 25rem) 1rem clamp(3.75rem, 7.5vw, 6.25rem) 1rem;
+    padding: clamp(4.75rem, 30vw, 14.5rem) 1rem clamp(1.75rem, 10vh, 3.25rem) 1rem;
     /* prevents the topper line from causing an overflow */
     overflow: hidden;
     position: relative;
@@ -88,6 +88,7 @@
 @media only screen and (min-width: 64rem) {
   #hero-2149 {
     margin-top: 100px;
+    max-height: 95vh;
   }
   #hero-2149 .cs-background:before {
     /* Overlay */
@@ -224,6 +225,7 @@
     text-align: left;
     padding: 12.5rem 1rem 5rem;
     background-color: var(--secondary);
+    max-height: 95vh;
   }
   #hero-288 .cs-container {
     flex-direction: row;
@@ -237,6 +239,7 @@
     flex: none;
     align-items: flex-start;
     text-align: left;
+    padding: 3rem 1rem;
   }
   #hero-288 .cs-title,
   #hero-288 .cs-text {
@@ -247,6 +250,7 @@
     height: auto;
     aspect-ratio: 1/1;
     /* 623px - 814px */
+    margin-top: -3rem;
   }
   #hero-288 .cs-waves {
     height: 100%;

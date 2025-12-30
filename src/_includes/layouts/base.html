@@ -38,6 +38,20 @@
 
         <link rel="manifest" href="/site.webmanifest">
 
+        <!-- Sitewide Stylesheets and Scripts -->
+        <link rel="stylesheet" href="/assets/css/root.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <link rel="stylesheet" href="/assets/css/critical.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <link rel="stylesheet" href="/assets/css/dark.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <link rel="stylesheet" href="/assets/css/global-styles.css" media="print" onload="this.media='all'; this.onload=null;" />
+        <noscript>
+            <link rel="stylesheet" href="/assets/css/root.css" />
+            <link rel="stylesheet" href="/assets/css/critical.css" />
+            <link rel="stylesheet" href="/assets/css/dark.css" />
+            <link rel="stylesheet" href="/assets/css/global-styles.css" />
+        </noscript>
+        <script defer src="/assets/js/dark.js"></script>
+        <script defer src="/assets/js/nav.js"></script>
+
         <!-- Preloads -->
         <link
             rel="preload"
@@ -77,19 +91,7 @@
             <link rel="preload" as="image" href="{{ preloadImg }}" fetchpriority="high" />
         {% endif %}
 
-        <!-- Sitewide Stylesheets and Scripts -->
-        <link rel="stylesheet" href="/assets/css/root.css" media="print" onload="this.media='all'; this.onload=null;" />
-        <link rel="stylesheet" href="/assets/css/critical.css" media="print" onload="this.media='all'; this.onload=null;" />
-        <link rel="stylesheet" href="/assets/css/dark.css" media="print" onload="this.media='all'; this.onload=null;" />
-        <link rel="stylesheet" href="/assets/css/global-styles.css" media="print" onload="this.media='all'; this.onload=null;" />
-        <noscript>
-            <link rel="stylesheet" href="/assets/css/root.css" />
-            <link rel="stylesheet" href="/assets/css/critical.css" />
-            <link rel="stylesheet" href="/assets/css/dark.css" />
-            <link rel="stylesheet" href="/assets/css/global-styles.css" />
-        </noscript>
-        <script defer src="/assets/js/dark.js"></script>
-        <script defer src="/assets/js/nav.js"></script>
+
 
         
         <script

@@ -84,9 +84,9 @@ tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. A
     <!-- Background Image -->
     <picture class="cs-background">
         <source media="(max-width: 600px)" srcset="assets/images/index-hero-m.webp">
-        <source media="(min-width: 601px) and (max-width: 1599px)" srcset="assets/images/index-hero.webp">
-        <source media="(min-width: 1600px)" srcset="assets/images/index-hero-w.webp">
-        <img loading="lazy" decoding="async" src="assets/images/index-hero.webp" alt="A cat wearing glasses, a top hat, and a bowtie sits next to a stack of books and an owl figurine." width="1920" height="907" aria-hidden="true">
+        <source media="(min-width: 601px) and (max-width: 1023px)" srcset="assets/images/index-hero.webp">
+        <source media="(min-width: 1024px)" srcset="assets/images/index-hero-w.webp">
+        <img fetchpriority="high" loading="eager" decoding="async" src="assets/images/index-hero.webp" alt="A cat wearing glasses, a top hat, and a bowtie sits next to a stack of books and an owl figurine." width="1920" height="1080" aria-hidden="true">
     </picture>
 </section>
 

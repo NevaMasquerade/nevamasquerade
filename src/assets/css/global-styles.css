@@ -267,6 +267,9 @@
     height: 1px;
     width: 100%;
   }
+  #cs-navigation .cs-li-link.cs-active {
+    cursor: default;
+  }
   #cs-navigation .cs-li-link.cs-active:before {
     display: block;
   }
@@ -639,7 +642,13 @@
     width: 0%;
     transition: width 0.3s;
   }
+  #cs-navigation .cs-li-link.cs-active {
+    cursor: default;
+  }
   #cs-navigation .cs-li-link.cs-active:before {
+    width: 100%;
+  }
+  #cs-navigation .cs-li-link.cs-active:hover:before {
     width: 100%;
   }
 }

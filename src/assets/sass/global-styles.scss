@@ -328,6 +328,8 @@
             }
 
             &.cs-active {
+                cursor: default;
+
                 &:before {
                     display: block;
                 }
@@ -794,7 +796,13 @@
             }
 
             &.cs-active {
+                cursor: default;
+
                 &:before {
+                    width: 100%;
+                }
+
+                &:hover:before {
                     width: 100%;
                 }
             }
