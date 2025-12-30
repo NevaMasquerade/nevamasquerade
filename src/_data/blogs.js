@@ -12,4 +12,7 @@ module.exports = {
   weakCopy: { 
     title: "Why Your Website Messaging Isn’t Converting (And What to Do Instead)", 
     description: "Your website looks good, but it’s not doing its job. Here’s why your website isn’t converting — and the three shifts that change everything." },
+  badUX: { 
+    title: "What Good Websites Get Right (That Yours Might Not Yet)", 
+    description: "Your website might be stylishly sabotaging itself. Let’s talk UX, squint tests, and what Apple’s latest fail can teach your business." },
 };

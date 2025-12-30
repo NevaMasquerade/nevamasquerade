@@ -1,0 +1,504 @@
+---
+title: "Modern ≠ Usable"
+description: "Beautiful sites with bad UX are everywhere. Here’s how to stop confusing your users, convert more leads, and make your website actually work."
+preloadImg: '/assets/images/blog/bad-ux-m.webp'
+ogImage: '/assets/images/og/bad-ux.png'
+permalink: 'blog/bad-ux/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/assets/css/blog-post.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog-post.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">{{ blogs.badUX.title}}</h1>
+        <div class="blog-authorGroup">
+            <!--Blog Date-->
+            <span class="blog-date">Last Updated: December 29, 2025</span>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--               Featured Image                 -->
+<!-- ============================================ -->
+<div class="nm-featured-image">
+    <picture class="blog-mainImage">
+        <source media="(max-width: 600px)" srcset="../../../assets/images/blog/bad-ux-m.webp">
+        <source media="(min-width: 601px)" srcset="../../../assets/images/blog/bad-ux.webp">
+        <img
+            src="../../../assets/images/blog/bad-ux.webp"
+            alt="Fluffy cat squished awkwardly into a clear glass fishbowl. Cute, but not remotely functional."
+            decoding="async"
+            width="2200"
+            height="1237"
+            fetchpriority="high"
+        />
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+
+<div class="blog-container main-content-wrapper">
+    
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                  Blog Article                -->
+        <!-- ============================================ -->
+
+        <article class="blog-article">
+            <section id="blog-content">
+                <p>
+                    So you’ve got a website. You picked your colors, got a solid logo, and maybe
+                    added some fun scrolling effects or animations to spice things up. It looks
+                    good. You’ve put time into it. Maybe even money.
+                </p>
+                <p>
+                    But people are visiting and… not doing much else.
+                </p>
+                <p>
+                    They’re not clicking. They’re not booking. They’re not reaching out.
+                </p>
+                <p>
+                    If that’s happening, I’ll be straight with you:<br><strong>The issue
+                    probably isn’t your design. It’s the experience.</strong>
+                </p>
+                <p>
+                    Most coaches and consultants don’t know they’re making these mistakes — but when
+                    your site is doing very little to move people closer to working with you, you
+                    sure can feel it.
+                </p>
+                <p>
+                    So if you’re wondering why people are bouncing instead of buying, this post is
+                    for you.
+                </p>
+                <p>
+                    Let’s talk about what’s really going on — and how to fix it.
+                </p>
+                <hr>
+                <h2>This Mistake Is More Common Than You Think</h2>
+                    <p>
+                        There’s a reason so many solo service providers run into user experience (UX)
+                        issues. The internet is flooded with flashy templates and design trends. Sites
+                        with clever wording, minimal navigation, and wild scrolling features are
+                        everywhere — and they <em>look</em> successful.
+                    </p>
+                    <p>
+                        So when you DIY your site — or even when you hire someone — it’s tempting to
+                        lean into what’s trendy. You assume that if big brands are doing something, it
+                        must be the right way to do it.
+                    </p>
+                    <p>
+                        But here’s the part most people don’t realize: <br><strong>Just because
+                        something looks modern doesn’t mean it’s usable.</strong>
+                    </p>
+                    <p>
+                        For example, in 2025 <a
+                        href="https://www.apple.com/newsroom/2025/06/apple-introduces-a-delightful-and-elegant-new-software-design/">Apple
+                        released Liquid Glass</a>, its newest software design with iOS 26. It’s sleek,
+                        cutting edge, and aesthetically pleasing at a glance. Plus, it’s Apple, so it
+                        must be good, right?
+                    </p>
+                    <p>
+                        Not so much.
+                    </p>
+                    <p>
+                        Liquid Glass is pretty, but <em>unusable</em>. Here are some of the issues I had
+                        with it within an hour of updating my phone:
+                    </p>
+                    <ul>
+                        <li>Impossible to read notifications over the light colored portions of my
+                        wallpaper photo (problem: not enough contrast)</li>
+                        <li>Hard to quickly find apps with all the colors removed (problem: apps are
+                        less recognizable)</li>
+                        <li>Unable to navigate between tabs in Safari after the interface changed
+                        (problem: hidden essential functions)</li>
+                    </ul>
+                    <p>
+                        (This isn’t just my opinion; the Nielsen Norman Group, one of the top usability
+                        research groups in the world, wrote about these issues and more in <a
+                        href="https://www.nngroup.com/articles/liquid-glass/">Liquid Glass Is Cracked,
+                        and Usability Suffers in iOS 26</a>.)
+                    </p>
+                    <p>
+                        Maybe you’ve felt those frustrations, too.
+                    </p>
+                    <p>
+                        Anyways, I bring this up to point out that Apple has resources, budgets, and
+                        teams that are way beyond our reach as solo business owners.
+                    </p>
+                    <p>
+                        They should know better, yet they still missed the mark on this one.
+                    </p>
+                    <p>
+                        Here’s the truth: most of your prospects don’t care how slick your website
+                        looks. They care about whether or not they can figure out what you do, why it
+                        matters, and how to take the next step.
+                    </p>
+                    <p>
+                        That’s what UX — user experience — is really about. And it’s what your website
+                        needs to get right if you want it to work <em>for</em> your business, not
+                        against it.
+                    </p>
+                    <hr>
+                <h2>Why Bad UX Is Quietly Holding Your Business Back</h2>
+                    <p>
+                        Your website doesn’t need to win design awards. It needs to help your people get
+                        what they came for — quickly, clearly, and without confusion. Bad UX gets in the
+                        way of that. Every time.
+                    </p>
+                    <p>
+                        Here’s how.
+                    </p>
+                    <h3>1. It makes people give up before they even get started</h3>
+                        <p>
+                            Usability is a big deal. If someone lands on your website and can’t figure out
+                            where to go or what you do, they’re going to leave. Not because your business
+                            isn’t valuable, but because your site didn’t make it easy for them to stick
+                            around.
+                        </p>
+                        <p>
+                            According to Microsoft, <a
+                            href="https://info.microsoft.com/rs/157-GQE-382/images/EN-CNTNT-Report-DynService-2017-global-state-customer-service-en-au.pdf">56%
+                            of people have stopped doing business with a brand because of poor digital
+                            experiences</a>. That includes websites that are confusing, slow, or hard to
+                            use.
+                        </p>
+                        <p>
+                            Think about your own behavior here. If you have a choice, do you stick around as
+                            a customer if the website is a pain to use? I don’t.
+                        </p>
+                        <p>
+                            So if your navigation is vague, your buttons aren’t clear, or your site is
+                            glitchy on mobile… you're losing people who could’ve become clients.
+                        </p>
+                    <h3>2. It makes you look less credible than you are</h3>
+                        <p>
+                            According to Stanford, <a
+                            href="https://credibility.stanford.edu/guidelines/index.html">75% of people
+                            judge a company’s credibility based on its website design</a>. (So much for
+                            don’t judge a book by its cover.)
+                        </p>
+                        <p>
+                            What does this mean? Even if your coaching gets results or your service is
+                            top-notch, if your site feels janky, cluttered, or half-baked? People assume the
+                            rest of your business is, too.
+                        </p>
+                        <p>
+                            Your website is often your first impression. If it’s hard to use or doesn’t feel
+                            professional, that can be enough to make someone second-guess hiring you — no
+                            matter how good you actually are.
+                        </p>
+                    <h3>3. It drives up your marketing costs</h3>
+                        <p>
+                            Let’s be real: client acquisition is expensive. Whether you’re running ads,
+                            posting content, or building a referral network, it takes time and effort to get
+                            someone to your site.
+                        </p>
+                        <p>
+                            So when they land there and immediately bounce because of a bad experience?
+                            That’s wasted effort.
+                        </p>
+                        <p>
+                            Here’s the kicker: Forrester research shows that <a
+                            href="https://www.forrester.com/report/The-Six-Steps-For-Justifying-Better-UX/RES117708">a
+                            well-designed user interface can increase conversion rates by up to 200%</a>.
+                        </p>
+                        <p>
+                            Good UX helps your website pull more weight. It turns visits into leads. It
+                            gives people a reason to trust you. And it makes your entire marketing strategy
+                            more effective.
+                        </p>
+                <hr>
+                <h2>How I Know This Isn’t Just Theory</h2>
+                    <p>
+                        This isn’t something I read in a blog post once. I started learning about UX in
+                        the trenches.
+                    </p>
+                    <p>
+                        Back in 2021, I was working on the web team at the U.S. Department of State. One
+                        of my first major projects in my new role as product owner? Building an
+                        interactive world map that showed where the United States had donated COVID-19
+                        vaccines.
+                    </p>
+                    <p>
+                        Sounds simple. But maps are a UX minefield.
+                    </p>
+                    <p>
+                        Some countries — like Russia — are massive and easy to click. Others — like
+                        Monaco — are so tiny they aren’t even visible. As a result, mobile users
+                        couldn’t tap the right countries. And many people, myself included, don’t know
+                        geography well enough to recognize what they’re looking for on a blank map.
+                    </p>
+                    <p>
+                        So we didn’t just redesign the map — we rethought the experience entirely.
+                    </p>
+                    <p>
+                        We broke it into regional maps. We added clickable text lists. And on mobile? We
+                        ditched the maps altogether and used plain text links, which were faster and
+                        easier to use.
+                    </p>
+                    <p>
+                        This wasn’t flashy. But it worked. Because we focused on what the user needed to
+                        do — and made that part easier.
+                    </p>
+                    <p>
+                        That same thinking applies to your website. You don’t need to impress people
+                        with flashy bells and whistles. You need to help them understand what you do and
+                        how to take the next step. The simpler, the better.
+                    </p>
+                <hr>
+                <h2>What to Do Instead: Focus on These Three Core Areas</h2>
+                    <p>
+                        You don’t need to do a full UX audit or hire a research firm. But you
+                        <em>do</em> need to think about your site from your user’s perspective — and
+                        make sure it holds up in three key areas.
+                    </p>
+                    <hr>
+                    <h3>1. Content: What It Says</h3>
+                        <p>
+                            Your content is more than just your message. It’s the guide your visitor relies
+                            on to understand what you offer, how it helps, and what to do next.
+                        </p>
+                        <p>
+                            Here’s what to pay attention to:
+                        </p>
+                        <ul>
+                            <li><strong>Navigation labels</strong> should be straightforward. Skip the
+                            clever names. “Work With Me” is clearer than “The Journey.”</li>
+                            <li><strong>Headings</strong> should help skimmers find what they need
+                            fast.</li>
+                            <li><strong>Link text</strong> should tell people what they’re clicking on.
+                            “Click here” and “Learn more” aren’t enough.</li>
+                            <li><strong>Buttons</strong> should have a clear action. “Book Your Free Call”
+                            is better than “Submit.”</li>
+                        </ul>
+                        <p>
+                            These microcopy elements aren’t for unbridled creativity — they have a job. Your
+                            top priority for them is clarity, followed by conciseness, and lastly character.
+                        </p>
+                        <p>
+                            You can still add a lot of personality to your website (heck, mine is
+                            cat-themed), but if your words are vague, confusing, or trying too hard to sound
+                            clever, your users won’t stick around to decode them.
+                        </p>
+                    <hr>
+                    <h3>2. Design: How It Looks</h3>
+                        <p>
+                            Good design supports good content. It makes it easier to read, easier to
+                            navigate, and easier to take action. It also makes people more forgiving of
+                            minor usability issues — that’s called the <a
+                            href="https://www.nngroup.com/articles/aesthetic-usability-effect/">aesthetic-usability
+                            effect</a>.
+                        </p>
+                        <p>
+                            Basically, people tend to think that if something <em>looks</em> good, it also
+                            <em>works</em> good. (Remember how 75% of people judge a company’s credibility
+                            based on its website?)
+                        </p>
+                        <p>
+                            This means that investing in design pays off.
+                        </p>
+                        <p>
+                            I don’t have time to dive into design principles and psychology in this post,
+                            but here are a few quick tips:
+                        </p>
+                        <ul>
+                            <li>A clear <strong>visual hierarchy </strong>— what’s most important should
+                            stand out immediately.</li>
+                            <li><strong>Consistency</strong> with fonts, colors, and spacing across your
+                            site.</li>
+                            <li>Smart use of <strong>design principles</strong> like grouping related
+                            content together so people understand what goes with what.</li>
+                        </ul>
+                        <p>
+                            You don’t need a minimalist layout or some designer-chic look. You need a layout
+                            that helps people process what they’re seeing without working too hard.
+                        </p>
+                    <hr>
+                    <h3>3. Tech: How It Works</h3>
+                        <p>
+                            If your site doesn’t <em>function</em>, nothing else matters. The best content
+                            and design can’t make up for a broken or slow site.
+                        </p>
+                        <p>
+                            This is where things can get very, well, technical. It quickly becomes
+                            overwhelming if you don’t speak developer, and I’ll be honest, a lot of it still
+                            goes over my head.
+                        </p>
+                        <p>
+                            Here’s your non-technical tech checklist:
+                        </p>
+                        <ul>
+                            <li><strong>Does your site load fast?</strong> It should load in under 3
+                            seconds. </li>
+                            <li><strong>Is it mobile-friendly?</strong> You should not have to awkwardly
+                            scroll sideways at all.</li>
+                            <li><strong>Do all the links and buttons work?</strong> Watch for 404 errors and
+                            test that form submissions work.</li>
+                            <li><strong>Are your images compressed properly?</strong> Aim to keep all images
+                            under 50KB to help your website load quickly.</li>
+                        </ul>
+                        <p>
+                            Some of these issues are harder to fix than others, but they are all critical
+                            for a good user experience.
+                        </p>
+                        <p>
+                            If your site’s slow, glitchy, or broken on mobile, people will leave. Not
+                            because they’re impatient — but because we’ve all been trained to expect
+                            websites to work. If yours doesn’t, people won’t make excuses for it. They’ll
+                            just go elsewhere.
+                        </p>
+                    <hr>
+                    <h3>Bonus: Accessibility Is Just Good UX</h3>
+                        <p>
+                            Accessibility isn’t some extra feature you add at the end. It’s built into good
+                            design, good content, and good tech.
+                        </p>
+                        <ul>
+                            <li>Clear link text helps screen readers <em>and</em> fast readers.</li>
+                            <li>High contrast helps low-vision users <em>and</em> people using your site
+                            outside in the sun.</li>
+                            <li>Mobile-friendly design helps <em>everyone</em> on their phone — which is
+                            most people these days.</li>
+                        </ul>
+                        <p>
+                            Accessibility doesn’t just help a few people. It improves the experience for
+                            <em>all</em> your users. And it’s worth taking seriously.
+                        </p>
+                <hr>
+                <h2>What This Looks Like in Practice</h2>
+                    <p>
+                        Most professionals specialize in one of these areas. If you want words, hire a
+                        copywriter. If you want looks, hire a graphic designer. And if you want code,
+                        hire a developer.
+                    </p>
+                    <p>
+                        If you have the resources to hire a team of specialists who work well together,
+                        by all means hire the dream team. But as I’ve shown, you really need all three
+                        areas supporting each other — hiring one or two specialists ain’t gonna cut it.
+                    </p>
+                    <p>
+                        Alternatively, if you have time and budget constraints, a generalist, like me,
+                        might be a better fit. My knowledge may not be as deep as a specialist’s, but I
+                        make up for that with breadth and crossing disciplines.
+                    </p>
+                    <p>
+                        In <a href="/storycraft/">Storycraft</a>, my done-for-you website package, I take care of
+                        all this for you.
+                    </p>
+                    <ul>
+                        <li>I write your content with a focus on clarity, tone, and conversion.</li>
+                        <li>I design a layout that fits your brand but keeps the user experience front
+                        and center.</li>
+                        <li>I code mobile-first and optimize for fast loading times and clean
+                        functionality.</li>
+                    </ul>
+                    <p>
+                        UX isn’t an afterthought. It’s baked into every step. Because you shouldn’t have
+                        to figure this stuff out on your own — or settle for a site that just “looks
+                        nice.”
+                    </p>
+                    <p>
+                        When your website actually <em>works</em> the way it should, you:
+                    </p>
+                    <ul>
+                        <li>Convert more visitors into leads</li>
+                        <li>Look like the capable, trustworthy pro you are</li>
+                        <li>Feel confident sending people to your site, knowing it’s pulling its
+                        weight<br></li>
+                    </ul>
+                <hr>
+                <h2>“This Feels Like a Lot. Where Should I Start?”</h2>
+                    <p>
+                        Fair question. You don’t have to fix everything at once.
+                    </p>
+                    <p>
+                        Here’s what I’d recommend doing first:
+                    </p>
+                    <ol>
+                        <li><strong>Do the squint test.<br></strong>Pull up your homepage. Squint
+                        your eyes. What jumps out first? If it’s not your main heading and CTA, adjust
+                        the colors, size, or placement so those stand out more.</li>
+                        <li><strong>Fix your link text.<br></strong>Search your site for any
+                        “click here” or “learn more” links. Replace them with something more
+                        descriptive. What is someone actually clicking on?</li>
+                        <li><strong>Check your images.<br></strong>Are your file sizes way bigger
+                        than they need to be? Resize your images to 2x the display size, max, and
+                        compress the files. This alone can speed up your site dramatically.</li>
+                    </ol>
+                    <p>
+                        These are small changes — but they make a difference. Especially if your site
+                        has been sitting untouched for a while.
+                    </p>
+                <hr>
+                <h2>Let Your Website Start Doing Its Job</h2>
+                    <p>
+                        If your website looks good but isn’t converting, it’s probably not a design
+                        issue.
+                    </p>
+                    <p>
+                        It’s the experience.
+                    </p>
+                    <p>
+                        The good news? You can fix that.
+                    </p>
+                    <p>
+                        You can build a site that’s simple, clear, and functional — without sacrificing
+                        style. One that helps people quickly understand what you do and decide to take
+                        the next step.
+                    </p>
+                    <p>
+                        And if you don’t want to do it all yourself? That’s what I’m here for.
+                    </p>
+                <hr>
+                <h2>Ready to Build a Website That Works?</h2>
+                    <p>
+                        If you’re tired of guessing what’s wrong with your site — and you’re ready for
+                        something strategic, thoughtful, and effective — I’d love to help.
+                    </p>
+                    <p>
+                        <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
+                            {% ButtonIcon %}
+                            Start Your Story
+                        </a>
+                    </p>
+                    <p>
+                        Book a free discovery call, and
+                        let’s talk about how your website can finally start working <em>for</em> your
+                        business.
+                    </p>
+            </section>
+        </article>
+    </div>
+    <!-- End .main-content -->
+</div>
+    {% include 'components/cta.html' %}
+{% endblock %}

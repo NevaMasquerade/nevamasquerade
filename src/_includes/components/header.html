@@ -16,6 +16,7 @@
                 aria-hidden="true"
                 decoding="async"
                 class="light-mode-logo"
+                loading="lazy"
             />
             <img
                 src="../../assets/svgs/logo-horizontal-color-dark.svg"
@@ -25,6 +26,7 @@
                 aria-hidden="true"
                 decoding="async"
                 class="dark-mode-logo"
+                loading="lazy"
             />
         </a>
         <!--Navigation List-->
@@ -41,29 +43,39 @@
             <div class="cs-ul-wrapper">
                 <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
                     <li class="cs-li">
-                        <a href="/" class="cs-li-link {% if page.url == '/' %} cs-active {% endif %}">
-                            Home
-                        </a>
+                        {% if page.url == '/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">Home</span>
+                        {% else %}
+                            <a href="/" class="cs-li-link">Home</a>
+                        {% endif %}
                     </li>
                     <li class="cs-li">
-                        <a href="/about/" class="cs-li-link {% if page.url == '/about/' %} cs-active {% endif %}">
-                            About
-                        </a>
+                        {% if page.url == '/about/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">About</span>
+                        {% else %}
+                            <a href="/about/" class="cs-li-link">About</a>
+                        {% endif %}
                     </li>
                     <li class="cs-li">
-                        <a href="/services/" class="cs-li-link {% if page.url == '/services/' %} cs-active {% endif %}">
-                            Services
-                        </a>
+                        {% if page.url == '/services/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">Services</span>
+                        {% else %}
+                            <a href="/services/" class="cs-li-link">Services</a>
+                        {% endif %}
                     </li>
                     <li class="cs-li">
-                        <a href="/blog/" class="cs-li-link {% if page.url == '/blog/' %} cs-active {% endif %}">
-                            Blog
-                        </a>
+                        {% if page.url == '/blog/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">Blog</span>
+                        {% else %}
+                            <a href="/blog/" class="cs-li-link">Blog</a>
+                        {% endif %}
                     </li>
                     <li class="cs-li">
-                        <a href="/contact/" class="cs-li-link {% if page.url == '/contact/' %} cs-active {% endif %}">
-                            Contact
-                        </a>
+                        {% if page.url == '/contact/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">Contact</span>
+                        {% else %}
+                            <a href="/contact/" class="cs-li-link">Contact</a>
+                        {% endif %}
                     </li>
                     <li class="cs-li">
                         <a href="/start-here/" class="cs-button-solid">Start Here</a>
@@ -85,6 +97,7 @@
             alt="sun"
             width="32"
             height="32"
+            loading="lazy"
             />
             <img
                 class="cs-sun"
@@ -94,6 +107,7 @@
                 alt="sun"
                 width="32"
                 height="32"
+                loading="lazy"
             />
         </button>
     </div>
