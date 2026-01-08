@@ -15,4 +15,7 @@ module.exports = {
   badUX: { 
     title: "What Good Websites Get Right (That Yours Might Not Yet)", 
     description: "Your website might be stylishly sabotaging itself. Let’s talk UX, squint tests, and what Apple’s latest fail can teach your business." },
+   funnels: { 
+    title: "Your Website Isn’t a Funnel (But It Should Be): 3 Strategies for Solopreneurs", 
+    description: "How to turn your digital brochure into a real sales funnel — without starting from scratch or sacrificing your soul to “marketing hacks.”" },
 };
