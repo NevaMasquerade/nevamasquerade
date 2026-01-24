@@ -18,11 +18,11 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     text-align: left;
-    color: var(--accent500);
+    color: var(--accent70);
   }
   table thead,
   table tfoot {
-    background-color: var(--accent500);
+    background-color: var(--accent70);
     color: var(--textLight);
     font-family: var(--headerFont);
     font-size: 1.2rem;
@@ -62,7 +62,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode table caption {
-    color: var(--secondary);
+    color: var(--secondary10);
   }
   body.dark-mode table thead,
   body.dark-mode table tfoot {

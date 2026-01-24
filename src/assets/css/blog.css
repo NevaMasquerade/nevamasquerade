@@ -34,7 +34,7 @@
     color: var(--textLight);
   }
   #events-1438 #cs-content-832 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #events-1438 #cs-content-832 .cs-flex-group {
     /* prevents flexbox from squishing it */
@@ -58,7 +58,7 @@
     list-style: none;
     width: 100%;
     max-width: 44rem;
-    background-color: var(--accent500);
+    background-color: var(--accent70);
     border-radius: 0;
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@
   #events-1438 .cs-picture {
     width: 100%;
     height: 15rem;
-    background-color: var(--secondary600);
+    background-color: var(--secondary80);
     display: block;
     position: relative;
     z-index: 1;
@@ -151,7 +151,7 @@
     width: auto;
     height: 1em;
     transition: transform 0.3s;
-    color: var(--secondary300);
+    color: var(--secondary40);
     display: flex;
     align-self: flex-start;
   }
@@ -163,7 +163,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   #events-1438 .cs-background img {
     width: 100%;
@@ -215,7 +215,7 @@
     color: var(--textLight);
   }
   body.dark-mode #events-1438 #cs-content-832 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #events-1438 #cs-content-832 .cs-title,
   body.dark-mode #events-1438 #cs-content-832 .cs-text {

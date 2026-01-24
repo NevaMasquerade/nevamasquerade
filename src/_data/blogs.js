@@ -19,6 +19,6 @@ module.exports = {
     title: "Your Website Isn’t a Funnel (But It Should Be): 3 Strategies for Solopreneurs", 
     description: "How to turn your digital brochure into a real sales funnel — without starting from scratch or sacrificing your soul to “marketing hacks.”" },
   beyondTemplates: { 
-    title: "Hate Sharing Your Website? 3 Steps to Move Beyond Templates", 
+    title: "Hate Sharing Your Website? 3 Steps to a Site You Can't Stop Sharing", 
     description: "Still hiding your site behind “just DM me”? You’ve hit the template wall. Here’s how to rebuild your site so it actually feels like you." },
 };

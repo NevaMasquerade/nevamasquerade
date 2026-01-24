@@ -21,6 +21,8 @@ permalink: 'blog/bad-ux/'
     <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
 
 {% block body %}
+
+
 <!-- ============================================ -->
 <!--                   Banner                     -->
 <!-- ============================================ -->
@@ -63,17 +65,13 @@ permalink: 'blog/bad-ux/'
 <!-- ============================================ -->
 <!--              Main Blog Content               -->
 <!-- ============================================ -->
-
-
-<div class="blog-container main-content-wrapper">
     
     <!--Main content -->
     <div class="main-content">
         <!-- ============================================ -->
         <!--                  Blog Article                -->
         <!-- ============================================ -->
-
-        <article class="blog-article">
+        <article class="blog-article">        
             <section id="blog-content">
                 <p>
                     So you’ve got a website. You picked your colors, got a solid logo, and maybe
@@ -309,7 +307,24 @@ permalink: 'blog/bad-ux/'
                             cat-themed), but if your words are vague, confusing, or trying too hard to sound
                             clever, your users won’t stick around to decode them.
                         </p>
-                    <hr>
+                        
+                        <aside id="blog-1289" class="related-post" aria-label="Related article">
+                            <div class="cs-item cs-highlight">
+                                <a href="/blog/website-not-converting/" class="cs-link">
+                                    <picture class="cs-picture">
+                                        <img loading="lazy" decoding="async" src="../../assets/images/blog/weak-copy-m.webp" alt="A bewildered cat staring down through glass amidst a black void." width="270" height="200">
+                                    </picture>
+                                    <div class="cs-flex">
+                                        <span class="cs-topper">More like this</span>
+                                        <h4 class="aside-title">{{ blogs.weakCopy.title }}</h4>
+                                        <p class="cs-item-text">
+                                            {{ blogs.weakCopy.description }}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>  
+                        </aside>
+
                     <h3>2. Design: How It Looks</h3>
                         <p>
                             Good design supports good content. It makes it easier to read, easier to
@@ -342,7 +357,24 @@ permalink: 'blog/bad-ux/'
                             You don’t need a minimalist layout or some designer-chic look. You need a layout
                             that helps people process what they’re seeing without working too hard.
                         </p>
-                    <hr>
+
+                        <aside id="blog-1289" class="related-post" aria-label="Related article">
+                            <div class="cs-item cs-highlight">
+                                <a href="/blog/move-beyond-templates/" class="cs-link">
+                                    <picture class="cs-picture">
+                                        <img loading="lazy" decoding="async" src="../../assets/images/blog/beyond-templates-m.webp" alt="Fluffy white cat peeking out from behind a wall, looking both shy and suspicious — like it knows its template is showing." width="270" height="200">
+                                    </picture>
+                                    <div class="cs-flex">
+                                        <span class="cs-topper">More like this</span>
+                                        <h4 class="aside-title">{{ blogs.beyondTemplates.title }}</h4>
+                                        <p class="cs-item-text">
+                                            {{ blogs.beyondTemplates.description }}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>  
+                        </aside>
+
                     <h3>3. Tech: How It Works</h3>
                         <p>
                             If your site doesn’t <em>function</em>, nothing else matters. The best content
@@ -499,6 +531,6 @@ permalink: 'blog/bad-ux/'
         </article>
     </div>
     <!-- End .main-content -->
-</div>
+
     {% include 'components/cta.html' %}
 {% endblock %}

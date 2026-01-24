@@ -8,7 +8,7 @@
     margin: auto;
     position: relative;
     z-index: 10;
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   #services-2175:before {
     /* background color */
@@ -165,7 +165,7 @@
     padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
     /* prevents flexbox from affecting height and width */
     box-sizing: border-box;
-    background-color: var(--primary);
+    background-color: var(--primary70);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -181,7 +181,7 @@
     color: var(--textLight);
   }
   #contact-1333 .cs-form .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #contact-1333 .cs-form .cs-text {
     color: var(--textLight);
@@ -242,21 +242,21 @@
   #contact-1333 .cs-faq-item {
     list-style: none;
     width: 100%;
-    border-bottom: 1px solid var(--secondary300);
+    border-bottom: 1px solid var(--secondary40);
     transition: border-bottom 0.3s;
   }
   #contact-1333 .cs-faq-item.active {
-    border-color: var(--accent400);
+    border-color: var(--accent50);
   }
   #contact-1333 .cs-faq-item.active .cs-button {
     color: var(--textDark);
   }
   #contact-1333 .cs-faq-item.active .cs-button:before {
-    background-color: var(--accent400);
+    background-color: var(--accent50);
     transform: rotate(315deg);
   }
   #contact-1333 .cs-faq-item.active .cs-button:after {
-    background-color: var(--accent400);
+    background-color: var(--accent50);
     transform: rotate(-315deg);
   }
   #contact-1333 .cs-faq-item.active .cs-item-p {
@@ -290,7 +290,7 @@
     content: "";
     width: 0.5rem;
     height: 0.125rem;
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
     opacity: 1;
     border-radius: 50%;
     position: absolute;
@@ -307,7 +307,7 @@
     content: "";
     width: 0.5rem;
     height: 0.125rem;
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
     opacity: 1;
     border-radius: 50%;
     position: absolute;
@@ -333,7 +333,7 @@
     /* 16px - 24px */
     padding: 0 clamp(1rem, 2vw, 1.5rem);
     opacity: 0;
-    color: var(--bodyTextColor);
+    color: var(--textDark);
     /* clips the text so it doesn't show up */
     overflow: hidden;
     transition: opacity 0.3s, padding-bottom 0.3s;
@@ -370,7 +370,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #contact-1333 .cs-button:before, body.dark-mode #contact-1333 .cs-button:after {
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
   }
   body.dark-mode #contact-1333 .cs-item-p {
     opacity: 0.8;
@@ -380,16 +380,16 @@
     opacity: 0.4;
   }
   body.dark-mode #contact-1333 .cs-faq-item.active {
-    border-color: var(--primary200);
+    border-color: var(--primary10);
   }
   body.dark-mode #contact-1333 .cs-faq-item.active .cs-button {
     color: var(--textLight);
   }
   body.dark-mode #contact-1333 .cs-faq-item.active .cs-button:before {
-    background-color: var(--primary200);
+    background-color: var(--primary10);
   }
   body.dark-mode #contact-1333 .cs-faq-item.active .cs-button:after {
-    background-color: var(--primary200);
+    background-color: var(--primary10);
   }
   body.dark-mode #contact-1333 .cs-button {
     color: var(--textLight);

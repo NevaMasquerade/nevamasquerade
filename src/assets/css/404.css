@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-574 {
-    background-color: var(--primary);
+    background-color: var(--primary70);
     padding-top: 68px;
   }
   #sbs-574 .cs-container {
@@ -33,7 +33,7 @@
     align-items: flex-start;
   }
   #sbs-574 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary30);
   }
   #sbs-574 .cs-title {
     color: var(--textLight);
@@ -75,7 +75,7 @@
     margin-left: 0;
     margin-right: 0;
     padding: var(--sectionPadding);
-    background-color: var(--secondary);
+    background-color: var(--secondary10);
     /* clips the red box from overflowing the section */
     overflow: hidden;
   }
@@ -89,7 +89,7 @@
     content: "";
     width: 100vw;
     margin-left: -38%;
-    background: var(--primary);
+    background: var(--primary70);
     opacity: 1;
     display: block;
     position: absolute;
@@ -115,7 +115,7 @@
     /* yellow box */
     content: "";
     width: 50%;
-    background: var(--secondary300);
+    background: var(--secondary40);
     opacity: 1;
     display: block;
     position: absolute;
@@ -134,7 +134,7 @@
     background: var(--medium);
   }
   body.dark-mode #sbs-574 .cs-picture:before {
-    background: var(--primary);
+    background: var(--primary70);
   }
 }
 

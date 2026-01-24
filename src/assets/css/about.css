@@ -34,7 +34,7 @@
     margin-bottom: 2rem;
   }
   #sbs-578 .nm-button-secondary {
-    color: var(--accent500);
+    color: var(--accent70);
   }
   #sbs-578 .cs-picture {
     display: block;
@@ -86,7 +86,7 @@
     content: "";
     width: 50%;
     height: 60%;
-    background: var(--secondary400);
+    background: var(--secondary40);
     opacity: 1;
     display: block;
     position: absolute;
@@ -101,7 +101,7 @@
     background-color: var(--medium);
   }
   body.dark-mode #sbs-578 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #sbs-578 .cs-title,
   body.dark-mode #sbs-578 .cs-text,
@@ -122,7 +122,7 @@
 @media only screen and (min-width: 0rem) {
   #services-965 {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    background-color: var(--primary70);
     position: relative;
     z-index: 1;
   }
@@ -157,7 +157,7 @@
     color: var(--textLight);
   }
   #services-965 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   #services-965 .cs-title,
   #services-965 .cs-text {
@@ -200,7 +200,7 @@
     width: 5.5rem;
     height: 5.5rem;
     margin: -2.75rem auto 2rem 0;
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -218,7 +218,7 @@
     line-height: 1.2em;
     text-align: inherit;
     margin: 0 0 0.75rem 0;
-    color: var(--secondary600);
+    color: var(--secondary80);
   }
   #services-965 .cs-item-text {
     /* 14px - 16px */
@@ -232,7 +232,7 @@
   #services-965 .cs-waves {
     width: 100%;
     height: 13.875rem;
-    background-color: var(--primary600);
+    background-color: var(--primary80);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -260,7 +260,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #services-965 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   body.dark-mode #services-965 .cs-title,
   body.dark-mode #services-965 .cs-text,
@@ -273,7 +273,7 @@
     color: var(--textLight);
   }
   body.dark-mode #services-965 .cs-icon-wrapper {
-    background-color: var(--primary400);
+    background-color: var(--primary60);
   }
   body.dark-mode #services-965 .cs-waves {
     background-color: rgba(0, 0, 0, 0.8);
@@ -286,7 +286,7 @@
 @media only screen and (min-width: 0rem) {
   #steps-284 {
     padding: var(--sectionPadding);
-    background-color: var(--secondary);
+    background-color: var(--secondary10);
   }
   #steps-284 .cs-container {
     width: 100%;
@@ -314,7 +314,7 @@
   }
   #steps-284 .nm-button-secondary {
     margin-top: 1.5rem;
-    color: var(--accent500);
+    color: var(--accent70);
   }
   #steps-284 .nm-phase-topper {
     font-family: var(--smallCaps);
@@ -322,13 +322,13 @@
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--accent400);
+    color: var(--accent60);
   }
   #steps-284 .nm-phase-heading {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
-    color: var(--secondary600);
+    color: var(--secondary80);
   }
   #steps-284 .cs-right-section {
     margin: 0;
@@ -368,9 +368,9 @@
     /* reset the border on the :before */
   }
   #steps-284 .cs-item:nth-of-type(2) .cs-item-text:before, #steps-284 .cs-item:nth-of-type(4) .cs-item-text:before, #steps-284 .cs-item:nth-of-type(6) .cs-item-text:before, #steps-284 .cs-item:nth-of-type(8) .cs-item-text:before {
-    border-top: 1px solid var(--accent400);
+    border-top: 1px solid var(--accent60);
     border-left: none;
-    border-right: 1px solid var(--accent400);
+    border-right: 1px solid var(--accent60);
     left: auto;
     right: 0;
     bottom: 0;
@@ -383,7 +383,7 @@
   }
   #steps-284 .cs-item:nth-of-type(3) .cs-item-text:before, #steps-284 .cs-item:nth-of-type(5) .cs-item-text:before, #steps-284 .cs-item:nth-of-type(7) .cs-item-text:before {
     height: auto;
-    border-top: 1px solid var(--accent400);
+    border-top: 1px solid var(--accent60);
     border-radius: 0;
     top: 0.5px;
     bottom: -0.5px;
@@ -391,7 +391,7 @@
   #steps-284 .cs-item:last-of-type .cs-item-text:before {
     height: 50%;
     border-radius: 0;
-    border-top: 1px solid var(--accent400);
+    border-top: 1px solid var(--accent60);
     border-bottom: none;
     top: 0.5px;
   }
@@ -406,7 +406,7 @@
     height: clamp(2.5rem, 5.1vw, 3.25rem);
     border-radius: 0;
     border: none;
-    color: var(--accent500);
+    color: var(--accent70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -418,7 +418,7 @@
     font-family: var(--smallCaps);
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: var(--secondary600);
+    color: var(--secondary80);
   }
   #steps-284 .cs-item-text {
     /* 14px - 16px */
@@ -440,8 +440,8 @@
     width: 70%;
     height: 100%;
     border-radius: 0;
-    border-left: 1px solid var(--accent500);
-    border-bottom: 1px solid var(--accent500);
+    border-left: 1px solid var(--accent70);
+    border-bottom: 1px solid var(--accent70);
     box-sizing: content-box;
     opacity: 1;
     position: absolute;
@@ -454,9 +454,9 @@
     content: "";
     width: 0.25rem;
     height: 0.25rem;
-    background: var(--secondary300);
+    background: var(--secondary20);
     border-radius: 0;
-    border: 6px solid var(--accent500);
+    border: 6px solid var(--accent70);
     box-sizing: content-box;
     opacity: 1;
     position: absolute;
@@ -484,7 +484,7 @@
     margin: 0;
   }
   #steps-284 .cs-item-text::after {
-    border: 12px solid var(--accent500);
+    border: 12px solid var(--accent70);
     width: 0.5rem;
     height: 0.5rem;
   }
@@ -512,7 +512,7 @@
   }
   body.dark-mode #steps-284 #quote-828 {
     color: var(--textLight);
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   body.dark-mode #steps-284 #quote-828 .cs-name {
     color: var(--textLight);
@@ -524,21 +524,21 @@
     /* reset the border on the :before */
   }
   body.dark-mode #steps-284 .cs-item:nth-of-type(2) .cs-item-text:before, body.dark-mode #steps-284 .cs-item:nth-of-type(4) .cs-item-text:before, body.dark-mode #steps-284 .cs-item:nth-of-type(6) .cs-item-text:before, body.dark-mode #steps-284 .cs-item:nth-of-type(8) .cs-item-text:before {
-    border-top: 1px solid var(--secondary300);
-    border-right: 1px solid var(--secondary300);
+    border-top: 1px solid var(--secondary40);
+    border-right: 1px solid var(--secondary40);
   }
   body.dark-mode #steps-284 .cs-item:nth-of-type(3) .cs-item-text:before, body.dark-mode #steps-284 .cs-item:nth-of-type(5) .cs-item-text:before, body.dark-mode #steps-284 .cs-item:nth-of-type(7) .cs-item-text:before {
-    border-top: 1px solid var(--secondary300);
+    border-top: 1px solid var(--secondary40);
   }
   body.dark-mode #steps-284 .cs-item:last-of-type .cs-item-text:before {
-    border-top: 1px solid var(--secondary300);
+    border-top: 1px solid var(--secondary40);
   }
   body.dark-mode #steps-284 .cs-item-text:before {
-    border-left: 1px solid var(--secondary300);
-    border-bottom: 1px solid var(--secondary300);
+    border-left: 1px solid var(--secondary40);
+    border-bottom: 1px solid var(--secondary40);
   }
   body.dark-mode #steps-284 .cs-item-text:after {
-    border: 12px solid var(--primary400);
+    border: 12px solid var(--primary60);
   }
 }
 /*-- -------------------------- -->

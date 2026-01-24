@@ -172,7 +172,7 @@
         }
 
         .cs-color {
-            color: var(--primary);
+            color: var(--primary70);
         }
 
         p {
@@ -190,7 +190,7 @@
                 font-size: inherit;
                 line-height: inherit;
                 text-decoration: underline;
-                color: var(--primary);
+                color: var(--primary70);
             }
         }
 
@@ -246,7 +246,7 @@
                 width: 100%;
                 /* 177px - 258px */
                 height: clamp(11.0625rem, 19vw, 16.125rem);
-                background: var(--primary);
+                background: var(--primary70);
                 border-radius: 0 calc(100 / 16 * 1rem) 0 calc(100 / 16 * 1rem);
                 opacity: 0.15;
                 display: block;
@@ -317,7 +317,7 @@
             }
             .cs-color,
             a {
-                color: var(--primary100);
+                color: var(--primary10);
             }
 
             p,

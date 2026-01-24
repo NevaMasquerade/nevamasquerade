@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs-578 {
-        background-color: var(--primary600);
+        background-color: var(--primary80);
 
         .cs-container {
             width: 100%;
@@ -35,7 +35,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--secondary20);
         }
 
         .cs-title,
@@ -109,7 +109,7 @@
                 content: "";
                 width: 50%;
                 height: 60%;
-                background: var(--secondary400);
+                background: var(--secondary40);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -128,7 +128,7 @@
             background-color: var(--medium);
 
             .cs-topper {
-                color: var(--secondary);
+                color: var(--secondary20);
             }
 
             .cs-title,
@@ -186,11 +186,11 @@
         }
 
         .cs-topper {
-            color: var(--accent600);
+            color: var(--accent70);
         }
 
         .cs-title {
-            color: var(--secondary600);
+            color: var(--secondary80);
         }
 
         .cs-text {
@@ -220,11 +220,11 @@
     body.dark-mode {
         #cs-content-832 {
             .cs-topper {
-                color: var(--primaryLight);
+                color: var(--secondary20);
             }
             .cs-title,
             .cs-text {
-                color: var(--bodyTextColorWhite);
+                color: var(--textLight);
             }
 
             .cs-text {
@@ -261,7 +261,7 @@
         #services-690 {
             background: var(--dark);
             .cs-topper {
-                color: var(--secondary);
+                color: var(--secondary20);
             }
             .cs-title,
             .cs-text,
@@ -271,11 +271,11 @@
             }
 
             .cs-color {
-                color: var(--secondary300);
+                color: var(--secondary30);
             }
 
             .cs-picture {
-                background-color: var(--primary400);
+                background-color: var(--primary40);
             }
 
             .cs-text,
@@ -284,11 +284,11 @@
             }
 
             .cs-item {
-                background-color: var(--primary600);
+                background-color: var(--primary80);
             }
 
             .nm-accent {
-                background-color: var(--primary);
+                background-color: var(--primary70);
 
                     .cs-picture {
                         background-color: var(--medium);
@@ -296,12 +296,12 @@
                 }
 
             .cs-th {
-                border: 1px solid var(--primary);
+                border: 1px solid var(--primary70);
             }
 
             .cs-td {
-                background-color: var(--primary);
-                border: 1px solid var(--primary400);
+                background-color: var(--primary70);
+                border: 1px solid var(--primary50);
             }
         
             .cs-color {
@@ -319,7 +319,7 @@
         
             .cs-th:first-child, .cs-td:first-child {
                 background-color: var(--medium);
-                border: 1px solid var(--primary400);
+                border: 1px solid var(--primary50);
                 color: var(--textLight);
             }
 
@@ -385,7 +385,7 @@
             /* 24px - 40px top & Bottom */
             /* 20px - 40px left & right */
             padding: clamp(1.5rem, 4.2vw, 2.5rem) clamp(1.25rem, 4.2vw, 2.5rem);
-            background-color: var(--secondary);
+            background-color: var(--secondary10);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             display: flex;
@@ -394,7 +394,7 @@
         }
 
         .nm-badge {
-            background-color: var(--secondary300);
+            background-color: var(--secondary40);
             align-items: center;
             display: inline-block;
             margin-bottom: 1rem;
@@ -406,7 +406,7 @@
             font-size: calc(16 / 16 * 1rem);
             text-transform: uppercase;
             letter-spacing: 2px;
-            color: var(--accent700);
+            color: var(--accent90);
             text-align: center;
             align-self: center;
         }
@@ -414,11 +414,11 @@
         .cs-button-transparent {
             margin-top: 1rem;
             padding: 1rem;
-            border: 2px solid var(--accent500);
+            border: 2px solid var(--accent70);
         }
 
         .cs-popular {
-            background-color: var(--accent500);
+            background-color: var(--accent70);
             color: var(--textLight);
             filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, .4));
             padding: clamp(2.5rem, 4.7vw, 3.5rem) clamp(1.5rem, 4.2vw, 2.5rem);
@@ -435,7 +435,7 @@
             }
 
             .cs-price {
-                color: var(--secondary);
+                color: var(--secondary05);
             }
 
             .cs-includes {
@@ -443,7 +443,7 @@
             }
 
             .cs-includes {
-                border-color: var(--secondary300);
+                border-color: var(--secondary30);
             }
 
             .cs-li {
@@ -452,11 +452,11 @@
 
             .cs-button-transparent {
                 color: var(--textLight);
-                border: 2px solid var(--secondary200);
+                border: 2px solid var(--secondary20);
 
                 &:hover {
-                    background-color: var(--secondary200);
-                    color: var(--accent600);
+                    background-color: var(--secondary20);
+                    color: var(--accent80);
                 }
             }
         }
@@ -470,7 +470,7 @@
             font-weight: 400;
             /* 4px - 8px */
             margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
-            color: var(--accent500);
+            color: var(--accent70);
             display: block;
         }
 
@@ -494,7 +494,7 @@
             text-align: inherit;
             font-weight: 400;
             margin: 0;
-            color: var(--accent500);
+            color: var(--accent70);
             display: flex;
             flex-wrap: wrap;
             gap: .25rem;
@@ -520,11 +520,11 @@
             text-align: inherit;
             font-weight: 600;
             width: 100%;
-            color: var(--accent500);
+            color: var(--accent70);
             margin-top: 2rem;
             /* 16px - 24px */
             padding: clamp(1rem, 3vw, 1.5rem) 0 0 0;
-            border-top: 1px solid var(--secondary300);
+            border-top: 1px solid var(--secondary30);
             display: block;
         }
 
@@ -584,12 +584,12 @@
             padding-right: clamp(1.75rem, 4vw, 2.5rem);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
-            border-right: 1px solid var(--secondary300);
+            border-right: 1px solid var(--secondary50);
         }
 
         .cs-popular {
             .cs-item-content {
-                border-color: var(--secondary300);
+                border-color: var(--secondary30);
             }
 
             .cs-package {
@@ -707,7 +707,7 @@
             }
 
             .cs-item {
-                background-color: var(--primary600);
+                background-color: var(--primary80);
             }
 
             .cs-item-content {
@@ -719,7 +719,7 @@
             }
 
             .cs-popular {
-                background-color: var(--primary);
+                background-color: var(--primary70);
 
                 .cs-price,
                 .cs-package {
@@ -747,7 +747,7 @@
 @media only screen and (min-width: 0rem) {
     #faq-351 {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: var(--primary70);
 
         .cs-container {
             width: 100%;
@@ -772,7 +772,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary200);
+            color: var(--secondary20);
         }
 
         .cs-title,
@@ -803,19 +803,19 @@
         .cs-faq-item {
             list-style: none;
             width: 100%;
-            border-bottom: 1px solid var(--primary300);
+            border-bottom: 1px solid var(--primary50);
             transition: border-bottom 0.3s;
 
             &.active {
-                border-color: var(--secondary200);
+                border-color: var(--secondary20);
                 .cs-button {
-                    color: var(--secondary);
+                    color: var(--secondary10);
                     &:before {
-                        background-color: var(--secondary200);
+                        background-color: var(--secondary20);
                         transform: rotate(315deg);
                     }
                     &:after {
-                        background-color: var(--secondary200);
+                        background-color: var(--secondary20);
                         transform: rotate(-315deg);
                     }
                 }
@@ -861,7 +861,7 @@
                 content: "";
                 width: calc(8 / 16 * 1rem);
                 height: calc(2 / 16 * 1rem);
-                background-color: var(--primary300);
+                background-color: var(--primary30);
                 opacity: 1;
                 border-radius: 50%;
                 position: absolute;
@@ -879,7 +879,7 @@
                 content: "";
                 width: calc(8 / 16 * 1rem);
                 height: calc(2 / 16 * 1rem);
-                background-color: var(--primary300);
+                background-color: var(--primary30);
                 opacity: 1;
                 border-radius: 50%;
                 position: absolute;

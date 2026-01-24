@@ -65,7 +65,7 @@ permalink: 'blog/storycraft-atlas/'
 <!-- ============================================ -->
 
 
-<div class="blog-container main-content-wrapper">
+
     
     <!--Main content -->
     <div class="main-content">
@@ -521,7 +521,24 @@ permalink: 'blog/storycraft-atlas/'
                     <p>
                         That’s why I built the Storycraft Atlas. First, to fix my own damn website. Second, to guide how I craft my clients’ websites.
                     </p>
-                    <hr>
+
+                    <aside id="blog-1289" class="related-post" aria-label="Related article">
+                        <div class="cs-item cs-highlight">
+                            <a href="/blog/why-i-made-storycraft/" class="cs-link">
+                                <picture class="cs-picture">
+                                    <img loading="lazy" decoding="async" src="../../assets/images/blog/why-story-m.webp" alt="A cat scrunching its face while lounging on loose puzzle pieces." width="270" height="200">
+                                </picture>
+                                <div class="cs-flex">
+                                    <span class="cs-topper">More like this</span>
+                                    <h3 class="aside-title">{{ blogs.whyStory.title }}</h3>
+                                    <p class="cs-item-text">
+                                        {{ blogs.whyStory.description }}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>  
+                    </aside>
+
                 <h2>What happens with a framework?</h2>
 
                     <p>
@@ -609,6 +626,6 @@ permalink: 'blog/storycraft-atlas/'
         </article>
     </div>
     <!-- End .main-content -->
-</div>
+
     {% include 'components/cta.html' %}
 {% endblock %}

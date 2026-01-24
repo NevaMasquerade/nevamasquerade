@@ -10,7 +10,7 @@
         margin: auto;
         position: relative;
         z-index: 10;
-        background-color: var(--primary600);
+        background-color: var(--primary80);
 
         &:before {
             /* background color */
@@ -191,7 +191,7 @@
             padding: clamp(2rem, 5.18vw, 3rem) clamp(1rem, 5vw, 3.75rem);
             /* prevents flexbox from affecting height and width */
             box-sizing: border-box;
-            background-color: var(--primary);
+            background-color: var(--primary70);
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -208,7 +208,7 @@
             }
 
             .cs-topper {
-                color: var(--secondary);
+                color: var(--secondary20);
             }
 
             .cs-text {
@@ -277,19 +277,19 @@
         .cs-faq-item {
             list-style: none;
             width: 100%;
-            border-bottom: 1px solid var(--secondary300);
+            border-bottom: 1px solid var(--secondary40);
             transition: border-bottom 0.3s;
 
             &.active {
-                border-color: var(--accent400);
+                border-color: var(--accent50);
                 .cs-button {
                     color: var(--textDark);
                     &:before {
-                        background-color: var(--accent400);
+                        background-color: var(--accent50);
                         transform: rotate(315deg);
                     }
                     &:after {
-                        background-color: var(--accent400);
+                        background-color: var(--accent50);
                         transform: rotate(-315deg);
                     }
                 }
@@ -331,7 +331,7 @@
                 content: "";
                 width: calc(8 / 16 * 1rem);
                 height: calc(2 / 16 * 1rem);
-                background-color: var(--secondary300);
+                background-color: var(--secondary40);
                 opacity: 1;
                 border-radius: 50%;
                 position: absolute;
@@ -349,7 +349,7 @@
                 content: "";
                 width: calc(8 / 16 * 1rem);
                 height: calc(2 / 16 * 1rem);
-                background-color: var(--secondary300);
+                background-color: var(--secondary40);
                 opacity: 1;
                 border-radius: 50%;
                 position: absolute;
@@ -378,7 +378,7 @@
             /* 16px - 24px */
             padding: 0 clamp(1rem, 2vw, 1.5rem);
             opacity: 0;
-            color: var(--bodyTextColor);
+            color: var(--textDark);
             /* clips the text so it doesn't show up */
             overflow: hidden;
             transition:
@@ -429,7 +429,7 @@
             .cs-button {
                 &:before,
                 &:after {
-                    background-color: var(--secondary300);
+                    background-color: var(--secondary40);
                 }
             }
 
@@ -445,16 +445,16 @@
             .cs-faq-item {
 
                 &.active {
-                    border-color: var(--primary200);
+                    border-color: var(--primary10);
                     .cs-button {
                         color: var(--textLight);
 
                         &:before {
-                            background-color: var(--primary200);
+                            background-color: var(--primary10);
                         }
 
                         &:after {
-                            background-color: var(--primary200);
+                            background-color: var(--primary10);
                         }
                     }
                 }

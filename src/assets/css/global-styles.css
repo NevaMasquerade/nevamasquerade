@@ -148,7 +148,7 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--primary);
+    background: var(--primary70);
     height: 2px;
     width: 100%;
   }
@@ -249,7 +249,7 @@
     /* 16px - 24px */
     font-size: clamp(0.875rem, 2vw, 1.25rem);
     line-height: 1.2em;
-    color: var(--primary600);
+    color: var(--primary80);
     font-family: var(--smallCaps);
     font-weight: 600;
     letter-spacing: 3px;
@@ -263,7 +263,7 @@
     content: "";
     opacity: 1;
     display: none;
-    background: var(--secondary300);
+    background: var(--secondary40);
     height: 1px;
     width: 100%;
   }
@@ -316,7 +316,7 @@
     display: block;
   }
   body.dark-mode #cs-navigation .cs-line {
-    background: var(--secondary300);
+    background: var(--secondary40);
   }
   body.dark-mode #cs-navigation .cs-ul-wrapper {
     background: var(--medium);
@@ -325,7 +325,7 @@
     color: var(--textLight);
   }
   body.dark-mode #cs-navigation .cs-li-link:before {
-    background: var(--secondary300);
+    background: var(--secondary40);
   }
 }
 /*-- -------------------------- -->
@@ -335,7 +335,7 @@
 @media only screen and (max-width: 63.9375rem) {
   #cs-navigation .cs-dropdown {
     position: relative;
-    color: var(--accent200);
+    color: var(--accent30);
   }
   #cs-navigation .cs-dropdown .cs-li-link {
     position: relative;
@@ -381,7 +381,7 @@
     justify-content: flex-start;
     align-items: flex-end;
     margin: 0;
-    background: var(--secondary);
+    background: var(--secondary10);
     height: 0;
     width: 100%;
     box-sizing: border-box;
@@ -439,7 +439,7 @@
     visibility: hidden;
     opacity: 0;
     transform: scaleY(0);
-    border-bottom: 5px solid var(--secondary300);
+    border-bottom: 5px solid var(--secondary40);
     margin: 0;
     background: var(--textLight);
     min-width: 12.5rem;
@@ -515,7 +515,7 @@
     transition: color 0.3s, background 0.3s;
   }
   #cs-navigation .cs-li-link.cs-drop-link:hover {
-    background: var(--secondary);
+    background: var(--secondary10);
   }
   #cs-navigation .cs-li-link.cs-drop-link:focus-visible {
     outline: 2px solid currentColor;
@@ -528,7 +528,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-navigation .cs-drop-ul {
-    background: var(--primary);
+    background: var(--primary70);
   }
   body.dark-mode #cs-navigation .cs-li-link.cs-drop-link:hover {
     background: var(--medium);
@@ -603,7 +603,7 @@
   #cs-navigation .cs-button-solid {
     font-size: clamp(0.7rem, 1.8vw, 0.9rem);
     align-self: center;
-    background-color: var(--accent400);
+    background-color: var(--accent50);
   }
   #cs-navigation .cs-li {
     padding: 1.5rem 0;
@@ -624,7 +624,7 @@
     line-height: 1.2em;
     letter-spacing: 3px;
     text-transform: uppercase;
-    color: var(--primary600);
+    color: var(--primary80);
   }
   #cs-navigation .cs-li-link:hover:before {
     width: 100%;
@@ -637,7 +637,7 @@
     content: "";
     opacity: 1;
     display: block;
-    background: var(--secondary300);
+    background: var(--secondary40);
     height: 2px;
     width: 0%;
     transition: width 0.3s;
@@ -664,13 +664,13 @@
     display: block;
   }
   body.dark-mode #cs-navigation .cs-button-solid {
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
   }
   body.dark-mode #cs-navigation .cs-li-link {
     color: var(--textLight);
   }
   body.dark-mode #cs-navigation .cs-li-link:before {
-    background: var(--secondary200);
+    background: var(--secondary20);
   }
 }
 /*-- -------------------------- -->
@@ -683,7 +683,7 @@
     padding-bottom: 1.25rem;
     box-sizing: border-box;
     overflow: hidden;
-    background: var(--primary600);
+    background: var(--primary80);
     position: relative;
     z-index: 10;
     /* Navigation Links */
@@ -742,7 +742,7 @@
     transition: color 0.3s;
   }
   #cs-footer-1293 .cs-link:hover {
-    color: var(--primary100);
+    color: var(--primary05);
   }
   #cs-footer-1293 .cs-service-group {
     width: 100%;
@@ -785,7 +785,7 @@
     transition: color 0.3s;
   }
   #cs-footer-1293 .cs-link:hover {
-    color: var(--primary100);
+    color: var(--primary05);
   }
   #cs-footer-1293 .cs-bottom {
     max-width: 80rem;
@@ -825,7 +825,7 @@
     transition: color 0.3s;
   }
   #cs-footer-1293 .cs-copyright-link:hover {
-    color: var(--primary100);
+    color: var(--primary05);
   }
 }
 /* Tablet - 768px */
@@ -929,7 +929,7 @@
     background: rgba(0, 0, 0, 0.5);
   }
   body.dark-mode #cs-footer-1293 .cs-header {
-    color: var(--secondary);
+    color: var(--secondary10);
   }
 }
 /*-- -------------------------- -->
@@ -958,7 +958,7 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: var(--primary700);
+    background: var(--primary90);
     opacity: 0.8;
     top: 0;
     left: 0;
@@ -1000,7 +1000,7 @@
     color: var(--textLight);
   }
   #cta-403 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary10);
   }
   #cta-403 .cs-text {
     opacity: 0.8;
@@ -1013,8 +1013,8 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 64rem) {
   #cta-403 .cs-button-solid {
-    background-color: var(--secondary200);
-    color: var(--primary700);
+    background-color: var(--secondary20);
+    color: var(--primary90);
   }
   #cta-403 .cs-button-solid:hover {
     color: var(--textLight);
@@ -1026,7 +1026,7 @@
   #cta-403 .cs-background:before {
     width: 40%;
     opacity: 1;
-    background: var(--accent500);
+    background: var(--accent70);
   }
   #cta-403 .cs-background:after {
     /* black slant */
@@ -1084,9 +1084,9 @@
     width: 31.25rem;
     height: 93.75rem;
     margin-right: -3.125rem;
-    background: -moz-linear-gradient(left, rgb(18, 38, 51) 0%, rgb(18, 38, 51) 57%, rgba(18, 38, 51, 0) 100%);
-    background: -webkit-linear-gradient(left, rgb(18, 38, 51) 0%, rgb(18, 38, 51) 57%, rgba(18, 38, 51, 0) 100%);
-    background: linear-gradient(to right, rgb(18, 38, 51) 0%, rgb(18, 38, 51) 57%, rgba(18, 38, 51, 0) 100%);
+    background: -moz-linear-gradient(left, rgb(20, 43, 58) 0%, rgb(20, 43, 58) 57%, rgba(20, 43, 58, 0) 100%);
+    background: -webkit-linear-gradient(left, rgb(20, 43, 58) 0%, rgb(20, 43, 58) 57%, rgba(20, 43, 58, 0) 100%);
+    background: linear-gradient(to right, rgb(20, 43, 58) 0%, rgb(20, 43, 58) 57%, rgba(20, 43, 58, 0) 100%);
   }
 }
 /*-- -------------------------- -->
@@ -1098,7 +1098,7 @@
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   #cta-2443 .cs-container {
     width: 100%;
