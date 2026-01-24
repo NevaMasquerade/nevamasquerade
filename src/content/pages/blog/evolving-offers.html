@@ -65,7 +65,7 @@ permalink: 'blog/evolving-offers/'
 <!-- ============================================ -->
 
 
-<div class="blog-container main-content-wrapper">
+
     
     <!--Main content -->
     <div class="main-content">
@@ -361,7 +361,24 @@ permalink: 'blog/evolving-offers/'
                 <p>
                 This is the difference between a site built <em>with</em> strategy and one thrown together around a page builder.
                 </p>
-                <hr>
+
+                <aside id="blog-1289" class="related-post" aria-label="Related article">
+                            <div class="cs-item cs-highlight">
+                                <a href="/blog/storycraft-atlas/" class="cs-link">
+                                    <picture class="cs-picture">
+                                        <img loading="lazy" decoding="async" src="../../assets/images/blog/storycraft-atlas-m.webp" alt="A calico cat lounging in front of a globe, books, and camera." width="270" height="200">
+                                    </picture>
+                                    <div class="cs-flex">
+                                        <span class="cs-topper">More like this</span>
+                                        <h4 class="aside-title">{{ blogs.framework.title }}</h4>
+                                        <p class="cs-item-text">
+                                            {{ blogs.framework.description }}
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>  
+                        </aside>
+
                 <h3>Done-for-you updates whenever you need them</h3>
 
 
@@ -483,6 +500,6 @@ permalink: 'blog/evolving-offers/'
         </article>
     </div>
     <!-- End .main-content -->
-</div>
+
     {% include 'components/cta.html' %}
 {% endblock %}

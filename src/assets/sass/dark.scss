@@ -9,7 +9,7 @@
     // Dark Mode Color Scheme
     :root {
         --dark: #071219;
-        --medium: #122633;
+        --medium: #142B3A;
         --accent: #294759;
     }
 
@@ -28,29 +28,29 @@
         }
 
         a {
-            color: var(--primary100);
+            color: var(--primary05);
         
             &:visited {
-                color: var(--secondary200);
+                color: var(--secondary10);
             }
         
             &:hover {
-                color: var(--primary200);
+                color: var(--primary10);
             }
         }
 
         a[target="_blank"]:link::after {
-            background-color: var(--primary100);
+            background-color: var(--primary05);
         }
     
         a[target="_blank"]:hover::after {
-            background-color: var(--primary200);
+            background-color: var(--primary10);
             width: .8em;
             height: .8em;
         }
     
         a[target="_blank"]:visited::after {
-            background-color: var(--secondary200);
+            background-color: var(--secondary10);
         }
 
         
@@ -65,11 +65,11 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--secondary20);
         }
 
         .cs-button-solid {
-            background-color: var(--secondary200);
+            background-color: var(--secondary30);
             color: var(--dark);
 
             &:visited {
@@ -81,14 +81,14 @@
             }
 
             &:before {
-                background-color: var(--primary400);
+                background-color: var(--primary60);
             }
         }
 
         .cs-button-transparent {
 
             &:hover {
-                background-color: var(--primary);
+                background-color: var(--primary70);
             }
         }
     }
@@ -101,7 +101,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #hero-668 {
-            background-color: var(--primary);
+            background-color: var(--primary70);
         }
     }
 }

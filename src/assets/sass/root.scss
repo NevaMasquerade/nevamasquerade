@@ -8,29 +8,39 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary100: #c5d9e5;
-        --primary200: #9bb9cc;
-        --primary300: #6d90a6;
-        --primary400: #486a80;
-        --primary: #294759;
-        --primary600: #122633;
-        --primary700: #071219;
-        --secondary: #e5dbd1;
-        --secondary200: #ccb7a5;
-        --secondary300: #a6917e;
-        --secondary400: #806c5b;
-        --secondary500: #59493b;
-        --secondary600: #33281f;
-        --accent100: #e5bbb8;
-        --accent200: #cc948f;
-        --accent300: #a66963;
-        --accent400: #804540;
-        --accent500: #592824;
-        --accent600: #33120f;
-        --accent700: #190705;
+        --primary05: #EDF3F7;
+        --primary10: #DBE7EF;
+        --primary20: #BBD2E0;
+        --primary30: #9BB9CC;
+        --primary40: #6D90A6;
+        --primary50: #587B90;
+        --primary60: #415F74;
+        --primary70: #294759;
+        --primary80: #142B3A;
+        --primary90: #071219;
+        --secondary05: #F8F5F3;
+        --secondary10: #EAE2DB;
+        --secondary20: #CFBCAB;
+        --secondary30: #C2A993;
+        --secondary40: #A6917E;
+        --secondary50: #88725E;
+        --secondary60: #6D5D4E;
+        --secondary70: #514336;
+        --secondary80: #33281F;
+        --secondary90: #19130D;
+        --accent05: #F9F0EF;
+        --accent10: #F3E1DF;
+        --accent20: #E5BBB8;
+        --accent30: #CC948F;
+        --accent40: #C66A64;
+        --accent50: #A3645F;
+        --accent60: #8F4E48;
+        --accent70: #592824;
+        --accent80: #481A15;
+        --accent90: #33120F;
         --textLight: #fffaf0;
         --textMid: #656360;
-        --textDark: #262524;
+        --textDark: #1A1918;
         --accent100-rgb: 229, 187, 184;
 
         /* 13px - 16px */
@@ -65,7 +75,7 @@
         font-size: var(--topperFontSize);
         line-height: 1.2em;
         font-weight: 400;
-        color: var(--accent500);
+        color: var(--accent70);
         text-align: inherit;
         text-wrap: balance;
     }
@@ -99,7 +109,7 @@
         position: relative;
         display: inline-flex;
         gap: .5em;
-        background: var(--accent300);
+        background: var(--accent50);
         width: auto;
         padding: 1rem;
         font-family: var(--smallCaps);
@@ -140,7 +150,7 @@
             content: "";
             opacity: 1;
             display: block;
-            background: var(--primary400);
+            background: var(--primary50);
             height: 100%;
             box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.4);
             //Transition properties
@@ -165,7 +175,7 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         margin: 0;
-        color: var(--accent500);
+        color: var(--accent70);
         min-width: calc(150 / 16 * 1rem);
         padding: 1rem;
         background-color: transparent;
@@ -180,7 +190,7 @@
 
         &:hover {
             color: var(--textLight);
-            background: var(--accent500);
+            background: var(--accent70);
             text-decoration: none;
         }
     }
@@ -211,7 +221,7 @@
         width: auto;
         height: 1em;
         transition: transform 0.3s;
-        color: var(--secondary300);
+        color: var(--secondary30);
         display: flex;
         align-self: flex-start;
     }
@@ -337,7 +347,7 @@
     }
 
     a {
-        color: var(--primary);
+        color: var(--primary70);
         text-decoration: none;
         transition: color 0.3s;
         font-weight: 600;
@@ -349,11 +359,11 @@
         }
         
         &:visited {
-            color: var(--accent500);
+            color: var(--accent70);
         }
 
         &:hover {
-            color: var(--primary600);
+            color: var(--primary80);
             text-decoration: underline;
             text-underline-offset: .1em;
         }
@@ -394,7 +404,7 @@
         position: absolute;
         top: -40px;
         left: 6px;
-        background: var(--primary);
+        background: var(--primary70);
         color: var(--textLight);
         padding: 8px;
         text-decoration: none;
@@ -414,7 +424,7 @@
     }
 
     *:focus-visible {
-        outline: 2px solid var(--accent300);
+        outline: 2px solid var(--accent40);
         outline-offset: 8px;
     }       
     

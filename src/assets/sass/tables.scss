@@ -19,12 +19,12 @@
         text-transform: uppercase;
         letter-spacing: 3px;
         text-align: left;
-        color: var(--accent500);
+        color: var(--accent70);
         }
         
         thead,
         tfoot {
-        background-color:var(--accent500);
+        background-color:var(--accent70);
         color: var(--textLight);
         font-family: var(--headerFont);
         font-size: 1.2rem;
@@ -76,7 +76,7 @@
     body.dark-mode {
         table {
             caption {
-                color: var(--secondary);
+                color: var(--secondary10);
             }
             
             thead,

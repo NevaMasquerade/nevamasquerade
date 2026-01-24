@@ -41,7 +41,7 @@
         }
 
         .nm-button-secondary {
-            color: var(--accent500);
+            color: var(--accent70);
         }
 
         .cs-picture {
@@ -99,7 +99,7 @@
                 content: "";
                 width: 50%;
                 height: 60%;
-                background: var(--secondary400);
+                background: var(--secondary40);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -118,7 +118,7 @@
             background-color: var(--medium);
 
             .cs-topper {
-                color: var(--secondary);
+                color: var(--secondary20);
             }
 
             .cs-title,
@@ -148,7 +148,7 @@
 @media only screen and (min-width: 0rem) {
     #services-965 {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: var(--primary70);
         position: relative;
         z-index: 1;
 
@@ -186,7 +186,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary200);
+            color: var(--secondary20);
         }
 
         .cs-title,
@@ -234,7 +234,7 @@
             width: calc(88 / 16 * 1rem);
             height: calc(88 / 16 * 1rem);
             margin: calc(-44 / 16 * 1rem) auto calc(32 / 16 * 1rem) 0;
-            background-color: var(--secondary300);
+            background-color: var(--secondary40);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -254,7 +254,7 @@
             line-height: 1.2em;
             text-align: inherit;
             margin: 0 0 calc(12 / 16 * 1rem) 0;
-            color: var(--secondary600);
+            color: var(--secondary80);
         }
 
         .cs-item-text {
@@ -270,7 +270,7 @@
         .cs-waves {
             width: 100%;
             height: calc(222 / 16 * 1rem);
-            background-color: var(--primary600);
+            background-color: var(--primary80);
             position: absolute;
             bottom: 0;
             left: 0;
@@ -308,7 +308,7 @@
             background-color: var(--dark);
 
             .cs-topper {
-                color: var(--secondary200);
+                color: var(--secondary20);
             }
 
             .cs-title,
@@ -324,7 +324,7 @@
             }
 
             .cs-icon-wrapper {
-                background-color: var(--primary400);
+                background-color: var(--primary60);
             }
 
             .cs-waves {
@@ -342,7 +342,7 @@
 @media only screen and (min-width: 0rem) {
     #steps-284 {
         padding: var(--sectionPadding);
-        background-color: var(--secondary);
+        background-color: var(--secondary10);
 
         .cs-container {
             width: 100%;
@@ -373,7 +373,7 @@
 
         .nm-button-secondary {
             margin-top: 1.5rem;
-            color: var(--accent500);
+            color: var(--accent70);
         }
 
         .nm-phase-topper {
@@ -382,14 +382,14 @@
             font-weight: 600;
             letter-spacing: 3px;
             text-transform: uppercase;
-            color: var(--accent400);
+            color: var(--accent60);
         }
 
         .nm-phase-heading {
             font-size: calc(24 / 16 * 1rem);
             margin-bottom: .5rem;
             margin-top: .5rem;
-            color: var(--secondary600);
+            color: var(--secondary80);
         }
 
         .cs-right-section {
@@ -440,9 +440,9 @@
 
                     /* reset the border on the :before */
                     &:before {
-                        border-top: 1px solid var(--accent400);
+                        border-top: 1px solid var(--accent60);
                         border-left: none;
-                        border-right: 1px solid var(--accent400);
+                        border-right: 1px solid var(--accent60);
                         left: auto;
                         right: 0;
                         bottom: 0;
@@ -463,7 +463,7 @@
                 .cs-item-text {
                     &:before {
                         height: auto;
-                        border-top: 1px solid var(--accent400);
+                        border-top: 1px solid var(--accent60);
                         border-radius: 0;
                         top: .5px;
                         bottom: -.5px;
@@ -476,7 +476,7 @@
                     &:before {
                         height: 50%;
                         border-radius: 0;
-                        border-top: 1px solid var(--accent400);
+                        border-top: 1px solid var(--accent60);
                         border-bottom: none;
                         top: .5px;
                     }
@@ -495,7 +495,7 @@
             height: clamp(2.5rem, 5.1vw, 3.25rem);
             border-radius: 0;
             border: none;
-            color: var(--accent500);
+            color: var(--accent70);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -508,7 +508,7 @@
             font-family: var(--smallCaps);
             text-transform: uppercase;
             letter-spacing: 3px;
-            color: var(--secondary600);
+            color: var(--secondary80);
         }
 
         .cs-item-text {
@@ -531,8 +531,8 @@
                 width: 70%;
                 height: 100%;
                 border-radius: 0;
-                border-left: 1px solid var(--accent500);
-                border-bottom: 1px solid var(--accent500);
+                border-left: 1px solid var(--accent70);
+                border-bottom: 1px solid var(--accent70);
 				box-sizing: content-box;
                 opacity: 1;
                 position: absolute;
@@ -546,9 +546,9 @@
                 content: "";
                 width: calc(4 / 16 * 1rem);
                 height: calc(4 / 16 * 1rem);
-                background: var(--secondary300);
+                background: var(--secondary20);
                 border-radius: 0;
-                border: 6px solid var(--accent500);
+                border: 6px solid var(--accent70);
 				box-sizing: content-box;
                 opacity: 1;
                 position: absolute;
@@ -584,7 +584,7 @@
 
         .cs-item-text {
             &::after {
-                border: 12px solid var(--accent500);
+                border: 12px solid var(--accent70);
                 width: calc(8 / 16 * 1rem);
                 height: calc(8 / 16 * 1rem);
             }
@@ -618,7 +618,7 @@
 
             #quote-828 {
                 color: var(--textLight);
-                background-color: var(--primary);
+                background-color: var(--primary70);
 
                 .cs-name {
                     color: var(--textLight);
@@ -641,8 +641,8 @@
                     .cs-item-text {
                         /* reset the border on the :before */
                         &:before {
-                            border-top: 1px solid var(--secondary300);
-                            border-right: 1px solid var(--secondary300);
+                            border-top: 1px solid var(--secondary40);
+                            border-right: 1px solid var(--secondary40);
                         }
                     }
                 }
@@ -652,7 +652,7 @@
                 &:nth-of-type(7) {
                     .cs-item-text {
                         &:before {
-                            border-top: 1px solid var(--secondary300);
+                            border-top: 1px solid var(--secondary40);
                         }
                     }
                 }
@@ -660,7 +660,7 @@
                 &:last-of-type {
                     .cs-item-text {
                         &:before {
-                            border-top: 1px solid var(--secondary300);
+                            border-top: 1px solid var(--secondary40);
                         }
                     }
                 }
@@ -669,12 +669,12 @@
             .cs-item-text {
 
                 &:before {
-                    border-left: 1px solid var(--secondary300);
-                    border-bottom: 1px solid var(--secondary300);
+                    border-left: 1px solid var(--secondary40);
+                    border-bottom: 1px solid var(--secondary40);
                 }
 
                 &:after {
-                    border: 12px solid var(--primary400);
+                    border: 12px solid var(--primary60);
                 }
             }
         }

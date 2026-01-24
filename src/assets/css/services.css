@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-578 {
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   #sbs-578 .cs-container {
     width: 100%;
@@ -31,7 +31,7 @@
     order: 1;
   }
   #sbs-578 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #sbs-578 .cs-title,
   #sbs-578 .cs-text {
@@ -96,7 +96,7 @@
     content: "";
     width: 50%;
     height: 60%;
-    background: var(--secondary400);
+    background: var(--secondary40);
     opacity: 1;
     display: block;
     position: absolute;
@@ -111,7 +111,7 @@
     background-color: var(--medium);
   }
   body.dark-mode #sbs-578 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #sbs-578 .cs-title,
   body.dark-mode #sbs-578 .cs-text {
@@ -157,10 +157,10 @@
     flex: none;
   }
   #services-690 .cs-topper {
-    color: var(--accent600);
+    color: var(--accent70);
   }
   #services-690 .cs-title {
-    color: var(--secondary600);
+    color: var(--secondary80);
   }
   #services-690 .cs-text {
     padding-bottom: 1rem;
@@ -181,11 +181,11 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #cs-content-832 .cs-topper {
-    color: var(--primaryLight);
+    color: var(--secondary20);
   }
   body.dark-mode #cs-content-832 .cs-title,
   body.dark-mode #cs-content-832 .cs-text {
-    color: var(--bodyTextColorWhite);
+    color: var(--textLight);
   }
   body.dark-mode #cs-content-832 .cs-text {
     opacity: 0.8;
@@ -212,7 +212,7 @@
     background: var(--dark);
   }
   body.dark-mode #services-690 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #services-690 .cs-title,
   body.dark-mode #services-690 .cs-text,
@@ -221,30 +221,30 @@
     color: var(--textLight);
   }
   body.dark-mode #services-690 .cs-color {
-    color: var(--secondary300);
+    color: var(--secondary30);
   }
   body.dark-mode #services-690 .cs-picture {
-    background-color: var(--primary400);
+    background-color: var(--primary40);
   }
   body.dark-mode #services-690 .cs-text,
   body.dark-mode #services-690 .cs-item-text {
     opacity: 0.8;
   }
   body.dark-mode #services-690 .cs-item {
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   body.dark-mode #services-690 .nm-accent {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   body.dark-mode #services-690 .nm-accent .cs-picture {
     background-color: var(--medium);
   }
   body.dark-mode #services-690 .cs-th {
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primary70);
   }
   body.dark-mode #services-690 .cs-td {
-    background-color: var(--primary);
-    border: 1px solid var(--primary400);
+    background-color: var(--primary70);
+    border: 1px solid var(--primary50);
   }
   body.dark-mode #services-690 .cs-color .cs-th:first-child {
     color: var(--textLight);
@@ -255,7 +255,7 @@
   }
   body.dark-mode #services-690 .cs-th:first-child, body.dark-mode #services-690 .cs-td:first-child {
     background-color: var(--medium);
-    border: 1px solid var(--primary400);
+    border: 1px solid var(--primary50);
     color: var(--textLight);
   }
   body.dark-mode #services-690 .nm-td-accent {
@@ -309,7 +309,7 @@
     /* 24px - 40px top & Bottom */
     /* 20px - 40px left & right */
     padding: clamp(1.5rem, 4.2vw, 2.5rem) clamp(1.25rem, 4.2vw, 2.5rem);
-    background-color: var(--secondary);
+    background-color: var(--secondary10);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -317,7 +317,7 @@
     align-items: stretch;
   }
   #pricing-1233 .nm-badge {
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
     align-items: center;
     display: inline-block;
     margin-bottom: 1rem;
@@ -328,17 +328,17 @@
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: var(--accent700);
+    color: var(--accent90);
     text-align: center;
     align-self: center;
   }
   #pricing-1233 .cs-button-transparent {
     margin-top: 1rem;
     padding: 1rem;
-    border: 2px solid var(--accent500);
+    border: 2px solid var(--accent70);
   }
   #pricing-1233 .cs-popular {
-    background-color: var(--accent500);
+    background-color: var(--accent70);
     color: var(--textLight);
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
     padding: clamp(2.5rem, 4.7vw, 3.5rem) clamp(1.5rem, 4.2vw, 2.5rem);
@@ -353,24 +353,24 @@
     opacity: 0.8;
   }
   #pricing-1233 .cs-popular .cs-price {
-    color: var(--secondary);
+    color: var(--secondary05);
   }
   #pricing-1233 .cs-popular .cs-includes {
     color: var(--textLight);
   }
   #pricing-1233 .cs-popular .cs-includes {
-    border-color: var(--secondary300);
+    border-color: var(--secondary30);
   }
   #pricing-1233 .cs-popular .cs-li {
     color: var(--textLight);
   }
   #pricing-1233 .cs-popular .cs-button-transparent {
     color: var(--textLight);
-    border: 2px solid var(--secondary200);
+    border: 2px solid var(--secondary20);
   }
   #pricing-1233 .cs-popular .cs-button-transparent:hover {
-    background-color: var(--secondary200);
-    color: var(--accent600);
+    background-color: var(--secondary20);
+    color: var(--accent80);
   }
   #pricing-1233 .cs-package {
     /* 13px - 16px */
@@ -381,7 +381,7 @@
     font-weight: 400;
     /* 4px - 8px */
     margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
-    color: var(--accent500);
+    color: var(--accent70);
     display: block;
   }
   #pricing-1233 .cs-desc {
@@ -403,7 +403,7 @@
     text-align: inherit;
     font-weight: 400;
     margin: 0;
-    color: var(--accent500);
+    color: var(--accent70);
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem;
@@ -427,11 +427,11 @@
     text-align: inherit;
     font-weight: 600;
     width: 100%;
-    color: var(--accent500);
+    color: var(--accent70);
     margin-top: 2rem;
     /* 16px - 24px */
     padding: clamp(1rem, 3vw, 1.5rem) 0 0 0;
-    border-top: 1px solid var(--secondary300);
+    border-top: 1px solid var(--secondary30);
     display: block;
   }
   #pricing-1233 .cs-ul {
@@ -483,10 +483,10 @@
     padding-right: clamp(1.75rem, 4vw, 2.5rem);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    border-right: 1px solid var(--secondary300);
+    border-right: 1px solid var(--secondary50);
   }
   #pricing-1233 .cs-popular .cs-item-content {
-    border-color: var(--secondary300);
+    border-color: var(--secondary30);
   }
   #pricing-1233 .cs-popular .cs-package {
     font-size: clamp(1.6125rem, 2vw, 2rem);
@@ -576,7 +576,7 @@
     opacity: 0.8;
   }
   body.dark-mode #pricing-1233 .cs-item {
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   body.dark-mode #pricing-1233 .cs-item-content {
     border-color: rgba(255, 255, 255, 0.3);
@@ -585,7 +585,7 @@
     opacity: 0.4;
   }
   body.dark-mode #pricing-1233 .cs-popular {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   body.dark-mode #pricing-1233 .cs-popular .cs-price,
   body.dark-mode #pricing-1233 .cs-popular .cs-package {
@@ -606,7 +606,7 @@
 @media only screen and (min-width: 0rem) {
   #faq-351 {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   #faq-351 .cs-container {
     width: 100%;
@@ -629,7 +629,7 @@
     align-items: center;
   }
   #faq-351 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   #faq-351 .cs-title,
   #faq-351 .cs-text {
@@ -654,21 +654,21 @@
   #faq-351 .cs-faq-item {
     list-style: none;
     width: 100%;
-    border-bottom: 1px solid var(--primary300);
+    border-bottom: 1px solid var(--primary50);
     transition: border-bottom 0.3s;
   }
   #faq-351 .cs-faq-item.active {
-    border-color: var(--secondary200);
+    border-color: var(--secondary20);
   }
   #faq-351 .cs-faq-item.active .cs-button {
-    color: var(--secondary);
+    color: var(--secondary10);
   }
   #faq-351 .cs-faq-item.active .cs-button:before {
-    background-color: var(--secondary200);
+    background-color: var(--secondary20);
     transform: rotate(315deg);
   }
   #faq-351 .cs-faq-item.active .cs-button:after {
-    background-color: var(--secondary200);
+    background-color: var(--secondary20);
     transform: rotate(-315deg);
   }
   #faq-351 .cs-faq-item.active .cs-item-p {
@@ -705,7 +705,7 @@
     content: "";
     width: 0.5rem;
     height: 0.125rem;
-    background-color: var(--primary300);
+    background-color: var(--primary30);
     opacity: 1;
     border-radius: 50%;
     position: absolute;
@@ -722,7 +722,7 @@
     content: "";
     width: 0.5rem;
     height: 0.125rem;
-    background-color: var(--primary300);
+    background-color: var(--primary30);
     opacity: 1;
     border-radius: 50%;
     position: absolute;

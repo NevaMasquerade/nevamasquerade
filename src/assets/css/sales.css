@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #sbs-578 {
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   #sbs-578 .cs-container {
     width: 100%;
@@ -31,7 +31,7 @@
     order: 1;
   }
   #sbs-578 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #sbs-578 .cs-title,
   #sbs-578 .cs-text {
@@ -93,7 +93,7 @@
     content: "";
     width: 50%;
     height: 60%;
-    background: var(--secondary400);
+    background: var(--secondary40);
     opacity: 1;
     display: block;
     position: absolute;
@@ -108,7 +108,7 @@
     background-color: var(--medium);
   }
   body.dark-mode #sbs-578 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #sbs-578 .cs-title,
   body.dark-mode #sbs-578 .cs-text {
@@ -243,7 +243,7 @@
   #RPsbs-600,
   #RPsbsr-600 {
     position: relative;
-    background-color: var(--accent500);
+    background-color: var(--accent70);
   }
   #RPsbs-600 .cs-container,
   #RPsbsr-600 .cs-container {
@@ -273,7 +273,7 @@
   }
   #RPsbs-600 .cs-topper,
   #RPsbsr-600 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #RPsbs-600 .cs-title,
   #RPsbs-600 .cs-text,
@@ -381,11 +381,11 @@
 @media only screen and (min-width: 0rem) {
   body.dark-mode #RPsbs-600,
   body.dark-mode #RPsbsr-600 {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   body.dark-mode #RPsbs-600 .cs-topper,
   body.dark-mode #RPsbsr-600 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #RPsbs-600 .cs-title,
   body.dark-mode #RPsbs-600 .cs-text,
@@ -417,7 +417,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #RPsbsr-600 {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
 }
 /* Mobile - 768px */
@@ -490,7 +490,7 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
-    border-bottom: solid 1px var(--accent500);
+    border-bottom: solid 1px var(--accent70);
   }
   #why-choose-1631 #cs-content-831 .cs-title {
     font-size: 2rem;
@@ -548,7 +548,7 @@
     width: 3rem;
     height: 3rem;
     aspect-ratio: 1/1;
-    background: var(--accent500);
+    background: var(--accent70);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -610,13 +610,13 @@
     opacity: 0.8;
   }
   body.dark-mode #why-choose-1631 .cs-wrapper {
-    background: var(--primary);
+    background: var(--primary70);
   }
   body.dark-mode #why-choose-1631 .cs-picture:before {
     background-color: var(--accent);
   }
   body.dark-mode #why-choose-1631 #cs-content-831 {
-    border-bottom-color: var(--primary);
+    border-bottom-color: var(--primary70);
   }
   body.dark-mode #why-choose-1631 #cs-content-831 .cs-title,
   body.dark-mode #why-choose-1631 #cs-content-831 .cs-text {
@@ -633,10 +633,10 @@
 @media only screen and (min-width: 0rem) {
   #steps-585 {
     padding: var(--sectionPadding);
-    background: var(--secondary);
+    background: var(--secondary20);
   }
   #steps-585 .cs-topper {
-    color: var(--accent500);
+    color: var(--accent70);
   }
   #steps-585 .cs-container {
     width: 100%;
@@ -673,7 +673,7 @@
     min-height: 15.5rem;
     /* 16px - 24px left & right */
     padding: 1rem clamp(1rem, 1.8vw, 1.5rem);
-    border-bottom: 1px solid var(--accent500);
+    border-bottom: 1px solid var(--accent70);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     display: flex;
@@ -710,7 +710,7 @@
     line-height: 1.2em;
     /* auto pushes against other elements in a flexbox, this one forces it to be at the bottom of the flexbox */
     margin: 0 0 auto 0;
-    color: var(--accent500);
+    color: var(--accent70);
     display: block;
     font-variant-numeric: lining-nums;
   }
@@ -739,7 +739,7 @@
   }
   #steps-585 .cs-item {
     border-bottom: none;
-    border-right: 1px solid var(--accent500);
+    border-right: 1px solid var(--accent70);
   }
 }
 /* Dark Mode */
@@ -748,7 +748,7 @@
     background: var(--medium);
   }
   body.dark-mode #steps-585 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   body.dark-mode #steps-585 .cs-title {
     color: var(--textLight);
@@ -764,7 +764,7 @@
     color: var(--textLight);
   }
   body.dark-mode #steps-585 .cs-number {
-    color: var(--secondary300);
+    color: var(--secondary30);
   }
 }
 /*-- -------------------------- -->
@@ -774,7 +774,7 @@
 @media only screen and (min-width: 0rem) {
   #faq-351 {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   #faq-351 .cs-container {
     width: 100%;
@@ -803,7 +803,7 @@
     margin-bottom: 1.5rem;
   }
   #faq-351 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   #faq-351 .cs-title,
   #faq-351 .cs-text {
@@ -831,21 +831,21 @@
   #faq-351 .cs-faq-item {
     list-style: none;
     width: 100%;
-    border-bottom: 1px solid var(--primary300);
+    border-bottom: 1px solid var(--primary50);
     transition: border-bottom 0.3s;
   }
   #faq-351 .cs-faq-item.active {
-    border-color: var(--secondary200);
+    border-color: var(--secondary20);
   }
   #faq-351 .cs-faq-item.active .cs-button {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #faq-351 .cs-faq-item.active .cs-button:before {
-    background-color: var(--secondary200);
+    background-color: var(--secondary20);
     transform: rotate(315deg);
   }
   #faq-351 .cs-faq-item.active .cs-button:after {
-    background-color: var(--secondary200);
+    background-color: var(--secondary20);
     transform: rotate(-315deg);
   }
   #faq-351 .cs-faq-item.active .cs-item-p {
@@ -882,7 +882,7 @@
     content: "";
     width: 0.5rem;
     height: 0.125rem;
-    background-color: var(--primary300);
+    background-color: var(--primary30);
     opacity: 1;
     border-radius: 50%;
     position: absolute;
@@ -899,7 +899,7 @@
     content: "";
     width: 0.5rem;
     height: 0.125rem;
-    background-color: var(--primary300);
+    background-color: var(--primary30);
     opacity: 1;
     border-radius: 50%;
     position: absolute;
@@ -954,7 +954,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #faq-351 {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
 }
 

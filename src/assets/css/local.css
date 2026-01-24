@@ -42,7 +42,7 @@
     font-family: var(--headerFont);
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
     line-height: 1.2em;
-    color: var(--secondary);
+    color: var(--secondary10);
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
@@ -124,7 +124,7 @@
 @media only screen and (min-width: 0rem) {
   #RPsbs-576,
   #RPsbsr-576 {
-    background: var(--primary);
+    background: var(--primary70);
   }
   #RPsbs-576 ul,
   #RPsbsr-576 ul {
@@ -164,7 +164,7 @@
   }
   #RPsbs-576 .cs-topper,
   #RPsbsr-576 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #RPsbs-576 .cs-title,
   #RPsbsr-576 .cs-title {
@@ -222,7 +222,7 @@
     content: "";
     width: 100vw;
     margin-left: -38%;
-    background: var(--primary);
+    background: var(--primary70);
     opacity: 1;
     display: block;
     position: absolute;
@@ -252,7 +252,7 @@
     /* yellow box */
     content: "";
     width: 50%;
-    background: var(--secondary300);
+    background: var(--secondary40);
     opacity: 1;
     display: block;
     position: absolute;
@@ -279,10 +279,10 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
   #RPsbsr-576 {
-    background: var(--primary600);
+    background: var(--primary80);
   }
   #RPsbsr-576 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #RPsbsr-576 .cs-title {
     color: var(--textLight);
@@ -311,14 +311,14 @@
     margin-right: -38%;
     left: auto;
     right: 50%;
-    background: var(--primary600);
+    background: var(--primary80);
   }
   #RPsbsr-576 .cs-content {
     /* pushes to the left in the 1st position */
     order: -1;
   }
   #RPsbsr-576 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #RPsbsr-576 .cs-title,
   #RPsbsr-576 .cs-text {
@@ -340,7 +340,7 @@
     /* Also target if it's not wrapped in an anchor */
   }
   body.dark-mode #RPsbsr-576 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #RPsbsr-576 .cs-title,
   body.dark-mode #RPsbsr-576 .cs-text {
@@ -372,7 +372,7 @@
 @media only screen and (min-width: 0rem) {
   #services-965 {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    background-color: var(--primary70);
     position: relative;
     z-index: 1;
   }
@@ -407,7 +407,7 @@
     color: var(--textLight);
   }
   #services-965 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   #services-965 .cs-title,
   #services-965 .cs-text {
@@ -450,7 +450,7 @@
     width: 5.5rem;
     height: 5.5rem;
     margin: -2.75rem auto 2rem 0;
-    background-color: var(--secondary300);
+    background-color: var(--secondary30);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -468,7 +468,7 @@
     line-height: 1.2em;
     text-align: inherit;
     margin: 0 0 0.75rem 0;
-    color: var(--secondary600);
+    color: var(--secondary80);
   }
   #services-965 .cs-item-text {
     /* 14px - 16px */
@@ -482,7 +482,7 @@
   #services-965 .cs-waves {
     width: 100%;
     height: 13.875rem;
-    background-color: var(--primary600);
+    background-color: var(--primary80);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -507,10 +507,10 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #services-965 {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   body.dark-mode #services-965 .cs-topper {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   body.dark-mode #services-965 .cs-title,
   body.dark-mode #services-965 .cs-text,
@@ -534,6 +534,9 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
+  #sbs-578 {
+    background-color: var(--secondary10);
+  }
   #sbs-578 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -566,7 +569,7 @@
     margin-bottom: 2rem;
   }
   #sbs-578 .nm-button-secondary {
-    color: var(--accent500);
+    color: var(--accent70);
   }
   #sbs-578 .cs-picture {
     display: block;
@@ -631,7 +634,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #sbs-578 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #sbs-578 .cs-title,
   body.dark-mode #sbs-578 .cs-text,
@@ -642,7 +645,7 @@
     opacity: 0.8;
   }
   body.dark-mode #sbs-578 .cs-picture:before {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
 }
 /*-- -------------------------- -->
@@ -654,7 +657,7 @@
     padding: var(--sectionPadding);
     /* clips the cs-floater and prevents it from causing overflow issues */
     overflow: hidden;
-    background-color: var(--primary);
+    background-color: var(--primary70);
     position: relative;
     z-index: 1;
   }
@@ -684,7 +687,7 @@
     color: var(--textLight);
   }
   #pricing-1319 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #pricing-1319 .cs-text {
     color: var(--textLight);
@@ -724,7 +727,7 @@
     align-items: center;
   }
   #pricing-1319 .cs-item.cs-popular {
-    background-color: var(--secondary200);
+    background-color: var(--secondary20);
     filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.4));
     padding: clamp(3rem, 4.4vw, 4rem) clamp(1rem, 2.3vw, 1.5rem);
   }
@@ -752,7 +755,7 @@
     text-align: inherit;
     text-transform: uppercase;
     font-weight: 600;
-    color: var(--accent500);
+    color: var(--accent70);
     /* 4px - 8px */
     margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
   }
@@ -765,7 +768,7 @@
     display: block;
   }
   #pricing-1319 .nm-badge {
-    background-color: var(--accent500);
+    background-color: var(--accent70);
     align-items: center;
     display: inline-block;
     margin-bottom: 1.5rem;
@@ -797,7 +800,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
-    color: var(--accent500);
+    color: var(--accent70);
     min-width: 9.375rem;
     padding: 1.25rem;
     background-color: transparent;
@@ -810,7 +813,7 @@
   }
   #pricing-1319 .cs-button-transparent:hover {
     color: var(--textLight);
-    background: var(--accent500);
+    background: var(--accent70);
   }
   #pricing-1319 .cs-price {
     /* 31px - 49px */
@@ -821,7 +824,7 @@
     text-align: inherit;
     margin: 0;
     padding: 0;
-    color: var(--accent500);
+    color: var(--accent70);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -934,7 +937,7 @@
 @media only screen and (min-width: 81.25rem) {
   #pricing-1319 {
     background: url("/assets/textures/price-texture.webp");
-    background-color: var(--primary600);
+    background-color: var(--primary80);
     background-size: cover;
     background-position: center 20%;
     background-repeat: no-repeat;
@@ -991,10 +994,10 @@
     background-color: var(--medium);
   }
   body.dark-mode #pricing-1319 .cs-item .cs-package {
-    color: var(--secondary200);
+    color: var(--secondary30);
   }
   body.dark-mode #pricing-1319 .cs-item.cs-popular {
-    background-color: var(--primary);
+    background-color: var(--primary70);
     filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   }
   body.dark-mode #pricing-1319 .cs-item.cs-popular .cs-ul:before {
@@ -1011,7 +1014,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #pricing-1319 .nm-badge {
-    background-color: var(--secondary300);
+    background-color: var(--secondary40);
     filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.2));
   }
   body.dark-mode #pricing-1319 .nm-best {
@@ -1024,7 +1027,7 @@
     color: var(--textLight);
   }
   body.dark-mode #pricing-1319 .cs-package {
-    color: var(--primary);
+    color: var(--primary70);
   }
   body.dark-mode #pricing-1319 .cs-desc,
   body.dark-mode #pricing-1319 .cs-price,

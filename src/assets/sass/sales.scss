@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #sbs-578 {
-        background-color: var(--primary600);
+        background-color: var(--primary80);
 
         .cs-container {
             width: 100%;
@@ -35,7 +35,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--secondary20);
         }
 
         .cs-title,
@@ -105,7 +105,7 @@
                 content: "";
                 width: 50%;
                 height: 60%;
-                background: var(--secondary400);
+                background: var(--secondary40);
                 opacity: 1;
                 display: block;
                 position: absolute;
@@ -124,7 +124,7 @@
             background-color: var(--medium);
 
             .cs-topper {
-                color: var(--secondary);
+                color: var(--secondary20);
             }
 
             .cs-title,
@@ -294,7 +294,7 @@
     #RPsbs-600,
     #RPsbsr-600 {
         position: relative;
-        background-color: var(--accent500);
+        background-color: var(--accent70);
 
         .cs-container {
             width: 100%;
@@ -323,7 +323,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--secondary20);
         }
 
         .cs-title,
@@ -432,10 +432,10 @@
     body.dark-mode {
         #RPsbs-600,
         #RPsbsr-600 {
-            background-color: var(--primary);
+            background-color: var(--primary70);
             
             .cs-topper {
-                color: var(--secondary);
+                color: var(--secondary20);
             }
             .cs-title,
             .cs-text {
@@ -471,7 +471,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
     #RPsbsr-600 {
-        background-color: var(--primary);
+        background-color: var(--primary70);
     }
 }
 
@@ -557,7 +557,7 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
-            border-bottom: solid 1px var(--accent500);
+            border-bottom: solid 1px var(--accent70);
 
             .cs-title {
                 font-size: 2rem;
@@ -623,7 +623,7 @@
             width: calc(48 / 16 * 1rem);
             height: calc(48 / 16 * 1rem);
             aspect-ratio: 1 / 1;
-            background: var(--accent500);
+            background: var(--accent70);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -702,7 +702,7 @@
             }
 
             .cs-wrapper {
-                background: var(--primary);
+                background: var(--primary70);
             }
 
             .cs-picture {
@@ -712,7 +712,7 @@
             }
 
             #cs-content-831 {
-                border-bottom-color: var(--primary);
+                border-bottom-color: var(--primary70);
 
                 .cs-title,
                 .cs-text {
@@ -736,10 +736,10 @@
 @media only screen and (min-width: 0rem) {
     #steps-585 {
         padding: var(--sectionPadding);
-        background: var(--secondary);
+        background: var(--secondary20);
 
         .cs-topper {
-            color: var(--accent500);
+            color: var(--accent70);
         }
 
         .cs-container {
@@ -784,7 +784,7 @@
             min-height: calc(248 / 16 * 1rem);
             /* 16px - 24px left & right */
             padding: calc(16 / 16 * 1rem) clamp(1rem, 1.8vw, 1.5rem);
-            border-bottom: 1px solid var(--accent500);
+            border-bottom: 1px solid var(--accent70);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             display: flex;
@@ -824,7 +824,7 @@
             line-height: 1.2em;
             /* auto pushes against other elements in a flexbox, this one forces it to be at the bottom of the flexbox */
             margin: 0 0 auto 0;
-            color: var(--accent500);
+            color: var(--accent70);
             display: block;
             font-variant-numeric: lining-nums;
         }
@@ -863,7 +863,7 @@
 
         .cs-item {
             border-bottom: none;
-            border-right: 1px solid var(--accent500);
+            border-right: 1px solid var(--accent70);
         }
         
     }
@@ -876,7 +876,7 @@
             background: var(--medium);
 
             .cs-topper {
-                color: var(--secondary200);
+                color: var(--secondary20);
             }
             .cs-title {
                 color: var(--textLight);
@@ -896,7 +896,7 @@
             }
             
             .cs-number {
-                color: var(--secondary300);
+                color: var(--secondary30);
             }
         }
     }
@@ -910,7 +910,7 @@
 @media only screen and (min-width: 0rem) {
     #faq-351 {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: var(--primary70);
 
         .cs-container {
             width: 100%;
@@ -943,7 +943,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary200);
+            color: var(--secondary20);
         }
 
         .cs-title,
@@ -977,19 +977,19 @@
         .cs-faq-item {
             list-style: none;
             width: 100%;
-            border-bottom: 1px solid var(--primary300);
+            border-bottom: 1px solid var(--primary50);
             transition: border-bottom 0.3s;
 
             &.active {
-                border-color: var(--secondary200);
+                border-color: var(--secondary20);
                 .cs-button {
-                    color: var(--secondary);
+                    color: var(--secondary20);
                     &:before {
-                        background-color: var(--secondary200);
+                        background-color: var(--secondary20);
                         transform: rotate(315deg);
                     }
                     &:after {
-                        background-color: var(--secondary200);
+                        background-color: var(--secondary20);
                         transform: rotate(-315deg);
                     }
                 }
@@ -1035,7 +1035,7 @@
                 content: "";
                 width: calc(8 / 16 * 1rem);
                 height: calc(2 / 16 * 1rem);
-                background-color: var(--primary300);
+                background-color: var(--primary30);
                 opacity: 1;
                 border-radius: 50%;
                 position: absolute;
@@ -1053,7 +1053,7 @@
                 content: "";
                 width: calc(8 / 16 * 1rem);
                 height: calc(2 / 16 * 1rem);
-                background-color: var(--primary300);
+                background-color: var(--primary30);
                 opacity: 1;
                 border-radius: 50%;
                 position: absolute;
@@ -1122,7 +1122,7 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #faq-351 {
-            background-color: var(--primary);
+            background-color: var(--primary70);
         }
     }
 }

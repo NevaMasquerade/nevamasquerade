@@ -90,7 +90,7 @@
 @media only screen and (min-width: 0rem) {
   #content-1638 {
     padding: var(--sectionPadding);
-    background-color: var(--secondary);
+    background-color: var(--secondary10);
     position: relative;
     z-index: 1;
   }
@@ -124,7 +124,7 @@
     color: var(--textLight);
   }
   #content-1638 .nm-highlight {
-    background-color: var(--primary);
+    background-color: var(--primary70);
     padding: 2rem;
   }
   #content-1638 .nm-highlight .cs-text {

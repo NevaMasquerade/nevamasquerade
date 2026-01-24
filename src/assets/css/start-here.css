@@ -33,7 +33,7 @@
     color: var(--textLight);
   }
   #events-1438 #cs-content-832 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #events-1438 #cs-content-832 .cs-flex-group {
     /* prevents flexbox from squishing it */
@@ -57,7 +57,7 @@
     list-style: none;
     width: 100%;
     max-width: 44rem;
-    background-color: var(--accent500);
+    background-color: var(--accent70);
     border-radius: 0;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@
   #events-1438 .cs-picture {
     width: 100%;
     height: 15rem;
-    background-color: var(--secondary600);
+    background-color: var(--secondary80);
     display: block;
     position: relative;
     z-index: 1;
@@ -151,7 +151,7 @@
     width: auto;
     height: 1em;
     transition: transform 0.3s;
-    color: var(--secondary300);
+    color: var(--secondary30);
     display: flex;
     align-self: flex-start;
   }
@@ -163,7 +163,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--primary600);
+    background-color: var(--primary80);
   }
   #events-1438 .cs-background img {
     width: 100%;
@@ -265,7 +265,7 @@
 @media only screen and (min-width: 0rem) {
   #blog-1289 {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   #blog-1289 .cs-container {
     width: 100%;
@@ -288,7 +288,7 @@
     align-items: flex-start;
   }
   #blog-1289 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   #blog-1289 .cs-title,
   #blog-1289 .cs-text {
@@ -299,7 +299,7 @@
     flex: none;
   }
   #blog-1289 .cs-color {
-    color: var(--primary);
+    color: var(--primary70);
   }
   #blog-1289 .nm-button-secondary {
     color: var(--textLight);
@@ -361,7 +361,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: var(--secondary300);
+    background: var(--secondary40);
     mix-blend-mode: multiply;
     opacity: 0;
     position: absolute;
@@ -390,7 +390,7 @@
     text-align: left;
     font-weight: 600;
     margin: 0;
-    color: var(--accent500);
+    color: var(--accent70);
     display: block;
   }
   #blog-1289 .cs-h3 {
@@ -476,10 +476,10 @@
     opacity: 0.8;
   }
   body.dark-mode #blog-1289 .cs-date {
-    color: var(--secondary);
+    color: var(--secondary10);
   }
   body.dark-mode #blog-1289 .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode #blog-1289 .cs-item {
     background-color: var(--medium);
@@ -497,7 +497,7 @@
     padding: var(--sectionPadding);
     /* clips the cs-floater and prevents it from causing overflow issues */
     overflow: hidden;
-    background-color: var(--secondary);
+    background-color: var(--secondary10);
     position: relative;
     z-index: 1;
   }
@@ -567,7 +567,7 @@
     line-height: 1.2em;
     text-align: inherit;
     font-weight: 400;
-    color: var(--accent500);
+    color: var(--accent70);
     /* 4px - 8px */
     margin: 0 0 clamp(0.25rem, 1vw, 0.5rem) 0;
   }
@@ -598,7 +598,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     margin: 0;
-    color: var(--accent500);
+    color: var(--accent70);
     min-width: 9.375rem;
     padding: 0;
     background-color: transparent;
@@ -610,7 +610,7 @@
     transition: font-size 0.3s, color 0.3s;
   }
   #pricing-1319 .cs-button-transparent:hover {
-    color: var(--primary);
+    color: var(--primary70);
     font-size: 1.125rem;
   }
   #pricing-1319 .cs-price {
@@ -622,7 +622,7 @@
     text-align: inherit;
     margin: 0;
     padding: 0;
-    color: var(--accent500);
+    color: var(--accent70);
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -758,10 +758,10 @@
     background-color: var(--medium);
   }
   body.dark-mode #pricing-1319 .cs-item .cs-package {
-    color: var(--secondary200);
+    color: var(--secondary20);
   }
   body.dark-mode #pricing-1319 .cs-item.cs-popular {
-    background-color: var(--primary);
+    background-color: var(--primary70);
     filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.2));
   }
   body.dark-mode #pricing-1319 .cs-item.cs-popular .cs-ul:before {
@@ -778,7 +778,7 @@
     background-color: var(--dark);
   }
   body.dark-mode #pricing-1319 .nm-badge {
-    background-color: var(--secondary300);
+    background-color: var(--secondary30);
     filter: drop-shadow(0 0 40px rgba(255, 255, 255, 0.2));
   }
   body.dark-mode #pricing-1319 .nm-best {
@@ -791,7 +791,7 @@
     color: var(--textLight);
   }
   body.dark-mode #pricing-1319 .cs-package {
-    color: var(--primary);
+    color: var(--primary70);
   }
   body.dark-mode #pricing-1319 .cs-desc,
   body.dark-mode #pricing-1319 .cs-price,

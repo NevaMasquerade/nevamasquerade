@@ -38,7 +38,7 @@
             }
 
             .cs-topper {
-                color: var(--secondary)
+                color: var(--secondary20)
             }
 
             .cs-flex-group {
@@ -67,7 +67,7 @@
             list-style: none;
             width: 100%;
             max-width: calc(704 / 16 * 1rem);
-            background-color: var(--accent500);
+            background-color: var(--accent70);
             border-radius: 0;
             display: flex;
             flex-direction: column;
@@ -127,7 +127,7 @@
         .cs-picture {
             width: 100%;
             height: calc(240 / 16 * 1rem);
-            background-color: var(--secondary600);
+            background-color: var(--secondary80);
             display: block;
             position: relative;
             z-index: 1;
@@ -182,7 +182,7 @@
             width: auto;
             height: 1em;
             transition: transform 0.3s;
-            color: var(--secondary300);
+            color: var(--secondary40);
             display: flex;
             align-self: flex-start;
         }
@@ -195,7 +195,7 @@
             top: 0;
             left: 0;
             z-index: -1;
-            background-color: var(--primary600);
+            background-color: var(--primary80);
 
             
 
@@ -267,7 +267,7 @@
 
             #cs-content-832 {
                 .cs-topper {
-                    color: var(--secondary);
+                    color: var(--secondary20);
                 }
                 .cs-title,
                 .cs-text {

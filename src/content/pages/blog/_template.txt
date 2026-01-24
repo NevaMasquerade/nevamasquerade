@@ -58,8 +58,6 @@ permalink: 'blog/page-path/'
 <!--              Main Blog Content               -->
 <!-- ============================================ -->
 
-
-<div class="blog-container main-content-wrapper">
     
     <!--Main content -->
     <div class="main-content">
@@ -74,6 +72,6 @@ permalink: 'blog/page-path/'
         </article>
     </div>
     <!-- End .main-content -->
-</div>
+    
     {% include 'components/cta.html' %}
 {% endblock %}

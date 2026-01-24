@@ -65,7 +65,7 @@ permalink: 'blog/move-beyond-templates/'
 <!-- ============================================ -->
 
 
-<div class="blog-container main-content-wrapper">
+
     
     <!--Main content -->
     <div class="main-content">
@@ -293,7 +293,8 @@ permalink: 'blog/move-beyond-templates/'
                         <p>
                             If we’re doing a rebrand inside <a href="https://nevamasquerade.design/storycraft/">Storycraft</a>, I take your personality (and brand adjectives) and translate it directly into design. You don’t have to worry about which font says “playful yet professional” — that’s my job. You’re not stuck second-guessing whether something “feels right.” It either aligns with your foundation… or it doesn’t.
                         </p>
-                <hr>
+                
+                    <hr>
 
                 <h2>Step 3: Add a Quirk</h2>
 
@@ -349,7 +350,23 @@ permalink: 'blog/move-beyond-templates/'
                         <p>
                             In <a href="https://nevamasquerade.design/storycraft/">Storycraft</a>, we’ll tease out your quirk together. I’ll then figure out how to incorporate it (tastefully) in a way that feels genuine and memorable.
                         </p>
-                <hr>
+
+                    <aside id="blog-1289" class="related-post" aria-label="Related article">
+                        <div class="cs-item cs-highlight">
+                            <a href="/blog/why-i-made-storycraft/" class="cs-link">
+                                <picture class="cs-picture">
+                                    <img loading="lazy" decoding="async" src="../../assets/images/blog/why-story-m.webp" alt="A cat scrunching its face while lounging on loose puzzle pieces." width="270" height="200">
+                                </picture>
+                                <div class="cs-flex">
+                                    <span class="cs-topper">More like this</span>
+                                    <h3 class="aside-title">{{ blogs.whyStory.title }}</h3>
+                                    <p class="cs-item-text">
+                                        {{ blogs.whyStory.description }}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>  
+                    </aside>
 
                 <h2>You Might Be Wondering…</h2>
 
@@ -441,6 +458,6 @@ permalink: 'blog/move-beyond-templates/'
         </article>
     </div>
     <!-- End .main-content -->
-</div>
+
     {% include 'components/cta.html' %}
 {% endblock %}

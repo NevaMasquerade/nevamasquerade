@@ -62,9 +62,6 @@ permalink: 'blog/why-i-made-storycraft/'
 <!-- ============================================ -->
 <!--              Main Blog Content               -->
 <!-- ============================================ -->
-
-
-<div class="blog-container main-content-wrapper">
     
     <!--Main content -->
     <div class="main-content">
@@ -129,7 +126,24 @@ permalink: 'blog/why-i-made-storycraft/'
                 <p>
                 Templates are great <em>until</em> you outgrow them. Then they’re just in the way.
                 </p>
-                <hr>
+
+                <aside id="blog-1289" class="related-post" aria-label="Related article">
+                    <div class="cs-item cs-highlight">
+                        <a href="/blog/move-beyond-templates/" class="cs-link">
+                            <picture class="cs-picture">
+                                <img loading="lazy" decoding="async" src="../../assets/images/blog/beyond-templates-m.webp" alt="Fluffy white cat peeking out from behind a wall, looking both shy and suspicious — like it knows its template is showing." width="270" height="200">
+                            </picture>
+                            <div class="cs-flex">
+                                <span class="cs-topper">More like this</span>
+                                <h3 class="aside-title">{{ blogs.beyondTemplates.title }}</h3>
+                                <p class="cs-item-text">
+                                    {{ blogs.beyondTemplates.description }}
+                                </p>
+                            </div>
+                        </a>
+                    </div> 
+                </aside>
+
                 <h2>Becoming an expert in WordPress led me away from using it</h2>
 
 
@@ -395,6 +409,5 @@ permalink: 'blog/why-i-made-storycraft/'
         </article>
     </div>
     <!-- End .main-content -->
-</div>
     {% include 'components/cta.html' %}
 {% endblock %}

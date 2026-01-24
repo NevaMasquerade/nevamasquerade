@@ -6,7 +6,7 @@
 @media only screen and (min-width: 0rem) {
   :root {
     --dark: #071219;
-    --medium: #122633;
+    --medium: #142B3A;
     --accent: #294759;
   }
   body.dark-mode {
@@ -23,24 +23,24 @@
     color: var(--textLight);
   }
   body.dark-mode a {
-    color: var(--primary100);
+    color: var(--primary05);
   }
   body.dark-mode a:visited {
-    color: var(--secondary200);
+    color: var(--secondary10);
   }
   body.dark-mode a:hover {
-    color: var(--primary200);
+    color: var(--primary10);
   }
   body.dark-mode a[target=_blank]:link::after {
-    background-color: var(--primary100);
+    background-color: var(--primary05);
   }
   body.dark-mode a[target=_blank]:hover::after {
-    background-color: var(--primary200);
+    background-color: var(--primary10);
     width: 0.8em;
     height: 0.8em;
   }
   body.dark-mode a[target=_blank]:visited::after {
-    background-color: var(--secondary200);
+    background-color: var(--secondary10);
   }
   body.dark-mode .light {
     display: none;
@@ -49,10 +49,10 @@
     display: block !important;
   }
   body.dark-mode .cs-topper {
-    color: var(--secondary);
+    color: var(--secondary20);
   }
   body.dark-mode .cs-button-solid {
-    background-color: var(--secondary200);
+    background-color: var(--secondary30);
     color: var(--dark);
   }
   body.dark-mode .cs-button-solid:visited {
@@ -62,10 +62,10 @@
     color: var(--textLight);
   }
   body.dark-mode .cs-button-solid:before {
-    background-color: var(--primary400);
+    background-color: var(--primary60);
   }
   body.dark-mode .cs-button-transparent:hover {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
   .dark {
     display: none;
@@ -73,7 +73,7 @@
 }
 @media only screen and (min-width: 0rem) {
   body.dark-mode #hero-668 {
-    background-color: var(--primary);
+    background-color: var(--primary70);
   }
 }
 
