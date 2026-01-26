@@ -1,0 +1,611 @@
+---
+title: "Flashy ≠ Effective: Let’s Build a Website That Works"
+description: "Flashy doesn’t mean functional in web design. In this post, I break down what actually builds credibility online — and how to get there without the fluff."
+preloadImg: '/assets/images/blog/flashy-websites-m.webp'
+ogImage: '/assets/images/og/flashy-websites-og.png'
+permalink: 'blog/flashy-websites/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/assets/css/blog-post.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog-post.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">{{ blogs.flashyMyth.title}}</h1>
+        <div class="blog-authorGroup">
+            <!--Blog Date-->
+            <span class="blog-date">Last Updated: January 25, 2026</span>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--               Featured Image                 -->
+<!-- ============================================ -->
+<div class="nm-featured-image">
+    <picture class="blog-mainImage">
+        <source media="(max-width: 600px)" srcset="../../../assets/images/blog/flashy-websites-m.webp">
+        <source media="(min-width: 601px)" srcset="../../../assets/images/blog/flashy-websites.webp">
+        <img
+            src="../../../assets/images/blog/flashy-websites.webp"
+            alt="Fluffy cat snugly curled inside a small cardboard box, staring up with calm defiance — proof that fit matters more than flash."
+            decoding="async"
+            width="2200"
+            height="1237"
+            fetchpriority="high"
+        />
+    </picture>
+</div>
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+
+
+    
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                  Blog Article                -->
+        <!-- ============================================ -->
+
+        <article class="blog-article">
+            <section id="blog-content">
+                <p>
+                    You want your website to feel sharp and professional. You want it to reflect how far you’ve come. And yeah, let’s be honest — you probably want it to give off at least a little bit of “big name energy.”
+                </p>
+                <p>
+                    But if you’ve outgrown your DIY starter site and now find yourself stuck in redesign limbo — convinced you need animations, high-end visuals, or award-winning flourishes to be taken seriously — this post is for you.
+                </p>
+                <p>
+                    Here’s the truth: <strong>You don’t need a flashy website. You need a clear, effective one.</strong>
+                </p>
+                <p>
+                    All those bells and whistles? They might look cool at first glance, but they often do more harm than good. And as someone who’s spent nearly a decade inside a big, enterprise-level web team — I promise you: even the fanciest websites start simple. Every single time.
+                </p>
+                <p>
+                    In this post, we’re going to unpack:
+                </p>
+                <ul>
+                    <li>Why it <em>feels</em> like your site needs to be flashy to look legit</li>
+                    <li>Why that mindset is keeping you stuck (and costing you credibility)</li>
+                    <li>What actually matters when it comes to converting visitors into clients</li>
+                    <li>The must-have basics to nail before you even think about “fancy”</li>
+                    <li>What to skip if you want your site to feel trustworthy and easy to use</li>
+                    <li>And how I build all of this inside <a href="https://nevamasquerade.design/storycraft/">Storycraft</a> — my done-for-you website service</li>
+                </ul>
+                <p>
+                    Let’s cut through the noise and get to what actually works.
+                </p>
+
+                <hr>
+
+                <h2>Why This Myth Is So Easy to Believe</h2>
+
+                    <p>
+                        It makes sense that this idea sticks. When you look at someone like Jenna Kutcher or Marie Forleo, their websites are <em>stunning</em>. The slick animations. The bold video headers. The custom everything. Of course it feels like <em>that’s</em> the bar.
+                    </p>
+                    <p>
+                        They’ve built multi-million dollar brands — and their websites reflect that level of investment. So when you're scrolling through their site on a random Tuesday, wondering why yours doesn’t give off the same glow, it's easy to think: <em>I need to look like that.</em>
+                    </p>
+                    <p>
+                        But what you're seeing is the Ferrari.
+                    </p>
+                    <p>
+                        What you're <em>not</em> seeing? The whole pit crew behind it. The designers, developers, SEO strategists, consultants, marketing teams, and support staff who keep that thing running — even if it’s barely hanging on under the hood.
+                    </p>
+                    <p>
+                        Because here’s the real plot twist: a lot of those jaw-dropping websites? They're not actually working that well.
+                    </p>
+                    <p>
+                        They’re often:
+                    </p>
+                    <ul>
+                        <li>Slow to load (which hurts SEO and turns users off)</li>
+                        <li>Confusing to navigate (especially for anyone using assistive tech)</li>
+                        <li>Ignoring accessibility standards (which isn’t just unethical — it can be a legal problem)</li>
+                        <li>And packed with content that doesn’t guide users to a clear next step</li>
+                    </ul>
+                    <p>
+                        Sure, they might win a design award. But awards don’t pay your bills. <em>Clients</em> do.
+                    </p>
+                    <p>
+                        And clients don’t care about scroll-jacking and hover animations. They care about whether your site is clear, helpful, and easy to use. They want to know what you do, who it’s for, and how to take the next step — fast.
+                    </p>
+                    <p>
+                        It doesn’t help that a lot of the platforms solo business owners use — like Squarespace or Wix — showcase templates that lean hard into current design trends. You get flashy features out of the box: full-screen carousels, floating text blocks, autoplay videos, parallax backgrounds. All wrapped in a demo that looks <em>just</em> enough like the Big Name Coaches™ to feel aspirational.
+                    </p>
+                    <p>
+                        But here’s the catch: <strong>those templates aren’t just trend-forward — they’re fundamentally limited</strong>.
+                    </p>
+                    <p>
+                        They’re built for plug-and-play. Which means the second you try to do something custom or strategic, you hit a wall. The structure locks you in. The backend gets messy. You can’t move things where you want, or style them how you need, without fighting the system (or learning how to code).
+                    </p>
+                    <p>
+                        And even with all that effort? You still <em>can’t</em> replicate the polish and complexity of a site like Kutcher’s or Forleo’s — because those sites were built on other platforms, with big budgets and even bigger teams behind them. You’re trying to recreate a luxury site on a starter platform — and wondering why it’s not working.
+                    </p>
+                    <p>
+                        The result? You feel like you’re failing at design... when really, <strong>the tools were never built to support the kind of website you’re trying to create</strong>.
+                    </p>
+
+                <hr>
+
+                <h2>How This Myth Holds You Back (and Hurts Conversions)</h2>
+
+                    <p>
+                        Here’s what happens when you start believing your site has to be flashy to be effective:
+                    </p>
+                    <ul>
+                        <li><strong>You put off launching</strong> because it’s not “perfect” yet.</li>
+                        <li><strong>You lose hours</strong> tweaking animations and scroll effects that look cool but don’t actually help anyone.</li>
+                        <li><strong>You spiral into comparison mode</strong>, trying to reverse-engineer the websites of influencers with six-figure teams behind them.</li>
+                        <li><strong>You shape your site <em>around</em> the design</strong> instead of sharpening what the design is supposed to support: your message.</li>
+                        <li><strong>You get caught in an endless loop</strong>. The tweak-tweak-and-tweak-again loop. And somehow, your site never quite makes it out of draft.</li>
+                    </ul>
+                    <p>
+                        Eventually? You burn out. You start to wonder if maybe the problem <em>is</em> you.
+                    </p>
+                    <p>
+                        This looks like brilliant coaches and service providers like you with rock-solid offers and powerful results… and a website that doesn’t reflect <em>any</em> of that. Not because they don’t care. But because they’ve tied their credibility to a version of “professionalism” that was never meant for them.
+                    </p>
+                    <p>
+                        You get stuck chasing a vision cobbled together from influencer sites and high-budget rebrands. You spend months — even years — trying to wrangle a template into something it was never designed to be. And somewhere along the way, you start losing trust in your own instincts.
+                    </p>
+                    <p>
+                        That’s the real damage here. It’s not just wasted time or a slow site. It’s the way this myth chips away at your self-trust.
+                    </p>
+                    <p>
+                        And <strong>if you’re on Wix or Squarespace</strong>? Let’s be honest: <strong>you <em>can’t</em> build a Forleo-style site</strong> there. Those platforms just weren’t made for that level of complexity.
+                    </p>
+                    <p>
+                        So now you’re stuck with a goal that’s literally unreachable on your current tech stack — and blaming yourself for not being able to reach it.
+                    </p>
+                    <p>
+                        If you’ve ever caught yourself thinking…
+                    </p>
+                    <p>
+                        “I’ll fix my site once I can afford the rebrand.”<br>“I have to look more polished before I raise my prices.”<br>“I’m embarrassed to share my website, so I just won’t…”
+                    </p>
+                    <p>
+                        You’re not the only one. But those thoughts? They’re costing you way more than a fancy design ever could. They’re costing you leads, momentum, and confidence.
+                    </p>
+
+                <hr>
+
+                <h2>Let’s Talk UX (User Experience) — The Overlooked Dealbreaker</h2>
+
+                    <p>
+                        Now let’s get into what actually makes a website <em>work</em> — not just <em>look good</em>.
+                    </p>
+                    <p>
+                        In the web design world, we call it UX. Short for user experience. But don’t let the acronym scare you off — it just means: is this easy to use?
+                    </p>
+                    <p>
+                        A site with good UX is:
+                    </p>
+                    <ul>
+                        <li>Easy to navigate</li>
+                        <li>Easy to understand</li>
+                        <li>Easy to use</li>
+                        <li>Inclusive of different needs, contexts, and abilities</li>
+                    </ul>
+                    <p>
+                        A site with bad UX?
+                    </p>
+                    <ul>
+                        <li>Loads slowly</li>
+                        <li>Is hard to read</li>
+                        <li>Feels confusing or chaotic to move through</li>
+                        <li>Throws too many elements at you all at once</li>
+                        <li>Leaves entire groups of people — like disabled users or non-native English speakers — completely out</li>
+                    </ul>
+                    <p>
+                        The problem is, most “flashy” sites fall into the second category. Let’s break down a few common culprits.
+                    </p>
+
+                    <aside id="blog-1289" class="related-post" aria-label="Related article">
+                        <div class="cs-item cs-highlight">
+                            <a href="/blog/bad-ux/" class="cs-link">
+                                <picture class="cs-picture">
+                                    <img loading="lazy" decoding="async" src="../../assets/images/blog/bad-ux-m.webp" alt="Fluffy cat squished awkwardly into a clear glass fishbowl. Cute, but not remotely functional." width="270" height="200">
+                                </picture>
+                                <div class="cs-flex">
+                                    <span class="cs-topper">More like this</span>
+                                    <h3 class="aside-title">{{ blogs.badUX.title }}</h3>
+                                    <p class="cs-item-text">
+                                        {{ blogs.badUX.description }}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>  
+                    </aside>
+
+                    <h3>The Problem with Animations</h3>
+
+                        <p>
+                            Animations <em>can</em> be great — when they’re used with intention. A soft hover effect? A visual nudge that says “yes, this button does something”? Love it.
+                        </p>
+                        <p>
+                            But when animations are just there to flex — fading in every headline, sliding in every block of text, stacking autoplaying videos on a single page — you’re not impressing anyone. You’re interrupting them.
+                        </p>
+                        <p>
+                            <strong>Every second someone waits for your sentence to <em>appear</em> is a second they’re not actually reading it</strong>. That’s friction. And friction kills conversions.
+                        </p>
+                        <p>
+                            Your design shouldn’t get in the way of your message. It should <em>clear a path to it</em>.
+                        </p>
+
+                    <h3>The Problem with Parallax</h3>
+
+                        <p>
+                            Parallax scrolling — where the background moves at a different speed than the content — can add nice visual depth. <em>If</em> it’s used sparingly.
+                        </p>
+                        <p>
+                            But most of the time? <strong>It’s just a distraction</strong>.
+                        </p>
+                        <p>
+                            Overuse leads to:
+                        </p>
+                        <ul>
+                            <li>Nausea or motion sensitivity for some users</li>
+                            <li>Terrible contrast between text and background</li>
+                            <li>Wasted space that looks cool but doesn’t <em>do</em> anything</li>
+                        </ul>
+                        <p>
+                            It’s one of those “looks good in a demo, backfires in real life” situations. Especially on mobile.
+                        </p>
+
+                    <h3>The Problem with Scrolljacking</h3>
+
+                        <p>
+                            Scrolljacking is when your site hijacks a user’s scroll and does something <em>they</em> didn’t ask for — like snap to a section, delay the scroll, or take over the controls entirely.
+                        </p>
+                        <p>
+                            It’s meant to feel slick. But in reality? <a href="https://www.nngroup.com/articles/scrolljacking-101/">It hurts more than it helps</a>.
+                        </p>
+                        <p>
+                            It breaks expectations. It removes agency. It can even trigger accessibility flags. Worst of all, it’s confusing — and confusion is not a vibe that converts.
+                        </p>
+                    
+
+                    <p>
+                        These aren’t harmless little extras. They have real consequences. Especially if accessibility matters to you. (And if it doesn’t yet — it should.)
+                    </p>
+                
+                <hr>
+
+                <h2>Accessibility Isn’t Optional</h2>
+
+                    <p>
+                        Here’s something too many web designers gloss over:
+                    </p>
+                    <p>
+                        <strong>If your website isn’t accessible, it’s broken</strong>.
+                    </p>
+                    <p>
+                        Accessibility isn’t a bonus feature. It’s not a “someday” upgrade. It’s baseline. A non-negotiable for a website that actually works for the people who visit it.
+                    </p>
+                    <p>
+                        That includes basics like:
+                    </p>
+                    <ul>
+                        <li>Text with proper contrast (so it’s readable without squinting)</li>
+                        <li>No ALL CAPS for big chunks of text (especially rough for dyslexic users)</li>
+                        <li>Keyboard-friendly navigation (not everyone uses a mouse)</li>
+                        <li>Meaningful alt text for images (not just “image123.jpg” or keyword stuffing)</li>
+                        <li>Skipping the flashy effects that can trigger motion sensitivity or seizures</li>
+                    </ul>
+                    <p>
+                        And the thing is — accessibility doesn’t just help people with specific needs.
+                    </p>
+                    <p>
+                        <strong>It helps <em>everyone</em></strong>.
+                    </p>
+                    <p>
+                        Just like curb cuts on sidewalks help parents with strollers, travelers with rolling suitcases, and people hauling groceries — <strong>accessible design makes your site easier to use</strong>. Faster. Clearer. More trustworthy.
+                    </p>
+                    <p>
+                        Since I started working on the State Department’s main website in 2018, accessibility was never optional. It’s required by law. So I learned to build with those standards from day one — and that’s the standard I bring to every client site.
+                    </p>
+                    <p>
+                        I’m not here to hand you a pretty template that only works for half your audience.
+                    </p>
+                    <p>
+                        I’m here to build a high-performing, conversion-ready website that <em>actually works</em> — for all your users. Because <em>that’s</em> what builds credibility.
+                    </p>
+                    <p>
+                        Not parallax scrolls. Not page transitions. Not fireworks.
+                    </p>
+
+                <hr>
+
+                <h2>What Actually Builds Credibility Online</h2>
+
+                    <p>
+                        Let’s skip the fluff: looking credible online has nothing to do with fancy effects or whatever font is trending this month.
+                    </p>
+                    <p>
+                        It’s built through clarity. Consistency. And a site that’s actually designed for the people using it.
+                    </p>
+                    <p>
+                        When someone lands on your site, you’ve got a few seconds to do three things:
+                    </p>
+                    <ul>
+                        <li><strong>Orient them</strong> — What is this? Is this for me?</li>
+                        <li><strong>Build trust</strong> — Do I believe this person can help me?</li>
+                        <li><strong>Guide them</strong> — What should I do next?</li>
+                    </ul>
+                    <p>
+                        That means your site has to act like a concierge — not a billboard.
+                    </p>
+                    <p>
+                        It needs to answer unspoken questions. Remove doubts. Lead with what matters. All without sounding like a résumé or trying to impress with empty polish.
+                    </p>
+                    <p>
+                        So what <em>does</em> move the needle when it comes to credibility?
+                    </p>
+                    
+                    <hr>
+                    
+                    <h3>Clear, Purposeful Copy</h3>
+
+                        <p>
+                            You don’t need clever. You need clear.
+                        </p>
+                        <p>
+                            People are scanning for answers:
+                        </p>
+                        <ul>
+                            <li>What do you do?</li>
+                            <li>Who’s it for?</li>
+                            <li>Why should I care?</li>
+                            <li>What’s in it for me?</li>
+                        </ul>
+                        <p>
+                            Yes, good branding helps. But it’s your <em>words</em> that carry the weight. If your design looks sharp but the copy is vague, confusing, or full of fluff, people won’t stick around. They’ll bounce.
+                        </p>
+
+                    <hr>
+                    <h3>Trust-Building Touchpoints</h3>
+
+                        <p>
+                            Real trust comes from the details. Things like:
+                        </p>
+                        <ul>
+                            <li>Testimonials that show specific outcomes (not just “she’s amazing!”)</li>
+                            <li>CTAs that invite, not pressure</li>
+                            <li>Clean, professional photography (you don’t need a Vogue shoot — just something current and clear)</li>
+                            <li>Easy-to-find contact info or next steps</li>
+                            <li>A tone of voice that actually sounds like you — and resonates with the people you want to reach</li>
+                        </ul>
+                        <p>
+                            Polish doesn’t build trust on its own. Clarity and consistency do.
+                        </p>
+                    
+                    <hr>
+                    <h3>Thoughtful Navigation</h3>
+
+                        <p>
+                            You don’t need a 20-page website. Solopreneurs can do great with as few pages as:
+                        </p>
+                        <ul>
+                            <li>Homepage</li>
+                            <li>About</li>
+                            <li>Services</li>
+                            <li>Contact</li>
+                        </ul>
+                        <p>
+                            Each page should have a job. And the path from one to the next should be easy, intuitive, and free of clutter.
+                        </p>
+                        <p>
+                            No dead ends. No overthinking.
+                        </p>
+                        <p>
+                            Just a clear, confident journey that helps people get what they need.
+                        </p>
+
+                    <hr>
+                    <h3>Consistent Visual Language</h3>
+
+                        <p>
+                            This is where design plays its part — not to steal the show, but to support it.
+                        </p>
+                        <p>
+                            When your colors, fonts, and layouts feel cohesive (and not cobbled together from three different template packs), your site feels intentional. Professional. Established.
+                        </p>
+                        <p>
+                            And here’s a truth most people miss: simplicity is a luxury.
+                        </p>
+                        <p>
+                            A clean, accessible, well-paced website doesn’t just <em>look</em> good — it <em>feels</em> good to use. And that ease? It builds trust fast.
+                        </p>
+                
+                <hr>
+                <h2>How We Do This Inside Storycraft</h2>
+
+                    <p>
+                        When I build your site inside <a href="https://nevamasquerade.design/storycraft/">Storycraft</a>, I don’t treat design, copy, and dev like separate to-do lists. I treat the whole thing as one connected system — built to tell your story, feel intentional, and actually move people toward working with you.
+                    </p>
+                    <p>
+                        The process happens in three flexible, purpose-driven phases:
+                    </p>
+
+                    <h3>Phase 1 — Share Your Story</h3>
+
+                        <p>
+                            This is where we start. Not with colors or mockups — but with clarity.
+                        </p>
+                        <p>
+                            We dig into who you are, who you serve, and what makes your work matter. Not fluffy “vision board” stuff. Real, grounded strategy that drives every decision we make.
+                        </p>
+                        <p>
+                            We’ll uncover your voice, shape your offer messaging, and build the narrative that moves someone from “hmm, interesting” to “how do I hire them?”
+                        </p>
+                        <p>
+                            This is the blueprint. The map. The thing that keeps your site aligned — even when your offers evolve.
+                        </p>
+
+                    <h3>Phase 2 — Shape the Site</h3>
+
+                        <p>
+                            Now we bring it all together.
+                        </p>
+                        <p>
+                            Your strategy, your content, your design — all built out in one place, where everything supports everything else.
+                        </p>
+                        <p>
+                            Here’s what happens:
+                        </p>
+                        <ul>
+                            <li>We refine your messaging so it speaks directly to the people you want to work with</li>
+                            <li>I design layouts that highlight your content — not compete with it</li>
+                            <li>Then I code and build the site so it’s fast, clean, and accessible</li>
+                        </ul>
+                        <p>
+                            There’s no handoff between “copy” and “design” and “dev.” It’s all integrated — so every visual choice supports your story, and every line of code supports usability and performance.
+                        </p>
+                        <p>
+                            The result? A site that looks good <em>and</em> works hard.
+                        </p>
+
+                    <h3>Phase 3 — Ship and Support</h3>
+
+                        <p>
+                            Once we launch, I don’t disappear.
+                        </p>
+                        <p>
+                            <a href="https://nevamasquerade.design/storycraft/">Storycraft</a> is structured as an ongoing partnership — so your site can grow and adapt alongside your business.
+                        </p>
+                        <p>
+                            That means:
+                        </p>
+                        <ul>
+                            <li>Regular checkpoints to assess what’s working (and what needs a tune-up)</li>
+                            <li>Unlimited content updates and small fixes, without needing a full rebuild</li>
+                            <li>Strategic support that doesn’t vanish the second we hit “publish”</li>
+                        </ul>
+                        <p>
+                            Your website doesn’t sit still. Neither do we.
+                        </p>
+
+                <hr>
+                <h2>You Might Be Wondering...</h2>
+
+                    <h3>“If I hire you, am I just getting a minimal site that I’ll need to rebuild later?”</h3>
+
+                        <p>
+                            Solid question. Short answer: nope.
+                        </p>
+                        <p>
+                            Yes, I take a minimum-viable-site approach — but my version of “minimum” is miles ahead of the average DIY setup. When your site goes live, it already includes everything your audience needs to:
+                        </p>
+                        <ul>
+                            <li>Understand what you do</li>
+                            <li>Feel confident that you’re legit</li>
+                            <li>Take the next step without confusion or friction</li>
+                        </ul>
+                        <p>
+                            We don’t skip anything essential. We just don’t overbuild before you need it. No Ferraris when what you really need is a clean, powerful daily driver that can grow with you.
+                        </p>
+
+                    <h3>“How long does this take?”</h3>
+
+                        <p>
+                            It depends a little on where your content is starting from, but most <a href="https://nevamasquerade.design/storycraft/">Storycraft</a> sites go live in <strong>6–8 weeks</strong>.
+                        </p>
+                        <p>
+                            Because we move through focused phases, you're not stuck in an endless back-and-forth or waiting six months for something usable.
+                        </p>
+
+                    <h3>“Do I have to know what I want it to look like?”</h3>
+
+                        <p>
+                            Nope. That’s my job.
+                        </p>
+                        <p>
+                            You don’t need a vision board or a list of design inspo — just a clear sense of who you serve and what you offer. I’ll take it from there, translating your strategy into a design that supports it.
+                        </p>
+
+                <hr>
+                <h2>In Summary</h2>
+
+                    <p>
+                        If you’ve been caught in perfectionism — waiting for the time, the budget, or the mythical moment when your business finally feels “ready” for a real website...
+                    </p>
+                    <p>
+                        This is your sign to stop waiting.
+                    </p>
+                    <p>
+                        You don’t need <em>flashy</em>. You need <strong>focused</strong>.<br>You don’t need <em>trendy</em>. You need <strong>trustworthy</strong>. <br>You don’t need <em>perfect</em>. You need <strong>publishable</strong>.
+                    </p>
+                    <p>
+                        And when you embrace that? Everything starts moving:
+                    </p>
+                    <ul>
+                        <li>You show up online with <strong>more consistency</strong> and <strong>confidence</strong></li>
+                        <li>You attract clients who are <strong>aligned</strong> and <strong>already interested</strong></li>
+                        <li>You <strong>stop cringing</strong> when you send someone your link</li>
+                        <li>You finally have a foundation that <strong>supports your growth</strong></li>
+                    </ul>
+                    <p>
+                        A great website doesn’t have to cost five figures. It doesn’t have to take half a year. And it definitely doesn’t need scrolljacks, floating text, or performative animation just to look “legit.”
+                    </p>
+                    <p>
+                        <strong>It just needs to work</strong>. For you. For your people. For the next chapter of your business.
+                    </p>
+
+                <hr>
+                <h2>Ready to Build the Website That Works?</h2>
+
+                    <p>
+                        If you're done spinning in DIY purgatory and ready for a site you're proud to share — one that feels like <em>you</em> and converts like it means business — I'd love to help.
+                    </p>
+                    <p>
+                        <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
+                            {% ButtonIcon %}
+                            Start Your Story
+                        </a>
+                    </p>
+                    <p>
+                        We’ll hop on a quick call to look at where things stand, talk through what’s not working, and map out your next right steps. Whether we work together or not, you’ll walk away with more clarity.
+                    </p>
+                    <p>
+                        You don’t need a Ferrari. You need a site that shows up, speaks clearly, and keeps working behind the scenes — so you don’t have to.
+                    </p>
+                    <p>
+                        Let’s build that.
+                    </p>
+                    <p>
+                        P.S. If you’ve been waiting for the “right time”... this is it. Done is what gets you visible. Clarity loves action.
+                    </p>
+            </section>
+        </article>
+    </div>
+    <!-- End .main-content -->
+
+    {% include 'components/cta.html' %}
+{% endblock %}
