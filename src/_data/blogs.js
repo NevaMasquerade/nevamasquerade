@@ -21,4 +21,7 @@ module.exports = {
   beyondTemplates: { 
     title: "Hate Sharing Your Website? 3 Steps to a Site You Can't Stop Sharing", 
     description: "Still hiding your site behind “just DM me”? You’ve hit the template wall. Here’s how to rebuild your site so it actually feels like you." },
+  flashyMyth: { 
+    title: "No, You Don’t Need a Flashy Website to Look Credible", 
+    description: "Why over-designed sites can hurt more than help — and what actually builds trust, clarity, and conversions for solo business owners." },
 };
