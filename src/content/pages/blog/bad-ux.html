@@ -32,7 +32,7 @@ permalink: 'blog/bad-ux/'
         <h1 class="cs-int-title">{{ blogs.badUX.title}}</h1>
         <div class="blog-authorGroup">
             <!--Blog Date-->
-            <span class="blog-date">Last Updated: January 25, 2026</span>
+            <span class="blog-date">Last Updated: February 22, 2026</span>
         </div>
     </div>
     <!--Background Image-->
@@ -48,20 +48,27 @@ permalink: 'blog/bad-ux/'
 <!-- ============================================ -->
 <!--               Featured Image                 -->
 <!-- ============================================ -->
+
 <div class="nm-featured-image">
-    <picture class="blog-mainImage">
-        <source media="(max-width: 600px)" srcset="../../../assets/images/blog/bad-ux-m.webp">
-        <source media="(min-width: 601px)" srcset="../../../assets/images/blog/bad-ux.webp">
-        <img
-            src="../../../assets/images/blog/bad-ux.webp"
-            alt="Fluffy cat squished awkwardly into a clear glass fishbowl. Cute, but not remotely functional."
-            decoding="async"
-            width="2200"
-            height="1237"
-            fetchpriority="high"
-        />
-    </picture>
+    <figure class="blog-mainImage">
+        <picture class="blog-mainImage__media">
+            <source media="(max-width: 600px)" srcset="../../../assets/images/blog/bad-ux-m.webp">
+            <source media="(min-width: 601px)" srcset="../../../assets/images/blog/bad-ux.webp">
+            <img
+                src="../../../assets/images/blog/bad-ux.webp"
+                alt="Fluffy cat squished awkwardly into a clear glass fishbowl. Cute, but not remotely functional."
+                decoding="async"
+                width="2200"
+                height="1237"
+                fetchpriority="high"
+            />
+        </picture>
+        <figcaption class="nm-image-caption">
+            Just because it fits doesn’t mean it works. This cat is learning the hard way.
+        </figcaption>
+    </figure>
 </div>
+
 <!-- ============================================ -->
 <!--              Main Blog Content               -->
 <!-- ============================================ -->
@@ -100,8 +107,8 @@ permalink: 'blog/bad-ux/'
                 <p>
                     Let’s talk about what’s really going on — and how to fix it.
                 </p>
-                <hr>
-                <h2>This Mistake Is More Common Than You Think</h2>
+
+                <h2>Why “Modern” Doesn’t Mean Usable</h2>
                     <p>
                         There’s a reason so many solo service providers run into user experience (UX)
                         issues. The internet is flooded with flashy templates and design trends. Sites
@@ -165,25 +172,8 @@ permalink: 'blog/bad-ux/'
                         needs to get right if you want it to work <em>for</em> your business, not
                         against it.
                     </p>
-                    
-                    <aside id="blog-1289" class="related-post" aria-label="Related article">
-                        <div class="cs-item cs-highlight">
-                            <a href="/blog/flashy-websites/" class="cs-link">
-                                <picture class="cs-picture">
-                                    <img loading="lazy" decoding="async" src="../../assets/images/blog/flashy-websites-m.webp" alt="Fluffy cat snugly curled inside a small cardboard box, staring up with calm defiance — proof that fit matters more than flash." width="270" height="200">
-                                </picture>
-                                <div class="cs-flex">
-                                    <span class="cs-topper">More like this</span>
-                                    <h3 class="aside-title">{{ blogs.flashyMyth.title }}</h3>
-                                    <p class="cs-item-text">
-                                        {{ blogs.flashyMyth.description }}
-                                    </p>
-                                </div>
-                            </a>
-                        </div>  
-                    </aside>
 
-                <h2>Why Bad UX Is Quietly Holding Your Business Back</h2>
+                <h2>The Hidden Cost of Bad UX</h2>
                     <p>
                         Your website doesn’t need to win design awards. It needs to help your people get
                         what they came for — quickly, clearly, and without confusion. Bad UX gets in the
@@ -192,7 +182,7 @@ permalink: 'blog/bad-ux/'
                     <p>
                         Here’s how.
                     </p>
-                    <h3>1. It makes people give up before they even get started</h3>
+                    <h3>1. People Give Up Fast</h3>
                         <p>
                             Usability is a big deal. If someone lands on your website and can’t figure out
                             where to go or what you do, they’re going to leave. Not because your business
@@ -214,7 +204,7 @@ permalink: 'blog/bad-ux/'
                             So if your navigation is vague, your buttons aren’t clear, or your site is
                             glitchy on mobile… you're losing people who could’ve become clients.
                         </p>
-                    <h3>2. It makes you look less credible than you are</h3>
+                    <h3>2. It Undermines Your Credibility</h3>
                         <p>
                             According to Stanford, <a
                             href="https://credibility.stanford.edu/guidelines/index.html">75% of people
@@ -231,7 +221,7 @@ permalink: 'blog/bad-ux/'
                             professional, that can be enough to make someone second-guess hiring you — no
                             matter how good you actually are.
                         </p>
-                    <h3>3. It drives up your marketing costs</h3>
+                    <h3>3. It Wastes Your Marketing Effort</h3>
                         <p>
                             Let’s be real: client acquisition is expensive. Whether you’re running ads,
                             posting content, or building a referral network, it takes time and effort to get
@@ -251,8 +241,25 @@ permalink: 'blog/bad-ux/'
                             gives people a reason to trust you. And it makes your entire marketing strategy
                             more effective.
                         </p>
-                <hr>
-                <h2>How I Know This Isn’t Just Theory</h2>
+                    
+                    <aside id="blog-1289" class="related-post" aria-label="Related article">
+                        <div class="cs-item cs-highlight">
+                            <a href="/blog/website-funnels/" class="cs-link">
+                                <picture class="cs-picture">
+                                    <img loading="lazy" decoding="async" src="../../assets/images/blog/website-funnels-m.webp" alt="Cat crouched low to the ground, locked in on a small light dot on the floor like a furry little funnel-building sniper." width="270" height="200">
+                                </picture>
+                                <div class="cs-flex">
+                                    <span class="cs-topper">Want to go deeper?</span>
+                                    <h3 class="aside-title">{{ blogs.funnels.title }}</h3>
+                                    <p class="cs-item-text">
+                                        {{ blogs.funnels.description }}
+                                    </p>
+                                </div>
+                            </a>
+                        </div>  
+                    </aside>
+
+                <h2>UX in the Real World</h2>
                     <p>
                         This isn’t something I read in a blog post once. I started learning about UX in
                         the trenches.
@@ -289,14 +296,14 @@ permalink: 'blog/bad-ux/'
                         with flashy bells and whistles. You need to help them understand what you do and
                         how to take the next step. The simpler, the better.
                     </p>
-                <hr>
-                <h2>What to Do Instead: Focus on These Three Core Areas</h2>
+
+                <h2>Fix These Three Things First</h2>
                     <p>
                         You don’t need to do a full UX audit or hire a research firm. But you
                         <em>do</em> need to think about your site from your user’s perspective — and
                         make sure it holds up in three key areas.
                     </p>
-                    <hr>
+
                     <h3>1. Content: What It Says</h3>
                         <p>
                             Your content is more than just your message. It’s the guide your visitor relies
@@ -324,23 +331,6 @@ permalink: 'blog/bad-ux/'
                             cat-themed), but if your words are vague, confusing, or trying too hard to sound
                             clever, your users won’t stick around to decode them.
                         </p>
-                        
-                        <aside id="blog-1289" class="related-post" aria-label="Related article">
-                            <div class="cs-item cs-highlight">
-                                <a href="/blog/website-not-converting/" class="cs-link">
-                                    <picture class="cs-picture">
-                                        <img loading="lazy" decoding="async" src="../../assets/images/blog/weak-copy-m.webp" alt="A bewildered cat staring down through glass amidst a black void." width="270" height="200">
-                                    </picture>
-                                    <div class="cs-flex">
-                                        <span class="cs-topper">More like this</span>
-                                        <h4 class="aside-title">{{ blogs.weakCopy.title }}</h4>
-                                        <p class="cs-item-text">
-                                            {{ blogs.weakCopy.description }}
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>  
-                        </aside>
 
                     <h3>2. Design: How It Looks</h3>
                         <p>
@@ -375,23 +365,6 @@ permalink: 'blog/bad-ux/'
                             that helps people process what they’re seeing without working too hard.
                         </p>
 
-                        <aside id="blog-1289" class="related-post" aria-label="Related article">
-                            <div class="cs-item cs-highlight">
-                                <a href="/blog/move-beyond-templates/" class="cs-link">
-                                    <picture class="cs-picture">
-                                        <img loading="lazy" decoding="async" src="../../assets/images/blog/beyond-templates-m.webp" alt="Fluffy white cat peeking out from behind a wall, looking both shy and suspicious — like it knows its template is showing." width="270" height="200">
-                                    </picture>
-                                    <div class="cs-flex">
-                                        <span class="cs-topper">More like this</span>
-                                        <h4 class="aside-title">{{ blogs.beyondTemplates.title }}</h4>
-                                        <p class="cs-item-text">
-                                            {{ blogs.beyondTemplates.description }}
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>  
-                        </aside>
-
                     <h3>3. Tech: How It Works</h3>
                         <p>
                             If your site doesn’t <em>function</em>, nothing else matters. The best content
@@ -425,8 +398,8 @@ permalink: 'blog/bad-ux/'
                             websites to work. If yours doesn’t, people won’t make excuses for it. They’ll
                             just go elsewhere.
                         </p>
-                    <hr>
-                    <h3>Bonus: Accessibility Is Just Good UX</h3>
+
+                    <h3>Accessibility Is Good UX</h3>
                         <p>
                             Accessibility isn’t some extra feature you add at the end. It’s built into good
                             design, good content, and good tech.
@@ -442,8 +415,8 @@ permalink: 'blog/bad-ux/'
                             Accessibility doesn’t just help a few people. It improves the experience for
                             <em>all</em> your users. And it’s worth taking seriously.
                         </p>
-                <hr>
-                <h2>What This Looks Like in Practice</h2>
+
+                <h2>What This Looks Like When It’s Done Right</h2>
                     <p>
                         Most professionals specialize in one of these areas. If you want words, hire a
                         copywriter. If you want looks, hire a graphic designer. And if you want code,
@@ -484,10 +457,10 @@ permalink: 'blog/bad-ux/'
                         <li>Feel confident sending people to your site, knowing it’s pulling its
                         weight<br></li>
                     </ul>
-                <hr>
-                <h2>“This Feels Like a Lot. Where Should I Start?”</h2>
+
+                <h2>Start Here”</h2>
                     <p>
-                        Fair question. You don’t have to fix everything at once.
+                        You don’t have to fix everything at once.
                     </p>
                     <p>
                         Here’s what I’d recommend doing first:
@@ -507,8 +480,8 @@ permalink: 'blog/bad-ux/'
                         These are small changes — but they make a difference. Especially if your site
                         has been sitting untouched for a while.
                     </p>
-                <hr>
-                <h2>Let Your Website Start Doing Its Job</h2>
+
+                <h2>Let Your Website Pull Its Weight</h2>
                     <p>
                         If your website looks good but isn’t converting, it’s probably not a design
                         issue.
@@ -527,7 +500,7 @@ permalink: 'blog/bad-ux/'
                     <p>
                         And if you don’t want to do it all yourself? That’s what I’m here for.
                     </p>
-                <hr>
+
                 <h2>Ready to Build a Website That Works?</h2>
                     <p>
                         If you’re tired of guessing what’s wrong with your site — and you’re ready for
