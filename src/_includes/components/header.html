@@ -57,12 +57,21 @@
                         {% endif %}
                     </li>
                     <li class="cs-li">
-                        {% if page.url == '/services/' %}
-                            <span class="cs-li-link cs-active" aria-current="page">Services</span>
+                        {% if page.url == '/work-with-me/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">Work with Me</span>
                         {% else %}
-                            <a href="/services/" class="cs-li-link">Services</a>
+                            <a href="/work-with-me/" class="cs-li-link">Work with Me</a>
                         {% endif %}
                     </li>
+                    <!--
+                    <li class="cs-li">
+                        {% if page.url == '/work-with-me/unfuck-your-coparenting/' %}
+                            <span class="cs-li-link cs-active" aria-current="page">My Work</span>
+                        {% else %}
+                            <a href="/work-with-me/unfuck-your-coparenting/" class="cs-li-link">My Work</a>
+                        {% endif %}
+                    </li>
+                    -->
                     <li class="cs-li">
                         {% if page.url == '/blog/' %}
                             <span class="cs-li-link cs-active" aria-current="page">Blog</span>
@@ -76,9 +85,6 @@
                         {% else %}
                             <a href="/contact/" class="cs-li-link">Contact</a>
                         {% endif %}
-                    </li>
-                    <li class="cs-li">
-                        <a href="/start-here/" class="cs-button-solid">Start Here</a>
                     </li>
                 </ul>
             </div>

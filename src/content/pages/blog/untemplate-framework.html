@@ -1,0 +1,348 @@
+---
+title: "Why Your Website Feels Off (And the Framework That Fixes It)"
+description: "You feel it every time someone asks for your link. The Untemplate Framework inverts how websites are built — starting with what your site needs to say, not how it should look."
+preloadImg: '/assets/images/blog/storycraft-atlas.webp'
+ogImage: '/assets/images/og/storycraft-atlas-og.png'
+permalink: 'blog/untemplate-framework/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="article" />
+    <link rel="stylesheet" href="/assets/css/blog-post.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/blog-post.css" />
+    </noscript>
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+
+{% block body %}
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">{{ blogs.framework.title}}</h1>
+        <div class="blog-authorGroup">
+            <!--Blog Date-->
+            <span class="blog-date">Last Updated: May 20, 2026</span>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--               Featured Image                 -->
+<!-- ============================================ -->
+
+<div class="nm-featured-image">
+    <figure class="blog-mainImage">
+        <picture class="blog-mainImage__media">
+            <source media="(max-width: 600px)" srcset="../../../assets/images/blog/storycraft-atlas-m.webp">
+            <source media="(min-width: 601px)" srcset="../../../assets/images/blog/storycraft-atlas.webp">
+            <img
+                src="../../../assets/images/blog/storycraft-atlas.webp"
+                alt="A calico cat lounging in front of a globe, books, and camera."
+                decoding="async"
+                width="2200"
+                height="1237"
+                fetchpriority="high"
+            />
+        </picture>
+        <figcaption class="nm-image-caption">
+            This cat knows that a website without a plan is just a guess. 
+        </figcaption>
+    </figure>
+</div>
+
+<!-- ============================================ -->
+<!--              Main Blog Content               -->
+<!-- ============================================ -->
+
+
+
+    
+    <!--Main content -->
+    <div class="main-content">
+        <!-- ============================================ -->
+        <!--                  Blog Article                -->
+        <!-- ============================================ -->
+
+        <article class="blog-article">
+            <section id="blog-content">
+                <p>
+                    You can <em>feel</em> your website isn't working even if you don’t <em>know</em> that’s what’s wrong.
+                </p>
+                <p>
+                    You feel it when your website is out-of-date, but you aren’t sure where to start and quickly get overwhelmed and then do nothing.
+                </p>
+                <p>
+                    You feel it when you go to swap out one photo, only to rewrite your bio on your About page for the 37th time, yet nothing changes.
+                </p>
+                <p>
+                    You feel it when you get asked for your link, but you’re embarrassed by it, so you say, “I’m still working on it. Why don’t we just dm?”
+                </p>
+                <p>
+                    If you’ve been there, it’s not your fault. Platforms like Squarespace and template designers all sell websites as this plug-and-play product that’s so easy anyone can do it. 
+                </p>
+                <p>
+                    They’re wrong. 
+                </p>
+                <p>
+                    A <em>good</em> website is so much more than a pretty layout. Looks matter, but they’re superficial. If the foundation is weak, a gorgeous design won’t save it.
+                </p>
+                <p>
+                    That’s what you’re really feeling — you have something that <em>looks</em> like a website, but it’s missing the strategy and intention that turn it into a resource that actually supports your business.
+                </p>
+                <p>
+                    That's what the Untemplate Framework is built to deliver. In this post, I'm going to walk you through how it works — the three elements that separate a website that just exists from one that feels like you, explains what you do, and sells for you. 
+                </p>
+                <p>
+                    If you've been wondering why nothing you've tried before has stuck, this is why. Let's get into it.
+                </p>
+
+                <hr>
+                
+                <h2>First, what the Untemplate Framework actually is</h2>
+                    <p>
+                        The Untemplate Framework is the methodology behind the Untemplate Site — my done-for-you website strategy, copy, design, and build offer for coaches. It's not a template (bet you didn’t see that coming). It's not a checklist (you don’t need another one to ignore). It's a way of building websites that inverts the order most designers work in.
+                    </p>
+                    <p>
+                        Most designers (and templates) start with how a site looks, and then they plug in words. It doesn’t matter what the words are, they just fill in where words go. The Untemplate Framework starts with what a site needs to say — and works backward from there.
+                    </p>
+                    <p>
+                        The result is a finished website that feels like you, clearly communicates what you do, and actually supports your business. A site where every page has a job, every word sounds like you wrote it (not Chatty McChatFace), and visitors know what to do next without you having to explain yourself on every sales call.
+                    </p>
+                    <p>
+                        The framework does its heaviest lifting in the first two phases — Share Your Story and Shape the Site. Here's what that looks like in practice.
+                    </p>
+
+                <hr>
+
+                <h2>The Untemplate Playbook: personalizing your website strategy</h2>
+                    <p>
+                        Most designers kick off a project with a mood board or a brand questionnaire. You fill it in, they build something, but between your answers and their interpretation, strategy never really makes an appearance.
+                    </p>
+                    <p>
+                        The Untemplate Playbook is the opposite of that.
+                    </p>
+                    <p>
+                        Before writing or designing anything, I build a comprehensive strategic document that defines everything your website needs to do. We review it together in a 90-minute strategy session. You sign off on it. Then — and only then — does anything else begin.
+                    </p>
+                    <p>
+                        Here's what's in it:
+                    </p>
+                    <p>
+                        <strong>The sitemap.</strong> Not which pages your template came with. The pages your business actually needs — and a clear reason why each one earns its place.
+                    </p>
+                    <p>
+                        <strong>Page archetypes.</strong> A coach whose audience needs solid proof has different needs than one who relies on an emotional connection. Your archetype comes from your goals and then builds the structure to support them.
+                    </p>
+                    <p>
+                        <strong>Content architecture.</strong> What each page needs to accomplish, how it connects to the others, and how a visitor moves through the whole site. 
+                    </p>
+                    <p>
+                        These aren't separate decisions — they're interdependent. The sitemap defines which pages exist. The archetypes define what each page needs to do. The architecture is how it does it.
+                    </p>
+                    <p>
+                        Why does this matter? Because without it, you make decisions based on aesthetic preference or because you feel like it. The template had a section there, so you filled it in. The designer thought it looked good, so it stayed. Nobody asked “Is this doing anything?”
+                    </p>
+                    <p>
+                        The Playbook also protects you. Because you sign off before anything is built, the scope of the project is clearly defined. New pages, major structural pivots, significant changes after sign-off — that's new work, quoted separately. You know exactly what you're getting before a single pixel is placed.
+                    </p>
+                    <p>
+                        For someone who's been handed a finished website that didn't feel right and had no recourse, the Playbook is the thing that makes that impossible to repeat.
+                    </p>
+                
+                    <hr>
+
+                <h2>Voice Mining: finding the words that resonate</h2>
+                    <p>
+                        Here's the thing about website copy: most people are genuinely bad at writing their own. But it’s not because they’re bad writers.
+                    </p>
+                    <p>
+                        Writing about yourself objectively is hard. You go too broad. Too jargon-heavy. Too modest. You describe what you do instead of speaking to what your reader is experiencing. You end up with copy that's accurate but not resonant — and accurate-but-not-resonant doesn't convert.
+                    </p>
+                    <p>
+                        Voice Mining sidesteps the problem entirely: you don’t write a thing — at least, not initially.
+                    </p>
+                    <p>
+                        Instead, I collect everything you've already produced. Your existing website copy. Lead magnets. Social content — TikToks, Instagram captions, LinkedIn posts. Client testimonials. Audience DMs and comments and reviews — the exact words your clients use when they're not trying to sound professional. Anything that captures how you actually think and talk. I also ask you to fill out my questionnaire, but that’s supplemental to everything else you’ve already said.
+                    </p>
+                    <p>
+                        Then I read through it all. I'm looking for patterns — recurring phrases, distinctive word choices, how you structure an argument, where your personality shows up, what your audience says about their own problem when they're being honest about it. 
+                    </p>
+                    <p>
+                        I also do independent market research into your niche alongside all of this, because your voice doesn't exist in a vacuum. I need to see the big picture of your space to figure out how to position you effectively. 
+                    </p>
+                    <p>
+                        Then I write every page of your site using copy prompts from my framework as structural guides. I fill in each section from the Untemplate Playbook with language pulled directly from you and your audience. 
+                    </p>
+                    <p>
+                        Basically, I’m plagiarizing the hell out of you and your audience. I don’t write original content. I’m rearranging your words and ideas into the right order to make a persuasive sales argument and guide the right readers towards hiring you.
+                    </p>
+                    <p>
+                        I'm a historian by training. This is literally what historians do — take messy, scattered, contradictory source material and find the coherent narrative inside it. Voice Mining is just that process applied to someone who is, fortunately, still alive and able to answer direct questions. Which makes it considerably easier.
+                    </p>
+                    <p>
+                        The result is copy that passes the "that's exactly it" test. You read your own website and it feels like you wrote it on your best day. Because in a very real sense, you did. I just found it.
+                    </p>
+
+                <hr>
+
+                <h2>Phase-by-phase milestones: staying aligned throughout</h2>
+                    <p>
+                        Strategy and copy matter. But so does the structure of the project itself — because the structure is what makes the whole thing feel safe for someone who's been burned before.
+                    </p>
+                    <p>
+                        Nothing locks in without your approval. That's the hard rule.
+                    </p>
+                    <p>
+                        The process always starts the same way: strategy first. You sign off on the Untemplate Playbook before anything else starts. That document is the foundation that anchors everything else.
+                    </p>
+                    <p>
+                        From there, the process adapts to the track you're on.
+                    </p>
+                    <p>
+                        On the Custom Track — where I hand-code your site from scratch — there's a clear design phase before build begins. Full Figma mockups, one round of feedback, and formal approval before a line of code is written. There’s a hard line between design and build.
+                    </p>
+                    <p>
+                        On the CMS Track — where we work in an established platform like Squarespace — design and build are more fluid. I’ll build draft or hidden pages in your platform, which you’ll review and provide feedback on. No new pages go live until they're right. Less "approve this before we move on" and more "let's look at this together until it feels exactly right." Again, no pages go live that you haven't seen. The path there is just more iterative.
+                    </p>
+                    <p>
+                        Either way, you're never handed a finished website and told to live with it. We review every major decision together before it becomes the foundation for the next one. Nothing should come as a surprise. 
+                    </p>
+                    <p>
+                        If you've ever paid a designer, waited weeks, and gotten back something that looked nothing like what you discussed, this milestone structure answers the question: "How do I know this won't happen again?"
+                    </p>
+                    <p>
+                        You approve every major decision before it locks in. You stay in the driver's seat the whole way through without having to do any of the driving.
+                    </p>
+
+                <hr>
+
+                <h2>What happens without the Untemplate Framework</h2>
+                    <p>
+                        Most coaching websites don't fail dramatically. Nobody leaves a bad review saying “I would’ve hired you, but your website sucks.” The site just... doesn't work. Quietly. Visitors land, look around, and leave. Nobody books. Nobody opts in. And then you spend the next six months wondering if your offer is wrong or your prices are too high or your niche is too specific.
+                    </p>
+                    <p>
+                        It's usually none of those things. Instead, it looks like:
+                    </p>
+                    <p>
+                        The lifestyle coach who started with design. She picked a template, chose colors, scrolled Pinterest for an hour. She focused on design first because it feels tangible and exciting. Strategy feels abstract and hard, and it’s a bit outside her skillset, so she skipped it. As a result she got a site that looks polished but lacks direction — each section exists because the template had it there, nothing more.
+                    </p>
+                    <p>
+                        Or the wellness coach who wrote copy by describing herself instead of speaking to her reader. "I help women find balance." "My approach combines somatic work with mindset coaching." Her copy is accurate but not resonant. It describes what she does instead of reflecting the reader's experience back at them. The visitor reads it and thinks — “Okay, what does that even mean? This isn’t for me.” 
+                    </p>
+                    <p>
+                        Or the personal development coach who tries to make every page do everything: introduce himself, explain his offer, build trust, and convert. Those pages end up doing nothing, because they’re trying to do too many things at once. As a result, the visitor gets confused or bored and leaves before they discover how the coach could help them.
+                    </p>
+                    <p>
+                        Many coaches make one or more of these mistakes. And when nothing works, they fix the wrong things. New headline. Different photo. Color scheme refresh. These feel productive. They don't move the needle. The structural and strategic problems stay intact because there's no system for identifying what's actually broken.
+                    </p>
+                    <p>
+                        This is exactly what the Template Trap Audit is built to surface — the gap between what a coach thinks is wrong with their website and what's actually wrong with it.
+                    </p>
+                    <p>
+                        The Untemplate Framework closes that gap by focusing on what really matters. 
+                    </p>
+
+                {% include 'asides/evolving-offers-post.html' %}
+
+                <h2>What happens with the Untemplate Framework</h2>
+                    <p>
+                        When the framework is doing its job:
+                    </p>
+                    <p>
+                        <strong>Strategy replaces instinct.</strong> Your decisions come from a documented foundation — not from "does this look good?" but from "does this page have a clear goal and is every element serving it?"
+                    </p>
+                    <p>
+                        <strong>Every page has a job.</strong> Your homepage isn't trying to do everything. Your about page isn't just a bio. Your sales page isn't just a list of deliverables. Every page knows what it's there to do — and does it.
+                    </p>
+                    <p>
+                        <strong>Copy feels discovered, not constructed.</strong> Visitors read it and feel seen. You read it and feel accurately represented. That's what creates the "that's exactly it" reaction — and it's what makes a site convert without feeling pushy.
+                    </p>
+                    <p>
+                        <strong>The right clients show up ready.</strong> Discovery calls with people who already understand what you do, already resonate with how you work, already feel like they might be a fit. Less convincing. More confirming.
+                    </p>
+                    <p>
+                        <strong>You send the link without a disclaimer</strong>. No more "it's a work in progress." No more over-explaining on sales calls. Your site does the first part of the job before anyone gets on a call with you.
+                    </p>
+                    <p>
+                        <strong>Prices start to make sense.</strong> To you and to them. Your website becomes the permission structure for charging what your work is actually worth.
+                    </p>
+                    <p>
+                        <strong>And the Sunday night spiral stops.</strong> The low-priority, high-anxiety task of "fix the website" comes off the list. What fills that space is the work you're actually good at.
+                    </p>
+
+                <hr>
+
+                <h2>"But will this work for my niche?"</h2>
+                    <p>
+                        Coaches with specific or unusual niches sometimes worry that a framework built for coaches generally won't translate to their particular situation.
+                    </p>
+                    <p>
+                        I’ll be honest, my expertise isn't in your niche. I don’t know the ins and outs of your field, but I don’t need to, to do my job well. My expertise is in how websites work and how people engage with them. That doesn't change regardless of the subject matter. 
+                    </p>
+                    <p>
+                        Eight years on the U.S. Department of State's web team will teach you pretty quickly that you don't need to be a subject matter expert on a topic to present it online well. You need to understand your audience, use clear language, and build a structure that guides them toward a clear next step.
+                    </p>
+                    <p>
+                        For real though, the more unusual your niche is, the more interested I'll be. I like learning about new and obscure things. It's kind of why I became a historian in the first place.
+                    </p>
+                    <p>
+                        Don’t take my word for it. 
+                    </p>
+                    <p>
+                        Livi is a parallel parenting coach for people dealing with a high-conflict coparenting relationship. It’s a very specific and unique niche. Her brand is also bold and uncensored (she says “fuck” a lot). Her coaching business is truly one-of-a-kind.
+                    </p>
+                    <p>
+                        She wasn’t sure if I could actually capture her voice. As Livi described it: “I didn’t want a polished, generic website that didn’t feel like me.”
+                    </p>
+                    <p>
+                        But she trusted the process. She gave me tons of material to work with, and then she stepped back and let me work. When I shared the first draft, she replied: “Okay this is awesome! … Seriously you were made to do this! I am consistently impressed with how through this process is. So much of it is really making me understand my own brand better.”
+                    </p>
+                    <p>
+                        She had a few edits to finesse the voice or correct some details, exactly how this collaborative process is meant to work. Overall, she was thrilled. 
+                    </p>
+                    <p>
+                        “You took the time to really understand how I think, how I speak, and what I’m trying to build — and then you translated that into something that feels completely aligned.” <br>— Livi North, Unfuck Your Coparenting
+                    </p>
+
+                <hr>
+
+                <h2>Ready to stop guessing?</h2>
+                    <p>
+                        If something clicked while you were reading this — that's the framework working exactly the way it's supposed to.
+                    </p>
+                    <p>
+                        The Untemplate Site is for coaches who are done with websites that look fine but do nothing. Strategy, copy, design, and build — all done for you, all built around your story, not a template.
+                    </p>
+                    <p>
+                        <strong>See the Untemplate Site</strong>
+                    </p>
+                    <p>
+                        Not sure if you're ready for a full build? The Template Trap Audit is a comprehensive diagnostic of what's broken on your current site and a prioritized plan to fix it. If you move forward with an Untemplate Site after that, you're already ahead.
+                    </p>
+                    <p>
+                        <strong>See the Template Trap Audit</strong>
+                    </p>
+            </section>
+        </article>
+    </div>
+    <!-- End .main-content -->
+
+    {% include 'components/cta.html' %}
+{% endblock %}
