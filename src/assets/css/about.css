@@ -574,6 +574,9 @@
     margin: 0 0 clamp(1rem, 6vw, 3rem);
     color: var(--textLight);
   }
+  #quote-2434 .cs-topper {
+    color: var(--textLight);
+  }
   #quote-2434 .cs-text {
     color: var(--textLight);
     margin: 0 0 1rem 0;
@@ -632,6 +635,229 @@
 @media only screen and (min-width: 48rem) {
   body.dark-mode #quote-2434 .cs-background:before {
     background: linear-gradient(to right, rgba(1, 3, 8, 0) 0%, rgba(1, 3, 8, 0.84) 13%, rgb(1, 3, 8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  }
+}
+/*-- -------------------------- -->
+<---           Steps            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #steps-585 {
+    padding: var(--sectionPadding);
+    background: var(--secondary10);
+  }
+  #steps-585 .cs-topper {
+    color: var(--accent70);
+  }
+  #steps-585 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-585 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+  #steps-585 .cs-content .cs-text:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+  #steps-585 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  #steps-585 .cs-item {
+    list-style: none;
+    min-height: 15.5rem;
+    /* 16px - 24px left & right */
+    padding: 1rem clamp(1rem, 1.8vw, 1.5rem);
+    border-bottom: 1px solid var(--accent70);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  #steps-585 .cs-item:last-of-type {
+    border: none;
+  }
+  #steps-585 .cs-h3 {
+    font-family: var(--smallCaps);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0 0 0.75rem 0;
+    color: var(--textDark);
+    display: block;
+  }
+  #steps-585 .cs-item-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.4em;
+    text-align: left;
+    margin: 0 0 1rem 0;
+    color: var(--textDark);
+  }
+  #steps-585 .cs-number {
+    font-family: var(--smallCaps);
+    font-size: 3.8125rem;
+    font-weight: 400;
+    line-height: 1.2em;
+    /* auto pushes against other elements in a flexbox, this one forces it to be at the bottom of the flexbox */
+    margin: 0 0 auto 0;
+    color: var(--accent70);
+    display: block;
+    font-variant-numeric: lining-nums;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-585 .cs-container {
+    max-width: 80rem;
+  }
+  #steps-585 .cs-card-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #steps-585 .cs-item {
+    width: 48%;
+    justify-content: flex-start;
+  }
+  #steps-585 .cs-item:nth-of-type(3) {
+    border-bottom: none;
+  }
+}
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #steps-585 .cs-card-group {
+    flex-wrap: nowrap;
+  }
+  #steps-585 .cs-item {
+    border-bottom: none;
+    border-right: 1px solid var(--accent70);
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #steps-585 {
+    background: var(--medium);
+  }
+  body.dark-mode #steps-585 .cs-topper {
+    color: var(--secondary20);
+  }
+  body.dark-mode #steps-585 .cs-title {
+    color: var(--textLight);
+  }
+  body.dark-mode #steps-585 .cs-item {
+    border-color: var(--textLight);
+  }
+  body.dark-mode #steps-585 .cs-item-text {
+    color: var(--textLight);
+    opacity: 0.8;
+  }
+  body.dark-mode #steps-585 .cs-h3 {
+    color: var(--textLight);
+  }
+  body.dark-mode #steps-585 .cs-number {
+    color: var(--secondary30);
+  }
+}
+/*-- -------------------------- -->
+<---           Quote            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #quote-560 {
+    padding: var(--sectionPadding);
+    background-color: var(--accent70);
+  }
+  #quote-560 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #quote-560 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+    /* 16px - 20px */
+    gap: clamp(1rem, 2vw, 1.25rem);
+  }
+  #quote-560 .cs-topper {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: var(--textLight);
+    margin-bottom: 0.25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  #quote-560 .cs-topper:before {
+    /* yellow line */
+    content: "";
+    width: 3.125rem;
+    height: 2px;
+    background: var(--secondary10);
+    opacity: 1;
+    display: block;
+  }
+  #quote-560 .cs-quote {
+    /* 31px - 49px */
+    font-size: clamp(1.9375rem, 5.1vw, 3.0625rem);
+    font-family: var(--headerFont);
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--textLight);
+  }
+  #quote-560 .cs-name {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.7vw, 1.25rem);
+    font-family: var(--smallCaps);
+    line-height: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin: 0;
+    color: var(--secondary10);
+    display: block;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #quote-560 {
+    background-color: var(--dark);
   }
 }
 

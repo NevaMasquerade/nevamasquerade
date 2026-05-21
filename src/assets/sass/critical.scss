@@ -1,7 +1,7 @@
 /* STYLES FOR ABOVE THE FOLD */
 
 /*-- -------------------------- -->
-<---       Hero (Immpact)       -->
+<---       Hero (Impact)       -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -10,7 +10,7 @@
         /* 300px - 400px on top - leaving extra space for the navigation */
         /* 60px - 100px on bottom */
         margin-top: 60px;
-        padding: clamp(4.75rem, 30vw, 14.5rem) calc(16/16 * 1rem) clamp(1.75rem, 10vh, 3.25rem) calc(16/16 * 1rem);
+
         /* prevents the topper line from causing an overflow */
         overflow: hidden;
         position: relative;
@@ -21,22 +21,31 @@
             max-width: calc(1280/16 * 1rem);
             margin: auto;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
         }
 
         .cs-content {
-            text-align: center;
+            text-align: left;
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
+            padding: var(--sectionPadding);
         }
 
         .cs-title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 5vw, 3.8125rem);
             max-width: 30ch;
+        }
+
+        .nm-subhead {
+            font-size: 1.875rem;
+            font-family: var(--headerFont);
+            color: var(--textLight);
+            margin: 0 0 2rem 0;
+            opacity: .9;
         }
 
         .cs-topper {
@@ -54,6 +63,17 @@
             max-width: 55ch;
             margin-bottom: calc(32/16 * 1rem);
             opacity: 0.8;
+        }
+
+        #button-box-838 {
+            width: 100%;
+            max-width: calc(630 / 16 * 1rem);
+            margin-bottom: calc(32 / 16 * 1rem);
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: calc(24 / 16 * 1rem);
         }
 
         .nm-button-secondary {
@@ -74,7 +94,7 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(0deg, rgba(0, 0, 0, .7) 50%, rgba(0, 0, 0, 0.3) 100%);
+                background: linear-gradient(180deg, rgba(0, 0, 0, .5) 00%, rgba(0, 0, 0, 1) 100%);
                 /* prevents the cursor from interacting with it */
                 pointer-events: none;
                 opacity: 1;
@@ -98,17 +118,17 @@
 }
 
 /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 48rem) {
     #hero-2149 {
-        margin-top: 100px;
-        max-height: 95vh;
+        margin-top: 65px;
+        max-height: 75vh;
 
         .cs-background {
 
             &:before {
                 /* Overlay */
                 content: "";
-                background: linear-gradient(0deg, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, 0.3) 100%);
+                background: linear-gradient(90deg, rgba(0, 0, 0, .9) 0%, rgba(0, 0, 0, 0.5) 80%);
                 /* prevents the cursor from interacting with it */
                 pointer-events: none;
                 opacity: 1;
@@ -264,7 +284,7 @@
         .cs-container {
             flex-direction: row;
             justify-content: space-between;
-            min-height: calc(550 / 16 * 1rem);
+            min-height: calc(50 / 16 * 1rem);
             column-gap: 1rem;
         }
 

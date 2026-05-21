@@ -1,6 +1,6 @@
 /* STYLES FOR ABOVE THE FOLD */
 /*-- -------------------------- -->
-<---       Hero (Immpact)       -->
+<---       Hero (Impact)       -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
@@ -8,7 +8,6 @@
     /* 300px - 400px on top - leaving extra space for the navigation */
     /* 60px - 100px on bottom */
     margin-top: 60px;
-    padding: clamp(4.75rem, 30vw, 14.5rem) 1rem clamp(1.75rem, 10vh, 3.25rem) 1rem;
     /* prevents the topper line from causing an overflow */
     overflow: hidden;
     position: relative;
@@ -19,20 +18,28 @@
     max-width: 80rem;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
   #hero-2149 .cs-content {
-    text-align: center;
+    text-align: left;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    padding: var(--sectionPadding);
   }
   #hero-2149 .cs-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 5vw, 3.8125rem);
     max-width: 30ch;
+  }
+  #hero-2149 .nm-subhead {
+    font-size: 1.875rem;
+    font-family: var(--headerFont);
+    color: var(--textLight);
+    margin: 0 0 2rem 0;
+    opacity: 0.9;
   }
   #hero-2149 .cs-topper {
     color: var(--secondary10);
@@ -47,6 +54,16 @@
     max-width: 55ch;
     margin-bottom: 2rem;
     opacity: 0.8;
+  }
+  #hero-2149 #button-box-838 {
+    width: 100%;
+    max-width: 39.375rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
   }
   #hero-2149 .nm-button-secondary {
     color: var(--textLight);
@@ -65,7 +82,7 @@
     content: "";
     width: 100%;
     height: 100%;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgb(0, 0, 0) 100%);
     /* prevents the cursor from interacting with it */
     pointer-events: none;
     opacity: 1;
@@ -85,15 +102,15 @@
   }
 }
 /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 48rem) {
   #hero-2149 {
-    margin-top: 100px;
-    max-height: 95vh;
+    margin-top: 65px;
+    max-height: 75vh;
   }
   #hero-2149 .cs-background:before {
     /* Overlay */
     content: "";
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.3) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.5) 80%);
     /* prevents the cursor from interacting with it */
     pointer-events: none;
     opacity: 1;
@@ -230,7 +247,7 @@
   #hero-288 .cs-container {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 34.375rem;
+    min-height: 3.125rem;
     column-gap: 1rem;
   }
   #hero-288 .cs-content {

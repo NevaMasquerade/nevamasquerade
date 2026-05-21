@@ -1,30 +1,30 @@
 // _data/blogs.js
 module.exports = {
   framework: { 
-    title: "The Storycraft Atlas: How to Stop Guessing What to Put on Your Website", 
-    description: "Not sure what your site needs now that you’ve outgrown DIY? This is the system I use to build websites that help the right people say yes.", },
+    title: "You Can Feel Your Website Isn't Working. Here's Exactly Why.", 
+    description: "You can feel your website isn't working even if you can't name what's wrong. The Untemplate Framework is the system built to close that gap — starting with story, not design." },
   whyStory: { 
-    title: "Your Website Isn’t Broken. The Template Can't Grow With You.", 
-    description: "Templates can only take you so far. This is the story of how WordPress bloat and wedding website rage inspired Storycraft — and why it might be your next move." },
-  notReady: { 
-    title: "Your Offers Are Still Evolving. Your Website Can Too.", 
-    description: "Think you need to “lock in” your offer before building your site? You don’t. Here’s how to move forward with a website that flexes as you grow." },
+    title: "Templates Are Better Than Ever. So Why Is Your Website Still Not Working?", 
+    description: "It's never been easier to look professional online. It's never been harder to stand out. Here's why the template trap is getting worse — and what coaches are doing instead." },
+  evolving: { 
+    title: "Your Offers Are Still Evolving. Build the Website Anyway.", 
+    description: "Your offers will keep evolving. There will always be a reason to wait. But your voice, your values, and your methodology? Those don't go out of date — and that's what a great site is built from." },
   weakCopy: { 
-    title: "Why Your Website Copy Isn’t Converting (And How to Fix It)", 
-    description: "Your website looks good, but it’s not doing its job. Here’s why your website isn’t converting — and the three shifts that change everything." },
+    title: "You've Rewritten Your Homepage 17 Times. Here's Why It's Still Wrong.", 
+    description: "You've rewritten your homepage headline more times than you can count. It's still off. The problem isn't the headline — it's the direction your copy is pointed. Here's how to fix it." },
   badUX: { 
-    title: "Why Your Website Looks Good but Isn’t Working", 
-    description: "Your website might be stylishly sabotaging itself. Let’s talk UX, squint tests, and what Apple’s latest fail can teach your business." },
-   funnels: { 
-    title: "Your Website Isn’t a Funnel (But It Should Be)", 
-    description: "How to turn your digital brochure into a real sales funnel — without starting from scratch or sacrificing your soul to “marketing hacks.”" },
+    title: "56% of People Leave Because of Bad UX. Is Your Site One of Them?", 
+    description: "Your website might be stylishly sabotaging itself. 56% of people leave because of bad digital experiences — and Apple's latest design fail proves even the big players get this wrong." },
+  funnels: { 
+    title: "3 Website Strategies That Turn Visitors Into Buyers (Without Starting Over)", 
+    description: "One clear CTA. Pages that guide decisions. A blog that builds trust. Three strategies that turn a digital brochure into a sales tool — no full rebuild required." },
   beyondTemplates: { 
-    title: "Hate Sharing Your Website? It’s Time to Move Beyond Templates.", 
-    description: "Still hiding your site behind “just DM me”? You’ve hit the template wall. Here’s how to rebuild your site so it actually feels like you." },
+    title: "Your Website Problem Is Not a Design Problem. It's an Identity Problem.", 
+    description: "A template can't fix a clarity problem. If your site looks fine but feels completely off, the issue isn't the design — it's that the real you hasn't shown up yet." },
   flashyMyth: { 
-    title: "You Don’t Need a Flashy Website to Look Credible", 
-    description: "Why over-designed sites can hurt more than help — and what actually builds trust, clarity, and conversions for solo business owners." },
+    title: "The Websites You're Trying to Imitate Might Not Even Be Working.", 
+    description: "Those jaw-dropping coach websites you're trying to replicate? A lot of them are slow, inaccessible, and not converting nearly as well as they look. Here's what actually works." },
   seo: { 
     title: "SEO Is Overrated When Your Business Runs on Referrals", 
-    description: "If your leads are already warm, SEO isn’t what drives sales. Your message does. Market research makes it clear, strategic, and resonant." },
+    description: "You can rank on page one and still lose the client. Here's why coaches who run on referrals are optimizing for the wrong thing — and what to do instead." }
 };

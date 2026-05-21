@@ -1,6 +1,6 @@
 ---
-title: "Modern ≠ Usable"
-description: "Beautiful sites with bad UX are everywhere. Here’s how to stop confusing your users, convert more leads, and make your website actually work."
+title: "Is Bad UX Quietly Costing You Clients?"
+description: "56% of people stop doing business with a brand because of poor digital experiences. If your site looks good but isn't converting, here's exactly what to fix first."
 preloadImg: '/assets/images/blog/bad-ux-m.webp'
 ogImage: '/assets/images/og/bad-ux.png'
 permalink: 'blog/bad-ux/'
@@ -32,7 +32,7 @@ permalink: 'blog/bad-ux/'
         <h1 class="cs-int-title">{{ blogs.badUX.title}}</h1>
         <div class="blog-authorGroup">
             <!--Blog Date-->
-            <span class="blog-date">Last Updated: February 22, 2026</span>
+            <span class="blog-date">Last Updated: May 20, 2026</span>
         </div>
     </div>
     <!--Background Image-->
@@ -242,22 +242,7 @@ permalink: 'blog/bad-ux/'
                             more effective.
                         </p>
                     
-                    <aside id="blog-1289" class="related-post" aria-label="Related article">
-                        <div class="cs-item cs-highlight">
-                            <a href="/blog/website-funnels/" class="cs-link">
-                                <picture class="cs-picture">
-                                    <img loading="lazy" decoding="async" src="../../assets/images/blog/website-funnels-m.webp" alt="Cat crouched low to the ground, locked in on a small light dot on the floor like a furry little funnel-building sniper." width="270" height="200">
-                                </picture>
-                                <div class="cs-flex">
-                                    <span class="cs-topper">Want to go deeper?</span>
-                                    <h3 class="aside-title">{{ blogs.funnels.title }}</h3>
-                                    <p class="cs-item-text">
-                                        {{ blogs.funnels.description }}
-                                    </p>
-                                </div>
-                            </a>
-                        </div>  
-                    </aside>
+                    {% include 'asides/funnels-post.html' %}
 
                 <h2>UX in the Real World</h2>
                     <p>
@@ -433,7 +418,7 @@ permalink: 'blog/bad-ux/'
                         make up for that with breadth and crossing disciplines.
                     </p>
                     <p>
-                        In <a href="/storycraft/">Storycraft</a>, my done-for-you website package, I take care of
+                        In <a href="/untemplate-site/">{{ services.dfyOffer.name }}</a>, my done-for-you website package, I take care of
                         all this for you.
                     </p>
                     <ul>
@@ -507,15 +492,12 @@ permalink: 'blog/bad-ux/'
                         something strategic, thoughtful, and effective — I’d love to help.
                     </p>
                     <p>
-                        <a class="cs-button-solid" href="https://calendly.com/tianna-nevamasquerade/storycrafted-sites-discovery-call">
-                            {% ButtonIcon %}
-                            Start Your Story
-                        </a>
+                        The {{ services.audit.name }} is a full diagnostic of your site — design, content, tech, and strategy — written in plain English, with a prioritized plan for exactly what to fix and in what order.
                     </p>
                     <p>
-                        Book a free discovery call, and
-                        let’s talk about how your website can finally start working <em>for</em> your
-                        business.
+                        <a class="cs-button-solid" href="/audit/">
+                            See the {{ services.audit.name }}
+                        </a>
                     </p>
             </section>
         </article>
