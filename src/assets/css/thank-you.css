@@ -133,6 +133,9 @@
   #content-1638 .nm-highlight .nm-button-secondary {
     color: var(--textLight);
   }
+  #content-1638 .nm-highlight li {
+    color: var(--textLight);
+  }
   #content-1638 .cs-title {
     padding-bottom: 2rem;
   }

@@ -1,0 +1,79 @@
+---
+title: "Check Your Inbox"
+description: "Your Homepage Anti-Template is on its way. Confirm your email to unlock your guide — and start thinking about your homepage strategically."
+preloadImg: '/assets/textures/blue-banner-m.webp'
+permalink: 'thank-you-anti-template/'
+eleventyExcludeFromCollections: true
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    {{ super() }}
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="../../assets/css/thank-you.css" media="print" onload="this.media='all'; this.onload=null;" />
+    <noscript>
+        <link rel="stylesheet" href="/assets/css/thank-you.css" />
+    </noscript>
+    <meta property="og:type" content="website" />
+    <!-- Any page-specific tags that belong in the <head>, such as a page-specific stylesheet -->
+{% endblock %}
+
+{% block body %}
+    <!-- Page HTML goes here, without a <main> wrapper. The <main> tag is already presented in layouts/base.html -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1106">
+    <div class="cs-container">
+        <h1 class="cs-int-title">
+            Check your inbox.
+        </h1>
+        <p class="nm-subhead">
+            Your Homepage Anti-Template is on its way. If you don't see it in the next few minutes, check your spam folder. If you still don't see it, email tianna@nevamasquerade.design.
+        </p>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="../../assets/textures/blue-banner-m.webp">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="../../assets/textures/blue-banner.webp">
+        <img decoding="async"fetchpriority="high" src="../../assets/textures/blue-banner.webp" alt="" width="1280" height="568" aria-hidden="true">
+    </picture>
+</div>
+
+<!-- ============================================ -->
+<!--                  Content                     -->
+<!-- ============================================ -->
+
+<section id="content-1638">
+    <div class="cs-container">
+        <div class="cs-content">
+            <div class="cs-flex">
+                <span class="cs-topper">Last hoop, you gotta click another button</span>
+                <h2 class="cs-title">One quick step first.</h2>
+                <p class="cs-text">
+                    You should have a confirmation email waiting. Click the link inside to confirm your address — that's what triggers your guide to send.
+                </p>
+                <p class="cs-text">
+                    No confirmation, no cats. Don't leave the cats waiting.
+                </p>
+            </div>
+            <div class="cs-flex nm-highlight">
+                <h3 class="cs-h3">While you wait</h3>
+                <p class="cs-text">
+                    If you want to get a head start on thinking strategically about your website, this is a good place to start:
+                </p>
+                <a href="/blog/website-not-converting" class="nm-button-secondary">
+                    Why Your Website Copy Isn't Converting (And How to Fix It)
+                    <img class="cs-arrow" loading="lazy" decoding="async" src="../../assets/svgs/chevron.svg" alt="" width="20" height="20" aria-hidden="true">
+                </a>
+            </div>
+        </div>  
+    </div>
+</section>
+                                
+
+{% endblock %}
